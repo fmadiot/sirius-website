@@ -500,6 +500,10 @@ h1.intro {
 	background: url("../images/icons/icon_code.png") no-repeat;
 }
 
+#project {
+	background: url("../images/icons/icon_project.png") no-repeat;
+}
+
 #start:hover {
 	background: url("../images/icons/icon_start_hover.png") no-repeat;
 }
@@ -532,6 +536,9 @@ h1.intro {
 	background: url("../images/icons/icon_code_hover.png") no-repeat;
 }
 
+#project:hover {
+	background: url("../images/icons/icon_project_hover.png") no-repeat;
+}
 
 /* Footer
 ------------------------------ */
