@@ -194,12 +194,12 @@ img {
 .fake_player_button {
 	background: url("../images/buttons/fake_player_button.png")
 		no-repeat;
-	display: inline;
+	display: block;
 	height: 83px;
 	width: 136px;
 	position: absolute;
 	margin-top: -270px;
-	margin-left: -70px;
+	margin-left: 255px;
 }
 
 #player:hover .fake_player_button {
