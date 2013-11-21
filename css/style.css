@@ -192,8 +192,7 @@ img {
 }
 
 .fake_player_button {
-	background: url("../images/buttons/fake_player_button.png")
-		no-repeat;
+	background: url("../images/buttons/fake_player_button.png") no-repeat;
 	display: block;
 	height: 83px;
 	width: 136px;
@@ -203,8 +202,9 @@ img {
 }
 
 #player:hover .fake_player_button {
-	background: url("../images/buttons/fake_player_button_hover.png") no-repeat;
-	}
+	background: url("../images/buttons/fake_player_button_hover.png")
+		no-repeat;
+}
 
 /*--------- Body Wrapper ---------------*/ /* Home Page
 ------------------------------ */
@@ -266,6 +266,10 @@ img {
 	background-color: #be1a78 !important;
 	text-transform: uppercase;
 	color: #fff !important;
+}
+
+.learn_more:hover {
+	background-color: #7269a4 !important;
 }
 
 /* Download Bottom Banner
@@ -385,23 +389,310 @@ h1.intro {
 	float: none;
 }
 
-/*--------- Download Page ------------*/
-.download_item {
-	width: 30%;
-	margin: 0 auto;
-	text-align: center;
+/*	Tabs in Donwnload Page
+-----------------------------*/
+#tabs_wrapper {
+	width: 100%;
 }
 
-#updatesite {
+#tabs_container {
+	margin-top: 35px;
+}
+
+#tabs_content_container p {
+	margin-left: 0 !important;
+}
+
+#tabs {
+	list-style: none;
+	padding: 9px 0;
+	margin: 0 0 0 1px;
+}
+
+#tabs li {
+	float: none;
+	width: auto;
+	margin: 0;
+	padding-right: 12px;
+	list-style-type: none;
+	display: inline;
+	z-index: 1;
+	color: #fff;
+	position: relative;
+}
+
+#tabs li span {
+	padding: 12px 40px 20px;
+	text-decoration: none;
+	border: 1px solid #dfdfdf;
+	outline: none;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	position: relative; background-image : linear-gradient( top, #d3d3d3 4%
+	, #f1f1f1 100%); background-image : -o-linear-gradient( top, #efefef 4%
+	, #fff 100%); background-image : -moz-linear-gradient( top, #d3d3d3 4%,
+	#f1f1f1 100%); background-image : -webkit-linear-gradient( top, #d3d3d3
+	4%, #f1f1f1 52%); background-image : -ms-linear-gradient( top, #d3d3d3
+	4%, #f1f1f1 100%); background-image : -webkit-gradient( linear, left
+	top, left bottom, color-stop( 0.04, #d3d3d3), color-stop( 1, #f1f1f1));
+	margin-left: -1px;
+	color: #334541;
+	font-weight: normal;
+	background-image: linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
+	background-image: -o-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -moz-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
+	background-image: -webkit-linear-gradient(top, #d3d3d3 4%, #f1f1f1 52%);
+	background-image: -ms-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.04, #d3d3d3
+		), color-stop(1, #f1f1f1) );
+}
+
+*>#tabs li span {
+	background-color: #d3d3d3;
+}
+
+*>#tabs li.active span {
+	background-color: #f1f1f1;
+}
+
+#tabs li span:hover {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+#tabs li.active span,#tabs li.active span:hover,#tabs li span:hover {
+	background-image: linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -o-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -moz-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -webkit-linear-gradient(top, #efefef 4%, #fff 52%);
+	background-image: -ms-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.04, #efefef
+		), color-stop(1, #fff) );
+	color: #333;
+	border: 1px solid #dfdfdf;
+	border-bottom: 1px solid #fff;
+}
+
+#tabs li.active span {
+	font-weight: bold;
+}
+
+#tabs li.active {
+	position: relative;
+	z-index: 2;
+}
+
+#tabs_content_container {
+	padding: 20px;
+	text-align: justify;
+	/*background-color: #fff;
+		border: 1px solid #dfdfdf;*/
+	position: relative;
+	z-index: 1;
+	margin-top: 10px;
+}
+
+.tab_content {
+	display: none;
+}
+
+#tabs_content_container .dwnld_wrapper {
+	display: inline-block;
+}
+
+#tabs_content_container ul.installnav {
+	float: left;
+	padding: 0;
+	width: 973px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-left: none;
+}
+
+#tabs_content_container ul.installnav li {
+	display: inline;
+}
+
+#tabs_content_container ul.installnav li a p {
+	font-size: 10px;
+	margin: 10px 0;
+}
+
+#tabs_content_container ul.installnav li a {
 	display: block;
-	margin: 30px auto;
-	width: 70px;
-	height: 70px;
-	background: url("../images/icons/icon_updatesite.png") no-repeat;
+	text-align: left;
+	text-decoration: none;
+	background: url("../images/download/installnav_bg.png") no-repeat 0 0;
+	box-shadow: 2px 0 6px #777;
+	width: 165px;
 }
 
-#updatesite:hover {
-	background: url("../images/icons/icon_updatesite_hover.png") no-repeat;
+#tabs_content_container ul.installnav li.active a,#tabs_content_container ul.installnav li.active a:hover
+	{
+	color: #282828;
+	outline: none;
+	background: url("../images/download/installnav_active_bg.png") no-repeat
+		right;
+	box-shadow: none;
+	width: 186px;
+	border: none;
+}
+
+#tabs_content_container ul.installnav li a:hover {
+	background: #fff;
+	background: url("../images/download/installnav_hover_bg.png") no-repeat
+		0 0;
+	cursor: pointer;
+}
+
+#tabs_content_container ul.installnav li.active a span {
+	text-align: center;
+	border-right: none;
+}
+
+#tabs_content_container ul.installnav li a span {
+	display: block;
+	width: 164px;
+	height: 122px;
+	padding: 40px 0;
+	text-align: center;
+	color: #595959;
+	border: 1px solid #dfdfdf;
+}
+
+#tabs_content_container ul.installnav li a span p.recommended {
+	margin-top: -14px;
+	color: #999;
+}
+
+#tabs_content_container h2 {
+	font-size: 14px;
+}
+
+.updateSiteBlock,.drag2install_tooltip {
+	color: #fff;
+	display: none;
+	position: absolute;
+	visibility: visible;
+	top: 16px;
+}
+
+.drag2install_tooltip {
+	width: 356px;
+	height: 55px;
+	background-image: url("../images/download/tooltip_bg.png");
+	background-repeat: no-repeat;
+	z-index: 12;
+	left: 290px;
+	top: 45px;
+}
+
+.updateSiteBlock {
+	background: none repeat scroll 0 0 #7269a4;
+	padding: 10px;
+	width: 315px;
+	z-index: 10;
+	left: 290px;
+	top: 20px;
+}
+
+.updateSiteBlock input[type="text"] {
+	width: 273px;
+}
+
+.updateSiteBlock p {
+	margin: 0 0 1px 0 !important;
+	width: 250px;
+}
+
+.updateSiteBlock input {
+	width: 200px;
+}
+
+.updateSiteBlock a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.updateSiteBlock a:hover {
+	text-decoration: none;
+}
+
+.updateSite a:hover .updateSiteBlock {
+	display: block;
+	visibility: visible;
+}
+
+.closeButtonUpdateSite img {
+	float: right;
+	position: relative;
+	margin: 0;
+}
+
+#content_emc {
+	display: block;
+}
+
+#content_drag2install,#content_updatesite,#content_emc,#content_drag2install_1,#content_updatesite_1,#content_emc_1
+	{
+	float: right;
+	position: absolute;
+	top: 70px;
+	left: 185px;
+	padding: 0 50px;
+	background: transparent;
+	cursor: default;
+}
+
+#content_drag2install p,#content_updatesite p,#content_emc p,#content_drag2install_1 p,#content_updatesite_1 p,#content_emc_1 p
+	{
+	margin-left: 20px !important;
+}
+
+#content_drag2install,#content_updatesite,#content_drag2install_1,#content_updatesite_1
+	{
+	display: none;
+	margin-bottom: 20px;
+}
+
+#content_drag2install a,#content_updatesite a,#content_emc a,#content_drag2install_1 a,#content_updatesite_1 a,#content_emc_1 a
+	{
+	background: transparent !important;
+	display: inline !important;
+	color: #be1a78 !important;
+	cursor: pointer;
+}
+
+#content_drag2install a:hover,#content_updatesite a:hover,#content_emc a:hover,#content_drag2install_1 a:hover,#content_updatesite_1 a:hover,#content_emc_1 a:hover
+	{
+	text-decoration: underline !important;
+}
+
+#install,#install_1,#closeButton,.drag2install:hover {
+	cursor: pointer;
+}
+
+#updatesite:hover,#install_emc:hover {
+	cursor: default;
+}
+
+.link-color {
+	color: #148EC5;
+}
+
+.clear {
+	clear: both;
+	height: 1px;
+}
+
+#install_1 img {
+	margin: 40px 0 10px 0;
+}
+
+.updateSite img {
+	margin: 40px 0 0 0;
 }
 
 /* Download & Update Site Buttons

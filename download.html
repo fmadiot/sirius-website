@@ -4,14 +4,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="Content-language" content="en">
-	<meta name="description" content="Sirius - Graphical editors for your DSL">
+	<meta name="description" content="Sirius - Create and Define Your Own Graphical Model">
 	 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/kickstart.js"></script>
+	<script type="text/javascript" src="js/tabs.js"></script>
+	<script type="text/javascript">window.onload=function(){tabs();};</script>
 	<script type="text/javascript" src="js/googleAnalytics.js"></script>
 	
 	<link rel="icon" type="image/png" href="favicon.ico" />
-	<title>Sirius - Graphical editors for your DSL</title>
+	<title>Sirius - Graphical Editors for your DSL</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />	
 	<link type="text/css" rel="stylesheet" href="css/tiptip.css" />
 </head>
@@ -35,19 +37,78 @@
 
 <div id="body_wrapper">	
 	<h1 class="page_title">Download</h1>
-	<p><b>Sirius source code is currently being migrated to Eclipse.</b></p>
-	<p><b>Until the first official release (0.9), a development version of Sirius is already available.</b></p>
-	<div class="download_wrapper">	
-		<div class="download_item">			
-			<span class="tooltip download_icon" data-content="#tooltipcontentID" data-action="click" id="updatesite"></span>
-			<div class="tooltip-content" id="tooltipcontentID">
-				<h3>Update Site</h3>			
-				<p>Copy this URL: <a href="http://download.eclipse.org/sirius/updates/stable/0.9.0-S20131115-0601/kepler">http://download.eclipse.org/sirius/updates/stable/0.9.0-S20131115-0601/kepler</a> to your Eclipse Installation to reach this Solution's Update Site.</p>
+
+	<div id="tabs_content_container">
+	   		
+		<div id="tab_eclipse" class="tab_content" style="display: block">				   
+			<div class="dwnld_wrapper">
+				
+				<ul class="installnav">
+					<li id="eclipse_drag2install">
+						<a>
+							<span>
+								<img src="images/download/icon_drag2install.png" alt="Drag to Install Icon">
+								<p>Drag to Install</p>
+							</span>
+						</a>
+						<div id="content_drag2install_1">		
+							<h2>Install Sirius with the Drag'n Drop Install</h2>										
+							<p><a id="install_1" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" onmouseover="drag2InstallTooltip()" onmouseout="drag2InstallTooltip_out()">
+								<img src="images/download/drag2install_button.png" id="drag2install_img" /></a>
+							</p>
+							<div class="drag2install_tooltip">
+								<p>Drag to your running Eclipse workspace!</p>
+							</div>
+							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
+						</div>
+					</li>
+					
+					<li id="eclipse_install_emc" class="active">
+						<a>
+							<span>
+								<img src="images/download/icon_emc.png" alt="Marketplace Icon">
+								<p>Marketplace</p>
+								<p class="recommended"> Recommended</p>
+							</span>
+						</a>
+						<div id="content_emc_1">
+							<h2>Install Sirius with Eclipse Marketplace</h2>
+							<span class="gap">&nbsp;</span>
+							<p>Browse the Marketplace, choose Sirius and just click on the install button.</p>
+							<p><img src="images/download/install_marketplace_module.png" alt="Obeo Marketplace"></p>
+							<br />
+													
+							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
+							<p>For more details, please refer to <a href="http://marketplace.eclipse.org/marketplace-client-intro" target="_blank">Introducing the Eclipse Marketplace Client</a> installation guide.</p>
+						</div>
+					</li>
+					
+					<li id="eclipse_updatesite">
+						<a>
+							<span>
+								<img src="images/download/icon_updatesite.png" alt="Drag to Install Icon">
+								<p>Update Site</p>
+							</span>
+						</a>
+						<div id="content_updatesite_1">
+							<h2>Install Sirius from Update Site</h2>										
+							<p>
+								<a class="updateSite" href="#" target="_blank" title="Update Site"><img src="images/download/updatesite_button.png" border="0" /></a>
+							</p>	
+							<div class="updateSiteBlock"><a class="closeButtonUpdateSite" href="#"><img src="images/download/closeButton.png" border="0" width="12" height="12" /></a>
+								<p>Add this URL to your Eclipse Installation to reach this Solution's Update Site.</p>
+								<p><input type="text" value="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" /></p>								
+							</div>
+							<br />
+							<p>The full procedure is described <a href="http://marketplace.eclipse.org/updatesite/help?url=http%3A//marketplace.obeonetwork.com/updates/od61/" target="_blank">here</a>.</p>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<p>Sirius is available as an update site. To install via the update site URL above, copy and paste it into the "Help > Install new software" dialog.</p>
-			<p>The full procedure is described <a href="http://marketplace.eclipse.org/updatesite/help?url=http%3A//marketplace.obeonetwork.com/updates/od61/">here</a>.</p>
-		</div>	
-	</div>
+		</div>
+	
+		</div>
+	
 </div> <!-- Fin body_wrapper -->	
 
 <div class="clear"></div>
