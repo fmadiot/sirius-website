@@ -87,6 +87,21 @@ img {
 	margin: 0 0 20px 0;
 }
 
+#incubation {
+	margin-top: -29px;
+		}
+
+#incubation a:hover {
+	border: none !important;
+	}
+
+#incubation img {
+	position: relative;
+	width: 43px;
+	height: auto;
+	margin-left: 30px;
+}
+
 /*--------- Header ---------------*/
 #header_wrapper {
 	background: transparent;
@@ -430,13 +445,14 @@ h1.intro {
 	-moz-border-radius: 5px 5px 0 0;
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
-	position: relative; background-image : linear-gradient( top, #d3d3d3 4%
-	, #f1f1f1 100%); background-image : -o-linear-gradient( top, #efefef 4%
-	, #fff 100%); background-image : -moz-linear-gradient( top, #d3d3d3 4%,
-	#f1f1f1 100%); background-image : -webkit-linear-gradient( top, #d3d3d3
-	4%, #f1f1f1 52%); background-image : -ms-linear-gradient( top, #d3d3d3
-	4%, #f1f1f1 100%); background-image : -webkit-gradient( linear, left
-	top, left bottom, color-stop( 0.04, #d3d3d3), color-stop( 1, #f1f1f1));
+	position: relative;
+	background-image: linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
+	background-image: -o-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -moz-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
+	background-image: -webkit-linear-gradient(top, #d3d3d3 4%, #f1f1f1 52%);
+	background-image: -ms-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.04, #d3d3d3
+		), color-stop(1, #f1f1f1) );
 	margin-left: -1px;
 	color: #334541;
 	font-weight: normal;
