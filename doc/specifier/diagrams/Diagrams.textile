@@ -195,6 +195,10 @@ table(table table-striped table-condensed).
 |!images/styles/Container_Style_Gradient.png!|!images/styles/Container_Style_Parallelogram.png!|!images/styles/Container_Style_Image.png!|
 |_. Gradient|_. Parallelogram|_. Image|
 
+h5. Default Size
+
+You can specify the default size of _Gradient_ and _Parallelogram_ styles at creation time by specifying the width and height computation expressions available in the Advanced tab. This default size will also be used to determine the container minimum size when its bounds are _auto-sized_.
+
 Most of the properties used to configure the various styles are self-explanatory. See the "styles":#styling section below for a general discussion. You can also refer to the tool-tips available directly in the editor on the "question mark" icon of each property.
 
 h4(#container_tools). Container Tools
@@ -621,6 +625,9 @@ A _Diagram Extension_ can specify the _Metamodels_ of the semantic elements it r
 
 The simplest use case of a diagram extension is to simply _augment_ the base diagram with new graphical elements, tools, filters and validation rules. However you can also use the notion of _Mapping Import_ to _modify_ the definition of some of the base diagram's mappings. _Mapping Imports_ are actually independent of diagram extensions, and can be used inside a normal diagram description as their semantic is defined in terms of layers activation, but their main use case is when using diagram extensions.
 
+You can use regular expression in _Viewpoint URI_ and _Representation Name_ fields. This allows to extend several diagrams with one single _Diagram Extension_. You should use regular expressions only to define a _Diagram Extension_ that contains only "style customization":#customization.
+These fields are considered as regular expressions if they contain at least one of these characters : "*", "[", "]", "(", ")" or "?".
+
 h3(#mapping_imports). Mapping Imports
 
 A mapping import is used to _specialize_ (modify) a mapping defined somewhere else (in an other layer, an other graphical representation or an other viewpoint). This feature is only available for diagram kind representations.
@@ -643,6 +650,7 @@ To use this feature, you must first create a _Style Customizations_ element insi
 * The style elements to customize, using the _Applied On_ attribute. You can specify multiple styles if the customization should apply to different style elements or to different styles for a given element (e.g. the default and some or all of the conditional styles).
 * The feature to customize, using the _Property Name_ field (you can use completion with _Ctrl+Space_ to see the list of possible values depending on which element(s) you selected in _Applied On_).
 * And finally the value to set for that feature. For references (_Property Customization (by selection)_), you must select the actual value from the available choices in the combo box. For attributes (_Property Customization (by expression)_), the value is computed using an interpreted expression evaluated in the context of the semantic element whose style is being customized.
+* The *Apply on all* option offers the possibility to customize the feature for all styles available in the diagram. That option avoids you to make an exhaustive list of all styles to customize. You can also make your customizations available for several representations by using a regular expression in Viewpoint URI and Representation Name fields (see "Diagram Extension Description":#diagram_extension for more details).
 
 A _Style Customization_ can define a predicate expression to control whether or not it should apply. If defined, the expression is evaluated in the context of a semantic element to determine whether or not the customizations should be applied. If no expression is defined, the customizations will apply. If a _Style Customization_ applies to a given element, the _base style_ that the element would normally have will be modified by applying all the _Property Customization_ (by expression and by reference) defined in the _Style Customization_ , if they are compatible with that base style.
 

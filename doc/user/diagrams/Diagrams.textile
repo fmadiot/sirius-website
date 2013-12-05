@@ -385,6 +385,18 @@ Theses customizations can be reset by the "Reset style customization" button ava
 
 NOTE: in case a user customized a Node with a WorkspaceImage style (through the "Set style to workspace image" action), it is considered in its whole customized then it can't be updated by the refresh action, only the "Reset style properties to default values" action can update it by reset it.
 
+h4(#routingStylePref). Customize edge routing style from preferences
+
+You have the possibility to customize the routing style of all new edges from the preferences. In the preference page _Viewpoint/Viewpoint Diagram/Connections_, you can enable _user specific default values_ and select a default routing style for all new edges.
+
+!images/preferences_viewpoint_diagram_connections.png!
+
+For example:
+* The _user specific default values_ is enabled and the line style is set to _Rectilinear_.
+* You create a new edge.
+* The routing style is set to _Rectilinear_ (regardless of the value specified in the VSM) and the _routingStyle_ is considered as custom.
+* If you call the action _Reset style to default value_ on this edge, then it keeps its routing style (because the preference is considered as the default value).
+
 h2(#reference). Reference
 
 This section describes all the features which are (or can be) available on graphical modelers
@@ -620,7 +632,7 @@ The illusration above shows the default value of all these preferences.
 * _Auto-size containers during arrange-all action:_ Container elements which have an explicit size are normally not resized during an _Arrange All_. This can be problematic if the elements they contain are re-arranged so that the container's size is not appropriate anymore. When this preference is enabled, the arrange all action will treat all containers as if they are "auto-sized", and adjust their size to the computed arrangement for their content. After the arrange all action is finished, the containers which had an explicit size before will still have an explicit size (although potentially different); they are only switched to auto-size mode during the arrange all action. 
 * _Move unlinked notes during layout:_ If checked, then the _Arrange all_ will consider all "notes":#notes on the diagram and arrange them. If unchecked, only the notes which are attached to non-note diagram elements are moved by the layout; the rest (which are considered just comments on the diagram itself), are not touched. 
 * _Automatically mark moved elements as pinned:_ If checked, then as soon as you explicitly move a element (node or container) on the diagram, Sirius will mark it as "pinned":#pinning and consider it should not be moved by the automatic layout. You can still explicitly "unpin":#pinning these elements.
-* <span id="synchronized_preference">_Synchronized mode for new diagrams:_</span> If checked, all newly created diagrams will initially be in "unsynchronized":#synchronized_diagram mode. You can still change the mode manually after the diagram is created.
+* <span id="synchronized_preference">_Synchronized mode for new diagrams:_</span> If checked, all newly created diagrams will initially be in "synchronized":#synchronized_diagram mode. You can still change the mode manually after the diagram is created.
 * _Remove/hide note when the annotated element is removed/hidden:_ If checked, then notes attached to a diagram element will be deleted if the element is deleted, or hidden if the element is hidden.
 
 h3. Appearance

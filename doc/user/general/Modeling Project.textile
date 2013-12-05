@@ -20,7 +20,7 @@ To use already existing modelers (assuming the plug-ins which provide them are i
 * a _dialect_ is a kind of representation supported by Sirius. Out of the box, Sirius supports three dialects: diagrams, tables, and trees. Sequence diagrams and cross-tables, which are special kinds of diagrams (resp. tables) can also be considered of as dialects, although technically they are not.
 * a _representation_ is a particular diagram, table, or tree which you created on your semantic model. It is simply a more general term than "diagram" which is also usable for other dialects.
 * a _representation file_ is a file in which Sirius stores all informations related to which representations you created, what appears on them, the positions and colors of the elements, etc. This files have a @.aird@ extension (typically @representations.aird@). Representation files reference the semantic model(s) they contain representations for, but you semantic models are kept unaware (and unpolluted) of any Sirius-specific data.
-* a _viewpoint_ is a set of representation descriptions which provide a specific point of view on some kind of semantic model. For example we could have a _UML Structural_ viewpoint, which describes the sub-set of all the standard UML diagrams which deal only with structural aspects of UML models (as opposed to behavioral or requirements aspects). Siriuss are defined in _Viewpoint Specification Models_ and packaged as Eclipse plug-ins. Once you install such a plug-in, the viewpoints it defines will be available to you (with all the representations they define) on all compatible semantic models.
+* a _viewpoint_ is a set of representation descriptions which provide a specific point of view on some kind of semantic model. For example we could have a _UML Structural_ viewpoint, which describes the sub-set of all the standard UML diagrams which deal only with structural aspects of UML models (as opposed to behavioral or requirements aspects). Viewpoints are defined in _Viewpoint Specification Models_ and packaged as Eclipse plug-ins. Once you install such a plug-in, the viewpoints it defines will be available to you (with all the representations they define) on all compatible semantic models.
 * a _modeling project_ is a special kind of project in your workspace which makes it easy to manipulate representation files and semantic models in a consistent way.
 
 The rest of this document explains how you can use the Sirius UI to create and manipulate representations of your semantic models. Each viewpoint and representation is specific. We will use the _Family_ example (see the "Getting Started":../../../../fr.obeo.dsl.designer.doc/html/Getting_Started_User.html section) for illustration purpose, but note that not all features may be available with all kinds of models and all viewpoints.
@@ -41,7 +41,7 @@ The recommended way to use Sirius is now to use the new notion of _Modeling Proj
 
 h2(#ModelingPerspective). The Modeling Perspective
 
-When you first start Sirius, it opens on the _Modeling_ perspective. This new perspective provides all the required views, wizards and menus to exploit designers as an end user. When run in the context of Obeo Designer, the perspective will also give you access to the main feature of the other components of Obeo Designer (e.g. shortcuts to launch Acceleo generator).
+When you first start Sirius, it opens on the _Modeling_ perspective. This new perspective provides all the required views, wizards and menus to exploit designers as an end user.
 
   !images/modeling_perspective.png!
 
@@ -76,6 +76,11 @@ You can customize this feature with three preferences:
 * Increase/decrease the threshold that triggers the intermediary level
 * Increase/decrease the group size
   !images/groupItems_1.png!
+  
+*Note:* We see that this feature need to be enabled and have a hierarchy context above the threshold to be triggered.
+In another hand, to keep a consistency, the threshold and group size value need to follow these rules:
+* The threshold needs to be higher or equal to the group size. Otherwise the threshold value will be ignored and the group size value will be used instead.
+* The group size value needs to be higher than zero.
   
 When you update these preferences, you need to make a refresh (F5) on all resources already expanded to get an updated tree items.
 
@@ -127,11 +132,11 @@ If for some reason you want to revert the conversion of a project into a _Modeli
 
 The action will simply remove the nature from the project itself, but will not remove or alter the representation files stored inside. You will still be able to use your representations using the "legacy mode":#LegacyMode.
 
-h3(#SiriusSelection). Selecting Which Viewpoints to Enable
+h3(#ViewpointSelection). Selecting Which Viewpoints to Enable
 
 Each modeling project has a set of viewpoints which are _enabled_. This controls what kind of representations you can create on the semantic models inside the project. The set of viewpoints which are available to you will depend on what plug-ins you have installed, and on the type of semantic models which are inside the modeling projects. For example, even if you have installed the "UML Designer":http://marketplace.obeonetwork.com/module/uml, you will only be able to enable to corresponding viewpoints if your project contains UML models (@.uml@ files).
 
-To select which viewpoints are enable on your project, simply use the _Viewpoint Selection_ action in the context menu of the project itself. A dialog box will open which will show you all the viewpoints which are compatible with your project (depending on the kind of models it contains). You can check or un-check each viewpoint individually to enable or disable it, and click _OK_ to validate your choice. Note that some viewpoints depend on other ones (especially viewpoints which extend other ones). If your selection of viewpoints does not include all the required dependencies, a message will be shown to indicate which dependencies are not resolved. You can then adjust your selection and re-validate it.
+To select which viewpoints are enable on your project, simply use the _Viewpoints Selection_ action in the context menu of the project itself. A dialog box will open which will show you all the viewpoints which are compatible with your project (depending on the kind of models it contains). You can check or un-check each viewpoint individually to enable or disable it, and click _OK_ to validate your choice. Note that some viewpoints depend on other ones (especially viewpoints which extend other ones). If your selection of viewpoints does not include all the required dependencies, a message will be shown to indicate which dependencies are not resolved. You can then adjust your selection and re-validate it.
 
   !images/viewpoint_selection1.png! !images/viewpoint_selection2.png!
   
