@@ -4,13 +4,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="Content-language" content="en">
-	<meta name="description" content="Sirius - Create and Define Your Own Graphical Model">
+	<meta name="description" content="Graphical Editors for your DSL">
 	 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/googleAnalytics.js"></script>
 
 	<link rel="icon" type="image/png" href="favicon.ico" />
-	<title>Sirius - Graphical Editors for your DSL</title>
+	<title>Sirius - The easiest way to get your own modeling tool</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />		
 </head>
 	
@@ -41,7 +42,7 @@
 
 	<div class="section left">
 		<div class="image">
-			<iframe class="shadow" width="400" height="250" src="http://www.youtube.com/embed/08XIW8hZOyQ?fs=1&amp;loop=1&amp;playlist=08XIW8hZOyQ&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+			<iframe class="popup-youtube shadow" width="400" height="250" src="http://www.youtube.com/embed/08XIW8hZOyQ?fs=1&amp;loop=1&amp;playlist=08XIW8hZOyQ&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
 		</div>
 		<h1 class="intro">4' Tutorial</h1>
 		<p>This tutorial shows the first steps to create a first graphical modeling tool with Sirius.</p>
@@ -53,8 +54,30 @@
 			<li>define Nodes and Edges to display model elements on the diagram</li>
 			<li>add a Creation Tool to create new model elements from a palette</li>
 		</ul>
+		<div class="tuto_resources">
+			<!-- <a class="btn btn_large" name="resources_lnk">Get the resources used by this video</a> -->
+			<h2 id="resource1"><span class="getstarted_icons" id="dwnld"></span>Download the resources used by this video</h2>
+			<div class="content">
+				<p>The DSL and the sample model used by this video can be found here:</p>
+				<ul>
+					<li>Family DSL (link to <a href="http://www.eclipse.org/forums/index.php/fa/17018/">http://www.eclipse.org/forums/index.php/fa/17018/</a>)</li>
+					<li>Sample model (link to  <a href="http://www.eclipse.org/forums/index.php/fa/17017/">http://www.eclipse.org/forums/index.php/fa/17017/</a>)</li>
+				</ul>
+				<p>Please follow the steps below:</p>
+				<ul>
+					<li>Install Sirius using instructions from http://www.eclipse.org/sirius/download.html</li>
+					<li>Import the family DSL (File > Import > General > Existing project into workspace). It contains the three projects corresponding to the DSL used in the video.</li>
+					<li>From your Eclipse containg these three plugin projects, launch a Eclipse runtime with sufficient JVM memory, "-XX:MaxPermSize=256m -Xms40m -Xmx512m" for example.</li>
+					<li>In the runtime go to the Sirius perspective and create a new Modeling Project named "basicfamily.sample"</li>
+					<li>Import in this project the sample model used by the video (example.basicfamily).</li>
+					<li>From now you can follow the video to browse the sample model and create your modeler based on basicfamily DSL.</li>
+				</ul>
+			</div>
+		</div>
+		
 	</div>
 
+	
 </div> <!-- Fin body_wrapper -->	
 
 <div class="clear"></div>
@@ -85,7 +108,7 @@
 				<li><a href="http://wiki.eclipse.org/Sirius"> Wiki</a></li>
 				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
 				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
-				<li><a href="http://www.obeodesigner.com/sirius">Professional support</a></li>
+				<li><a href="http://www.obeodesigner.com/sirius">Professional Support</a></li>
 				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
 				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
 			</ul>
@@ -93,23 +116,13 @@
 		
 		<div class="column">
 			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
-			<span id="copyright">Copyright © 2013 The Eclipse Foundation. All Rights Reserved.</span>
+			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
 		</div>
 	</div>
 </div>	
 
-<div class="clear"></div>
-
 <div id="download_banner_wrapper">
-	<div id="download_banner_content">
-		<p class="left">Get Sirius now</p>
-		<a class="right" href="download.html">Download</a>
-	</div> 
-</div>		
-
-<div class="clear"></div>
-
-<div id="download_banner_wrapper">
+	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
 	<div id="download_banner_content">
 		<p class="left">Get Sirius now</p>
 		<a class="right" href="download.html">Download</a>

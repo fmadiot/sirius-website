@@ -39,6 +39,11 @@ p {
 	padding: 0;
 }
 
+ul {
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+
 a,#menu_wrapper a:hover {
 	color: #be1a78;
 	text-decoration: none;
@@ -89,11 +94,11 @@ img {
 
 #incubation {
 	margin-top: -29px;
-		}
+}
 
 #incubation a:hover {
 	border: none !important;
-	}
+}
 
 #incubation img {
 	position: relative;
@@ -229,7 +234,8 @@ img {
 	width: 100%;
 }
 
-#brand_wrapper h1,.community_item h2,.download_item h1 {
+#brand_wrapper h1,.community_item h2,.download_item h1,.tuto_resources h2
+	{
 	color: #383838;
 	font-weight: normal;
 	text-align: center;
@@ -270,7 +276,7 @@ img {
 	background: url("../images/icons/icon_easy.png") no-repeat;
 }
 
-.learn_more {
+.learn_more,.btn {
 	display: block;
 	width: 240px;
 	height: 40px;
@@ -280,11 +286,14 @@ img {
 	color: #fff !important;
 	background-color: #be1a78 !important;
 	text-transform: uppercase;
-	color: #fff !important;
 }
 
-.learn_more:hover {
+.learn_more:hover,.btn:hover {
 	background-color: #7269a4 !important;
+}
+
+.btn_large {
+	width: 280px;
 }
 
 /* Download Bottom Banner
@@ -295,14 +304,21 @@ img {
 	bottom: 0;
 	height: 50px;
 	z-index: 2500;
-	-webkit-transition: all 1500ms ease;
-	-moz-transition: all 1500ms ease;
+	-webkit-transition: height 1500ms ease;
+	-moz-transition: all 150ms ease;
 	-ms-transition: all 1500ms ease;
 	-o-transition: all 1500ms ease;
-	transition: all 1500ms ease;
-	display: block;
+	transition: height 1500ms ea;
 	background-color: #7269a4;
 }
+
+#download_banner_wrapper .closeButton {
+	float: right;
+	margin: 13px 10px 0 0;
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+	}
 
 #download_banner_content {
 	width: 500px;
@@ -358,6 +374,10 @@ h1.intro {
 	content: ".";
 }
 
+.section.left,.section.right {
+	width: 510px;
+}
+
 .section.left {
 	padding-right: 470px;
 }
@@ -404,7 +424,7 @@ h1.intro {
 	float: none;
 }
 
-/*	Tabs in Donwnload Page
+/*	Tabs in Download Page
 -----------------------------*/
 #tabs_wrapper {
 	width: 100%;
@@ -503,8 +523,6 @@ h1.intro {
 #tabs_content_container {
 	padding: 20px;
 	text-align: justify;
-	/*background-color: #fff;
-		border: 1px solid #dfdfdf;*/
 	position: relative;
 	z-index: 1;
 	margin-top: 10px;
@@ -557,7 +575,6 @@ h1.intro {
 }
 
 #tabs_content_container ul.installnav li a:hover {
-	background: #fff;
 	background: url("../images/download/installnav_hover_bg.png") no-repeat
 		0 0;
 	cursor: pointer;
@@ -627,15 +644,6 @@ h1.intro {
 	width: 200px;
 }
 
-.updateSiteBlock a {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.updateSiteBlock a:hover {
-	text-decoration: none;
-}
-
 .updateSite a:hover .updateSiteBlock {
 	display: block;
 	visibility: visible;
@@ -683,7 +691,7 @@ h1.intro {
 
 #content_drag2install a:hover,#content_updatesite a:hover,#content_emc a:hover,#content_drag2install_1 a:hover,#content_updatesite_1 a:hover,#content_emc_1 a:hover
 	{
-	text-decoration: underline !important;
+	color: #383838 !important;
 }
 
 #install,#install_1,#closeButton,.drag2install:hover {
@@ -746,6 +754,31 @@ h1.intro {
 	width: 200px;
 }
 
+/* Get Started Page
+----------------------------------------------------------- */
+
+.getstarted_icons {
+	display: block;
+	background: url("../images/icons/icon_dwnld.png") no-repeat;
+	height: 20px;
+	width: 15px;
+	float: left;
+}
+
+.getstarted_icons:hover {
+		background: url("../images/icons/icon_dwnld_hover.png") no-repeat;
+	}
+
+.tuto_resources .content {
+	display: none;
+}
+
+.tuto_resources h2 {
+	font-size: 18px;
+	cursor: pointer;
+	padding:12px 45px 12px 65px;
+	}
+
 /*--------- Community Page ------------*/
 .community_links h1 {
 	margin-bottom: 0 !important;
@@ -777,11 +810,11 @@ h1.intro {
 	font-weight: normal;
 }
 
-.community_item a:hover {
+.community_item a:hover,.tuto_resources h2:hover {
 	color: #be1a78;
 }
 
-.community_icons {
+.community_icons{
 	display: block;
 	margin: 0 20px 40px 0;
 	float: left;
@@ -881,7 +914,6 @@ h1.intro {
 }
 
 #footer_wrapper a {
-	color: #fff;
 	font-weight: normal;
 	color: #c2bfd8;
 }
@@ -919,7 +951,6 @@ h1.intro {
 	letter-spacing: 1px;
 	margin: 0;
 	text-transform: uppercase;
-	margin: 0;
 }
 
 #footer_wrapper .column.right {
