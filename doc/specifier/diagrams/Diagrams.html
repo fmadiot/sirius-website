@@ -468,7 +468,7 @@
 			</li>
 			<li>
 				<em>Custom Style</em> can be used when none of the predefined styles correspond to your need. Custom style are implemented in Java and use the 
-				<code>org.eclipse.sirius.diagram.styleConfigurationProvider</code> extension point.
+				<code>org.eclipse.sirius.diagram.ui.styleConfigurationProvider</code> extension point.
 			</li>
 		</ul>
 		<table class="table table-striped table-condensed">
@@ -1330,13 +1330,6 @@
 			<em>Note:</em> Edges can have up to three different labels (one in the center and one at each extremity), but currently if a 
 			<em>Direct Edit</em> tool is associated to an 
 			<em>Edge Mapping</em>, only the center label (if it exists) can be edited. This restriction will probably be lifted in future versions.
-		</p>
-		<p>
-			<em>Note:</em> If you use the legacy Acceleo 2-based query language, where variables are prefixed with a 
-			<code>$</code>-sign, the edit mask variables are also available directly as 
-			<code>$0</code>, 
-			<code>$1</code>, etc. This is still supported for compatibility reasons, but it is recommended that you use the new 
-			<code>argN</code> variables from now on. The old names are not usable with languages like Acceleo 3 which do not have a prefix for variables.
 		</p>
 		<h4 id="selection_wizard">Selection Wizard Description</h4>
 		<p>This tool can be used to open a wizard dialog asking the user to select one or several model elements. The body of the tool is then executed in the context of the element selected by the user.</p>
