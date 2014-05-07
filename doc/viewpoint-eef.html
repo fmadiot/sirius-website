@@ -3,8 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>viewpoint-eef</title>
-		<link type="text/css" rel="stylesheet" href="/sirius/doc/resources/bootstrap.css"/>
-		<link type="text/css" rel="stylesheet" href="/sirius/doc/resources/custom.css"/>
+               <link type="text/css" rel="stylesheet" href="/sirius/doc/resources/bootstrap.css"/>
+               <link type="text/css" rel="stylesheet" href="/sirius/doc/resources/custom.css"/>
 	</head>
 	<body>
 		<h1 id="UsingtheExtendedEditingFrameworkwithSirius">Using the Extended Editing Framework with Sirius</h1>
@@ -82,7 +82,7 @@
 			<br/>If you plan to use EEF properties only in a designer  (for diagrams, tables, ... but not on the EMF treeviewer), you can configure the viewpoint contributor ID for the EEF views. Open the generated EEFGen model, under the root element
 			<em>Model</em>, select the
 			<em>Gen Edition Context</em>   and set the value
-			<strong>org.eclipse.sirius.diagram</strong> to the
+			<strong>org.eclipse.sirius.diagram.ui</strong> to the
 			<em>Descriptors contributorID</em> properties.
 		</p>
 		<p>
@@ -130,7 +130,7 @@
   &lt;extension
          point="org.eclipse.ui.views.properties.tabbed.propertySections"&gt;
       &lt;propertySections
-            contributorId="org.eclipse.sirius.diagram"&gt;
+            contributorId="org.eclipse.sirius.diagram.ui"&gt;
          &lt;propertySection
                class="org.eclipse.emf.samples.conference.parts.forms.ConferencePropertiesEditionPartForm"
                filter="org.eclipse.emf.samples.conference.providers.ConferencePropertiesEditionProvider$EditionFilter"
@@ -158,7 +158,7 @@
 		<p>Note: if you have not set
 			<strong>Descriptors Contributor ID</strong> in the
 			<code>.eefgen</code> model and you override the
-			<code>org.eclipse.sirius.diagram</code>,
+			<code>org.eclipse.sirius.diagram.ui</code>,
 			<code>org.eclipse.sirius.table.ui.EditorID</code> or
 			<code>org.eclipse.sirius.tree.ui.EditorID</code> contributorId, do not forget to remove the use of
 			<code>org.eclipse.emf.eef.runtime.ui.utils.EEFLabelProvider</code> as labelProvider. Otherwise you will get a viewpoint type name as title of the properties view instead of the type name of the semantic model element.
@@ -197,13 +197,13 @@
 		</ul>
 		<p>(please refer to the
 			<code>plugin.xml</code> file of
-			<code>org.eclipse.sirius.diagram</code> for a complete list).
+			<code>org.eclipse.sirius.diagram.ui</code> for a complete list).
 		</p>
 		<p>Example :</p>
 		<pre><code>   &lt;extension
          point="org.eclipse.ui.views.properties.tabbed.propertyTabs"&gt;
       &lt;propertyTabs
-            contributorId="org.eclipse.sirius.diagram"&gt;
+            contributorId="org.eclipse.sirius.diagram.ui"&gt;
          &lt;propertyTab
                label="Base"
                category="semantic &amp;amp; extension"
@@ -222,7 +222,7 @@
 		<pre><code>   &lt;extension
          point="org.eclipse.ui.views.properties.tabbed.propertyTabs"&gt;
       &lt;propertyTabs
-            contributorId="org.eclipse.sirius.diagram"&gt;
+            contributorId="org.eclipse.sirius.diagram.ui"&gt;
          &lt;propertyTab
                afterTab="top"
                label="Base"
@@ -296,7 +296,7 @@
 			<code>plugin.xml</code> file, the tabs declaration should appear like this (notice that in this sample we use viewpoints categories in order to make our tabs appear at first as described in the previous paragraph, which is not mandatory) :
 		</p>
 		<pre><code>&lt;extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs"&gt;
-   &lt;propertyTabs contributorId="org.eclipse.sirius.diagram"&gt;
+   &lt;propertyTabs contributorId="org.eclipse.sirius.diagram.ui"&gt;
       &lt;!--
           Other declarations : Base, ...
         --&gt;
@@ -316,7 +316,7 @@
 		<p></p>
 		<p>And the property sections declaration should appear like this :</p>
 		<pre><code>&lt;extension point="org.eclipse.ui.views.properties.tabbed.propertySections"&gt;
-   &lt;propertySections contributorId="org.eclipse.sirius.diagram"&gt;
+   &lt;propertySections contributorId="org.eclipse.sirius.diagram.ui"&gt;
       &lt;!--
           Other declarations : Base, ...
         --&gt;
@@ -416,7 +416,7 @@
 		<pre><code>&lt;extension
       point="org.eclipse.sirius.eef.adapters.sectionFilters"&gt;
    &lt;propertyContributorFilters
-         contributorId="org.eclipse.sirius.diagram"&gt;
+         contributorId="org.eclipse.sirius.diagram.ui"&gt;
       &lt;sectionFilter
             id="property.section.semantic"&gt;
       &lt;/sectionFilter&gt;
