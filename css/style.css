@@ -530,6 +530,10 @@ h1.intro {
 
 .tab_content {
 	display: none;
+	width: 973px;
+	height: 612px;
+	border: 1px solid #dfdfdf;
+	background: #fff;
 }
 
 #tabs_content_container .dwnld_wrapper {
@@ -539,9 +543,9 @@ h1.intro {
 #tabs_content_container ul.installnav {
 	float: left;
 	padding: 0;
-	width: 973px;
+	width: 186px;
+	margin-top: 0px;
 	background-color: #fff;
-	border: 1px solid #dfdfdf;
 	border-left: none;
 }
 
@@ -700,6 +704,20 @@ h1.intro {
 
 #updatesite:hover,#install_emc:hover {
 	cursor: default;
+}
+
+#content_updatesite_1 input {
+width: 412px;
+font-size: inherit;
+font-family: inherit;
+margin-left: 20px;
+color: #777;
+border: 0.1em solid #ddd;
+padding: 4px;
+}
+
+.dwnld_icon {
+padding-right: 8px;
 }
 
 .link-color {
