@@ -92,21 +92,6 @@ img {
 	margin: 0 0 20px 0;
 }
 
-#incubation {
-	margin-top: -29px;
-}
-
-#incubation a:hover {
-	border: none !important;
-}
-
-#incubation img {
-	position: relative;
-	width: 43px;
-	height: auto;
-	margin-left: 30px;
-}
-
 /*--------- Header ---------------*/
 #header_wrapper {
 	background: transparent;
