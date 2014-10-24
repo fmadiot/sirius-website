@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+	 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.min.js"></script>
+	<script type="application/json" src="js/gallery.json"></script>
+	
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<title>Sirius - The easiest way to get your own modeling tool</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />	
+	<link type="text/css" rel="stylesheet" href="css/media.css" />	
+</head>
+	
+<body>
+
+<div id="header_wrapper">
+	<div id="logo">
+		<a href="index.html"><img alt="logo" src="images/logos/logo.png" /></a>
+	</div>
+	
+	<div id="menu_wrapper">
+		<ul id="nav">
+			<li><a href="overview.html">Overview</a></li>
+			<li><a href="features.html">Features</a></li>
+			<li class="current_menu_item"><a href="gallery.html">Gallery</a></li>
+			<li><a href="getstarted.html">Get Started</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="download.html">Download</a></li>
+		</ul>
+	</div>	<!-- Fin menu_wrapper -->
+</div>	<!-- Fin header_wrapper -->
+
+<div id="body_wrapper">
+	<h1 class="page_title">Gallery</h1>
+	<br />
+	
+	<div class="intro_gallery">
+		<h2>What Can You Do with Sirius?</h2>
+		<p>Discover concrete examples of modeling tools created with Sirius for various use-cases: Systems Engineering, Software Development, Business Configuration, etc.</p>
+	</div>
+	
+    <div id="usecases"></div>
+	<script type="text/javascript">
+  		$.getJSON('js/gallery.json', function(data) {
+
+  			var output = " " ;
+
+	        for (var i in data.usecases) {
+	        	var medias = " ";
+	        	var thumb = " ";
+	        	var thumblist = " ";
+	        	var title = " ";
+	        	var author = " ";
+	        	var descr = " ";
+	        	var taglist = " ";
+	        	var tag = " ";
+	        	var lnklist = " ";
+	        	var lnk = " ";
+	        	var infos = " ";
+
+	   	    medias += "<div class='medias'><div class='popup-gallery-" + i + "'><a href='" + data.usecases[i].medias.mainSrc + "' title='" + data.usecases[i].medias.mainSrc + "'><img class='shadow' src='" + data.usecases[i].medias.mainSrc + "' alt='" + data.usecases[i].medias.imgAlt + "' width='520' /></a></div>";
+	   	    
+	   	 	if(data.usecases[i].medias.thumbs.length < 1){
+	   	 		thumblist += "<div class='thumbs'><ul>";
+	   	 	}
+	   	 	else {
+				thumblist += "<div class='thumbs popup-gallery-" + i + "'><ul>";
+				for (var t in data.usecases[i].medias.thumbs) {
+					thumb += "<li class='thumb-" + t + "'><a href='" + data.usecases[i].medias.thumbs[t].src + "'><img class='shadow' src='" + data.usecases[i].medias.thumbs[t].src + "' alt='" + data.usecases[i].medias.thumbs[t].src + "' width='60' /></a></li>";
+					
+				}
+	   	 	}
+			thumblist += thumb + "</ul></div>";
+			
+			medias += thumblist + "</div>";
+
+				title += "<div class='title'><h2 class='intro_g'>" + data.usecases[i].infos.title + "</h2></div>";
+				author += "<div class='author'><p>By " + data.usecases[i].infos.author + "</p></div>";
+				descr += "<div class='descr'><p>" + data.usecases[i].infos.description + "</p></div>";
+
+				taglist += "<div class='tags taglist'><span class='tag_head'>";
+				for (var j in data.usecases[i].infos.tags) {
+					tag += "</span><div class='tag'><i></i><span>" + data.usecases[i].infos.tags[j].nom + "</span><b></b></div>";
+				 }
+				taglist += tag + "</div>";
+
+				if(data.usecases[i].infos.lnks.length < 1){
+		   	 		thumblist += "<div class='lnks'><ul>";
+		   	 	}
+		   	 	else {
+				lnklist += "<div class='lnks'><h3 class='lnks_head'>Related links</h3><ul>";
+					for (var k in data.usecases[i].infos.lnks) {
+						lnk += "<li><a href='" + data.usecases[i].infos.lnks[k].url + "' target='_blank'>" + data.usecases[i].infos.lnks[k].nom + "</a></li>";
+					}
+		   	 	}
+				lnklist += lnk + "</ul></div>";
+
+				infos += "<div class='infos'>" + title + author + taglist + descr + lnklist +"</div>";
+				output += "<div class='usecase'>" + medias  + infos + "</div>";
+			
+			}
+
+			document.getElementById("usecases").innerHTML=output;
+			
+			for (var n in data.usecases) {
+				$('.popup-gallery-' + n).magnificPopup({
+					delegate: 'a',
+					type: 'image',
+					tLoading: 'Loading image #%curr%...',
+					mainClass: 'mfp-img-mobile',
+					gallery: {
+						enabled: true,
+						navigateByImgClick: true,
+						preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+					},
+					image: {
+						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+						titleSrc: function(item) {
+							return item.el.attr('title') + ' ';
+						}
+					}
+				});	
+			}			
+ 		 });
+   	</script>
+   	
+   	<br />
+   	<div class="intro_gallery">
+		<h2>Your modeling tool created with Sirius is not listed here?</h2> 
+   		<p>Feel free to submit your work here: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=448492">Bugzilla 448492</a>.</p>
+   	</div>
+   	
+</div> <!-- Fin body_wrapper -->
+
+<div class="clear"></div>
+
+<div id="footer_wrapper">
+	<div id="footer_content">
+		<div class="column">
+			<div class="columntitle">
+				<h3>Eclipse Links</h3>
+			</div>
+			<ul>
+				<li><a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy</a></li>
+				<li><a href="http://eclipse.org/"> Eclipse</a></li>
+				<li><a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use</a></li>
+				<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+				<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div class="column">
+			<div class="columntitle">
+				<h3>Community</h3>
+			</div>
+			<ul>
+				<li><a href="getstarted.html">Get Started</a></li>
+				<li><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></li>
+				<li><a href="http://wiki.eclipse.org/Sirius"> Wiki</a></li>
+				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
+				<li><a href="http://www.obeodesigner.com/sirius">Professional support</a></li>
+				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
+				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
+			</ul>
+		</div>
+		
+		<div class="column">
+			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
+			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
+		</div>
+	</div>
+</div>	
+
+<div id="download_banner_wrapper">
+	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
+	<div id="download_banner_content">
+		<p class="left">Get Sirius now</p>
+		<a class="right" href="download.html">Download</a>
+	</div> 
+</div>	
+
+</body>
+</html>

@@ -1,0 +1,590 @@
+{"usecases":[
+         {
+            "medias": {
+            	"mainSrc": "images/gallery/capella-logical-system.png",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [ 
+            		{"src": "images/gallery/capella-capabilities.png"},
+            		{"src": "images/gallery/capella-data.png"},
+            		{"src": "images/gallery/capella-dataflow.png"},
+            		{"src": "images/gallery/capella-operation.png"},
+            		{"src": "images/gallery/capella-physical-system.png"}
+            		]
+             },
+             "infos": {
+             	"title": "Capella",
+             	"author": "Thales",
+             	"description": "<p>Capella is a field-proven model driven engineering solution based on a graphical modeling workbench for engineers developing systems, software and hardware architectures.</p><p>It provides a domain-specific language (DSL) implementing Arcadia, both as a simplification and a semantic enrichment of the UML and SysML standards.</p>",
+             	"tags": [
+             		{
+             			"nom": "Systems Engineering",
+             			"url": "#"            		
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project page",
+             			"url": "https://www.polarsys.org/projects/polarsys.capella"            		
+             		},
+             		{
+             			"nom": "Strategy for building custom modeling workbenches",
+             			"url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"            		
+             		}
+             	] 
+             }
+        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/maif-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "P&C Insurance Products",
+	             	"author": "MAIF",
+	             	"description": "The MAIF insurance company has developped a graphical tool to manage the P&C products (property and casualty, IARD in french for Incendie, Accidents et Risques Divers).</p><p>It provides graphical representations to create, modify, consult, version and validate the products.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Configuration",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
+	             			"url": "http://fmadiot.blogspot.fr/2012/05/modeling-p-insurance-products-maif-case.html"            		
+	             		}
+	             	] 
+	             }
+	        },
+                
+       {
+            "medias": {
+            	"mainSrc": "images/gallery/uml-entities.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs":[ 
+            		{"src": "images/gallery/uml-composite.png"},
+            		{"src": "images/gallery/uml-activity.jpg"},
+            		{"src": "images/gallery/uml-deployment.png"}
+            		]            	
+             },
+             "infos": {
+             	"title": "UML Designer",
+             	"author": "Obeo",
+             	"description": "<p>UML Designer is an open source modeling tool to edit and vizualize UML 2.5 models.</p><p>It provides the following generic UML diagrams: Package, Class, Component, Composite Structure, Deployment, Use Case, Activity, State Machine, Sequence, Profile</p>",
+             	"tags": [
+             		{
+             			"nom": "Software Development",
+             			"url": "#"            		
+             		} 
+             	],
+             "lnks": [
+             		{
+             			"nom": "Product web site",
+             			"url": "http://www.umldesigner.org/"            		
+             		} 
+                         	] 
+             }
+        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/pep-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/pep-2.png"},
+	            		{"src": "images/gallery/pep-3.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Plastic Manufacturing",
+	             	"author": "PEP",
+	             	"description": "<p>This modeler allows the collaborative design and development of complex plastic products.</p><p>It provides views dedicated to the several different business experts involved in the creation of such products: projects/solution, resources, costs, process, sequence</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Configuration",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/mimic-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/mimic-2.png"},
+	            		{"src": "images/gallery/mimic-3.png"},
+	            		{"src": "images/gallery/mimic-4.png"},
+	            		{"src": "images/gallery/mimic-5.png"},
+	            		{"src": "images/gallery/mimic-6.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "MIMIC (Mobile Multimodality Creator)",
+	             	"author": "LIFL (University of Lille)",
+	             	"description": "<p>MIMIC is a model-based framework that enables the modeling and generation of multimodal mobile applications (Android and iPhone).</p><p> It allows multimodal mobile interfaces to be created more quickly, enabling rapid prototyping based on their designed models.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Leveraging Sensor-based Interactions in Multimodal Mobile Applications",
+	             			"url": "http://www.lifl.fr/~rouillar/publi/2014_Elouali_Lepallec_Rouillard_Tarby_EA_CHI.pdf"            		
+	             		},
+	             		{
+	             			"nom": "Nadia Elaoui's blog",
+	             			"url": "http://www.lifl.fr/~eloualin/tool.html"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/dart-module.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/dart-class.png"},
+	            		{"src": "images/gallery/dart-package.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Dart Designer",
+	             	"author": "Obeo",
+	             	"description": "<p>Dart Designer is an open source tool to build diagrams of your Dart applications.</p><p>It is based on a DSL defining concepts like Stylesheet, Package, Class, Mixin or even HTML pages. These concepts that you will manipulate in Dart Designer are either coming from the Dart programming language specification or from regular web application development.",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Product web site",
+	             			"url": "http://dartdesigner.github.io/"            		
+	             		},
+	             		{
+	             			"nom": "St&eacute;phane B&eacute;gaudeau's blog",
+	             			"url": "http://stephanebegaudeau.tumblr.com/post/94470472420/introducing-dart-designer"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/esa-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/esa-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Satellite Software Modeling",
+	             	"author": "ESA (European Space Agency)",
+	             	"description": "<p>This tool is dedicated to the creation of satellite applications.</p><p>It supports seven views (Data Component, Behavioural, Hardware/Deployment, Non Functional, Implementation/Analysis and Packet Utilization Standard) via 19 kinds of diagrams and 8 kinds of tables.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Systems Engineering",
+	             			"url": "#"            		
+	             		},
+	             		{
+	             			"nom": "Real Time",
+	             			"url": "#"            		
+	             		},
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
+	             			"url": "http://fmadiot.blogspot.fr/2012/09/esa-case-study.html"            		
+	             		},
+	             		{
+	             			"nom": "Cordet Project",
+	             			"url": "http://cordet.gmv.com/"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/timing-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/timing-2.png"},
+	            		{"src": "images/gallery/timing-3.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Timing Constraints",
+	             	"author": "Obeo",
+	             	"description": "This modeling tool provides additional layers over UML models in order to specify timing constraints: multi-clock, logical time, physical time.",
+	             	"tags": [
+	             		{
+	             			"nom": "Real Time",
+	             			"url": "#"            		
+	             		},
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "RT-Simex project presentation",
+	             			"url": "http://prezi.com/dbf2jtx0dgtr/rt-simex-reverse-engineering-of-simulated-and-executed-real-time-traces/"            		
+	             		},
+	             		{
+	             			"nom": "RT-Simex video: Analysis",
+	             			"url": "http://www.rtsimex.org/demos/demo-analyse"            		
+	             		},
+	             		{
+	             			"nom": "RT-Simex video: Constraints",
+	             			"url": "http://www.rtsimex.org/demos/demo-contrainte"            		
+	             		}
+	             	] 
+	             }
+	        },
+        {
+            "medias": {
+            	"mainSrc": "images/gallery/safety-risks.png",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [ 
+            		{"src": "images/gallery/safety-pha-tree.png"},
+            		{"src": "images/gallery/safety-sysml.png"},
+            		{"src": "images/gallery/safety-library.png"}
+            		]
+             },
+             "infos": {
+             	"title": "Safety Analysis Designer",
+             	"author": "Alstom",
+             	"description": "A tool to capture both parts of the system designs and parts of the safety analysis needed to build a critical systems.",
+             	"tags": [
+             		{
+             			"nom": "Safety",
+             			"url": "#"            		
+             		}, 
+             		{
+             			"nom": "Systems Engineering",
+             			"url": "#"            		
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "CSDM 2011 presentation",
+             			"url": "http://prezi.com/s5op0nbygtp1/performing-safety-analyses-and-sysml-designs-conjointly-a-viewpoint-matter/"            		
+             		},
+             		{
+             			"nom": "ERTS 2012 publication",
+             			"url": "http://www.erts2012.org/Site/0P2RUC89/4D-2.pdf"            		
+             		}, 
+             		{
+             			"nom": "Fr&eacute;d&eacute;ric Thomas' blog",
+             			"url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"            		
+             		} 
+             	] 
+             }
+        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/citrus-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/citrus-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Citrus",
+	             	"author": "Isoneo",
+	             	"description": "<p>Citrus is a product that supports the development cycle of a system, with an approach based on modeling and simulation.</p><p>It provides a studio to capture the system architecture, its interfaces and its breakdown structure into sub-systems/equipments.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Systems Engineering",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Citrus page",
+	             			"url": "http://solutions-isoneo.com/?page_id=499"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/all4tec-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/all4tec-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Safety Architect",
+	             	"author": "All4Tec",
+	             	"description": "<p>Safety Architect is a tool achieving risk analysis of complex systems using functional or physical architectures from usual modeling tools (for example SysML or UML).</p><p>It provides support to the implementation of FMEA and automatically deducts the FTA corresponding to the identified feared events.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Systems Engineering",
+	             			"url": "#"            		
+	             		},
+	             		{
+	             			"nom": "Safety",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Eclipse Marketplace",
+	             			"url": "http://marketplace.eclipse.org/content/safety-architect"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/bpmn-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "BPMN Designer",
+	             	"author": "Obeo",
+	             	"description": "<p>BPMN Designer is based on the BPMN Domain Model of Eclipse Modeling MDT project.</p><p>It supports Flow Objects (Events, Activities, Gateways), Connecting Objects (Sequence Flow, Message Flow, Association), Swim lanes (Pool, Lane) and Artifacts (Data Object, Group, Annotation)</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Process",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Obeo Markeplace",
+	             			"url": "http://marketplace.obeonetwork.com/module/bpmn"            		
+	             		}
+	             	] 
+	             }
+	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/intelhome-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/intelhome-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "IntelHome Designer",
+	             	"author": "University of South Britanny",
+	             	"description": "<p>IntelHome Designer is a graphical tool to configure home automation systems for disabled persons.</p><p>It consists in modeling a home with all its automated equipments. The model is used to generate configuration files for DANAH, a assistive technology system that pilots automated homes or medical structures.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Configuration",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Willy All&egrave;gre's thesis",
+	             			"url": "https://tel.archives-ouvertes.fr/tel-00803402/document"            		
+	             		},
+	             		{
+	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
+	             			"url": "http://fmadiot.blogspot.fr/2013/03/model-based-configuration-of-assistive.html"            		
+	             		}
+	             	] 
+	             }
+	        }
+,
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/rj45-map.jpg",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "RJ45 wiring",
+	             	"author": "Obeo",
+	             	"description": "<p>This modeler provides a view of RJ45 cable wiring in a building</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Network",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		
+	             	] 
+	             }
+	        },
+		{
+	            "medias": {
+	            	"mainSrc": "images/gallery/eseo-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "LOA Graphical Editor",
+	             	"author": "ESEO",
+	             	"description": "This editor is based on LOA (Active Operations Language), a DSL dedicated to the design and the integration of rich graphical components and interactions.",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Slides by O. Beaudoux and M. Clavreul",
+	             			"url": "http://api.ning.com/files/S7hsBCvqKXFwZfsIm-52lXSg7wS3rubAfJxbJXGt9pJJuv7*9bhF6zx-vZJQlFKO6hhrMQrh7hHloLguVawWWsPlYR6hcdhI/LoaDesigner.pdf"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/cinematic-1.jpg",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Cinematic Designer",
+	             	"author": "Obeo",
+	             	"description": "Cinematic Designer allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Obeo Marketplace",
+	             			"url": "http://marketplace.obeonetwork.com/module/cinematic"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/database-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Database Designer",
+	             	"author": "Obeo",
+	             	"description": "<p>Database Designer is a graphical designer to define or edit relational tables and relations.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Obeo Marketplace",
+	             			"url": "http://marketplace.obeonetwork.com/module/database"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/graal-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/graal-2.png"},
+	            		{"src": "images/gallery/graal-3.png"},
+	            		{"src": "images/gallery/graal-4.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Graal Designer",
+	             	"author": "Obeo",
+	             	"description": "<p>Graal Designer provides the ability to specify the users needs and their interactions with a system by defining tasks, use cases, user stories and interaction aspects a system should offer.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Obeo Marketplace",
+	             			"url": "http://marketplace.obeonetwork.com/module/graal"            		
+	             		}
+	             	] 
+	             }
+	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/graf-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "GRAF Designer",
+	             	"author": "Capgemini",
+	             	"description": "<p>GRAF is a method created by Capgemini to describe the architecture of complex Information Systems.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Enterprise Architecture",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Graf overview (in french)",
+	             			"url": "http://api.ning.com/files/auMGdvCc6abQ5SJitpd9KAdL-rOZ3cvzM2-mWNv1gJUWnW95AJ0bPDMwcKCuEjIZpK2C4D8qdHe3lFehGagJ8UMuqNtDJKEn/CapgeminiGRAFDesigner.pdf"            		
+	             		}
+	             	] 
+	             }
+	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/mosart-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/mosart-2.png"},
+	            		{"src": "images/gallery/mosart-3.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "MoSaRT Framework",
+	             	"author": "ENSMA",
+	             	"description": "<p>MoSaRT (Modeling oriented Scheduling analysis of Real-Time systems) is a model-based framework for designing and analyzing real-time systems.</p><p>The framework is based on the MoSaRT design language and the MoSaRT analysis repository, and presents a helpful modeling support for both designers and analysts.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Real Time",
+	             			"url": "#"            		
+	             		},
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "MoSaRT project",
+	             			"url": "http://www.lias-lab.fr/forge/projects/mosart"            		
+	             		}
+	             	] 
+	             }
+	        }
+       
+]}

@@ -235,7 +235,7 @@ img {
 	width: 100%;
 }
 
-#brand_wrapper h1,.community_item h2,.download_item h1,.tuto_resources h2
+#brand_wrapper h1,.community_item h2,.download_item h1,.tuto_resources h2,.infos h2
 	{
 	color: #383838;
 	font-weight: normal;
@@ -1059,6 +1059,117 @@ margin: 0 5px;
 	background: url("../images/icons/icon_features_hover.png") no-repeat;
 }
 
+/* Gallery Page
+------------------------------*/
+.intro_gallery {
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	padding: 0 15px 15px 15px;
+}
+
+.intro_gallery h2 {
+	font-size: 14px;
+	}
+
+.usecase {
+	display: inline-block;
+  	margin-top: 50px; 
+  	clear: both;
+}
+
+.usecase .medias {
+	width: 520px;
+	float: right;
+	margin-top: 10px;
+}
+
+.usecase .thumbs {
+width: 550px;
+
+}
+
+.usecase .thumbs ul{
+	padding-left: 15px;
+}
+
+.usecase .thumbs ul li {
+	display: inline-block;	
+	list-style: none;
+	padding-right: 15px;
+}
+
+.usecase .infos {
+	float: left;
+	width: 410px;
+	padding: 0 60px 0 0;
+}
+
+.infos h2 {
+	text-align: left;
+}
+
+.light_purple,.usecase .author,.usecase .tag_head {
+	color: #7269a4;
+}
+
+.usecase .tags {
+	margin-top: 10px;
+}
+
+.usecase .tag_head {
+	float: left;
+	margin-right: 15px;
+}
+
+.usecase .taglist .tag {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	margin: 0 5px 5px 0;
+	font-size: 11px;
+	cursor: default;
+}
+
+.usecase .taglist .tag i,.usecase .taglist .tag span,.usecase .taglist .tag b
+	{
+	color: #fff;
+	background-image: url(../images/icons/icon_taglist.png);
+	float: left;
+	display: inline-block;
+	height: 23px;
+	line-height: 22px;
+	text-decoration: none;
+}
+
+.usecase .taglist .tag i {
+	background-position: 0 0;
+	width: 20px;
+}
+
+.usecase .taglist .tag b {
+	background-position: right 0px;
+	width: 5px;
+}
+
+.usecase .taglist .tag span {
+	background-position: right -23px;
+	background-repeat: repeat-x;
+	padding: 0 3px 0 0;
+}
+
+.usecase .lnks  ul {
+	padding-left: 15px;
+}
+
+.usecase .lnks a {
+	font-weight: normal;
+}
+
+.usecase .lnks h3{
+	border-bottom: 1px solid #D3D3D3;
+	font-weight: bold;
+	font-size: 12px;
+}
 
 /* Footer
 ------------------------------ */
