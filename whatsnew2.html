@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<title>Sirius - The easiest way to get your own modeling tool</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<div id="header_wrapper">
+	<div id="logo">
+		<a href="index.html"><img alt="logo" src="images/logos/logo.png" /></a>
+	</div>
+
+	<div id="menu_wrapper">
+		<ul id="nav">
+			<li><a href="overview.html">Overview</a></li>
+			<li><a href="features.html">Features</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="getstarted.html">Get Started</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="download.html">Download</a></li>
+		</ul>
+	</div>	<!-- Fin menu_wrapper -->
+</div>	<!-- Fin header_wrapper -->
+
+<div id="body_wrapper">
+	<h1 class="page_title">What's New in Sirius 2.0</h1>
+
+
+
+
+	<div class="section left">
+		<div class="image">
+			<img class="shadow" width="340"  src="images/whatsnew2/sirius2-bigdiagram.png" />
+		</div>
+		<h1 class="intro">Performance & Scalability</h1>
+		<p>For this release, a special effort was made on the performance and scalability.</p>
+		<p>These improvements have been tested and validated with models composed of more than 500&nbsp;000 model elements displayed in 20 000 representations. </p>
+		<p> </p>
+		<ul>
+			<li><b>Initialization</b>: Sirius is initializing itself quicker providing a better feedback on startups and first usage.</li>
+			<li><b>Calls from the UI</b>: Calls from the UI are faster:  it scales better when you have thousands of representations.</li>
+			<li><b>Lists</b>: Diagram having lists containing numerous elements are created and refreshed quicker.</li>
+			<li><b>Select All</b>: Select All operation is now instantly completed on a big model, without any lag.</li>
+			<li><b>Tree Editors</b>: Tree Editors defined using Sirius are now more efficient in refreshing the SWT Components.</li>
+			<li><b>Delete</b>: Delete operations are now scaling based on how many things have changed, independently of the size of the model.</li>
+		</ul>
+	</div>
+
+
+	<div class="section left">
+		<h1 class="intro">User Experience</h1>
+		<p>This release comes with many ergonomic improvements for a better edition of diagrams.</p>
+	</div>
+
+	<div class="row">
+		<div class="col_3">
+			<h2>Shapes Distribution</h2>
+			<p>Now users can homogeneously distribute shapes: horizontaly or vertically, based on the gap between shapes or their centers.</p>
+			
+			<p><img class="shadow" src="images/whatsnew2/sirius2-distribution.png" /></p>
+		</div>
+	
+		<div class="col_3">
+			<h2>Edge Centering</h2>
+			<p>The creator of the modeling tool can force an edge end to be always directed toward the center of a node.</p>
+			
+			<p><img class="shadow" width="300" src="images/whatsnew2/sirius2-edge-centering.png" /></p>
+		</div>
+	
+		<div class="col_3">
+			<h2>Snap to Shape</h2>
+			<p>Now, the Snap to Shape option is selected by default on new diagrams. It displays smart guides to help you aligning objects to each others.</p>
+			
+			<p><img class="shadow" src="images/whatsnew2/sirius2-snap-to-shape.png" /></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col_3">
+			<h2>Snap to Grid</h2>
+			<p>When creating a new object with the Snap to grid option activated, it is automatically aligned to the grid.</p>
+			
+			<br />
+			<br />
+			<p><img class="shadow" src="images/whatsnew2/sirius2-snap-to-grid.png" /></p>
+		</div>
+		<div class="col_3">
+			<h2>Touching mode</h2>
+			<p>When drawing a selecting zone on a diagram, each object touched by this zone will be added to the selection (before, the selected objects had to be entirely inside the zone).</p>
+			
+			<p><img class="shadow" src="images/whatsnew2/sirius2-touch-mode.png" /></p>
+		</div>
+		<div class="col_3">
+			<h2>Outline</h2>
+			<p>When an object is not visible on the diagram, its selection from the outline reveals it: Sirius automatically moves the displayed zone of the diagram in order to make the object visible.</p>
+	
+			<p><img class="shadow" src="images/whatsnew2/sirius2-outline.png" /></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col_3">
+			<h2>Layout</h2>
+			<p>The move and resize of existing elements is better managed:</p>
+			<ul>
+				<li>Changing the location of an edge's end only changes its closest segment;</li>
+				<li>Resizing a shape doesn't modify its edge(s) location;</li>
+				<li>Increasing the size of a container doesn't modify the location of its children</li>
+			</ul>
+			<p><img class="shadow" src="images/whatsnew2/sirius2-edges.png" /></p>
+			<br />
+		</div>
+		<div class="col_3">
+			<h2>Navigation and creation menus</h2>
+			<p>The former <i>Navigate</i> menu on a diagram element has been replaced by two distinct ones:</p>
+			<ul>
+				<li><i>New</i>: provides the sub-menus to create new diagrams for the selected element;</li>
+				<li><i>Open</i>: provides sub-menus to open existing diagrams owned by the selected element.</li>
+			</ul>
+		
+			<br />
+			<p><img class="shadow" width="300" src="images/whatsnew2/sirius2-menus.png" /></p>
+		</div>
+	</div> <!-- Fin de la setion-->
+
+
+	<div class="section left">
+		<div class="image">
+			<img class="shadow" src="images/whatsnew2/sirius2-headless.png" />
+		</div>
+		<h1 class="intro">Headless mode</h1>
+		<p>New APIs have been added to run Sirius without any UI.</p><p>Things like loading a representation resource, creating a diagram, refreshing it, modifying the model and saving can now be used as a server-side or continuous integration process. </p>
+	</div>
+
+	<br />
+	<p>The complete list of changes is available here: <a href="http://wiki.eclipse.org/Sirius/2.0.0#New_.26_Noteworthy" title="New & Noteworthy">http://wiki.eclipse.org/Sirius/2.0.0#New_.26_Noteworthy</a>.</p>
+
+</div> <!-- Fin body_wrapper -->
+
+<div class="clear"></div>
+
+<div id="footer_wrapper">
+	<div id="footer_content">
+		<div class="column">
+			<div class="columntitle">
+				<h3>Eclipse Links</h3>
+			</div>
+			<ul>
+				<li><a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy</a></li>
+				<li><a href="http://eclipse.org/"> Eclipse</a></li>
+				<li><a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use</a></li>
+				<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+				<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<div class="columntitle">
+				<h3>Community</h3>
+			</div>
+			<ul>
+				<li><a href="getstarted.html">Get Started</a></li>
+				<li><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></li>
+				<li><a href="http://wiki.eclipse.org/Sirius"> Wiki</a></li>
+				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
+				<li><a href="http://www.obeodesigner.com/sirius">Professional Support</a></li>
+				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
+				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
+			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
+		</div>
+	</div>
+</div>
+
+<div id="download_banner_wrapper">
+	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
+	<div id="download_banner_content">
+		<p class="left intro">Sirius 2.0 has been released! </p>
+		<a class="right" href="download.html">Try it now</a>
+		<a class="right whatsnew" href="whatsnew2.html">What's new</a>
+	</div>
+</div>
+
+
+</body>
+</html>

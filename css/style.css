@@ -158,8 +158,12 @@ img {
 	display: block;
 	float: left;
 	list-style: none;
-	padding-right: 35px;
+	padding-left: 35px;
 	text-transform: uppercase;
+}
+
+#menu_wrapper ul li:first-child {
+	padding-left: 0px;
 }
 
 #menu_wrapper a {
@@ -235,7 +239,7 @@ img {
 	width: 100%;
 }
 
-#brand_wrapper h1,.community_item h2,.download_item h1,.tuto_resources h2,.infos h2
+#brand_wrapper h1,.community_item h2,.download_item h1,.tuto_resources h2,.infos h2, .col_3 h2
 	{
 	color: #383838;
 	font-weight: normal;
@@ -322,7 +326,7 @@ img {
 	}
 
 #download_banner_content {
-	width: 500px;
+	width: 800px;
 	margin: 0 auto;
 }
 
@@ -335,18 +339,28 @@ img {
 	letter-spacing: 1px;
 }
 
+#download_banner_content p.intro {
+	text-transform: none;
+	font-weight: normal;
+}
+
 #download_banner_content a {
 	display: block;
-	width: 180px;
+	min-width: 180px;
 	height: 35px;
+	padding: 0 15px;
 	text-align: center;
 	color: #fff;
 	background-color: #be1a78;
 }
 
-#download_banner_content a:hover {
+#download_banner_content a:hover, #download_banner_content a.whatsnew:hover {
 	background-color: #fff;
 	color: #261e58;
+}
+
+#download_banner_content a.whatsnew{
+	background-color: #261e58;
 }
 
 /* Overview Page
@@ -797,6 +811,21 @@ padding-right: 8px;
 	cursor: pointer;
 	padding:12px 45px 12px 65px;
 	}
+	
+
+/*--------- What's New Page ------------*/
+
+.col_3 {
+	float: left;
+	width: 29%;
+	margin-left: 64px;
+}
+
+.col_3:first-child{
+	margin-left: 0;
+}
+
+	
 
 /*--------- Community Page ------------*/
 .community_links h1 {
@@ -815,21 +844,21 @@ padding-right: 8px;
 	margin-right: 92px;
 }
 
-.community_item p {
+.community_item p, .col_3 p {
 	text-align: justify;
 	width: 100%;
 }
 
-.community_item h2 {
+.community_item h2, .col_3 h2 {
 	font-size: 18px;
 }
 
-.community_item a {
+.community_item a, .col_3 a {
 	color: #383838;
 	font-weight: normal;
 }
 
-.community_item a:hover,.tuto_resources h2:hover {
+.community_item a:hover,.tuto_resources h2:hover, .col_3 a:hover {
 	color: #be1a78;
 }
 
