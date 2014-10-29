@@ -1,14 +1,14 @@
 {"usecases":[
          {
             "medias": {
-            	"mainSrc": "images/gallery/capella-logical-system.png",
+            	"mainSrc": "images/gallery/capella-1.jpg",
             	"imgAlt": "Put image name here",
             	"thumbs": [ 
-            		{"src": "images/gallery/capella-capabilities.png"},
-            		{"src": "images/gallery/capella-data.png"},
-            		{"src": "images/gallery/capella-dataflow.png"},
-            		{"src": "images/gallery/capella-operation.png"},
-            		{"src": "images/gallery/capella-physical-system.png"}
+            		{"src": "images/gallery/capella-2.jpg"},
+            		{"src": "images/gallery/capella-3.jpg"},
+            		{"src": "images/gallery/capella-4.jpg"},
+            		{"src": "images/gallery/capella-5.jpg"},
+            		{"src": "images/gallery/capella-6.jpg"}
             		]
              },
              "infos": {
@@ -61,12 +61,13 @@
                 
        {
             "medias": {
-            	"mainSrc": "images/gallery/uml-entities.jpg",
+            	"mainSrc": "images/gallery/uml-1.png",
             	"imgAlt": "Put image name here",
             	"thumbs":[ 
-            		{"src": "images/gallery/uml-composite.png"},
-            		{"src": "images/gallery/uml-activity.jpg"},
-            		{"src": "images/gallery/uml-deployment.png"}
+            		{"src": "images/gallery/uml-2.png"},
+            		{"src": "images/gallery/uml-3.png"},
+            		{"src": "images/gallery/uml-4.png"},
+            		{"src": "images/gallery/uml-5.png"}
             		]            	
              },
              "infos": {
@@ -87,7 +88,38 @@
                          	] 
              }
         },
-                {
+               {
+	            "medias": {
+	            	"mainSrc": "images/gallery/ecore-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		{"src": "images/gallery/ecore-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Ecore Tools",
+	             	"author": "PEP",
+	             	"description": "<p>Ecore Tools allows you to design Classes, Datatypes, References and all the classical Ecore constructions</p><p>It also provides specific layers to support concerns involved in expressing your domain model: documenting, reviewing the referencing mechanism of elements, identifying business constraints, exploring the model.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Configuration",
+	             			"url": "#"            		
+	             		},
+	          		{
+					"nom": "Software Development",
+					"url": "#"            		
+				}
+
+	             	],
+	             "lnks": [
+             		{
+             			"nom": "eclipse.org/ecoretools",
+             			"url": "http://www.eclipse.org/ecoretools/"            		
+             		} 	             		
+	             	] 
+	             }
+	        },
+                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/pep-1.png",
 	            	"imgAlt": "Put image name here",
@@ -166,7 +198,7 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Product web site",
+	             			"nom": "Github",
 	             			"url": "http://dartdesigner.github.io/"            		
 	             		},
 	             		{
@@ -176,7 +208,67 @@
 	             	] 
 	             }
 	        },
-                {
+       {
+            "medias": {
+            	"mainSrc": "images/gallery/ifml-1.png",
+            	"imgAlt": "Put image name here",
+            	"thumbs":[ 
+            		{"src": "images/gallery/ifml-2.png"},
+            		{"src": "images/gallery/ifml-3.png"}
+            		]            	
+             },
+             "infos": {
+             	"title": "IFML Editor",
+             	"author": "WebRatio / Atlanmod",
+             	"description": "<p>IFML is an OMG standard designed for expressing the content, user interaction and control behavior of the front-end of software applications.</p><p>An IFML model supports the following design perspectives: view structure, view content, events, event transition, parameter binding, actions triggered by the user's events.</p>",
+             	"tags": [
+             		{
+             			"nom": "Software Development",
+             			"url": "#"            		
+             		} 
+             	],
+             "lnks": [
+             		{
+             			"nom": "Github",
+             			"url": "http://ifml.github.io/"            		
+             		} 
+                         	] 
+             }
+        },
+       {
+            "medias": {
+            	"mainSrc": "images/gallery/arduino-5.png",
+            	"imgAlt": "Put image name here",
+            	"thumbs":[ 
+            		{"src": "images/gallery/arduino-1.png"},
+            		{"src": "images/gallery/arduino-2.png"},
+            		{"src": "images/gallery/arduino-3.png"},
+            		{"src": "images/gallery/arduino-4.png"}
+            		]            	
+             },
+             "infos": {
+             	"title": "Arduino Designer",
+             	"author": "Obeo",
+             	"description": "<p>The Arduino Designer allows kids to create small programs for Arduino.</p><p>It provides a graphical block language to be able to develop simple programs and run them on electronic modules.</p>",
+             	"tags": [
+             		{
+             			"nom": "Software Development",
+             			"url": "#"            		
+             		}, 
+             		{
+             			"nom": "IoT",
+             			"url": "#"            		
+             		} 
+             	],
+             "lnks": [
+             		{
+             			"nom": "Github",
+             			"url": "https://github.com/mbats/arduino"            		
+             		} 
+                         	] 
+             }
+        },
+                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/esa-1.png",
 	            	"imgAlt": "Put image name here",
@@ -264,7 +356,7 @@
             		]
              },
              "infos": {
-             	"title": "Safety Analysis Designer",
+             	"title": "Risk Analysis Designer",
              	"author": "Alstom",
              	"description": "A tool to capture both parts of the system designs and parts of the safety analysis needed to build a critical systems.",
              	"tags": [
@@ -279,13 +371,9 @@
              	],
              "lnks": [
              		{
-             			"nom": "CSDM 2011 presentation",
-             			"url": "http://prezi.com/s5op0nbygtp1/performing-safety-analyses-and-sysml-designs-conjointly-a-viewpoint-matter/"            		
+             			"nom": "Obeo Marketplace",
+             			"url": "http://marketplace.obeonetwork.com/module/risk-analysis"            		
              		},
-             		{
-             			"nom": "ERTS 2012 publication",
-             			"url": "http://www.erts2012.org/Site/0P2RUC89/4D-2.pdf"            		
-             		}, 
              		{
              			"nom": "Fr&eacute;d&eacute;ric Thomas' blog",
              			"url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"            		
@@ -413,9 +501,9 @@
 	            		]
 	             },
 	             "infos": {
-	             	"title": "RJ45 wiring",
+	             	"title": "Lan Map Designer",
 	             	"author": "Obeo",
-	             	"description": "<p>This modeler provides a view of RJ45 cable wiring in a building</p>",
+	             	"description": "<p>This modeler provides a map of RJ45 cable wiring in a building.</p>",
 	             	"tags": [
 	             		{
 	             			"nom": "Network",
