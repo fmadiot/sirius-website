@@ -5,7 +5,6 @@
             	"imgAlt": "Put image name here",
             	"thumbs": [ 
             		{"src": "images/gallery/capella-2.jpg"},
-            		{"src": "images/gallery/capella-3.jpg"},
             		{"src": "images/gallery/capella-4.jpg"},
             		{"src": "images/gallery/capella-5.jpg"},
             		{"src": "images/gallery/capella-6.jpg"}
