@@ -3,7 +3,7 @@
             "medias": {
             	"mainSrc": "images/gallery/capella-1.jpg",
             	"imgAlt": "Put image name here",
-            	"thumbs": [ 
+            	"thumbs": [
             		{"src": "images/gallery/capella-2.jpg"},
             		{"src": "images/gallery/capella-3.jpg"},
             		{"src": "images/gallery/capella-4.jpg"},
@@ -18,26 +18,26 @@
              	"tags": [
              		{
              			"nom": "Systems Engineering",
-             			"url": "#"            		
+             			"url": "#"
              		}
              	],
              "lnks": [
              		{
              			"nom": "Project page",
-             			"url": "https://www.polarsys.org/projects/polarsys.capella"            		
+             			"url": "https://www.polarsys.org/projects/polarsys.capella"
              		},
              		{
              			"nom": "Strategy for building custom modeling workbenches",
-             			"url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"            		
+             			"url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"
              		}
-             	] 
+             	]
              }
         },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/maif-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -47,29 +47,29 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Business Configuration",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
-	             			"url": "http://fmadiot.blogspot.fr/2012/05/modeling-p-insurance-products-maif-case.html"            		
+	             			"url": "http://fmadiot.blogspot.fr/2012/05/modeling-p-insurance-products-maif-case.html"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
-                
-                
+
+
        {
             "medias": {
             	"mainSrc": "images/gallery/uml-1.png",
             	"imgAlt": "Put image name here",
-            	"thumbs":[ 
+            	"thumbs":[
             		{"src": "images/gallery/uml-2.png"},
             		{"src": "images/gallery/uml-3.png"},
             		{"src": "images/gallery/uml-4.png"},
             		{"src": "images/gallery/uml-5.png"}
-            		]            	
+            		]
              },
              "infos": {
              	"title": "UML Designer",
@@ -78,22 +78,22 @@
              	"tags": [
              		{
              			"nom": "Software Development",
-             			"url": "#"            		
-             		} 
+             			"url": "#"
+             		}
              	],
              "lnks": [
              		{
              			"nom": "Product web site",
-             			"url": "http://www.umldesigner.org/"            		
-             		} 
-                         	] 
+             			"url": "http://www.umldesigner.org/"
+             		}
+                         	]
              }
         },
                {
 	            "medias": {
 	            	"mainSrc": "images/gallery/ecore-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/ecore-2.png"}
 	            		]
 	             },
@@ -104,27 +104,27 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Business Configuration",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		},
 	          		{
 					"nom": "Software Development",
-					"url": "#"            		
+					"url": "#"
 				}
 
 	             	],
 	             "lnks": [
              		{
              			"nom": "eclipse.org/ecoretools",
-             			"url": "http://www.eclipse.org/ecoretools/"            		
-             		} 	             		
-	             	] 
+             			"url": "http://www.eclipse.org/ecoretools/"
+             		}
+	             	]
 	             }
 	        },
                  {
 	            "medias": {
 	            	"mainSrc": "images/gallery/pep-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/pep-2.png"},
 	            		{"src": "images/gallery/pep-3.png"}
 	            		]
@@ -136,19 +136,19 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Business Configuration",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
-	             		
-	             	] 
+
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/mimic-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/mimic-2.png"},
 	            		{"src": "images/gallery/mimic-3.png"},
 	            		{"src": "images/gallery/mimic-4.png"},
@@ -163,26 +163,26 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Leveraging Sensor-based Interactions in Multimodal Mobile Applications",
-	             			"url": "http://www.lifl.fr/~rouillar/publi/2014_Elouali_Lepallec_Rouillard_Tarby_EA_CHI.pdf"            		
+	             			"url": "http://www.lifl.fr/~rouillar/publi/2014_Elouali_Lepallec_Rouillard_Tarby_EA_CHI.pdf"
 	             		},
 	             		{
 	             			"nom": "Nadia Elaoui's blog",
-	             			"url": "http://www.lifl.fr/~eloualin/tool.html"            		
+	             			"url": "http://www.lifl.fr/~eloualin/tool.html"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/dart-module.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/dart-class.png"},
 	            		{"src": "images/gallery/dart-package.png"}
 	            		]
@@ -194,29 +194,29 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Github",
-	             			"url": "http://dartdesigner.github.io/"            		
+	             			"url": "http://dartdesigner.github.io/"
 	             		},
 	             		{
 	             			"nom": "St&eacute;phane B&eacute;gaudeau's blog",
-	             			"url": "http://stephanebegaudeau.tumblr.com/post/94470472420/introducing-dart-designer"            		
+	             			"url": "http://stephanebegaudeau.tumblr.com/post/94470472420/introducing-dart-designer"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
        {
             "medias": {
             	"mainSrc": "images/gallery/ifml-1.png",
             	"imgAlt": "Put image name here",
-            	"thumbs":[ 
+            	"thumbs":[
             		{"src": "images/gallery/ifml-2.png"},
             		{"src": "images/gallery/ifml-3.png"}
-            		]            	
+            		]
              },
              "infos": {
              	"title": "IFML Editor",
@@ -225,27 +225,27 @@
              	"tags": [
              		{
              			"nom": "Software Development",
-             			"url": "#"            		
-             		} 
+             			"url": "#"
+             		}
              	],
              "lnks": [
              		{
              			"nom": "Github",
-             			"url": "http://ifml.github.io/"            		
-             		} 
-                         	] 
+             			"url": "http://ifml.github.io/"
+             		}
+                         	]
              }
         },
        {
             "medias": {
             	"mainSrc": "images/gallery/arduino-5.png",
             	"imgAlt": "Put image name here",
-            	"thumbs":[ 
+            	"thumbs":[
             		{"src": "images/gallery/arduino-1.png"},
             		{"src": "images/gallery/arduino-2.png"},
             		{"src": "images/gallery/arduino-3.png"},
             		{"src": "images/gallery/arduino-4.png"}
-            		]            	
+            		]
              },
              "infos": {
              	"title": "Arduino Designer",
@@ -254,47 +254,47 @@
              	"tags": [
              		{
              			"nom": "Software Development",
-             			"url": "#"            		
-             		}, 
+             			"url": "#"
+             		},
              		{
              			"nom": "IoT",
-             			"url": "#"            		
-             		} 
+             			"url": "#"
+             		}
              	],
              "lnks": [
              		{
              			"nom": "Github",
-             			"url": "https://github.com/mbats/arduino"            		
-             		} 
-                         	] 
+             			"url": "https://github.com/mbats/arduino"
+             		}
+                         	]
              }
         },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/orange-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
 	             	"title": "Telecom Reference Architecture",
 	             	"author": "Orange",
-	             	"description": "<p>This modeling tool implements Orange Lab's internal approach (RAL kit) to describe the architecture of IT solutions and services platforms.</p><p>It supports 4 viewpoints (usage, fonctionnal, software and infrastructure) and integrates with UML Designer.",
+	             	"description": "<p>This modeling tool implements Orange Lab's internal approach (RAL kit) to describe the architecture of IT solutions and services platforms.</p><p>It supports 4 viewpoints (usage, functional, software and infrastructure) and integrates with UML Designer.",
 	             	"tags": [
 	             		{
 	             			"nom": "Business Configuration",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
-	             	] 
+	             	]
 	             }
 	        },
                  {
 	            "medias": {
 	            	"mainSrc": "images/gallery/esa-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/esa-2.png"}
 	            		]
 	             },
@@ -305,34 +305,34 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Systems Engineering",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		},
 	             		{
 	             			"nom": "Real Time",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		},
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
-	             			"url": "http://fmadiot.blogspot.fr/2012/09/esa-case-study.html"            		
+	             			"url": "http://fmadiot.blogspot.fr/2012/09/esa-case-study.html"
 	             		},
 	             		{
 	             			"nom": "Cordet Project",
-	             			"url": "http://cordet.gmv.com/"            		
+	             			"url": "http://cordet.gmv.com/"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/timing-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/timing-2.png"},
 	            		{"src": "images/gallery/timing-3.png"}
 	            		]
@@ -344,34 +344,34 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Real Time",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		},
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "RT-Simex project presentation",
-	             			"url": "http://prezi.com/dbf2jtx0dgtr/rt-simex-reverse-engineering-of-simulated-and-executed-real-time-traces/"            		
+	             			"url": "http://prezi.com/dbf2jtx0dgtr/rt-simex-reverse-engineering-of-simulated-and-executed-real-time-traces/"
 	             		},
 	             		{
 	             			"nom": "RT-Simex video: Analysis",
-	             			"url": "http://www.rtsimex.org/demos/demo-analyse"            		
+	             			"url": "http://www.rtsimex.org/demos/demo-analyse"
 	             		},
 	             		{
 	             			"nom": "RT-Simex video: Constraints",
-	             			"url": "http://www.rtsimex.org/demos/demo-contrainte"            		
+	             			"url": "http://www.rtsimex.org/demos/demo-contrainte"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
         {
             "medias": {
             	"mainSrc": "images/gallery/safety-risks.png",
             	"imgAlt": "Put image name here",
-            	"thumbs": [ 
+            	"thumbs": [
             		{"src": "images/gallery/safety-pha-tree.png"},
             		{"src": "images/gallery/safety-sysml.png"},
             		{"src": "images/gallery/safety-library.png"}
@@ -384,30 +384,30 @@
              	"tags": [
              		{
              			"nom": "Safety",
-             			"url": "#"            		
-             		}, 
+             			"url": "#"
+             		},
              		{
              			"nom": "Systems Engineering",
-             			"url": "#"            		
+             			"url": "#"
              		}
              	],
              "lnks": [
              		{
              			"nom": "Obeo Marketplace",
-             			"url": "http://marketplace.obeonetwork.com/module/risk-analysis"            		
+             			"url": "http://marketplace.obeonetwork.com/module/risk-analysis"
              		},
              		{
              			"nom": "Fr&eacute;d&eacute;ric Thomas' blog",
-             			"url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"            		
-             		} 
-             	] 
+             			"url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"
+             		}
+             	]
              }
         },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/citrus-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/citrus-2.png"}
 	            		]
 	             },
@@ -418,22 +418,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Systems Engineering",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Citrus page",
-	             			"url": "http://solutions-isoneo.com/?page_id=499"            		
+	             			"url": "http://solutions-isoneo.com/?page_id=499"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/all4tec-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/all4tec-2.png"}
 	            		]
 	             },
@@ -444,26 +444,26 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Systems Engineering",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		},
 	             		{
 	             			"nom": "Safety",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Eclipse Marketplace",
-	             			"url": "http://marketplace.eclipse.org/content/safety-architect"            		
+	             			"url": "http://marketplace.eclipse.org/content/safety-architect"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/bpmn-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -473,22 +473,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Business Process",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Obeo Markeplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/bpmn"            		
+	             			"url": "http://marketplace.obeonetwork.com/module/bpmn"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
 	        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/intelhome-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/intelhome-2.png"}
 	            		]
 	             },
@@ -499,19 +499,19 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Business Configuration",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Willy All&egrave;gre's thesis",
-	             			"url": "https://tel.archives-ouvertes.fr/tel-00803402/document"            		
+	             			"url": "https://tel.archives-ouvertes.fr/tel-00803402/document"
 	             		},
 	             		{
 	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
-	             			"url": "http://fmadiot.blogspot.fr/2013/03/model-based-configuration-of-assistive.html"            		
+	             			"url": "http://fmadiot.blogspot.fr/2013/03/model-based-configuration-of-assistive.html"
 	             		}
-	             	] 
+	             	]
 	             }
 	        }
 ,
@@ -519,7 +519,7 @@
 	            "medias": {
 	            	"mainSrc": "images/gallery/rj45-map.jpg",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -529,19 +529,19 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Network",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
-	             		
-	             	] 
+
+	             	]
 	             }
 	        },
 		{
 	            "medias": {
 	            	"mainSrc": "images/gallery/eseo-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -551,22 +551,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Slides by O. Beaudoux and M. Clavreul",
-	             			"url": "http://api.ning.com/files/S7hsBCvqKXFwZfsIm-52lXSg7wS3rubAfJxbJXGt9pJJuv7*9bhF6zx-vZJQlFKO6hhrMQrh7hHloLguVawWWsPlYR6hcdhI/LoaDesigner.pdf"            		
+	             			"url": "http://api.ning.com/files/S7hsBCvqKXFwZfsIm-52lXSg7wS3rubAfJxbJXGt9pJJuv7*9bhF6zx-vZJQlFKO6hhrMQrh7hHloLguVawWWsPlYR6hcdhI/LoaDesigner.pdf"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/cinematic-1.jpg",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -576,22 +576,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Obeo Marketplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/cinematic"            		
+	             			"url": "http://marketplace.obeonetwork.com/module/cinematic"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/database-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -601,22 +601,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Obeo Marketplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/database"            		
+	             			"url": "http://marketplace.obeonetwork.com/module/database"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/graal-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/graal-2.png"},
 	            		{"src": "images/gallery/graal-3.png"},
 	            		{"src": "images/gallery/graal-4.png"}
@@ -629,22 +629,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Obeo Marketplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/graal"            		
+	             			"url": "http://marketplace.obeonetwork.com/module/graal"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
                 {
 	            "medias": {
 	            	"mainSrc": "images/gallery/graf-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		]
 	             },
 	             "infos": {
@@ -654,22 +654,22 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Enterprise Architecture",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "Graf overview (in french)",
-	             			"url": "http://api.ning.com/files/auMGdvCc6abQ5SJitpd9KAdL-rOZ3cvzM2-mWNv1gJUWnW95AJ0bPDMwcKCuEjIZpK2C4D8qdHe3lFehGagJ8UMuqNtDJKEn/CapgeminiGRAFDesigner.pdf"            		
+	             			"url": "http://api.ning.com/files/auMGdvCc6abQ5SJitpd9KAdL-rOZ3cvzM2-mWNv1gJUWnW95AJ0bPDMwcKCuEjIZpK2C4D8qdHe3lFehGagJ8UMuqNtDJKEn/CapgeminiGRAFDesigner.pdf"
 	             		}
-	             	] 
+	             	]
 	             }
 	        },
 	        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/mosart-1.png",
 	            	"imgAlt": "Put image name here",
-	            	"thumbs": [ 
+	            	"thumbs": [
 	            		{"src": "images/gallery/mosart-2.png"},
 	            		{"src": "images/gallery/mosart-3.png"}
 	            		]
@@ -681,20 +681,20 @@
 	             	"tags": [
 	             		{
 	             			"nom": "Real Time",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		},
 	             		{
 	             			"nom": "Software Development",
-	             			"url": "#"            		
+	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
 	             		{
 	             			"nom": "MoSaRT project",
-	             			"url": "http://www.lias-lab.fr/forge/projects/mosart"            		
+	             			"url": "http://www.lias-lab.fr/forge/projects/mosart"
 	             		}
-	             	] 
+	             	]
 	             }
 	        }
-       
+
 ]}
