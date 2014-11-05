@@ -5,6 +5,7 @@
             	"imgAlt": "Put image name here",
             	"thumbs": [ 
             		{"src": "images/gallery/capella-2.jpg"},
+            		{"src": "images/gallery/capella-3.jpg"},
             		{"src": "images/gallery/capella-4.jpg"},
             		{"src": "images/gallery/capella-5.jpg"},
             		{"src": "images/gallery/capella-6.jpg"}
@@ -57,6 +58,7 @@
 	             	] 
 	             }
 	        },
+                
                 
        {
             "medias": {
@@ -267,6 +269,27 @@
                          	] 
              }
         },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/orange-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [ 
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Telecom Reference Architecture",
+	             	"author": "Orange",
+	             	"description": "<p>This modeling tool implements Orange Lab's internal approach (RAL kit) to describe the architecture of IT solutions and services platforms.</p><p>It supports 4 viewpoints (usage, fonctionnal, software and infrastructure) and integrates with UML Designer.",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Configuration",
+	             			"url": "#"            		
+	             		}
+	             	],
+	             "lnks": [
+	             	] 
+	             }
+	        },
                  {
 	            "medias": {
 	            	"mainSrc": "images/gallery/esa-1.png",
