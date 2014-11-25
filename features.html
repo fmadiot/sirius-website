@@ -1,32 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="Content-language" content="en">
 	<meta name="description" content="Graphical Editors for your DSL">
-	 
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/googleAnalytics.js"></script>
-	<script type="text/javascript" src="js/magnific-popup.video.js"></script> 
+	<script type="text/javascript" src="js/magnific-popup.video.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/bootstrap-tab.js"></script>
-	
+
 	<link rel="icon" type="image/png" href="favicon.ico" />
 	<title>Sirius - The easiest way to get your own modeling tool</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css" />		
-	<link type="text/css" rel="stylesheet" href="css/media.css" />	
-	
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/media.css" />
+
 </head>
-	
+
 <body>
 
 <div id="header_wrapper">
 	<div id="logo">
 		<a href="index.html"><img alt="logo" src="images/logos/logo.png" /></a>
 	</div>
-	
+
 	<div id="menu_wrapper">
 		<ul id="nav">
 			<li><a href="overview.html">Overview</a></li>
@@ -39,7 +39,7 @@
 	</div>	<!-- Fin menu_wrapper -->
 </div>	<!-- Fin header_wrapper -->
 
-<div id="body_wrapper">	
+<div id="body_wrapper">
 	<h1 class="page_title">Features</h1>
 
 		<ul id="myTab" class="nav nav-tabs">
@@ -50,7 +50,7 @@
 	<div id="myTabContent" class="tab-content">
 	<div class="tab-pane fade active in" id="home">
 		<!-- First table -->
-	<h2>Interpreted Mode</h2>
+	<h2><a id="interpreted-mode"></a>Interpreted Mode</h2>
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -80,13 +80,13 @@
 			</tbody>
 		</table>
 	<!-- End first table -->
-	
+
 	<!-- Second table -->
-	<h2>Fully Customizable Viewpoints</h2>
+	<h2><a id="customizable-viewpoints"></a>Fully Customizable Viewpoints</h2>
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th colspan="2">A graphical designer provides viewpoints adapted to the user's role or activity. 
+					<th colspan="2">A graphical designer provides viewpoints adapted to the user's role or activity.
 					Each viewpoint corresponds to a set of representations (diagrams, tables, matrices or trees) which can be completely customized.</th>
 				</tr>
 			</thead>
@@ -94,10 +94,10 @@
 				<tr>
 					<td>Customizable Diagrams</td>
 					<td>You can specify diagrams to graphically represent the model elements with your own graphical choices. <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_diagrams.png" title="Customizable Diagrams - Free graphical representations of model elements"><span class="features_icon"></span></a></div>
-On each diagram you can choose the model elements to display and how to display them: the kind of mapping (node, container, port, edge), 
+On each diagram you can choose the model elements to display and how to display them: the kind of mapping (node, container, port, edge),
 the graphical style (square, ellipse, image, size, colors, font, etc...), conditional styles (depending on a condition), decorators, etc...
-You can also define the tools available on this diagram: the palette content, optional layers (to show additional information on the same diagram), 
-filters (to hide elements depending on a condition), validation rules and associated quickfixes, element edition tools (drop, reconnect, delete, paste, 
+You can also define the tools available on this diagram: the palette content, optional layers (to show additional information on the same diagram),
+filters (to hide elements depending on a condition), validation rules and associated quickfixes, element edition tools (drop, reconnect, delete, paste,
 edit label, element selection wizard), model element creation tools, diagram creation tools, navigation tools, predefined automatic layouts, etc...</td>
 				</tr>
 				<tr>
@@ -106,22 +106,22 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Customizable Matrix</td>
-					<td>You can specify matrices to represent model elements as lines and columns, 
+					<td>You can specify matrices to represent model elements as lines and columns,
 					where each cell corresponds to a link between the objects in the line and the column. <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_matrix.png" title="Customizable Matrix - Lines display persons. Columns display cities. Intersections display persons location"><span class="features_icon"></span></a></div></td>
 				</tr>
 				<tr>
 					<td>Customizable Trees</td>
-					<td>You can specify a tree to represent model elements, where each node corresponds to a model 
+					<td>You can specify a tree to represent model elements, where each node corresponds to a model
 					element with related objects as child nodes. <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_trees.png" title="Customizable Trees - Trees can represent model elements as nodes and related elements as child nodes"><span class="features_icon"></span></a></div></td>
 				</tr>
 				<tr>
 					<td>Customizable Sequence Diagrams</td>
-					<td>You can specify a sequence diagram <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_sequence.png" title="Customizable Sequence Diagrams - Sequences display lifelines, messages and combined fragments"><span class="features_icon"></span></a></div> to represent your model elements with lifelines, 
+					<td>You can specify a sequence diagram <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_sequence.png" title="Customizable Sequence Diagrams - Sequences display lifelines, messages and combined fragments"><span class="features_icon"></span></a></div> to represent your model elements with lifelines,
 					messages and combined fragments. Inspired by UML, this kind of representation can be used with any DSL.</td>
 				</tr>
 				<tr>
 					<td>Customizable Colors Palette</td>
-					<td>You can define your own colors: Interpolated (a set of colors associated to a set of values) <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_colorsinterpolar.png" title="Customizable Colors Palette - Grouped Image - A set of colors associated to a set of values"><span class="features_icon"></span></a></div>, 
+					<td>You can define your own colors: Interpolated (a set of colors associated to a set of values) <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_colorsinterpolar.png" title="Customizable Colors Palette - Grouped Image - A set of colors associated to a set of values"><span class="features_icon"></span></a></div>,
 					User Fixed (RGB), Computed (from a model element) <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_colorscomputed.png" title="Customizable Colors Palette - Computed Colors - Computed Colors from a model element"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
@@ -133,26 +133,26 @@ edit label, element selection wizard), model element creation tools, diagram cre
 					<td>Many elements can be shared between representations. It allows you to reduce the amount of work by reusing existing viewpoints elements <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_elementsreuse.png" title="Viewpoint elements reuse - Navigation descriptions are reused by other diagrams"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 			</tbody>
-		</table>	
+		</table>
 		<!-- End second table -->
 	</div>
-	
-	
-	
+
+
+
 	<div class="tab-pane fade" id="profile">
 	<!-- Third table -->
-	<h2>Complete Modeling Workbench</h2>
+	<h2><a id="modeling-workbench"></a>Complete Modeling Workbench</h2>
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th colspan="2">A Graphical Designer created with Sirius offers a complete modeling workbench 
+					<th colspan="2">A Graphical Designer created with Sirius offers a complete modeling workbench
 					to manage your models and their corresponding representations (diagrams, tables, matrices, trees and sequence diagrams).</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>Viewpoints selection</td>
-					<td>When working on a model, you can select the viewpoints corresponding to your role or activity <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_selectviewpoints.png" title="Viewpoints Selection - Right-Click on your Modeling project in the Model Explorer view"><span class="features_icon"></span></a></div>. 
+					<td>When working on a model, you can select the viewpoints corresponding to your role or activity <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_selectviewpoints.png" title="Viewpoints Selection - Right-Click on your Modeling project in the Model Explorer view"><span class="features_icon"></span></a></div>.
 					It will restrict the available representations only to those needed for your working session <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_availableviewpoints.png" title="Available Representations - Select the viewpoint you need"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
@@ -170,13 +170,13 @@ edit label, element selection wizard), model element creation tools, diagram cre
 			</tbody>
 		</table>
 	<!-- End third table -->
-	
+
 	<!-- Forth table -->
-	<h2>Diagram Edition</h2>
+	<h2><a id="diagram-edition"></a>Diagram Edition</h2>
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th colspan="2">Each diagram defined with Sirius provides features to facilitate the visualization and the manipulation of the 
+					<th colspan="2">Each diagram defined with Sirius provides features to facilitate the visualization and the manipulation of the
 					displayed model elements.</th>
 				</tr>
 			</thead>
@@ -187,39 +187,39 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Layers</td>
-					<td>A layer shows additional objects on the current diagram. It can also add its own section of tools in the Palette. 
+					<td>A layer shows additional objects on the current diagram. It can also add its own section of tools in the Palette.
 					Several optional layers can be activated simultaneously. Each layer must be defined by the creator of the Graphical Designer <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_layers.png" title="Layers - You can display additional objects, labels, containers, tools, etc."><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
 					<td>Filters</td>
-					<td>A filter hides objects on the current diagram depending on their type and properties <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_filters.png" title="Filters - You can hide objects"><span class="features_icon"></span></a></div>. 
+					<td>A filter hides objects on the current diagram depending on their type and properties <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_filters.png" title="Filters - You can hide objects"><span class="features_icon"></span></a></div>.
 					Several filters can be activated simultaneously. Each filter must be defined by the creator of the Graphical Designer <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_filtersdefinition.png" title="Filters Definition - You must define filters at the diagram level"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
 					<td>Conditional styles</td>
-					<td>A conditional style changes the appearance of a model element according to specific conditions (property values, relations, ...). 
+					<td>A conditional style changes the appearance of a model element according to specific conditions (property values, relations, ...).
 					It allows to highlight some model elements of interest.</td>
 				</tr>
 				<tr>
 					<td>Outline</td>
-					<td>The outline shows a complete vision of the active diagram. 
+					<td>The outline shows a complete vision of the active diagram.
 					It is a convenient way to navigate on the active diagram when it is too big to be seen entirely on the editor <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_outline.png" title="Outline - A complete vision of the active diagram"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
 					<td>Automatic layout</td>
-					<td>Sirius provides a default automatic layout to graphically reorganize the model elements <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_automaticarrange.png" title="Automatic Layout - Allows a graphical reorganization of model elements"><span class="features_icon"></span></a></div>. 
+					<td>Sirius provides a default automatic layout to graphically reorganize the model elements <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_automaticarrange.png" title="Automatic Layout - Allows a graphical reorganization of model elements"><span class="features_icon"></span></a></div>.
 					The automatic layout strategy can be customized by the creator of the Graphical Designer.</td>
 				</tr>
 				<tr>
 					<td>Validation</td>
-					<td>Diagram can be validated <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_diagramvalidation.png" title="Diagram Validation - Right-Click on the diagram to get this option"><span class="features_icon"></span></a></div> 
-					to detect modeling rules violations defined by the Creator of the Graphical Designer <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_validationrules.png" title="Validation Rules - You can define rules to detect Informations, Warnings or Errors"><span class="features_icon"></span></a></div>. 
-					Each violated rule triggers either an Information, a Warning or an Error. They are shown both in the Problems view and 
+					<td>Diagram can be validated <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_diagramvalidation.png" title="Diagram Validation - Right-Click on the diagram to get this option"><span class="features_icon"></span></a></div>
+					to detect modeling rules violations defined by the Creator of the Graphical Designer <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_validationrules.png" title="Validation Rules - You can define rules to detect Informations, Warnings or Errors"><span class="features_icon"></span></a></div>.
+					Each violated rule triggers either an Information, a Warning or an Error. They are shown both in the Problems view and
 					the diagram via decorators on model elements.</td>
 				</tr>
 				<tr>
 					<td>Quickfixes</td>
-					<td>Problems detected by a validation rule can be automatically corrected by quickfixes. 
+					<td>Problems detected by a validation rule can be automatically corrected by quickfixes.
 					Quickfixes are defined by the creator of the Graphical Designer.</td>
 				</tr>
 				<tr>
@@ -228,7 +228,7 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Automatic initialization</td>
-					<td>When creating a new diagram, it is automatically populated with available model elements. 
+					<td>When creating a new diagram, it is automatically populated with available model elements.
 					The query executed to retrieve model elements is defined by the creator of the Graphical Designer.</td>
 				</tr>
 				<tr>
@@ -237,7 +237,7 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Layouting mode</td>
-					<td>This optional mode allows you to protect the underlying model while reorganizing a diagram <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_layoutingmode.png" title="Layouting Mode - To protect the underlying model while reorganizing a diagram"><span class="features_icon"></span></a></div>. 
+					<td>This optional mode allows you to protect the underlying model while reorganizing a diagram <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_layoutingmode.png" title="Layouting Mode - To protect the underlying model while reorganizing a diagram"><span class="features_icon"></span></a></div>.
 					It avoids mistakenly changing properties or links related to model elements present on the diagram.</td>
 				</tr>
 				<tr>
@@ -246,7 +246,7 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Image export</td>
-					<td>Each diagram can be exported as an image (JPEG, PNG, SVG, BMP or GIF)<div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_imageexport.png" title="Image Export - Exports all diagrams as an image (JPEG, PNG, SVG, BMP or GIF)"><span class="features_icon"></span></a></div>. 
+					<td>Each diagram can be exported as an image (JPEG, PNG, SVG, BMP or GIF)<div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_imageexport.png" title="Image Export - Exports all diagrams as an image (JPEG, PNG, SVG, BMP or GIF)"><span class="features_icon"></span></a></div>.
 					It is also possible to export all diagrams at once <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_imagesexport.png" title="Image Export - Exports all diagrams as an image (JPEG, PNG, SVG, BMP or GIF)"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
@@ -259,7 +259,7 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Synchronization mode</td>
-					<td>With "Synchronized" mode, the diagram is automatically populated with all the candidate elements (for example all the classes of a package). 
+					<td>With "Synchronized" mode, the diagram is automatically populated with all the candidate elements (for example all the classes of a package).
 					However, with "Unsynchronized" mode, you choose the elements which are represented on the diagram.</td>
 				</tr>
 				<tr>
@@ -268,13 +268,13 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				</tr>
 				<tr>
 					<td>Custom style</td>
-					<td>Although the style of the diagram elements is defined by the creator of the Graphical Designer, it can be customized for each 
+					<td>Although the style of the diagram elements is defined by the creator of the Graphical Designer, it can be customized for each
 					diagram element (background color, border size, foreground color, label alignment, label size and format, etc) <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_customstyles.png" title="Custom Style - Styles of diagram elements can be defined by the graphical designer creator"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
 					<td>Resizing</td>
-					<td>Model elements can be resized manually <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_resizing.png" title="Resizing Elements - Manual resizing"><span class="features_icon"></span></a></div> 
-					or automatically. Automatic resizing can be performed by calculating the most 
+					<td>Model elements can be resized manually <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_resizing.png" title="Resizing Elements - Manual resizing"><span class="features_icon"></span></a></div>
+					or automatically. Automatic resizing can be performed by calculating the most
 					appropriate size or by applying the size of another selected element <div class="popup-gallery icon_features"><a href="images/screenshots/features/sirius_feat_autoresizing.png" title="Resizing Elements - Automatic resizing"><span class="features_icon"></span></a></div>.</td>
 				</tr>
 				<tr>
@@ -284,9 +284,9 @@ edit label, element selection wizard), model element creation tools, diagram cre
 			</tbody>
 		</table>	<!-- End forth table -->
 		</div>
-	</div> <!-- End myTabContent -->		
+	</div> <!-- End myTabContent -->
 
-</div> <!-- Fin body_wrapper -->	
+</div> <!-- Fin body_wrapper -->
 
 <div class="clear"></div>
 
@@ -305,7 +305,7 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
 			</ul>
 		</div>
-		
+
 		<div class="column">
 			<div class="columntitle">
 				<h3>Community</h3>
@@ -321,13 +321,13 @@ edit label, element selection wizard), model element creation tools, diagram cre
 				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
 			</ul>
 		</div>
-		
+
 		<div class="column">
 			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
 			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
 		</div>
 	</div>
-</div>	
+</div>
 
 <div id="download_banner_wrapper">
 	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
@@ -335,8 +335,8 @@ edit label, element selection wizard), model element creation tools, diagram cre
 		<p class="left intro">Sirius 2.0 has been released! </p>
 		<a class="right" href="download.html">Try it now</a>
 		<a class="right whatsnew" href="whatsnew2.html">What's new</a>
-	</div> 
-</div>		
+	</div>
+</div>
 
 </body>
 </html>
