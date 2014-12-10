@@ -46,9 +46,14 @@
 	             	"description": "The MAIF insurance company has developped a graphical tool to manage the P&C products (property and casualty, IARD in french for Incendie, Accidents et Risques Divers).</p><p>It provides graphical representations to create, modify, consult, version and validate the products.</p>",
 	             	"tags": [
 	             		{
-	             			"nom": "Business Configuration",
+	             			"nom": "Business Analysis",
+	             			"url": "#"
+	             		},
+	             		{
+	             			"nom": "Domain Driven Development",
 	             			"url": "#"
 	             		}
+	             		
 	             	],
 	             "lnks": [
 	             		{
@@ -103,7 +108,7 @@
 	             	"description": "<p>Ecore Tools allows you to design Classes, Datatypes, References and all the classical Ecore constructions</p><p>It also provides specific layers to support concerns involved in expressing your domain model: documenting, reviewing the referencing mechanism of elements, identifying business constraints, exploring the model.</p>",
 	             	"tags": [
 	             		{
-	             			"nom": "Business Configuration",
+	             			"nom": "Domain Driven Development",
 	             			"url": "#"
 	             		},
 	          		{
@@ -135,7 +140,7 @@
 	             	"description": "<p>This modeler allows the collaborative design and development of complex plastic products.</p><p>It provides views dedicated to the several different business experts involved in the creation of such products: projects/solution, resources, costs, process, sequence</p>",
 	             	"tags": [
 	             		{
-	             			"nom": "Business Configuration",
+	             			"nom": "Business Analysis",
 	             			"url": "#"
 	             		}
 	             	],
@@ -282,7 +287,7 @@
 	             	"description": "<p>This modeling tool implements Orange Lab's internal approach (RAL kit) to describe the architecture of IT solutions and services platforms.</p><p>It supports 4 viewpoints (usage, functional, software and infrastructure) and integrates with UML Designer.",
 	             	"tags": [
 	             		{
-	             			"nom": "Business Configuration",
+	             			"nom": "Business Analysis",
 	             			"url": "#"
 	             		}
 	             	],
@@ -498,7 +503,7 @@
 	             	"description": "<p>IntelHome Designer is a graphical tool to configure home automation systems for disabled persons.</p><p>It consists in modeling a home with all its automated equipments. The model is used to generate configuration files for DANAH, a assistive technology system that pilots automated homes or medical structures.</p>",
 	             	"tags": [
 	             		{
-	             			"nom": "Business Configuration",
+	             			"nom": "Domain Driven Development",
 	             			"url": "#"
 	             		}
 	             	],
@@ -528,7 +533,7 @@
 	             	"description": "<p>This modeler provides a map of RJ45 cable wiring in a building.</p>",
 	             	"tags": [
 	             		{
-	             			"nom": "Network",
+	             			"nom": "Business Analysis",
 	             			"url": "#"
 	             		}
 	             	],
@@ -628,6 +633,10 @@
 	             	"description": "<p>Graal Designer provides the ability to specify the users needs and their interactions with a system by defining tasks, use cases, user stories and interaction aspects a system should offer.</p>",
 	             	"tags": [
 	             		{
+	             			"nom": "Business Analysis",
+	             			"url": "#"
+	             		},
+	             		{
 	             			"nom": "Software Development",
 	             			"url": "#"
 	             		}
@@ -665,6 +674,35 @@
 	             	]
 	             }
 	        },
+                {
+	            "medias": {
+	            	"mainSrc": "images/gallery/sysml-1.jpg",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/sysml-2.jpg"},
+	            		{"src": "images/gallery/sysml-3.jpg"},
+	            		{"src": "images/gallery/sysml-4.jpg"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "SysML Designer",
+	             	"author": "Obeo",
+	             	"description": "<p>SysML Designer is an open source modeling tool to edit and vizualize SysML 1.2 models.</p><p>It provides the following generic SysML representations: Block Definition Diagram (BBD), Internal Block Diagram (IBD), Requirements Table, Requirements Cross Table, Parametric Diagram and UML standard diagrams.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Systems Engineering",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Obeo Markeplace",
+	             			"url": "http://marketplace.obeonetwork.com/module/sysml"
+	             		}
+	             	]
+	             }
+	        },
+
 	        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/mosart-1.png",
@@ -682,10 +720,6 @@
 	             		{
 	             			"nom": "Real Time",
 	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
 	             		}
 	             	],
 	             "lnks": [
@@ -695,6 +729,64 @@
 	             		}
 	             	]
 	             }
+	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/agrodsl-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Farming DSLs",
+	             	"author": "Inria Rennes / Obeo",
+	             	"description": "<p>A set of DSLs with tooling based on Sirius and Xtext to describe an agricultural exploitation from a structural and behavioral point of view.</p><p>This description is then used for simulation and contraints statisfaction checking.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Business Analysis",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Slides",
+	             			"url": "http://devlog.cnrs.fr/_media/idm2014_mdeandsle_combemale-web.pdf"
+	             		},
+	             		{
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/cbrun/idm2014/tree/master/contrib/gemoc"
+	             		}
+	             	]
+	             }
+	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/vercors-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/vercors-2.png"},
+	            		{"src": "images/gallery/vercors-3.jpg"},
+	            		{"src": "images/gallery/vercors-4.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "VerCors",
+	             	"author": "Inria Sophia Antipolis",
+	             	"description": "<p>VerCors is a tool platform for the analysis and verification of safety and security properties of distributed applications.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Safety",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Project page",
+	             			"url": "https://team.inria.fr/scale/software/vercors/"
+	             		}
+	             	]
+	             }
 	        }
+
 
 ]}
