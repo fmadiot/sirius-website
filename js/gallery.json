@@ -740,7 +740,7 @@
 	             "infos": {
 	             	"title": "Farming DSLs",
 	             	"author": "Inria Rennes / Obeo",
-	             	"description": "<p>A set of DSLs with tooling based on Sirius and Xtext to describe an agricultural exploitation from a structural and behavioral point of view.</p><p>This description is then used for simulation and contraints statisfaction checking.</p>",
+	             	"description": "<p>A set of DSLs with tooling based on Sirius and Xtext to describe an agricultural exploitation from a structural and behavioral point of view.</p><p>This description is then used for simulation and constraints statisfaction checking.</p>",
 	             	"tags": [
 	             		{
 	             			"nom": "Business Analysis",
@@ -754,7 +754,7 @@
 	             		},
 	             		{
 	             			"nom": "GitHub",
-	             			"url": "https://github.com/cbrun/idm2014/tree/master/contrib/gemoc"
+	             			"url": "https://github.com/gemoc/farmingmodeling"
 	             		}
 	             	]
 	             }
