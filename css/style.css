@@ -281,7 +281,7 @@ img {
 	background: url("../images/icons/icon_easy.png") no-repeat;
 }
 
-.learn_more,.btn {
+.learn_more,.btn{
 	display: block;
 	width: 240px;
 	height: 40px;
@@ -482,7 +482,7 @@ h1.intro {
 	-webkit-border-top-right-radius: 5px;
 	position: relative;
 	background-image: linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
-	background-image: -o-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -o-linear-gradient(top, #d3d3d3 4%, #fff 100%);
 	background-image: -moz-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
 	background-image: -webkit-linear-gradient(top, #d3d3d3 4%, #f1f1f1 52%);
 	background-image: -ms-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
@@ -492,7 +492,7 @@ h1.intro {
 	color: #334541;
 	font-weight: normal;
 	background-image: linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
-	background-image: -o-linear-gradient(top, #efefef 4%, #fff 100%);
+	background-image: -o-linear-gradient(top, #d3d3d3 4%, #fff 100%);
 	background-image: -moz-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
 	background-image: -webkit-linear-gradient(top, #d3d3d3 4%, #f1f1f1 52%);
 	background-image: -ms-linear-gradient(top, #d3d3d3 4%, #f1f1f1 100%);
@@ -546,7 +546,7 @@ h1.intro {
 .tab_content {
 	display: none;
 	width: 973px;
-	height: 612px;
+	min-height: 620px;
 	border: 1px solid #dfdfdf;
 	background: #fff;
 }
@@ -555,7 +555,7 @@ h1.intro {
 	display: inline-block;
 }
 
-#tabs_content_container ul.installnav {
+ ul.installnav {
 	float: left;
 	padding: 0;
 	width: 186px;
@@ -564,25 +564,28 @@ h1.intro {
 	border-left: none;
 }
 
-#tabs_content_container ul.installnav li {
+ ul.installnav li {
 	display: inline;
 }
 
-#tabs_content_container ul.installnav li a p {
+ ul.installnav li > a p {
 	font-size: 10px;
 	margin: 10px 0;
 }
 
-#tabs_content_container ul.installnav li a {
+ ul.installnav li > a {
 	display: block;
 	text-align: left;
 	text-decoration: none;
-	background: url("../images/download/installnav_bg.png") no-repeat 0 0;
+	background: background: -webkit-linear-gradient(#dcdcdc, #fff); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#dcdcdc, #fff); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#dcdcdc, #fff); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#dcdcdc, #fff); /* Standard syntax */
 	box-shadow: 2px 0 6px #777;
 	width: 165px;
 }
 
-#tabs_content_container ul.installnav li.active a,#tabs_content_container ul.installnav li.active a:hover
+ ul.installnav li.active > a, ul.installnav li.active > a:hover
 	{
 	color: #282828;
 	outline: none;
@@ -593,28 +596,30 @@ h1.intro {
 	border: none;
 }
 
-#tabs_content_container ul.installnav li a:hover {
-	background: url("../images/download/installnav_hover_bg.png") no-repeat
-		0 0;
+ ul.installnav li > a:hover {
+	background: background: -webkit-linear-gradient(#fff, #dcdcdc); 
+  	background: -o-linear-gradient(#fff, #dcdcdc);
+  	background: -moz-linear-gradient(#fff, #dcdcdc);
+  	background: linear-gradient(#fff, #dcdcdc);
 	cursor: pointer;
 }
 
-#tabs_content_container ul.installnav li.active a span {
+ ul.installnav li.active > a > span {
 	text-align: center;
 	border-right: none;
 }
 
-#tabs_content_container ul.installnav li a span {
+ ul.installnav li > a > span {
 	display: block;
 	width: 164px;
-	height: 122px;
-	padding: 40px 0;
+	height: 75px;
+	padding: 25px 0 53px 0;
 	text-align: center;
 	color: #595959;
 	border: 1px solid #dfdfdf;
 }
 
-#tabs_content_container ul.installnav li a span p.recommended {
+ ul.installnav li > a span p.recommended {
 	margin-top: -14px;
 	color: #999;
 }
@@ -678,7 +683,7 @@ h1.intro {
 	display: block;
 }
 
-#content_drag2install,#content_updatesite,#content_emc,#content_drag2install_1,#content_updatesite_1,#content_emc_1
+#content_drag2install,#content_updatesite,#content_emc,#content_drag2install_1,#content_updatesite_1,#content_emc_1, #eclipse_package_content
 	{
 	float: right;
 	position: absolute;
@@ -694,11 +699,15 @@ h1.intro {
 	margin-left: 20px !important;
 }
 
-#content_drag2install,#content_updatesite,#content_drag2install_1,#content_updatesite_1
+#content_drag2install,#content_updatesite,#content_drag2install_1,#content_updatesite_1, #eclipse_package_content
 	{
 	display: none;
 	margin-bottom: 20px;
 }
+
+#eclipse_package_content .btn{
+	margin: 0;
+	}
 
 #content_drag2install a,#content_updatesite a,#content_emc a,#content_drag2install_1 a,#content_updatesite_1 a,#content_emc_1 a
 	{
@@ -729,6 +738,10 @@ margin-left: 20px;
 color: #777;
 border: 0.1em solid #ddd;
 padding: 4px;
+}
+
+.dwnld_wrapper ul {
+	margin-bottom: -6px;
 }
 
 .dwnld_icon {

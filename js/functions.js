@@ -23,6 +23,7 @@ $(document).ready(function() {
 			$("#content_drag2install_1").fadeIn(700);
 			$("#content_emc_1").hide();
 			$("#content_updatesite_1").hide();
+			$("#eclipse_package_content").hide();
 
 			return false;
 		});
@@ -48,6 +49,7 @@ $(document).ready(function() {
 			$("#content_emc_1").fadeIn(700);
 			$("#content_drag2install_1").hide();
 			$("#content_updatesite_1").hide();
+			$("#eclipse_package_content").hide();
 
 		});
 
@@ -70,7 +72,20 @@ $(document).ready(function() {
 			$("#content_updatesite_1").fadeIn(700);
 			$("#content_drag2install_1").hide();
 			$("#content_emc_1").hide();
+			$("#eclipse_package_content").hide();
 
+		});
+
+		$("#eclipse_package").click(function() {
+			$("#eclipse_drag2install").removeClass('active');
+			$("#eclipse_install_emc").removeClass('active');
+			$("#eclipse_updatesite").removeClass('active');
+			$(this).addClass("active");
+
+			$("#eclipse_package_content").fadeIn(700);
+			$("#content_drag2install_1").hide();
+			$("#content_emc_1").hide();
+			$("#content_updatesite_1").hide();
 		});
 
 		$(".updateSite").click(function() {
