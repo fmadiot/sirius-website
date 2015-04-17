@@ -1,0 +1,82 @@
+{"presentations":[
+        {
+            "header": {
+             	"title": "Arduino designer : the making of!",
+             	"lnk": "http://fr.slideshare.net/slideshow/embed_code/key/A3tlZzytLaMTlK" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_arduino_designer.png",
+            	"imgAlt": "Arduino designer : the making of!"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseCon Europe 2014 - Sirius + Xtext = Love",
+             	"lnk": "http://fr.slideshare.net/slideshow/embed_code/key/LY5kYUxfBv1c3n" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_xtext.png",
+            	"imgAlt": "EclipseCon Europe 2014 - Sirius + Xtext = Love"
+             }
+        },
+        {
+            "header": {
+             	"title": "Eclipse Finance Day: Sirius for Finance",
+             	"lnk": "http://fr.slideshare.net/slideshow/embed_code/key/3IXpZ8udyNSIIP" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_finance.png",
+            	"imgAlt": "Eclipse Finance Day: Sirius for Finance"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseCon Europe 2013 - Turning Eclipse into an Arduino programming platform for kids",
+             	"lnk": "http://fr.slideshare.net/slideshow/embed_code/key/cNeDVXXmu61xLm" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_arduino.png",
+            	"imgAlt": "EclipseCon Europe 2013 - Turning Eclipse into an Arduino programming platform for kids"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseCon Europe 2013 - Sirius By Example",
+             	"lnk": "http:////fr.slideshare.net/slideshow/embed_code/key/BU1OREG54vcPfQ" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_examples.png",
+            	"imgAlt": "EclipseCon Europe 2013 - Sirius By Example"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius Role Playing Game",
+             	"lnk": "http://fr.slideshare.net/slideshow/embed_code/key/FSO2VZScvIccLH" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_role_playing_game.png",
+            	"imgAlt": "Sirius Role Playing Game"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius - Graphical Editors for Your DSL",
+             	"lnk": "http://fr.slideshare.net/slideshow/embed_code/key/lXDSOfu6KwhCTB" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_editors.png",
+            	"imgAlt": "Sirius - Graphical Editors for Your DSL"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius - EclipseDemoCamp Paris 2013",
+             	"lnk": "https://prezi.com/embed/h8ekgh8azrm_/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0#" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_democamp_2013.png",
+            	"imgAlt": "Sirius - EclipseDemoCamp Paris 2013kids"
+             }
+		}
+]}

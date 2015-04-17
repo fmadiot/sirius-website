@@ -10,10 +10,10 @@
 	<script type="text/javascript" src="js/googleAnalytics.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.min.js"></script>
-	<script type="application/json" src="json/gallery.json"></script>
+	<script type="application/json" src="json/articles.json"></script>
 	
 	<link rel="icon" type="image/png" href="favicon.ico" />
-	<title>Sirius - Gallery</title>
+	<title>Sirius - Articles</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />	
 	<link type="text/css" rel="stylesheet" href="css/media.css" />	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
@@ -31,7 +31,7 @@
 	<div id="menu_wrapper">
 		<ul id="nav">
 			<li><a href="overview.html">Overview</a></li>
-			<li class="current_menu_item"><a href="gallery.html">Gallery</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
 			<li><a href="getstarted.html">Get Started</a></li>
 			<li><a href="features.html">Features</a></li>
 			<li><a href="community.html">Community</a></li>
@@ -41,108 +41,62 @@
 </div>	<!-- Fin header_wrapper -->
 
 <div id="body_wrapper">
-	<h1 class="page_title">Gallery</h1>
-	<br />
-	
-	<div class="intro_gallery">
-		<h3>What Can You Do with Sirius?</h3>
-		<p>Discover concrete examples of modeling tools created with Sirius for various use-cases: Systems Engineering, Software Development, Business Configuration, etc.</p>
-	</div>
-	
-    <div id="usecases"></div>
+	<h1 class="page_title">Articles</h1>
+</div> <!-- Fin body_wrapper -->
+
+	<div id="articles" class="articles"></div>
 	<script type="text/javascript">
-  		$.getJSON('json/gallery.json', function(data) {
+  		jQuery.getJSON('json/articles.json', function(data) {
 
   			var output = " " ;
 
-	        for (var i in data.usecases) {
-	        	var medias = " ";
-	        	var thumb = " ";
-	        	var thumblist = " ";
+	        for (var i in data.articles) {
+	        	var aside = " ";
+	        	var header = " ";
 	        	var title = " ";
-	        	var author = " ";
+	        	var date = " ";
+	        	var readmore = " ";
 	        	var descr = " ";
-	        	var taglist = " ";
-	        	var tag = " ";
-	        	var lnklist = " ";
-	        	var lnk = " ";
-	        	var infos = " ";
+	        	var photo = " ";
+	        	var name = " ";
+	        	var mail = " ";
+	        	var twitter = " ";
+	        	var google = " ";
+	        	var github = " ";
 
-	   	    medias += "<div class='medias'><div class='popup-gallery-" + i + "'><a href='" + data.usecases[i].medias.mainSrc + "' title='" + data.usecases[i].medias.mainSrc + "'><img class='shadow' src='" + data.usecases[i].medias.mainSrc + "' alt='" + data.usecases[i].medias.imgAlt + "' width='520' /></a></div>";
-	   	    
-	   	 	if(data.usecases[i].medias.thumbs.length < 1){
-	   	 		thumblist += "<div class='thumbs'><ul>";
-	   	 	}
-	   	 	else {
-				thumblist += "<div class='thumbs popup-gallery-" + i + "'><ul>";
-				for (var t in data.usecases[i].medias.thumbs) {
-					thumb += "<li class='thumb-" + t + "'><a href='" + data.usecases[i].medias.thumbs[t].src + "'><img class='shadow' src='" + data.usecases[i].medias.thumbs[t].src + "' alt='" + data.usecases[i].medias.thumbs[t].src + "' width='60' /></a></li>";
-					
+				for (var j in data.articles[i].aside.lnks) {
+					photo += "<p class='photo'><a href='" + data.articles[i].aside.lnks[j].blog + "' target='_blank'><img src='" + data.articles[i].aside.photoSrc + "' alt='" + data.articles[i].aside.imgAlt + "' /></a></p>";
+					name += "<p class='name'><a class='indigo' href='" + data.articles[i].aside.lnks[j].blog + "' target='_blank'>" + data.articles[i].aside.imgAlt + "</a><br />";
+					if(data.articles[i].aside.lnks[j].mail){
+						mail += "<a href='" + data.articles[i].aside.lnks[j].mail + "' class='social' target='_blank'><i class='fa fa-fw fa-envelope-square'></i></a>";
+					}
+					if(data.articles[i].aside.lnks[j].twitter){
+						twitter += "<a href='" + data.articles[i].aside.lnks[j].twitter + "' class='social' target='_blank'><i class='fa fa-fw fa-twitter-square'></i></a>";
+					}
+					if(data.articles[i].aside.lnks[j].google){
+						google += "<a href='" + data.articles[i].aside.lnks[j].google + "' class='social' target='_blank'><i class='fa fa-fw fa-google-plus-square'></i></a>";
+					}
+					if(data.articles[i].aside.lnks[j].github){
+						github += "<a href='" + data.articles[i].aside.lnks[j].github + "' class='social' target='_blank'><i class='fa fa-fw fa-github'></i></a>";
+					}
 				}
-	   	 	}
-			thumblist += thumb + "</ul></div>";
-			
-			medias += thumblist + "</div>";
-
-				title += "<div class='title'><h2>" + data.usecases[i].infos.title + "</h2></div>";
-				author += "<div class='author'><p>By " + data.usecases[i].infos.author + "</p></div>";
-				descr += "<div class='descr'><p>" + data.usecases[i].infos.description + "</p></div>";
-
-				taglist += "<div class='tags taglist'><span class='tag_head'>";
-				for (var j in data.usecases[i].infos.tags) {
-					tag += "</span><div class='tag'><i></i><span>" + data.usecases[i].infos.tags[j].nom + "</span><b></b></div>";
-				 }
-				taglist += tag + "</div>";
-
-				if(data.usecases[i].infos.lnks.length < 1){
-		   	 		thumblist += "<div class='lnks'><ul>";
-		   	 	}
-		   	 	else {
-				lnklist += "<div class='lnks'><h3 class='lnks_head'>Related links</h3><ul>";
-					for (var k in data.usecases[i].infos.lnks) {
-						lnk += "<li><a href='" + data.usecases[i].infos.lnks[k].url + "' target='_blank'>" + data.usecases[i].infos.lnks[k].nom + "</a></li>";
-					}
-		   	 	}
-				lnklist += lnk + "</ul></div>";
-
-				infos += "<div class='infos'>" + title + author + taglist + descr + lnklist +"</div>";
-				output += "<div class='usecase'>" + medias  + infos + "</div>";
-			
-			}
-
-			document.getElementById("usecases").innerHTML=output;
-			
-			for (var n in data.usecases) {
 				
-				$('.popup-gallery-' + n).magnificPopup({
-					delegate: 'a',
-					type: 'image',
-					tLoading: 'Loading image #%curr%...',
-					mainClass: 'mfp-img-mobile',
-					gallery: {
-						enabled: true,
-						navigateByImgClick: true,
-						preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-					},
-					image: {
-						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-						titleSrc: function(item) {
-							var usecaseIndex = $(item.el).parents(".usecase").index();
-							return data.usecases[usecaseIndex].infos.title;
-						}
-					}
-				});	
-			}			
+				name += mail + twitter + google + github +"</p>";
+				aside += "<aside class='col_2 left blogger'>" + photo + name + "</aside>";
+				
+				date += "<p class='date light_purple'>Posted on " + data.articles[i].header.date +"</p>";
+				title += "<h3><a class='indigo' href='" + data.articles[i].header.lnk + "'  target='_blank'>" + data.articles[i].header.title + "</a></h3>" + date;
+				readmore += "<p><a href='" + data.articles[i].header.lnk + "' target='_blank'>Read more <i class='fa fa-arrow-circle-right'>&nbsp;</i></a></p>";
+				descr += data.articles[i].header.description + readmore;
+				header += "<header class='col_10 left'>" + title + descr + "</header>";
+				
+				output += "<section><article class='row'>" + aside + header + "</article></section>";
+			}
+	        
+	        document.getElementById("articles").innerHTML=output;
  		 });
-   	</script>
-   	
-   	<br />
-   	<div class="intro_gallery">
-		<h3>Your modeling tool created with Sirius is not listed here?</h3> 
-   		<p>Feel free to submit your work here: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=448492">Bugzilla 448492</a>.</p>
-   	</div>
-   	
-</div> <!-- Fin body_wrapper -->
+   	</script> 
+
 
 <div class="clear"></div>
 

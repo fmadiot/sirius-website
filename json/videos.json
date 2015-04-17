@@ -1,0 +1,82 @@
+{"videos":[
+        {
+            "header": {
+             	"title": "EclipseCon France 2014 - Sirius + Xtext = Love",
+             	"lnk": "https://www.youtube.com/watch?v=Ha0FbmcLjYY" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_xtext.png",
+            	"imgAlt": "EclipseCon France 2014 - Sirius + Xtext = Love"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseCon France 2014 - Sirius Hands-On",
+             	"lnk": "https://www.youtube.com/watch?v=3fppg0UKEjs" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_handson.png",
+            	"imgAlt": "EclipseCon France 2014 - Sirius Hands-On"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius Overview - RRLL 2014 (french)",
+             	"lnk": "https://www.youtube.com/watch?v=I_GUOjgS_vQ" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_rrll.png",
+            	"imgAlt": "Sirius Overview - RRLL 2014 (french)"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius - Simple Task Graph Modeling Tool",
+             	"lnk": "https://www.youtube.com/watch?v=y2v7NB6K8aE" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_simple_modeling_tool.png",
+            	"imgAlt": "Sirius - Simple Task Graph Modeling Tool"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseCon North America 2013 - Sirius By Example",
+             	"lnk": "https://www.youtube.com/watch?v=fi4SVKlLs5E" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_examples.png",
+            	"imgAlt": "EclipseCon North America 2013 - Sirius By Example: Build Your Own Diagram, Table and Tree Editors in 20 Minutes"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius - Principles",
+             	"lnk": "https://www.youtube.com/watch?v=SEnfhNl47iA" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_principles.png",
+            	"imgAlt": "Sirius - Principles"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius - Graphical Editors for Your DSL",
+             	"lnk": "https://www.youtube.com/watch?v=rUqSaxu6SqM" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_editors.png",
+            	"imgAlt": "Sirius - Graphical Editors for Your DSL"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius with C&eacute;dric Brun, Obeo - EclipseCon France",
+             	"lnk": "https://www.youtube.com/watch?v=hyDxSmbSi2g" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_cbrun.png",
+            	"imgAlt": "Sirius with CŽdric Brun, Obeo - EclipseCon France"
+             }
+        }
+]}

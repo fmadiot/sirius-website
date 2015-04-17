@@ -1,0 +1,233 @@
+{"articles":[
+         {
+			"header": {
+             	"title": "Refine diagrams with interpolated colors",
+             	"date": "15/04/2015",
+             	"description": "<p>In your Viewpoint Specification Model (VSM), the specifier is not limited to use the provided colors but can define a palette with custom colors. A color can be defined using...</p>",
+             	"lnk": "http://melb.enix.org/sirius/refine-diagrams-with-interpolated-colors/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/blogger.png",
+            	"imgAlt": "Steve Monnier",
+            	"lnks": [
+             		{
+             			"blog": "",
+             			"mail": "",
+             			"twitter" : "",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+        {
+			"header": {
+             	"title": "Keyboard shortcuts",
+             	"date": "07/04/2015",
+             	"description": "<p>Usually when you are using a graphical modeler, you do most of the actions with the mouse. <a href='http://www.eclipse.org/sirius' target='_blank'>Sirius</a> based modelers have several built-in shortcut keys that you can use...</p>",
+             	"lnk": "http://melb.enix.org/sirius/keyboard-shortcuts/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+        {
+        	"header": {
+             	"title": "Customize diagrams with images",
+             	"date": "19/03/2015",
+             	"description": "<p>Continuing from the example of our <a href='http://melb.enix.org/sirius/the-tree-layout-secret' target='_blank'>previous blog post</a> on House of Cards, we&#146;ll see today how one can customize the elements of diagrams by using pictures...</p>",
+             	"lnk": "http://melb.enix.org/sirius/customize-diagrams-with-images/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Eclipse Sirius and Obeo Designer",
+             	"date": "11/03/2015",
+             	"description": "<p>Now that one of the majors Obeo Designer Technologies is Open-Source you might wonder how we get to employ close to 60 people...</p>",
+             	"lnk": "http://cedric.brun.io/eclipse/sirius-and-obeodesigner/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "http://twitter.com/bruncedric",
+             			"google" : "http://plus.google.com/+CedricBrun",
+             			"github" : "http://github.com/cbrun"
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius 3.0M6 - Anchors for Non-rectangular Images",
+             	"date": "09/03/2015",
+             	"description": "<p>Let&#146;s say you need a specific shape for your modeler and this shape is directly available , you can create an SVG file...</p>",
+             	"lnk": "http://cedric.brun.io/eclipse/sirius-3.0M6-anchors/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "http://twitter.com/bruncedric",
+             			"google" : "http://plus.google.com/+CedricBrun",
+             			"github" : "http://github.com/cbrun"
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "The Tree Layout Secret",
+             	"date": "04/03/2015",
+             	"description": "<p>A recurring problem when developing a graphical modeler is providing the right layout. The advantage with Sirius is it provides you with a default algorithm that performs an automatic layout of all the elements on a diagram...</p>",
+             	"lnk": "http://melb.enix.org/sirius/the-tree-layout-secret/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Multi-Viewpoints on EclipseCon Program",
+             	"date": "23/10/2014",
+             	"description": "<p>To demonstrate Sirius on short talks, I'm used to create a modeler from scratch, in ten minutes, on a topic that everybody in the audience knows: the conference they are attending...</p>",
+             	"lnk": "http://fmadiot.blogspot.fr/2014/10/multi-viewpoints-on-eclipsecon-program.html" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/fmadiot.png",
+            	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
+            	"lnks": [
+             		{
+             			"blog": "http://fmadiot.blogspot.fr/",
+             			"mail": "",
+             			"twitter" : "http://twitter.com/fmadiot",
+             			"google" : "",
+             			"github" : "http://github.com/fmadiot"
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius 2.0 : Under the Hood",
+             	"date": "16/10/2014",
+             	"description": "<p>This summer was quite intense for the Sirius team. Sirius 1.0.0 was barely out that development of the 2.0 stream started while report from adopters which are not part of the Eclipse Release train started to appear...</p>",
+             	"lnk": "http://cedric.brun.io/sirius-20-under-hood/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "http://twitter.com/bruncedric",
+             			"google" : "http://plus.google.com/+CedricBrun",
+             			"github" : "http://github.com/cbrun"
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius, Top Eclipse Luna Feature #9",
+             	"date": "13/06/2014",
+             	"description": "<p>As we get closer to the ship date of Eclipse Luna, I&#146;m counting down the <a href='http://eclipsesource.com/blogs/2014/06/12/rcp-improvements-top-eclipse-luna-feature-10/'>10 features of Eclipse 2014 that I&#146;m most excited about</a>. Number 9 on my list is a feature that&#146;s close to my heart, <i>graphical modelling</i>...</p>",
+             	"lnk": "http://eclipsesource.com/blogs/2014/06/13/sirius-top-eclipse-luna-feature-9/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/blogger.png",
+            	"imgAlt": "Ian Bull",
+            	"lnks": [
+             		{
+             			"blog": "http://www.developpez.com/user/profil/476513/alain-bernard",
+             			"mail": "",
+             			"twitter" : "",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Cr&eacute;er un &eacute;diteur de diagramme facilement avec Eclipse Sirius",
+             	"date": "24/05/2014",
+             	"description": "<p>La cr&eacute;ation d'&eacute;diteurs graphiques (&eacute;diteurs UML, repr&eacute;sentation de processus, &eacute;diteurs de concepts m&eacute;tier, etc.) est difficile &agrave; int&eacute;grer dans un cycle it&eacute;ratif court avec le client, car...</p>",
+             	"lnk": "http://alain-bernard.developpez.com/tutoriels/eclipse/sirius-intro/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/blogger.png",
+            	"imgAlt": "Alain Bernard",
+            	"lnks": [
+             		{
+             			"blog": "http://www.developpez.com/user/profil/476513/alain-bernard",
+             			"mail": "",
+             			"twitter" : "",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+        {
+            "header": {
+             	"title": "Introducing Eclipse Sirius",
+             	"date": "19/03/2013",
+             	"description": "<p>You might have noticed some signs of excitement from us lately, one being the following tweet...</p>",
+             	"lnk": "http://cedric.brun.io/introducing-eclipse-sirius/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "http://twitter.com/bruncedric",
+             			"google" : "http://plus.google.com/+CedricBrun",
+             			"github" : "http://github.com/cbrun"
+             		}
+             	]
+             }
+        }
+]}

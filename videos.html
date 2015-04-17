@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+	 
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.min.js"></script>
+	<script type="application/json" src="json/videos.json"></script>
+	
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<title>Sirius - Videos</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />	
+	<link type="text/css" rel="stylesheet" href="css/media.css" />	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+	
+<body>
+
+<div id="header_wrapper">
+	<div id="logo">
+		<a href="index.html"><img alt="logo" src="images/logos/logo.png" /></a>
+	</div>
+	
+	<div id="menu_wrapper">
+		<ul id="nav">
+			<li><a href="overview.html">Overview</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="getstarted.html">Get Started</a></li>
+			<li><a href="features.html">Features</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="download.html">Download</a></li>
+		</ul>
+	</div>	<!-- Fin menu_wrapper -->
+</div>	<!-- Fin header_wrapper -->
+
+<div id="body_wrapper" >
+	<h1 class="page_title">Videos</h1>
+</div> <!-- Fin body_wrapper -->
+
+	<div id="videos" class="videos"></div>
+		<script type="text/javascript">
+		
+	  		jQuery.getJSON('json/videos.json', function(data) {
+	  			var output = " " ;
+	
+		        for (var k in data.videos) {
+		        	var thumb = " ";
+		        	var header = " ";
+		        	var title = " ";
+		       
+					thumb += "<div class='video_thumbnail'><a class='popup-youtube' href='" + data.videos[k].header.lnk + "'><img src='" + data.videos[k].thumb.photoSrc + "'  /></a></div>";
+					title += "<h3><a class='popup-youtube indigo' href='" + data.videos[k].header.lnk + "'>" + data.videos[k].header.title + "</a></h3>";
+	         		header += "<header class='video_title centered'>" + title + "</header>";
+					
+					output += "<div class='col_3'>" + thumb + header + "</div>";
+					
+		        }
+		        
+		        document.getElementById("videos").innerHTML=output;
+		       
+		        var divs = $("#videos > .col_3");
+				for(var i = 0; i < data.videos.length; i+=3) {
+					  divs.slice(i, i+3).wrapAll("<section><article class='row'></article></section>");
+				}
+		        
+		        $('.popup-youtube').magnificPopup({
+		    		disableOn: 700,
+		    		type: 'iframe',
+		    		mainClass: 'mfp-fade',
+		    		removalDelay: 160,
+		    		preloader: false,
+
+		    		fixedContentPos: false
+		    	});
+		    	
+	 		 });
+	  		
+	   	</script>
+<div class="clear"></div>
+
+<div id="footer_wrapper">
+	<div id="footer_content">
+		<div class="column">
+			<div class="columntitle">
+				<h3>Eclipse Links</h3>
+			</div>
+			<ul>
+				<li><a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy</a></li>
+				<li><a href="http://eclipse.org/"> Eclipse</a></li>
+				<li><a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use</a></li>
+				<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+				<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div class="column">
+			<div class="columntitle">
+				<h3>Community</h3>
+			</div>
+			<ul>
+				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
+				<li><a href="http://www.obeodesigner.com/sirius">Professional Support</a></li>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
+				<li><a href="getstarted.html">Get Started</a></li>
+				<li><a href="articles-videos.html">Articles & Videos</a></li>
+				<li><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></li>
+				<li><a href="http://wiki.eclipse.org/Sirius">Wiki</a></li>
+				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
+				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
+			</ul>
+		</div>
+		
+		<div class="column">
+			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
+			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
+		</div>
+	</div>
+</div>	
+
+<div id="download_banner_wrapper">
+	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
+	<div id="download_banner_content">
+		<p class="left intro">Join the Sirius Roadshow!</p>
+		<a class="right" href="http://www.obeodesigner.com/roadshowmontreal2015" target="blank">Montreal - May 5th</a>
+		<a class="right whatsnew" href="http://www.obeodesigner.com/roadshowmunich2015" target="blank">Munich - April 28th</a>
+	</div> 
+</div>	
+
+</body>
+</html>
