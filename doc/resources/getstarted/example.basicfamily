@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<basicfamily:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://www.example.org/basicfamily">
+<basicfamily:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://www.eclipse.org/sirius/sample/basicfamily">
   <members xsi:type="basicfamily:Man" name="Paul" children="//@members.3 //@members.2"/>
   <members xsi:type="basicfamily:Woman" name="Isa" children="//@members.3 //@members.2"/>
   <members xsi:type="basicfamily:Man" name="Elias" children="//@members.4 //@members.7 //@members.9 //@members.6" parents="//@members.1 //@members.0"/>
@@ -12,4 +12,3 @@
   <members xsi:type="basicfamily:Woman" name="Clara" parents="//@members.2"/>
   <members xsi:type="basicfamily:Man" name="Albert"/>
 </basicfamily:Family>
-

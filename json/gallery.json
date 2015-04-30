@@ -410,6 +410,32 @@
         },
                 {
 	            "medias": {
+	            	"mainSrc": "images/gallery/eip-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "EIP Designer",
+	             	"author": "Laurent Broudoux",
+	             	"description": "<p>A Sirius designer for Enterprise Integration Patterns.</p><p>It allows you to design integration routes using the common patterns and vocabulary used within Enterprise Application Integration or Enterprise Services Bus solutions.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Github",
+	             			"url": "https://github.com/lbroudoux/eip-designer"
+	             		}
+	             	]
+	             }
+	        },
+                {
+	            "medias": {
 	            	"mainSrc": "images/gallery/citrus-1.png",
 	            	"imgAlt": "Put image name here",
 	            	"thumbs": [

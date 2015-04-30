@@ -21,12 +21,42 @@
         },
         {
             "header": {
-             	"title": "Sirius Overview - RRLL 2014 (french)",
+             	"title": "RRLL 2014 - Sirius Overview (french)",
              	"lnk": "https://www.youtube.com/watch?v=I_GUOjgS_vQ" 
             },
             "thumb": {
             	"photoSrc": "images/resources/videos/sirius_rrll.png",
             	"imgAlt": "Sirius Overview - RRLL 2014 (french)"
+             }
+        },
+        {
+            "header": {
+             	"title": "Open World Forum 2014 - Sirius, the new Open Source way for systems design (french)",
+             	"lnk": "https://www.youtube.com/watch?v=e24lMPpoiMU" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_openworldforum.png",
+            	"imgAlt": "Sirius: the new Open Source way for systems design - Stéphane Lacrampe (Co-founder, CEO, Obeo) (french)"
+             }
+        },
+        {
+            "header": {
+             	"title": "Eclipse Day Florence 2014 - Sirius:build diagram,table and tree editors in 20 minutes!",
+             	"lnk": "https://www.youtube.com/watch?v=IsLXXyKzUjw" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_florence.png",
+            	"imgAlt": "Eclipse Day Florence 2014 - Sirius by Mélanie Bats / Sirius:build diagram,table and tree editors in 20 minutes!"
+             }
+        },
+        {
+            "header": {
+             	"title": "Eclipse Day Florence 2014 - Turning Eclipse into an Arduino programming platform for kids",
+             	"lnk": "https://www.youtube.com/watch?v=KHKWQKXmtUE" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_arduino_cat.png",
+            	"imgAlt": "Eclipse Day Florence 2014 - Turning Eclipse into an Arduino programming platform for kids"
              }
         },
         {
@@ -47,6 +77,36 @@
             "thumb": {
             	"photoSrc": "images/resources/videos/sirius_examples.png",
             	"imgAlt": "EclipseCon North America 2013 - Sirius By Example: Build Your Own Diagram, Table and Tree Editors in 20 Minutes"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseConEurope 2013 - EcoreTools 2.0: The Making-Of",
+             	"lnk": "https://www.youtube.com/watch?v=XSP-oAmmS_E" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_ecoretools.png",
+            	"imgAlt": "EclipseConEurope 2013 - EcoreTools 2.0: The Making-Of"
+             }
+        },
+        {
+            "header": {
+             	"title": "EclipseConEurope 2013 - Changing the Game of Systems Architecture",
+             	"lnk": "https://www.youtube.com/watch?v=PBG_3pMA_xA" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_eclipsecon_2013.png",
+            	"imgAlt": "EclipseConEurope 2013 - Changing the Game of Systems Architecture"
+             }
+        },
+        {
+            "header": {
+             	"title": "Turning Eclipse into an Arduino programming platform for kids",
+             	"lnk": "https://www.youtube.com/watch?v=fi6FgIXLbNc" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/sirius_arduino.png",
+            	"imgAlt": "MDA Arduino - Turning Eclipse into an Arduino programming platform for kids"
              }
         },
         {

@@ -324,12 +324,10 @@ img, img:focus{
 }
 
 .btn{
-	display: block;
-	width: 240px;
-	height: 40px;
+	display: inline-block;
+	padding: 10px 40px;
 	margin: auto;
 	text-align: center;
-	line-height: 40px;
 	color: #fff !important;
 	background-color: #be1a78 !important;
 	text-transform: uppercase;
@@ -337,10 +335,6 @@ img, img:focus{
 
 .btn:hover {
 	background-color: #7269a4 !important;
-}
-
-.btn_large {
-	width: 280px;
 }
 
 /* Download Bottom Banner
@@ -646,7 +640,7 @@ img, img:focus{
  ul.installnav li > a > span {
 	display: block;
 	width: 164px;
-	height: 75px;
+	height: 100px;
 	padding: 25px 0 53px 0;
 	text-align: center;
 	color: #595959;
@@ -788,21 +782,9 @@ padding-right: 8px;
 	margin: 40px 0 0 0;
 }
 
-.dwnld_wrapper .services .col_3 a:hover {
-	color: #be1a78 !important;
-}
-
-.dwnld_wrapper .services .col_3 h3 {
-	font-family: 'Open Sans', Arial, sans-serif;
+.dwnld_wrapper .services a{
+	font-family: 'Open Sans Condensed', Arial, sans-serif;
 	font-size: 14px;
-	text-align: center;
-	border-top: 1px solid #d3d3d3;
-	border-bottom: 1px solid #d3d3d3;
-	padding: 12px 0;
-}
-
-.dwnld_wrapper .services .col_3 .icon {
-	font-size: 50px;
 }
 
 
@@ -867,7 +849,7 @@ padding-right: 8px;
 }
 
 .fa {
-	padding-right: 12px;
+	padding: 0 2px;
 }
 	
 /* ------- Resources Page ------*/
@@ -1252,14 +1234,12 @@ ul.nav-tabs{
 }
 
 .nav-tabs > li > a {
-  line-height: 20px;
   border: 1px solid transparent;
   -webkit-border-radius: 2px 2px 0 0;
      -moz-border-radius: 2px 2px 0 0;
           border-radius: 2px 2px 0 0;
   padding: 12px 15px 13px 15px;
   margin-right: 4px;
-  line-height: 14px;
 }
 
 .nav-tabs > li > a:hover,
@@ -1304,7 +1284,6 @@ margin: 0 5px;
 /* Gallery Page
 ------------------------------*/
 .intro_gallery {
-	background-color: #fff;
 	border: 1px solid #dfdfdf;
 	padding: 0 15px 15px 15px;
 }
