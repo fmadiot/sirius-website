@@ -57,36 +57,37 @@
 				<em>Bold</em> and 
 				<em>Italic</em>, it is now possible to set the font formatting style to 
 				<em>Underline</em> and 
-				<em>Strike through</em>.
+				<em>Strike through</em> (or any combination of these).
 			</li>
 			<li><span class="label label-success">Added</span> Container elements on diagrams now support vertical and horizontal compartments layout (this is only visible if the modeler configuration makes use of this new feature). </li>
 			<li><span class="label label-success">Added</span> In table and tree editors, a 
 				<em>Refresh</em> can now be launched by hitting <kbd>F5</kbd> like in diagrams (previously the only way was to click on the 
-				<em>Refresh</em> icon).
+				<em>Refresh</em> icon or menu item).
 			</li>
 			<li><span class="label label-success">Added</span> In table editors, hitting the <kdb>Del</kdb> key is now equivalent to selecting 
 				<em>Delete Line</em> in the context menu.
 			</li>
 			<li><span class="label label-success">Added</span> On diagram, it is now possible to set a custom background image on list containers.</li>
-			<li><span class="label label-info">Modified</span> Do not decorate the viewpoint icons for viewpoints loaded from plugins</li>
 			<li><span class="label label-info">Modified</span> In the 
-				<em>Viewpoint Selection</em> dialog and wizard page, the &#171;plug-in&#187; decorator for viewpoints loaded from plug-ins is removed, and a &#171;Folder&#187; decorator for viewpoints loaded from the current workspace has been added on the top of the default viewpoint icon.
+				<em>Viewpoint Selection</em> dialog and wizard page, the &#171;plug-in&#187; decorator for viewpoints loaded from plug-ins is removed, and a &#171;Folder&#187; decorator for viewpoints loaded from the current workspace has been added. This makes the icons more visible in the 99% of cases where viewpoints come from installed plug-ins.
 			</li>
 		</ul>
 		<h3 id="SpecifierVisibleChanges">Specifier-Visible Changes</h3>
 		<ul>
-			<li><span class="label label-success">Added</span> <span class="label label-success">Experimental</span> Optional support for the experimental 
+			<li><span class="label label-success">Added</span> <span class="label label-info">Experimental</span> Optional support for the experimental 
 				<em>Acceleo Query Language</em> (AQL) has been added to write interpreted expressions.  It is provided by the 
 				<code>org.eclipse.sirius.common.acceleo.aql</code> (required for evaluating the expressions) and 
-				<code>org.eclipse.sirius.common.acceleo.aql.ide</code>  (optional, only needed to provide specification-time features like expression completion). AQL is similar to Acceleo 3/MTL, but provides much better performance. TODO: ref to the doc when available.
+				<code>org.eclipse.sirius.common.acceleo.aql.ide</code>  (optional, only needed to provide specification-time features like expression completion). AQL is similar to Acceleo 3/MTL, but simpler and provides much better performance in the Sirius context.
 			</li>
-			<li><span class="label label-success">Added</span> <span class="label label-success">Experimental</span> New, experimental support for containers with vertical or horizontal 
-				<em>compartments</em> on diagrams: the children presentation property of a ContainerMapping has two new values 
+			<li><span class="label label-success">Added</span> <span class="label label-info">Experimental</span> New, experimental support for containers with vertical or horizontal 
+				<em>compartments</em> on diagrams: the 
+				<em>children presentation</em> property of a 
+				<em>Container Mapping</em> has two new values: 
 				<em>Vertical Stack</em> and 
 				<em>Horizontal Stack</em>. They indicate that a container will present its children containers as a vertical/horizontal stack of compartments.
 			</li>
-			<li><span class="label label-success">Added</span> Everywhere an image path can be configured in the VSM, a new button is present on the right of the text field which opens a dialog to select an image, either from the workspace or from an installed plug-in.</li>
-			<li><span class="label label-success">Added</span> Everywhere an interpreted expression can be configured in the VSM, a new button is present on the right of the text field which opens a multi-line dialog to edit long expression more easily. Auto-completion is supported inside the multi-line dialog.</li>
+			<li><span class="label label-success">Added</span> Everywhere an image path can be configured in the VSM, a new button is present on the right of the text field. It opens a dialog to select an image, either from the workspace or from an installed plug-in.</li>
+			<li><span class="label label-success">Added</span> Everywhere an interpreted expression can be configured in the VSM, a new button is present on the right of the text field. It opens a multi-line dialog to edit long expression more easily. Auto-completion is supported inside the multi-line dialog.</li>
 			<li><span class="label label-success">Added</span> Compressed SVG images (
 				<code>*.svgz</code>) are now supported everywhere normal SVG images were supported.
 			</li>
@@ -96,19 +97,17 @@
 			</li>
 			<li><span class="label label-success">Added</span> A quick outline is now accessible in the VSM editor by using the shortcut <kbd>Ctrl+o</kbd>. It supports filtering on both an element&#8217;s name and properties for quick, keyboard-only navigation in complex VSMs.</li>
 			<li><span class="label label-success">Added</span> The &#171;hide label by default capability&#187; has been added to the container styles.</li>
-			<li><span class="label label-success">Added</span> In addition to Bold and Italic, Underline and Strike through styles have been added on the label font format.</li>
+			<li><span class="label label-success">Added</span> In addition to 
+				<em>Bold</em> and 
+				<em>Italic</em>, 
+				<em>Underline</em> and 
+				<em>Strike Through</em> styles have been added on the label font format.
+			</li>
 			<li><span class="label label-success">Improved</span> Many VSM elements which are required are now created automatically. For example the default layer of a 
 				<em>Diagram Description</em> is automatically added to new 
-				<em>Diagram Description</em>.
+				<em>Diagram Descriptions</em>.
 			</li>
-			<li><span class="label label-success">Improved</span> Some default values have been modified to better reflect actual usage. This does not impact existing VSM and only applies to newly created elements.</li>
-			<li><span class="label label-success">Improved</span> The precision of the VSM validation, especially regarding the typing of computed expressions, has been greatly improved. Other validation rules like static image paths have also been added or improved.</li>
-			<li><span class="label label-info">Fixed</span> Preconditions expressions are now correctly evaluare for 
-				<em>Double Click</em> and 
-				<em>Direct Edit</em> tools.
-			</li>
-			<li><span class="label label-info">Modified</span> The context menu entries (categories and items) have been reorganized to put most common actions/items first</li>
-			<li><span class="label label-info">Modified</span> In diagrams, the style previously named &#171;Lozenge&#187; is now called &#171;Diamond&#187;.
+			<li><span class="label label-success">Improved</span> Some default values have been modified to better reflect actual usage. This does not impact existing VSM and only applies to newly created elements.
 				<ul>
 					<li>The label position on a 
 						<em>Node</em> mapping is now 
@@ -128,21 +127,28 @@
 					</li>
 				</ul>
 			</li>
-			<li><span class="label label-info">Modified</span> In Open menu, the menu is computed from the navigation tool label instead of its name/id.</li>
-			<li><span class="label label-info">Modified</span> All Acceleo 3 references have been removed in Sirius Metamodels to avoid a dependency to Acceleo 3 but an automatic migration have been added during the loading of the VSM to avoid a change of behavior. This migration adds explicitly the old default value (
-				<code>[eContents()-&gt;size()/]</code>) in the VSM, that was implicit before. Customers who want to completely remove this dependency must remove the A3 expressions from there VSM after the migration.
+			<li><span class="label label-success">Improved</span> The precision of the VSM validation, especially regarding the typing of computed expressions, has been greatly improved. Other validation rules like static image paths have also been added or improved.</li>
+			<li><span class="label label-info">Modified</span> In the VSM editor, the context menu entries (categories and items) have been reorganized to put most common actions/items first.</li>
+			<li><span class="label label-info">Modified</span> In diagrams, the style previously named &#171;Lozenge&#187; is now called &#171;Diamond&#187;.</li>
+			<li><span class="label label-info">Modified</span> In the 
+				<em>Open</em> menu on a representation, the menu is computed from the navigation tool&#8217;s label instead of its name/id.
 			</li>
-			<li><span class="label label-info">Modified</span> The default icons paths of Selection Wizard and Pane Based Selection Wizard used to reference invalid icons, so the corresponding tools had no icon per default in the palette. The default icons paths have been corrected to reference the icons displayed for those elements in the VSM editor.</li>
+			<li><span class="label label-info">Modified</span> All Acceleo 3 references have been removed from the Sirius metamodels to avoid a dependency to Acceleo 3. An automatic migration has been added during the loading of the VSM to avoid a change of behavior. This migration adds explicitly the old default value (
+				<code>[eContents()-&gt;size()/]</code>) in the VSM, that was implicit before. Customers who want to completely remove this dependency must remove the Acceleo 3 expressions from there VSM after the migration.
+			</li>
+			<li><span class="label label-info">Modified</span> The default icons paths of 
+				<em>Selection Wizard</em> and 
+				<em>Pane-Based Selection Wizard</em> used to reference invalid icons, so the corresponding tools had no icon per default in the palette. The default icons paths have been corrected to reference the icons displayed for those elements in the VSM editor.
+			</li>
 			<li><span class="label label-info">Modified</span> "
-				<code>*</code>" can now be used as feature name of a FeatureColumn to skip the feature name validation during the cell creation. This allow to compute the label of cells for lines whose semantic element types have no common EStructuralFeatures (inherited or with same name).
+				<code>*</code>" can now be used as feature name of a table&#8217;s 
+				<em>Feature Column</em> to skip the feature name validation during the cell creation. This allow to compute the label of cells for lines whose semantic element types have no common 
+				<em>EStructuralFeature</em> (inherited or with same name).
 			</li>
 		</ul>
 		<h3 id="DeveloperVisibleChanges">Developer-Visible Changes</h3>
 		<p>The most important and impacting changes in this release are (details below in plug-in specific sections):</p>
 		<ul>
-			<li><span class="label label-success">Added</span>  A new feature 
-				<code>org.eclipse.sirius.specifier</code> has been added which depends on everything needed to create and run Sirius-based modelers.
-			</li>
 			<li><span class="label label-success">Added</span>  The new extension point 
 				<code>org.eclipse.sirius.ui.siriuspropertiescelleditor</code>, defined in 
 				<code>org.eclipse.sirius.ui</code>, can be used to provide customized cell editors for semantic element&#8217;s properties as shown in the properties view on a Sirius representation.
@@ -151,7 +157,7 @@
 				<code>org.eclipse.sirius.eef.components.SiriusAwarePropertiesEditingComponent</code> can be used as root class of the generated EEF components to greatly improve performances when using both EEF properties views with Sirius representations. 
 			</li>
 			<li><span class="label label-info">Modified</span> The minimum version of EEF required for using 
-				<code>org.eclipse.sirius.eef.adapters</code> is now 1.5.0 (from 1.2 before). EEF 1.5 should be source and binary-compatible with EEF 1.2 to 1.4, and no re-generation of the EEF views should be needed to switch to 1.5.
+				<code>org.eclipse.sirius.eef.adapters</code> is now 1.5.0 (from 1.2 before). EEF 1.5 is source and binary-compatible with EEF 1.2 to 1.4, and no re-generation of the EEF views should be needed to switch to 1.5.
 			</li>
 			<li><span class="label label-info">Modified</span> The 
 				<code>org.eclipse.sirius.business.internal.session.IsModifiedSavingPolicy</code> saving policy, introduced in Sirius 2.0.0 but not enabled there is now the default. The previous implementation, 
@@ -164,7 +170,7 @@
 				<code>RGBValues</code> type used in Sirius to represent colors has been converted into an immutable EMF EDataType, which also reduces memory consumption compared to previous versions.
 			</li>
 			<li><span class="label label-info">Modified</span> The 
-				<code>AirdResourceImpl</code> type, which implements the 
+				<code>AirdResourceImpl</code> type, use for the 
 				<code>*.aird</code> resources, no longer inherits from GMF&#8217;s 
 				<code>GMFResource</code> or depend on GMF in any way. This makes the 
 				<code>org.eclipse.sirius</code> now completely independent on GMF.
@@ -180,7 +186,7 @@
 			</li>
 			<li><span class="label label-info">Moved</span> Extensions in 
 				<code>plugin.xml</code> that provide UI functionalities have been moved to 
-				<code>org.eclipse.sirius.table.ui.ext</code>.
+				<code>org.eclipse.sirius.table.ui.ext</code> to make the contributions to the UI optional. If your product consumed directly the Sirius plug-ins instead of the high-level features, you may need to add the new plug-ins if you want the Sirius UI contributions to stay available.
 			</li>
 			<li><span class="label label-danger">Removed</span> Many unused types defined in the metamodels have been removed. This should not impact normal client code. Existing models will be automatically migrated on loading if needed.</li>
 			<li><span class="label label-danger">Removed</span> Sirius no longer installs the 
@@ -192,16 +198,23 @@
 		</ul>
 		<p>Packaging changes:</p>
 		<ul>
-			<li><span class="label label-success">Added</span> Two new feature have been added concerning the new support for the AQL language: 
-				<code>org.eclipse.sirius.runtime.aql</code> includes the minimum required to execute AQL queries at runtime, and 
-				<code>org.eclipse.sirius.aql</code> includes both the runtime requirements and the development-time features like support for auto-completion of AQL expressions in the VSM editor.
+			<li><span class="label label-success">Added</span> Two new feature have been added concerning the new support for the AQL language:
+				<ul>
+					<li>
+						<code>org.eclipse.sirius.runtime.aql</code> includes the minimum required to execute AQL queries at runtime. It must be present on end-users' systems for modelers which use AQL expressions to work.
+					</li>
+					<li>
+						<code>org.eclipse.sirius.aql</code> includes both the runtime requirements and the development-time features like support for auto-completion of AQL expressions in the VSM editor.
+					</li>
+				</ul>
 			</li>
 			<li><span class="label label-success">Added</span>  The new feature 
 				<code>org.eclipse.sirius.specifier</code> includes everything needed to have a complete Sirius specification environment, with support for all dialects. It includes support for Acceleo 3/MTL queries, but not for AQL (provided by 
 				<code>org.eclipse.sirius.aql</code>) or OCL (provided by 
-				<code>org.eclipse.sirius.runtime.ocl</code>).
+				<code>org.eclipse.sirius.runtime.ocl</code>). Future Sirius releases will probably swap AQL and Acceleo 3, making AQL the defaut and part of the main feature, and Acceleo 3/MTL optional in a separate feature.
 			</li>
-			<li><span class="label label-success">Added</span> All Sirius releases and milestones are available as a zipped archive in addition to a normal p2 repository. For each version and platform (e.g. 3.0.0 on Eclipse Mars), two archives are available: one with the Sirius core, and one with the Sirius automated test suites and the sample modelers they rely on. See the Sirius wiki and release pages for more details and links to these archives, for example 
+			<li><span class="label label-success">Added</span> All Sirius releases and milestones are available as zipped archives in addition to a normal p2 repository/update-site. For each version and platform (e.g. 3.0.0 on Eclipse Mars), two archives are available: one with the Sirius core, and one with the Sirius automated test suites and the sample modelers they rely on. See the 
+				<a href="https://wiki.eclipse.org/Sirius/Update_Sites">Sirius wiki</a> and release pages for more details and links to these archives, for example 
 				<code>http://download.eclipse.org/sirius/updates/releases/2.0.5/</code>. This is retro-active on all previously released versions of Sirius, but not on milestones before 3.0.0.
 			</li>
 		</ul>
@@ -212,7 +225,7 @@
 				<a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git/plain/releng/org.eclipse.sirius.settings/Sirius.setup">here</a>.
 			</li>
 			<li><span class="label label-success">Added</span> New patches proposed by contributors on the 
-				<a href="https://git.eclipse.org/r/#/admin/projects/sirius/org.eclipse.sirius">Sirius Gerrit</a> now automatically trigger 
+				<a href="https://git.eclipse.org/r/#/admin/projects/sirius/org.eclipse.sirius">Sirius Gerrit</a> now automatically trigger a sub-set of the Sirius automated test suites, which give a good feedback on the absence of regressions introduced by the proposed patch.
 			</li>
 		</ul>
 		<h4 id="Changesinorg.eclipse.sirius.common">Changes in 
