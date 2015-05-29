@@ -1,4 +1,46 @@
 {"articles":[
+		{
+			"header": {
+             	"title": "Unravelling the container within the container within the container...",
+             	"date": "13/05/2015",
+             	"description": "<p>Last time in the Sirius blog post series, you learned how to create an artificial container, today we will see how to create...</p>",
+             	"lnk": "http://melb.enix.org/sirius/reimport/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+        {
+			"header": {
+             	"title": "\"I am your container\", Darth Sirius",
+             	"date": "30/04/2015",
+             	"description": "<p>Continuing the Sirius blog posts series, today we will see a small tip: how to create artificial containers in your diagram? One of the main advantage of Sirius is...</p>",
+             	"lnk": "http://melb.enix.org/sirius/artificial-container/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
          {
 			"header": {
              	"title": "Refine diagrams with interpolated colors",
