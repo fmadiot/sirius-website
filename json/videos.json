@@ -1,4 +1,14 @@
 {"videos":[
+		{
+            "header": {
+             	"title": "EclipseCon North America 2015 - Arduino Designer: the Making of!",
+             	"lnk": "http://www.infoq.com/presentations/arduino-designer" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_eclipsecon_na_2015_mbats_cat.png",
+            	"imgAlt": "EclipseCon North America 2015 - Arduino Designer: the Making of!"
+             }
+        },
         {
             "header": {
              	"title": "EclipseCon France 2014 - Sirius + Xtext = Love",

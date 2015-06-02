@@ -1,4 +1,25 @@
 {"articles":[
+        {
+			"header": {
+             	"title": "The SVenGers : Age of Sirius",
+             	"date": "27/05/2015",
+             	"description": "<p>Today we swing the Sirius posts series onto another topic : using SVG images in your designers. Maybe you do not know yet but we will have to fight...</p>",
+             	"lnk": "http://melb.enix.org/sirius/svg/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
 		{
 			"header": {
              	"title": "Unravelling the container within the container within the container...",
