@@ -5,6 +5,7 @@
 		<title>extensions-provide_tabbar_extensions</title>
 		<link type="text/css" rel="stylesheet" href="../resources/bootstrap.css"/>
 		<link type="text/css" rel="stylesheet" href="../resources/custom.css"/>
+    <script type="text/javascript" src="../../js/googleAnalytics.js"></script>
 	</head>
 	<body>
 		<h1 id="SiriusProvidetabbarextensions">Sirius &#8211; Provide tab-bar extensions</h1>
@@ -84,7 +85,7 @@
    &lt;visibleWhen checkEnabled="false"&gt;
       &lt;and&gt;
          &lt;with variable="activeEditorId"&gt;
-            &lt;equals value="org.eclipse.sirius.diagram.part.SiriusDiagramEditorID"/&gt;
+            &lt;equals value="org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID"/&gt;
          &lt;/with&gt;
          &lt;with variable="activeEditor"&gt;
              &lt;test property="org.eclipse.sirius.sample.tabbar.isConcernedEditor"/&gt;
@@ -119,12 +120,12 @@
 		<pre>&lt;extension point="org.eclipse.core.expressions.propertyTesters"&gt;
    &lt;propertyTester
          class="org.eclipse.sirius.sample.tabbar.SampleTestTabbarExtensionActivationPropertyTester"
-         shouldActivateTabbarExtensionid="org.eclipse.sirius.sample.tabbar.ActiveExtensionTester"
+         id="org.eclipse.sirius.sample.tabbar.ActiveExtensionTester"
          namespace="org.eclipse.sirius.sample.tabbar"
          properties="shouldActivateTabbarExtension"
          type="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"&gt;
    &lt;/propertyTester&gt;
-         &lt;propertyTester
+   &lt;propertyTester
          class="org.eclipse.sirius.sample.tabbar.SampleTestTabbarExtensionActivationPropertyTester"
          id="org.eclipse.sirius.sample.tabbar.ConcernEditorTester"
          namespace="org.eclipse.sirius.sample.tabbar"
@@ -157,7 +158,7 @@ import org.eclipse.sirius.ui.business.api.dialect.DialectEditor;
  */
 public class SampleTestTabbarExtensionActivationPropertyTester extends PropertyTester {
     public boolean test(Object receiver, String property, Object[] args, Object expectedValue) {
-        if ("isConcerned".equals(property)) {
+        if ("isConcernedEditor".equals(property)) {
             // called in a with activeEditor element
             if (receiver instanceof DialectEditor) {
                 DRepresentation activeRepresentation = ((DialectEditor) receiver).getRepresentation();

@@ -5,6 +5,7 @@
 		<title>Release_Notes</title>
 		<link type="text/css" rel="stylesheet" href="resources/bootstrap.css"/>
 		<link type="text/css" rel="stylesheet" href="resources/custom.css"/>
+    <script type="text/javascript" src="../js/googleAnalytics.js"></script>
 	</head>
 	<body>
 		<h1 id="ReleaseNotesforSirius">Release Notes for Sirius</h1>
@@ -67,9 +68,9 @@
 			<li><span class="label label-success">Added</span> In table editors, hitting the <kdb>Del</kdb> key is now equivalent to selecting 
 				<em>Delete Line</em> in the context menu.
 			</li>
-			<li><span class="label label-success">Added</span> On diagram, it is now possible to set a custom background image on list containers.</li>
+			<li><span class="label label-success">Added</span> On diagrams, it is now possible to set a custom background image on list containers.</li>
 			<li><span class="label label-info">Modified</span> In the 
-				<em>Viewpoint Selection</em> dialog and wizard page, the &#171;plug-in&#187; decorator for viewpoints loaded from plug-ins is removed, and a &#171;Folder&#187; decorator for viewpoints loaded from the current workspace has been added. This makes the icons more visible in the 99% of cases where viewpoints come from installed plug-ins.
+				<em>Viewpoint Selection</em> dialog and wizard page, the &#171;plug-in&#187; decorator for viewpoints loaded from plug-ins is removed, and a &#171;Folder&#187; decorator for viewpoints loaded from the current workspace has been added. This makes the icons more visible in the most common where viewpoints come from installed plug-ins.
 			</li>
 		</ul>
 		<h3 id="SpecifierVisibleChanges">Specifier-Visible Changes</h3>
@@ -77,14 +78,15 @@
 			<li><span class="label label-success">Added</span> <span class="label label-info">Experimental</span> Optional support for the experimental 
 				<em>Acceleo Query Language</em> (AQL) has been added to write interpreted expressions.  It is provided by the 
 				<code>org.eclipse.sirius.common.acceleo.aql</code> (required for evaluating the expressions) and 
-				<code>org.eclipse.sirius.common.acceleo.aql.ide</code>  (optional, only needed to provide specification-time features like expression completion). AQL is similar to Acceleo 3/MTL, but simpler and provides much better performance in the Sirius context.
+				<code>org.eclipse.sirius.common.acceleo.aql.ide</code>  (optional, only needed to provide specification-time features like expression completion) plug-ins. AQL is similar to Acceleo 3/MTL, but simpler and provides much better performance in the Sirius context. If you make use of this feature, be aware that some details may still change in future releases, including 3.0.x maintenance releases. See 
+				<a href="https://www.eclipse.org/acceleo/documentation/aql.html">the AQL documentation</a> for more details on the language itself.
 			</li>
 			<li><span class="label label-success">Added</span> <span class="label label-info">Experimental</span> New, experimental support for containers with vertical or horizontal 
 				<em>compartments</em> on diagrams: the 
 				<em>children presentation</em> property of a 
 				<em>Container Mapping</em> has two new values: 
 				<em>Vertical Stack</em> and 
-				<em>Horizontal Stack</em>. They indicate that a container will present its children containers as a vertical/horizontal stack of compartments.
+				<em>Horizontal Stack</em>. They indicate that a container will present its children containers as a vertical/horizontal stack of compartments. While working reliably, this support is marked experimental in Sirius 3.0.0 as there are still some combinations of mappings, styles and behaviors which do not behave as expected. If you make use of this feature, be aware that some details may still change in future releases, including 3.0.x maintenance releases.
 			</li>
 			<li><span class="label label-success">Added</span> Everywhere an image path can be configured in the VSM, a new button is present on the right of the text field. It opens a dialog to select an image, either from the workspace or from an installed plug-in.</li>
 			<li><span class="label label-success">Added</span> Everywhere an interpreted expression can be configured in the VSM, a new button is present on the right of the text field. It opens a multi-line dialog to edit long expression more easily. Auto-completion is supported inside the multi-line dialog.</li>
@@ -160,7 +162,7 @@
 				<code>org.eclipse.sirius.eef.adapters</code> is now 1.5.0 (from 1.2 before). EEF 1.5 is source and binary-compatible with EEF 1.2 to 1.4, and no re-generation of the EEF views should be needed to switch to 1.5.
 			</li>
 			<li><span class="label label-info">Modified</span> The 
-				<code>org.eclipse.sirius.business.internal.session.IsModifiedSavingPolicy</code> saving policy, introduced in Sirius 2.0.0 but not enabled there is now the default. The previous implementation, 
+				<code>org.eclipse.sirius.business.internal.session.IsModifiedSavingPolicy</code> saving policy, introduced in Sirius 2.0.0 but not enabled at that time is now the default. The previous implementation, 
 				<code>org.eclipse.sirius.business.api.session.SavingPolicyImpl</code> is still available if needed.
 			</li>
 			<li><span class="label label-info">Modified</span> All metamodels defined by Sirius have been modified to use EMF&#8217;s 
@@ -185,8 +187,8 @@
 				<code>DAnalysis.getModels()</code> should be avoided and may be removed in a future release.
 			</li>
 			<li><span class="label label-info">Moved</span> Extensions in 
-				<code>plugin.xml</code> that provide UI functionalities have been moved to 
-				<code>org.eclipse.sirius.table.ui.ext</code> to make the contributions to the UI optional. If your product consumed directly the Sirius plug-ins instead of the high-level features, you may need to add the new plug-ins if you want the Sirius UI contributions to stay available.
+				<code>plugin.xml</code> that provide UI functionalities have been moved to new 
+				<code>org.eclipse.sirius.*.ext</code> plug-ins, to make the contributions to the UI optional. If your product consumed directly the Sirius plug-ins instead of the high-level features, you may need to add the new plug-ins if you want the Sirius UI contributions to stay available.
 			</li>
 			<li><span class="label label-danger">Removed</span> Many unused types defined in the metamodels have been removed. This should not impact normal client code. Existing models will be automatically migrated on loading if needed.</li>
 			<li><span class="label label-danger">Removed</span> Sirius no longer installs the 
@@ -381,7 +383,9 @@
 			<li><span class="label label-success">Added</span> A new method has been added in 
 				<code>org.eclipse.sirius.viewpoint.DAnalysis</code> named 
 				<code>getSemanticResources()</code>. This method returns a list of 
-				<code>org.eclipse.sirius.business.api.resource.ResourceDescriptor</code> which is a descriptor of the semantic resource.* <span class="label label-info">Modified</span> 
+				<code>org.eclipse.sirius.business.api.resource.ResourceDescriptor</code> which is a descriptor of the semantic resource.
+			</li>
+			<li><span class="label label-info">Modified</span> 
 				<code>org.eclipse.sirius.viewpoint.RGBValues</code> has been changed from an 
 				<code>EClass</code> to an 
 				<code>EDataType</code>, it is not an 
@@ -916,6 +920,11 @@
 			<li><span class="label label-info">Modified</span> The 
 				<code>SiriusTestCase.genericSetUp(List&lt;URI&gt;, List&lt;URI&gt;, boolean, URI)</code> method has been set to protected so that it can be called from concrete test cases. This method allows initializing session.
 			</li>
+			<li><span class="label label-info">Moved</span> The class 
+				<code>TreeItemLabelFontFormatQuery</code> was moved into 
+				<code>org.eclipse.sirius.tests.support.api</code> (from 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.widget</code>), as it can be used in non-SWTBot tests..
+			</li>
 			<li><span class="label label-warning">Deprecated</span> The method 
 				<code>org.eclipse.sirius.tests.support.api.SiriusDiagramTestCase.setReadOnly(IFile)</code> has been deprecated, 
 				<code>org.eclipse.sirius.tests.support.api.EclipseTestsSupportHelper.setReadOnlyStatus(boolean, IResource...)</code> can be used instead.
@@ -945,6 +954,11 @@
 			<li><span class="label label-info">Modified</span> The methods 
 				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusHelper.selectPropertyTabItem(String)</code> now returns a 
 				<code>boolean</code> that is true when the property tab item is found, false otherwise.
+			</li>
+			<li><span class="label label-info">Moved</span> The class 
+				<code>TreeItemLabelFontFormatQuery</code> was moved into 
+				<code>org.eclipse.sirius.tests.support.api</code> (from 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.widget</code>), as it can be used in non-SWTBot tests..
 			</li>
 			<li><span class="label label-warning">Deprecated</span> The methods 
 				<code>org.eclipse.sirius.tests.swtbot.support.api.business.UIPerspective.deleteProject(UIProject)</code> and 
