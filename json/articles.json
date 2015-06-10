@@ -1,4 +1,25 @@
 {"articles":[
+		{
+			"header": {
+             	"title": "Fix it Sirius!",
+             	"date": "10/06/2015",
+             	"description": "<p>EMF provides a powerful validation system which helps you detect errors in your model. But sometimes you would like to add more rules not already implemented in...</p>",
+             	"lnk": "http://melb.enix.org/sirius/validation/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
         {
 			"header": {
              	"title": "The SVenGers : Age of Sirius",
