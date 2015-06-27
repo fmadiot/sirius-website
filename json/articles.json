@@ -1,6 +1,27 @@
 {"articles":[
 		{
 			"header": {
+             	"title": "Sirius 3.0 \"Harder, Better, Faster, Stronger\"",
+             	"date": "26/06/2015",
+             	"description": "<p>Today is a great day: with the announcement of Eclipse Mars, many great projects are released, and Sirius 3.0 is part of this release...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-3-0/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
              	"title": "Fix it Sirius!",
              	"date": "10/06/2015",
              	"description": "<p>EMF provides a powerful validation system which helps you detect errors in your model. But sometimes you would like to add more rules not already implemented in...</p>",
