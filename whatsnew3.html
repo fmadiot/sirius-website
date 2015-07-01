@@ -1,0 +1,198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="http://www.eclipse.org/sirius/js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="http://www.eclipse.org/sirius/js/functions.js"></script>
+
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<title>Sirius - What's New in Sirius 2.0</title>
+	<link type="text/css" rel="stylesheet" href="http://www.eclipse.org/sirius/css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div id="header_wrapper">
+	<div id="logo">
+		<a href="index.html"><img alt="logo" src="http://www.eclipse.org/sirius/images/logos/logo.png" /></a>
+	</div>
+
+	<div id="menu_wrapper">
+		<ul id="nav">
+			<li><a href="http://www.eclipse.org/sirius/overview.html">Overview</a></li>
+			<li><a href="http://www.eclipse.org/sirius/gallery.html">Gallery</a></li>
+			<li><a href="http://www.eclipse.org/sirius/getstarted.html">Get Started</a></li>
+			<li><a href="http://www.eclipse.org/sirius/features.html">Features</a></li>
+			<li><a href="http://www.eclipse.org/sirius/community.html">Community</a></li>
+			<li><a href="http://www.eclipse.org/sirius/download.html">Download</a></li>
+		</ul>
+	</div>	<!-- Fin menu_wrapper -->
+</div>	<!-- Fin header_wrapper -->
+
+<div id="body_wrapper">
+	<h1 class="page_title">What's New in Sirius 3.0</h1>
+
+
+	<div class="row">
+		<h2>Smarter Diagrams and Better User Experience</h2>
+		<p>This release comes with many ergonomic improvements for a better edition of diagrams.</p>
+	</div>
+
+	<br /><br />
+	
+	<div class="row">
+		<div class="col_3">
+			<h2>Anchor on borders</h2>
+			<p>Now the edges are linked closely to the images. You only need to use images with a transparent background.</p>
+			
+			<p><img class="shadow" src="images/whatsnew3/imageborder.png" width="300px" /></p>
+		</div>
+	
+		<div class="col_3">
+			<h2>Underlined and strike through</h2>
+			<p>In the Appearance tab, in addition to <i>Bold</i> and <i>Italic</i>, it is now possible to set the font formatting style to <i>Underline</i> and <i>Strike through</i>.</p>
+			
+			<p><img class="shadow" src="images/whatsnew3/underline.png" width="300px" /></p>
+		</div>
+	
+		<div class="col_3">
+			<h2>Compartments</h2>
+			<p>Containers now support vertical and horizontal compartments layout, thanks to new possible values for <i>Children Presentation</i> attribute.</p>
+			
+			<p><img class="shadow" src="images/whatsnew3/compartments.png" width="300px" /></p>
+		</div>
+	</div>
+	
+	<div class="row margin_top">
+		<div class="col_3">
+			<h2>Tree and table</h2>
+			<p>Keyboard shortcuts were added on table and tree: refresh (F5), quick outline (Ctrl+O) and line deletion (Del).</p>
+		</div>
+		<div class="col_3">
+			<h2>Background image</h2>
+			<p>On diagrams, it is now possible to set a custom background image on list containers.</p>
+		</div>
+		<div class="col_3">
+			<h2>Container label visibility</h2>
+			<p>When users need to simplify their diagram, now they can hide the label of containers.</p>
+		</div>
+	</div>
+
+	<br /><br />
+	
+	<div class="section left">
+	
+		<div class="image">
+			<img class="shadow" width="400"  src="images/whatsnew3/sirius-query-bench.png" />
+		</div>
+	
+		<h2>Easier and Faster Query Language: AQL</h2>
+	
+		<p>Sirius 3.0 introduces AQL (Acceleo Query Language), a new language that makes your life easier writing expressions for querying EMF models.</p>
+		<p>Usable as a new query language in Sirius configuration files, AQL is a simplified and optimized variant of Acceleo /  
+		OCL. The implementation has been specifically tailored for the Sirius context, providing much better performance.</p>
+		<p>AQL expressions start with the <i>aql:</i> prefix and have a syntax similar to Acceleo (without the enclosing [../] brackets). This new syntax is very easy to learn: if you know OCL, you already know AQL!</p>
+		
+		<p>The following example shows how an Acceleo 3 expression can be simplified with AQL:<br />
+		<ul>
+		<li><b>With Acceleo: </b><i>[if father.oclIsUndefined() then '' else father.name endif/]</i></li>
+		<li><b>With AQL: </b> <i>aql:self.father.name</i></li>
+		</ul>
+	</div>
+	
+	<div>
+		<h2>Better Performance and Memory Consumption</h2>
+
+		<p>This release comes with lots of performance improvements, also including reduced memory consumption. This was tested and validated with models composed of more than <b>1 million elements</b>.</p>
+		<p>Here is a list of major works done for Sirius 3.0:</p>
+		<p> </p>
+		<ul>
+			<li><b>Big operations (open, save, close, etc.):</b> the model footprint was reduced by 20% and the save strategy was reviewed.</li>
+			<li><b>Right-click latency:</b> selecting an object in the project explorer was optimized for large models.</li>
+			<li><b>Properties edition:</b> property views made with EEF are better integrated to greatly improve performances.</li>
+			<li><b>Refresh:</b> the refresh operation was improved for diagrams, trees and tables.</li>
+			<li><b>Image caches:</b> diagrams with a lot of images scale better.</li>
+		</ul>
+	</div>
+	
+	<div class="section left">
+	
+		<div class="image">
+			<img class="shadow" width="400"  src="images/whatsnew3/imagepathselection.png" />
+		</div>
+
+	
+		<h2>Stronger Modeling Tools</h2>
+		<p>With Sirius 3.0.0, potential problems when creating a new Sirius-based modeler are detected earlier:</p>
+		<ul>
+			<li>Java services can be defined and tested directly in your current development environment.</li>
+		
+			<li>A selection wizard guarantees the valid specification of images path.</li>
+	
+			<li>A quick Outline is now available to easily find any element in a odesign. Just hit Ctrl+O.</li>
+		
+			<li>Validation of Sirius configuration file was improved to be more complete and precise.</li>
+			
+		</ul>
+		
+	</div>
+	
+	<br />
+	<p>The complete list of changes is available here: <a href="http://www.eclipse.org/sirius/doc/Release_Notes.html#sirius3.0.0" title="New & Noteworthy">http://www.eclipse.org/sirius/doc/Release_Notes.html#sirius3.0.0</a>.</p>
+	<p>Read <a href="http://eclipse.org/sirius/whatsnew2.html" title="New & Noteworthy">What's new in Sirius 2.0</a> to see the new and noteworthy features of previous version.</p>
+	<br />
+</div> <!-- Fin body_wrapper -->
+
+<div class="clear"></div>
+
+<div id="footer_wrapper">
+	<div id="footer_content">
+		<div class="column">
+			<div class="columntitle">
+				<h3>Eclipse Links</h3>
+			</div>
+			<ul>
+				<li><a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy</a></li>
+				<li><a href="http://eclipse.org/"> Eclipse</a></li>
+				<li><a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use</a></li>
+				<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+				<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<div class="columntitle">
+				<h3>Community</h3>
+			</div>
+			<ul>
+				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
+				<li><a href="http://www.obeodesigner.com/sirius">Professional Support</a></li>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
+				<li><a href="getstarted.html">Get Started</a></li>
+				<li><a href="articles-videos.html">Articles & Videos</a></li>
+				<li><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></li>
+				<li><a href="http://wiki.eclipse.org/Sirius">Wiki</a></li>
+				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
+				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
+			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
