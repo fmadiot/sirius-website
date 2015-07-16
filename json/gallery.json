@@ -758,7 +758,7 @@
 	        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/agrodsl-1.png",
-	            	"imgAlt": "Put image name here",
+	            	"imgAlt": "Farming DSLs - Inria Rennes / Obeo",
 	            	"thumbs": [
 	            		]
 	             },
@@ -787,7 +787,7 @@
 	        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/vercors-1.png",
-	            	"imgAlt": "Put image name here",
+	            	"imgAlt": "VerCors - Inria Sophia Antipolis",
 	            	"thumbs": [
 	            		{"src": "images/gallery/vercors-2.png"},
 	            		{"src": "images/gallery/vercors-3.jpg"},
@@ -808,6 +808,34 @@
 	             		{
 	             			"nom": "Project page",
 	             			"url": "https://team.inria.fr/scale/software/vercors/"
+	             		}
+	             	]
+	             }
+	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/view1.jpg",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/view2.jpg"},
+	            		{"src": "images/gallery/view9.jpg"},
+	            		{"src": "images/gallery/view10.jpg"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "ARTIST",
+	             	"author": "Safran-Sagem",
+	             	"description": "<p>ARTIST eases engineering activities while developing safety-critical software embedded in complex system. It provides a wide set of services and interacts with a whole ecosystem.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Project page",
+	             			"url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
 	             		}
 	             	]
 	             }
