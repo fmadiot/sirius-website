@@ -457,7 +457,11 @@
 	             		{
 	             			"nom": "Github",
 	             			"url": "https://github.com/lbroudoux/eip-designer"
-	             		}
+	             		},
+             		{
+             			"nom": "InfoQ",
+             			"url": "http://www.infoq.com/articles/eip-designer"
+             		}
 	             	]
 	             }
 	        },
