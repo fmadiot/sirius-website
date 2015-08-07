@@ -125,6 +125,34 @@
 	             	]
 	             }
 	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/view1.jpg",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/view2.jpg"},
+	            		{"src": "images/gallery/view9.jpg"},
+	            		{"src": "images/gallery/view10.jpg"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "ARTIST",
+	             	"author": "Safran-Sagem",
+	             	"description": "<p>ARTIST eases engineering activities while developing safety-critical software embedded in complex system. It provides a wide set of services and interacts with a whole ecosystem.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Project page",
+	             			"url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
+	             		}
+	             	]
+	             }
+	        },
                  {
 	            "medias": {
 	            	"mainSrc": "images/gallery/pep-1.png",
@@ -811,35 +839,6 @@
 	             		}
 	             	]
 	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/view1.jpg",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/view2.jpg"},
-	            		{"src": "images/gallery/view9.jpg"},
-	            		{"src": "images/gallery/view10.jpg"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "ARTIST",
-	             	"author": "Safran-Sagem",
-	             	"description": "<p>ARTIST eases engineering activities while developing safety-critical software embedded in complex system. It provides a wide set of services and interacts with a whole ecosystem.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Project page",
-	             			"url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
-	             		}
-	             	]
-	             }
 	        }
-
 
 ]}
