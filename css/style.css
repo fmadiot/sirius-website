@@ -1297,7 +1297,7 @@ margin: 0 5px;
 .usecase .medias {
 	width: 520px;
 	float: right;
-	margin-top: 10px;
+	margin-top: -1px;
 }
 
 .usecase .thumbs {
