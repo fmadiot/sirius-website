@@ -120,6 +120,10 @@ img, img:focus{
 	background: #fff;
 }
 
+.bg_dark_fushia {
+	background-color: #be1a78 !important;
+}
+
 .bg_indigo {
 	background: #261e58;
 }

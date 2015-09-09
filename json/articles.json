@@ -1,6 +1,27 @@
 {"articles":[
 		{
 			"header": {
+             	"title": "AQL - a new interpreter for Sirius",
+             	"date": "18/09/2015",
+             	"description": "<p>TL;DR: we&#146;ve been working on a new query interpreter for Sirius which is small, simple, fast, extensible and bring richer validation...</p>",
+             	"lnk": "http://cedric.brun.io/eclipse/introducing-aql/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "http://twitter.com/bruncedric",
+             			"google" : "http://plus.google.com/+CedricBrun",
+             			"github" : "http://github.com/cbrun"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
              	"title": "Sirius 3.0 \"Harder, Better, Faster, Stronger\"",
              	"date": "26/06/2015",
              	"description": "<p>Today is a great day: with the announcement of Eclipse Mars, many great projects are released, and Sirius 3.0 is part of this release...</p>",
