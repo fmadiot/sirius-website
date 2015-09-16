@@ -1,9 +1,51 @@
 {"articles":[
+ 		{
+            "header": {
+             	"title": "Didacticiel (tutoriel) Eclipse Sirius (Obeo Designer Community) : on peaufine l&#146;&eacute;diteur de diagramme",
+             	"date": "13/06/2014",
+             	"description": "<p>Nous avions cr&eacute;&eacute; un \"viewpoint\" contenant un objet \"representation\" de type diagram...</p>",
+             	"lnk": "http://www.urbanisation-si.com/didacticiel-tutoriel-eclipse-sirius-obeo-designer-community-on-peaufine-l-editeur-de-diagramme" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/blogger.png",
+            	"imgAlt": "urbanisation-si",
+            	"lnks": [
+             		{
+             			"blog": "http://www.urbanisation-si.com/didacticiel-tutoriel-eclipse-sirius-obeo-designer-community-on-peaufine-l-editeur-de-diagramme",
+             			"mail": "",
+             			"twitter" : "",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "SiriusCon Paris 2015: Be Part of the Program!",
+             	"date": "18/09/2015",
+             	"description": "<p>After a successful Sirius roadshow that led us to Toulouse, Paris, Munich and Montreal we have decided to go one step beyond with...</p>",
+             	"lnk": "http://fmadiot.blogspot.fr/2015/09/siriuscon-paris-2015-its-time-to-submit.html" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/fmadiot.png",
+            	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
+            	"lnks": [
+             		{
+             			"blog": "http://fmadiot.blogspot.fr/",
+             			"mail": "",
+             			"twitter" : "http://twitter.com/fmadiot",
+             			"google" : "",
+             			"github" : "http://github.com/fmadiot"
+             		}
+             	]
+             }
+        },
 		{
 			"header": {
              	"title": "AQL - a new interpreter for Sirius",
              	"date": "18/09/2015",
-             	"description": "<p>TL;DR: we&#146;ve been working on a new query interpreter for Sirius which is small, simple, fast, extensible and bring richer validation...</p>",
+             	"description": "<p>TL;DR: we&#146;ve been working on a new query interpreter for Sirius which is small, simple, fast, extensible and bring richer validation. It&#146;s been released for early adopters...</p>",
              	"lnk": "http://cedric.brun.io/eclipse/introducing-aql/" 
             },
             "aside": {
@@ -316,7 +358,7 @@
         },
         {
             "header": {
-             	"title": "Cr&eacute;er un &eacute;diteur de diagramme facilement avec Eclipse Sirius",
+             	"title": "[FR]Cr&eacute;er un &eacute;diteur de diagramme facilement avec Eclipse Sirius",
              	"date": "24/05/2014",
              	"description": "<p>La cr&eacute;ation d'&eacute;diteurs graphiques (&eacute;diteurs UML, repr&eacute;sentation de processus, &eacute;diteurs de concepts m&eacute;tier, etc.) est difficile &agrave; int&eacute;grer dans un cycle it&eacute;ratif court avec le client, car...</p>",
              	"lnk": "http://alain-bernard.developpez.com/tutoriels/eclipse/sirius-intro/" 

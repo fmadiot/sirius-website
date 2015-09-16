@@ -523,6 +523,32 @@
 	        },
                 {
 	            "medias": {
+	            	"mainSrc": "images/gallery/emfta-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/emfta-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "EMFTA",
+	             	"author": "Julien Delange",
+	             	"description": "<p>EMFTA is an EMF-based FTA editor/visualizer. It provides a table to edit the content of the FTA (Gates and Events) and a diagram to graphically represent the FTA.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Safety",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Github",
+	             			"url": "https://github.com/juli1/emfta"
+	             		}
+	             	]
+	             }
+	        },
+                {
+	            "medias": {
 	            	"mainSrc": "images/gallery/bpmn-1.png",
 	            	"imgAlt": "Put image name here",
 	            	"thumbs": [

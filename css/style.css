@@ -855,6 +855,10 @@ padding-right: 8px;
 .fa {
 	padding: 0 2px;
 }
+
+.blogger .fa-fw {
+   text-align: left;
+}
 	
 /* ------- Resources Page ------*/
 
