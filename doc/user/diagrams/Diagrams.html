@@ -5,7 +5,6 @@
 		<title>Diagrams</title>
 		<link type="text/css" rel="stylesheet" href="../../resources/bootstrap.css"/>
 		<link type="text/css" rel="stylesheet" href="../../resources/custom.css"/>
-    <script type="text/javascript" src="../../../js/googleAnalytics.js"></script>
 	</head>
 	<body>
 		<h1 id="DiagramEditors">Diagram Editors</h1>
@@ -28,6 +27,9 @@
 							</li>
 							<li>
 								<a href="#Resizingelements">Resizing elements</a>
+							</li>
+							<li>
+								<a href="#Movingelements">Moving elements</a>
 							</li>
 							<li>
 								<a href="#Manageedges">Manage edges</a>
@@ -186,6 +188,39 @@
 		<p>Opening existing diagrams and renaming or deleting them works exactly as for any other kind of representation. Refer to the general documentation about the 
 			<em>Modeling Project</em> UI for details.
 		</p>
+		<h4 id="RulersGrid">Rulers &amp; Grid</h4>
+		<p>Several behaviors concerning the diagram elements editing is conditioned by properties of the diagram accessible through the 
+			<em>Rulers &amp; Grid</em> tab of the 
+			<em>Properties</em> view of the diagram.
+			<br/>
+			<img border="0" src="images/properties_view_rulers_and_grid_tab.png"/>
+		</p>
+		<h5 id="ShowRuler">Show Ruler</h5>
+		<p>
+			<em>Display/Show Ruler</em>: Display an horizonal and vertical ruler according to 
+			<em>Measurement/Ruler Units</em> property.
+		</p>
+		<h5 id="ShowGrid">Show Grid </h5>
+		<p>
+			<em>Display/Show Grid</em>: Display a grid in background of the diagram according to 
+			<em>Measurement/Grid Spacing</em> and 
+			<em>Grid Line</em> properties. This grid can be in front of all figures if the property 
+			<em>Grid In Front</em> is enabled.
+		</p>
+		<h5 id="Snaptogrid">Snap to grid</h5>
+		<p>Capability to allow edit parts to snap to the grid when editing (during creation, moving or resizing). It is also possible to have connection bendpoints snap to it. Grid snapping and visibility are two distinct properties, and it is possible to enable one without the other.</p>
+		<h5 id="snap_to_shapes">Snap to shapes</h5>
+		<p>The 
+			<em>Snap to shapes</em> feature allows you to quickly align parts being dragged or resized to other parts in the diagram or that share the same parent (e.g: edit parts inside a compartment can only snap to each other). The snap is effective on top, bottom, right, left and center of the figure. Feedback is shown in the form of a gray line when a part is being attached to another part. This feature is not enabled on border nodes.
+			<br/>
+			<img border="0" src="images/snap_to_shape.png"/>
+		</p>
+		<p>By pressing the <kdb>F4</kdb> shortcut key, it is possible to temporarily enable the snap to all shapes currently visible on the diagram. Some screenshots of this feature are shown below.
+			<br/>
+			<img border="0" src="images/snap_to_all_shapes.png"/>
+			<br/>
+			<img border="0" src="images/snap_to_all_shapes_2.png"/>
+		</p>
 		<h3 id="Resizingelements">Resizing elements</h3>
 		<p>If the specifier has authorized it, it is possible to resize a shape by dragging them until they are the size that you want.</p>
 		<p>There are specific shortcuts to change the resize behavior:</p>
@@ -193,9 +228,34 @@
 			<li>CTRL (or ALT for Mac users): Centered resize (expands the shape on both opposite sides)</li>
 			<li>SHIFT: Resize that keeps the ratio</li>
 			<li>ALT (or CTRL for Mac users): Resize without snap (temporarily disables the snap during the resize if it is activated). </li>
-			<li>F3: Resize with children location relative to the parent. If the shape is resized to the left, upwards, or both, the children (contained nodes for container and border nodes for all shapes) are moved with the same offset that the resize.</li>
+			<li>F3: Resize with children location relative to the parent. If the shape is resized to the left, upwards, or both, the children (contained nodes for container and border nodes for all shapes) are moved with the same offset than the resize.</li>
+			<li>F4: Resize with snap to all shapes (if the 
+				<a href="#snap_to_shapes">Snap to shapes</a> is already activated for the current diagram)
+			</li>
+		</ul>
+		<h4 id="Compartments">Compartments</h4>
+		<p>The resize of compartments might evolve in future versions. The current behavior is to redistribute space between adjacent compartments and to resize the first/last compartment when the compartmented container is resized from top/bottom for a vertical stack and left/right for an horizontal one.</p>
+		<p>When resizing a compartmented container or a compartment from the top or from the left, the F3 shortcut configures the same behaviors than on standard containers (see previous section). </p>
+		<p>On 
+			<em>experimental</em> structures of containers with compartmented compartments, the F3 shortcut also allows to disable the resize propagation to manually correct the computed layout and remove empty space (
+			<em>experimental</em>). This might occur when there are several levels of compartments without the same number of compartments on each level. The corrective resize can be done on the last compartments of each compartmented container (from bottom for vertical stacks and from right for horizontal stacks).
+		</p>
+		<h3 id="Movingelements">Moving elements</h3>
+		<p>There are specific shortcuts to change the move behavior:</p>
+		<ul>
+			<li>SHIFT: Constrained move (only vertical or horizontal move is authorized at once).</li>
+			<li>ALT (or CTRL for Mac users): Ignore snap while dragging (temporarily disables the snap during the move if it is activated).</li>
+			<li>F3: Move the edge source and target if pressed during the edge move. See the &#171;Move edge group&#187; subsection below for more details. </li>
+			<li>F4: Move with snap to all shapes (if the 
+				<a href="#snap_to_shapes">Snap to shapes</a> is already activated for the current diagram)
+			</li>
 		</ul>
 		<h3 id="Manageedges">Manage edges</h3>
+		<h4 id="Movebendpoints">Move bend-points</h4>
+		<p>It is possible to snap the bend-points to all shapes by pressing <kdb>F4</kdb> shortcut key during the move. This feature is only available if the 
+			<a href="#snap_to_shapes">Snap to shapes</a> is already activated for the current diagram. As for 
+			<em>Snap to grid</em>, and unlike to snap for node, there is no guide drawn during the move.
+		</p>
 		<h4 id="RemoveBendpoints">Remove Bend-points</h4>
 		<p>You can define some bend-points (or inflection points) on an edge. It is possible to remove all these bend-points to retrieve the original Straight edge. This action is available within the edge context menu or by using the shortcut &#171;Ctrl&#187; + &#171;Shift&#187; + &#171;-&#187;. This action is only available on edges with a &#171;Straight&#187; routing style.</p>
 		<p>The edge state just after its creation:
@@ -209,6 +269,35 @@
 		<p>The user executes the &#171;Remove Bend-points&#187; action:
 			<br/>
 			<img border="0" src="images/afterRemoveBendpoints.png"/>
+		</p>
+		<h4 id="move_edge_group">Move edge group</h4>
+		<p>In specific cases, we can find edges connected to border nodes. For example in a diagram representing data flows, exchanges are connected to port in and port out. When the user wants to move an exchange on a layouted diagram, he has to move the source port, then the target port and possibly move some bendpoints of the edge.
+			<br/>This feature aims to move the group {edge, labels, ports} in a single “drag like” operation when using the F3 shortcut and drag/move the edge. The F3 key has no effect if you attempt a reconnect by moving the first or last edge end.
+		</p>
+		<p>Example when activating the tool and moving the second edge toward the top:
+			<br/>
+			<img border="0" src="images/moveEdgeGroup1.png"/>
+		</p>
+		<p>The final result:
+			<br/>
+			<img border="0" src="images/moveEdgeGroup2.png"/>
+		</p>
+		<p>The edge group moving is authorized only if these conditions are met:</p>
+		<ul>
+			<li>A border node as source.</li>
+			<li>A border node as target.</li>
+			<li>Source node has only one connection: the moved edge.</li>
+			<li>Target node has only one connection: the moved edge.</li>
+			<li>Source and target are on the same &#171;axis&#187;:
+				<ul>
+					<li>located on west or east sides of their respective parent (could be the same).</li>
+					<li>located on north or south sides of their respective parent (could be the same).</li>
+				</ul>
+			</li>
+		</ul>
+		<p>Examples of authorized moving:
+			<br/>
+			<img border="0" src="images/compoundmoves2.png"/>
 		</p>
 		<h3 id="distribute">Distribute elements</h3>
 		<p>Four new actions allow to distribute shapes: </p>
@@ -357,12 +446,6 @@
 			<em>Show/Hide</em> tab bar button allows to manage the labels too.
 		</p>
 		<h5 id="ContainersListsandcompartmentslabels">Containers, Lists and compartments labels</h5>
-		<p><div style="display:none">
-			<br/>   TODO Correct displayed name for compartments: DNodeContainer name and not smeantic elemnt label ?
-			<br/>	
-			<img border="0" src="images/diagram_editor_hide_container_list_region_label_1.png"/>
-			<br/></div>
-		</p>
 		<p>Labels of containers, lists and compartment might be hidden by default. You can choose to display them using the outline, contextual menu or 
 			<em>Show/Hide</em> tree view.
 		</p>
@@ -399,6 +482,11 @@
 			<em>Hide label icons on connectors</em>", next time you will open your diagram, all label icons of shapes and connectors will be hidden :
 		</p>	
 		<img border="0" src="images/diagram_editor_hide_label_icon_2.png"/>
+		<h4 id="Collapsingcompartments">Collapsing compartments</h4>
+		<p>When working with compartmented containers, you may want to collapse the compartments. Select a compartment and collapse/expand it using the handle visible on the following illustration. The collapse handle&#8217;s location varies depending on the label alignment to avoid overlapping (depending on the list elements alignment for a list with an hidden label).</p>
+		<p>
+			<img border="0" src="images/compartments_collapse3.png"/> 
+		</p>
 		<h3 id="Validatingthemodel">Validating the model</h3>
 		<p>On a diagram, you can have validation rules. These rules were previously created by the architect who created the diagram&#8217;s configuration. As a user of the modeler, you can validate these rules on your model.</p>
 		<p>To validate the rules open the context menu of the diagram itself (by right-clicking on its background) and choose the 
@@ -936,7 +1024,7 @@
 				<strong>not</strong> be moved by the algorithm.
 			</li>
 			<li>
-				<em>Arrange Linked Bordered Nodes</em> This special action will only concerns nodes which are on the border of another element and which are either the source or the target of at least one edge. When invoked, the action will try to move these bordered nodes on the border of their parent on the most &#171;natural&#187; side of their parent element depending on the direction of the edge. For example if a bordered node is on the top side of an element but has an edge which does down to a target element below its parent, this action will move the bordered node to the bottom side so that the edge does not cross the parent element.
+				<em>Arrange Linked Border Nodes</em> This special action will only concerns nodes which are on the border of another element and which are either the source or the target of at least one edge. When invoked, the action will try to move these bordered nodes on the border of their parent on the most &#171;natural&#187; side of their parent element depending on the direction of the edge. For example if a border node is on the top side of an element but has an edge which goes down to a target element below its parent, this action will move the border node to the bottom side so that the edge does not cross the parent element.
 			</li>
 		</ul>
 		<p>
