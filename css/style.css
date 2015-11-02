@@ -442,7 +442,7 @@ img, img:focus{
 .section.right .image {
 	float: left;
 	margin-left: -490px;
-	margin-top: 25px;
+	margin-top: 5px;
 }
 
 .image:after,.bottom_content .lnk:after {
