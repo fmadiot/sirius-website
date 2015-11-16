@@ -1,4 +1,46 @@
 {"articles":[
+		{
+			"header": {
+             	"title": "EclipseCon Europe 2015 is over but SiriusCon is coming!",
+             	"date": "10/11/2015",
+             	"description": "<p>EclipseCon Europe 2015 is over now. This conference is the one in which the “Eclipse Family” feeling is the most inescapable...</p>",
+             	"lnk": "http://cedric.brun.io/eclipse/eclipsecon-europe-2015/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "http://twitter.com/bruncedric",
+             			"google" : "http://plus.google.com/+CedricBrun",
+             			"github" : "http://github.com/cbrun"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Group And Stack Your Diagram Elements With Sirius 3.1",
+             	"date": "2/11/2015",
+             	"description": "<p>Want to group diagram elements into vertical or horizontal stacks? Since Sirius 3.1, it is possible...</p>",
+             	"lnk": "http://fmadiot.blogspot.fr/2015/11/group-and-stack-your-diagram-elements.html" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/fmadiot.png",
+            	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
+            	"lnks": [
+             		{
+             			"blog": "http://fmadiot.blogspot.fr/",
+             			"mail": "",
+             			"twitter" : "http://twitter.com/fmadiot",
+             			"google" : "",
+             			"github" : "http://github.com/fmadiot"
+             		}
+             	]
+             }
+        },
  		{
             "header": {
              	"title": "Didacticiel (tutoriel) Eclipse Sirius (Obeo Designer Community) : on peaufine l&#146;&eacute;diteur de diagramme",
