@@ -337,7 +337,7 @@ img, img:focus{
 	text-transform: uppercase;
 }
 
-.btn:hover {
+.btn:hover{
 	background-color: #7269a4 !important;
 }
 
@@ -394,13 +394,18 @@ img, img:focus{
 	background-color: #be1a78;
 }
 
-#download_banner_content a:hover, #download_banner_content a.whatsnew:hover {
-	background-color: #fff;
-	color: #261e58;
-}
-
 #download_banner_content a.whatsnew{
 	background-color: #261e58;
+}
+
+#download_banner_content a.bg_light_purple {
+	background-color: #7269a4;
+}
+
+
+#download_banner_content a:hover, #download_banner_content a.whatsnew:hover, #download_banner_content a.bg_light_purple:hover {
+	background-color: #fff;
+	color: #261e58;
 }
 
 /* Overview Page

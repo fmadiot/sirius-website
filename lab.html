@@ -142,8 +142,12 @@
  <div id="download_banner_wrapper" class="bg_dark_fushia">
 	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
 	<div id="download_banner_content">
-		<p class="left intro">SiriusCon Paris 2015, the first international conference on Sirius </p>
-		<a class="right whatsnew" href="http://www.siriuscon.org/" target="_blank">Register Now</a>
+		<script> 
+			jQuery.get( "call2action.html", function(data) {
+			  jQuery( "#download_banner_content" ).html( data );
+			  //alert( "Load was performed : " + data );
+			});
+		</script>
 	</div>
 </div>
 </body>
