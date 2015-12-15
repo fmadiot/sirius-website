@@ -132,6 +132,10 @@ img, img:focus{
 	background: #f3f3f3;
 }
 
+.bg_lightest_gray {
+	background: #fafafa;
+}
+
 .bg_gray {
 	background: #dedede;
 }
@@ -229,53 +233,9 @@ img, img:focus{
 	color: #be1a78;
 }
 
-/*--------- Slider Wrapper ---------------*/
-#slider_wrapper {
-	width: 100%;
-	background: url("../images/slider_bg.png") repeat-x;
-	color: #fff;
-	height: 560px;
-	text-align: center;
-}
 
-#slider_wrapper h1 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: normal;
-	padding: 35px 0 10px 0;
-}
-
-#slider_wrapper a:focus  {border: none;}
-
-#player {
-	width: 650px;
-	height: 400px;
-	margin: 30px auto;
-	border-radius: 2px;
-	box-shadow: 0 2px 18px #383838;
-}
-
-.home_player img {
-		width: 650px;
-	height: 393px !important;
-}
-
-.fake_player_button {
-	background: url("../images/buttons/fake_player_button.png") no-repeat;
-	display: block;
-	height: 83px;
-	width: 136px;
-	position: absolute;
-	margin-top: -270px;
-	margin-left: 255px;
-}
-
-#player:hover .fake_player_button {
-	background: url("../images/buttons/fake_player_button_hover.png")
-		no-repeat;
-}
-
-/*--------- Body Wrapper ---------------*/ /* Home Page
+/*--------- Body Wrapper ---------------*/
+/* Home Page
 ------------------------------ */
 #brand_wrapper,.community_links,.download_wrapper {
 	padding: 9px 0;
@@ -308,28 +268,10 @@ img, img:focus{
 	margin-right: 0 !important;
 }
 
-#visual,#declarative,#easy {
-	display: block;
-	margin: 20px auto;
-	width: 100px;
-	height: 100px;
-}
-
-#visual {
-	background: url("../images/icons/icon_visual.png") no-repeat;
-}
-
-#declarative {
-	background: url("../images/icons/icon_declarative.png") no-repeat;
-}
-
-#easy {
-	background: url("../images/icons/icon_easy.png") no-repeat;
-}
-
 .btn{
 	display: inline-block;
 	padding: 10px 40px;
+	border-radius: 0;
 	margin: auto;
 	text-align: center;
 	color: #fff !important;
@@ -339,6 +281,17 @@ img, img:focus{
 
 .btn:hover{
 	background-color: #7269a4 !important;
+}
+
+/*Home Page 
+---------------- */
+section.highlight_banner {
+	padding: 100px;
+}
+
+.highlight_banner h1 {
+	color: #261e58;
+	font-weight: bold;
 }
 
 /* Download Bottom Banner
@@ -869,7 +822,7 @@ padding-right: 8px;
 
 section {
 	width: 100%;
-	padding: 35px 0;
+	padding: 45px 0;
 }
 
 section.first_item{
@@ -921,8 +874,15 @@ a.social {
 h3, .blogger .name,.videos h3 a {	
 	font-family: 'Open Sans Condensed', Arial, sans-serif;
 	font-weight: bold;
-	font-size: 16px;
 	color:#261e58;
+	}
+
+.blogger .name,.videos h3 a {	
+	font-size: 16px;
+	}
+
+h3 {	
+	font-size: 22px;
 	}
 
 /*----- Video section ------*/
@@ -1432,6 +1392,7 @@ width: 550px;
 	padding: 0 0 0 199px;
 	float: left;
 	position: relative;
+	    box-sizing: initial;
 }
 
 #footer_wrapper .column:FIRST-CHILD {
