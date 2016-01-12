@@ -163,9 +163,14 @@ function check_webtolead_fields(){
           }
         }
         if(req){
-            document.WebToLeadForm.submit();
-            return true;
-        }
+            if(validateEmailAdd()){
+                         document.WebToLeadForm.submit();
+                         return true;
+                      }
+                      else {
+                         return false;
+                      }
+         }
         else{
           alert('Please fill out all required fields!');
           return false;
@@ -179,7 +184,7 @@ function check_webtolead_fields(){
 
  function validateEmailAdd(){
        var req = true;
-       var regexp= /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,5})+$/;
+       var regexp= /^\w+(['\.\-\+]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
        if(document.getElementById('email1').value.length >0) {
          if(document.getElementById('email1').value.match(regexp)== null){
            alert('Invalid email address.');
