@@ -104,7 +104,7 @@
 	             },
 	             "infos": {
 	             	"title": "Ecore Tools",
-	             	"author": "PEP",
+	             	"author": "Obeo",
 	             	"description": "<p>Ecore Tools allows you to design Classes, Datatypes, References and all the classical Ecore constructions</p><p>It also provides specific layers to support concerns involved in expressing your domain model: documenting, reviewing the referencing mechanism of elements, identifying business constraints, exploring the model.</p>",
 	             	"tags": [
 	             		{
