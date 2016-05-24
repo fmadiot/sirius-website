@@ -470,11 +470,9 @@
 	            	"mainSrc": "images/gallery/POOSL-1.png",
 	            	"imgAlt": "Put image name here",
 	            	"thumbs": [
-	            		{
-	            		"src": "images/gallery/POOSL-2.png",
-	            		"src": "images/gallery/POOSL-3.png",
-	            		"src": "images/gallery/POOSL-4.png"	            		            		
-	            		}
+	            		{"src": "images/gallery/POOSL-2.png"},
+	            		{"src": "images/gallery/POOSL-3.png"},
+	            		{"src": "images/gallery/POOSL-4.png"}	            		            		
 	            		]
 	             },
 	             "infos": {

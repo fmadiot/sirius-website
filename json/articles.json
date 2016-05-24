@@ -1,93 +1,9 @@
 {"articles":[
-		{
-			"header": {
-             	"title": "Ecore.ecore using EcoreTools",
-             	"date": "18/05/2015",
-             	"description": "<p>A few weeks ago I ended up on the following thread on the EMF Forum asking for Ecore meta-model formal documentation?...</p>",
-             	"lnk": "http://cedric.brun.io/eclipse/ecore-ecore-diagrams/" 
-            },
-            "aside": {
-            	"photoSrc": "images/resources/cbrun.png",
-            	"imgAlt": "C&eacute;dric Brun",
-            	"lnks": [
-             		{
-             			"blog": "http://cedric.brun.io/",
-             			"mail": "mailto:cedric.brun@obeo.fr",
-             			"twitter" : "http://twitter.com/bruncedric",
-             			"google" : "http://plus.google.com/+CedricBrun",
-             			"github" : "http://github.com/cbrun"
-             		}
-             	]
-             }
-        },
-		{
-			"header": {
-             	"title": "Metamodel (Ecore) Design Checklist",
-             	"date": "10/05/2016",
-             	"description": "<p>This is an index page for the Metamodel (Ecore) Design Checklist serie, a condensed version listing all the rules of the article...</p>",
-             	"lnk": "http://cedric.brun.io/eclipse/ecore-design-checklist/" 
-            },
-            "aside": {
-            	"photoSrc": "images/resources/cbrun.png",
-            	"imgAlt": "C&eacute;dric Brun",
-            	"lnks": [
-             		{
-             			"blog": "http://cedric.brun.io/",
-             			"mail": "mailto:cedric.brun@obeo.fr",
-             			"twitter" : "http://twitter.com/bruncedric",
-             			"google" : "http://plus.google.com/+CedricBrun",
-             			"github" : "http://github.com/cbrun"
-             		}
-             	]
-             }
-        },
-		{
-			"header": {
-             	"title": "Metamodel (Ecore) Design Checklist - part 2",
-             	"date": "09/05/2016",
-             	"description": "<p>This article is the second part of a series focusing on metamodel design...</p>",
-             	"lnk": "http://cedric.brun.io/eclipse/ecore-design-checklist-part2/" 
-            },
-            "aside": {
-            	"photoSrc": "images/resources/cbrun.png",
-            	"imgAlt": "C&eacute;dric Brun",
-            	"lnks": [
-             		{
-             			"blog": "http://cedric.brun.io/",
-             			"mail": "mailto:cedric.brun@obeo.fr",
-             			"twitter" : "http://twitter.com/bruncedric",
-             			"google" : "http://plus.google.com/+CedricBrun",
-             			"github" : "http://github.com/cbrun"
-             		}
-             	]
-             }
-        },
-		{
-			"header": {
-             	"title": "Metamodel (Ecore) Design Checklist - part 1",
-             	"date": "02/05/2016",
-             	"description": "<p>Be meticulous with the model describing your domain! So many aspects of your tool will trickle down from your Ecore model that...</p>",
-             	"lnk": "http://cedric.brun.io/eclipse/ecore-design-checklist-part1/" 
-            },
-            "aside": {
-            	"photoSrc": "images/resources/cbrun.png",
-            	"imgAlt": "C&eacute;dric Brun",
-            	"lnks": [
-             		{
-             			"blog": "http://cedric.brun.io/",
-             			"mail": "mailto:cedric.brun@obeo.fr",
-             			"twitter" : "http://twitter.com/bruncedric",
-             			"google" : "http://plus.google.com/+CedricBrun",
-             			"github" : "http://github.com/cbrun"
-             		}
-             	]
-             }
-        },
         {
 			"header": {
              	"title": "Eclipse Modeling Package Neon M6 is ready for testing",
              	"date": "30/03/2016",
-             	"description": "<p>The teams have been working hard and pushed many changes. I’ve been tweeting those as they went but I figured that compiling...</p>",
+             	"description": "<p>The teams have been working hard and pushed many changes. I’ve been tweeting those as they went but I figured that...</p>",
              	"lnk": "http://cedric.brun.io/eclipse/eclipse-4.6.0M6/" 
             },
             "aside": {
