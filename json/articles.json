@@ -1,4 +1,25 @@
 {"articles":[
+	{
+			"header": {
+             	"title": "Sirius 4.0 Gotta Catch ‘Em All : Be prepared for the future",
+             	"date": "06/06/2016",
+             	"description": "<p>My previous post illustrates The Power of One framework to define graphical designers and property views: Eclipse Sirius 4.0...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-0-be-prepared-for-the-future/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
         {
 			"header": {
              	"title": "Eclipse Modeling Package Neon M6 is ready for testing",
