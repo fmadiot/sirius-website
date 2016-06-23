@@ -20,7 +20,7 @@ html,body,#body_wrapper {
 
 body>#body_wrapper {
 	height: auto;
-	padding-bottom: 30px;
+	padding: 0 5px 30px 5px;
 }
 
 #body_wrapper,#header_wrapper,#footer_wrapper,#slider_wrapper,#brand_wrapper,.row
