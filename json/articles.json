@@ -1,6 +1,27 @@
 {"articles":[
 	{
 			"header": {
+             	"title": "Sirius for dummies",
+             	"date": "10/08/2016",
+             	"description": "<p>Recently I’ve got the chance to spend some time evaluating an interesting tool called Sirius. Sirius promises to enable you to easily create an Eclipse based workbench with...</p>",
+             	"lnk": "http://accso.de/magazin/sirius_for_dummies" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/blogger.png",
+            	"imgAlt": "Accso",
+            	"lnks": [
+             		{
+             			"blog": "http://accso.de/magazin/",
+             			"mail": "mailto:info@accso.de",
+             			"twitter" : "https://twitter.com/accso",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
              	"title": "Sirius 4.0 Gotta Catch ‘Em All : Be prepared for the future",
              	"date": "06/06/2016",
              	"description": "<p>My previous post illustrates The Power of One framework to define graphical designers and property views: Eclipse Sirius 4.0...</p>",
