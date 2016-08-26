@@ -635,9 +635,9 @@ section.highlight_banner {
 	color: #999;
 }
 
-.updateSiteBlock,.drag2install_tooltip {
+.drag2install_tooltip {
 	color: #fff;
-	display: none;
+	display: block;
 	position: absolute;
 	visibility: visible;
 	top: 16px;
@@ -649,36 +649,9 @@ section.highlight_banner {
 	background-image: url("../images/download/tooltip_bg.png");
 	background-repeat: no-repeat;
 	z-index: 12;
-	left: 290px;
-	top: 45px;
+	left: 260px;
+	top: 55px;
 	padding-left: 10px;
-}
-
-.updateSiteBlock {
-	background: none repeat scroll 0 0 #7269a4;
-	padding: 10px;
-	width: 315px;
-	z-index: 10;
-	left: 290px;
-	top: 20px;
-}
-
-.updateSiteBlock input[type="text"] {
-	width: 273px;
-}
-
-.updateSiteBlock p {
-	margin: 0 0 1px 0 !important;
-	width: 250px;
-}
-
-.updateSiteBlock input {
-	width: 200px;
-}
-
-.updateSite a:hover .updateSiteBlock {
-	display: block;
-	visibility: visible;
 }
 
 .closeButtonUpdateSite img {
@@ -707,7 +680,7 @@ section.highlight_banner {
 
 #content_drag2install,#content_updatesite,#content_drag2install_1,#content_updatesite_1, #content_emc_1
 	{
-	display: none;
+	/*display: none;*/
 	margin-bottom: 20px;
 }
 
@@ -770,67 +743,8 @@ padding-right: 8px;
 	font-size: 14px;
 }
 
-
-/* Download & Update Site Buttons
+/* Miscellous
 ----------------------------------------------------------- */
-#updateSiteBlock {
-	background: none repeat scroll 0 0 #7269a4;
-	color: #fff;
-	border: 1px solid #ECECEC;
-	border-radius: 5px 5px 5px 5px;
-	display: none;
-	padding: 10px;
-	position: absolute;
-	right: 450px;
-	top: 560px;
-	width: 265px;
-	z-index: 10;
-	font-size: 12px;
-}
-
-#closeButtonUpdateSite {
-	float: right;
-	position: relative;
-}
-
-#closeButton,#closeButtonUpdateSite {
-	cursor: pointer;
-}
-
-#updateSiteBlock p {
-	margin-top: 0;
-	width: 200px;
-}
-
-#updateSiteBlock input {
-	width: 200px;
-}
-
-
-/* Get Started Page
------------------------------------------------------------ */
-
-.getstarted_icons {
-	display: block;
-	background: url("../images/icons/icon_dwnld.png") no-repeat;
-	height: 20px;
-	width: 15px;
-	float: left;
-}
-
-.getstarted_icons:hover {
-		background: url("../images/icons/icon_dwnld_hover.png") no-repeat;
-	}
-
-.tuto_resources .content {
-	display: none;
-}
-
-.tuto_resources h2 {
-	cursor: pointer;
-	margin-top: 20px;
-}
-
 .fa {
 	padding: 0 2px;
 }
@@ -1488,4 +1402,8 @@ input[type="button"] {
   outline: none !important;
   border: 1px solid #b5b0cf;
   box-shadow: 0 0 4px #b5b0cf;
+}
+
+.cloak {
+  display: none  !important;
 }

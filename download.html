@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -7,9 +6,9 @@
 	<meta name="description" content="Graphical Editors for your DSL">
 
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-	<script type="text/javascript">window.onload=function(){tabs();};</script>
 	<script type="text/javascript" src="js/googleAnalytics.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="angular/sirius.js"></script>
 
 	<link rel="icon" type="image/png" href="favicon.ico" />
 	<title>Sirius - Download</title>
@@ -19,25 +18,8 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
-<body>
-
-<div id="header_wrapper">
-	<div id="logo">
-		<a href="index.html"><img alt="logo" src="images/logos/logo.png" /></a>
-	</div>
-
-	<div id="menu_wrapper">
-		<ul id="nav">
-			<li><a href="overview.html">Overview</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="getstarted.html">Get Started</a></li>
-			<li><a href="features.html">Features</a></li>
-			<li><a href="community.html">Community</a></li>
-			<li class="current_menu_item"><a href="download.html">Download</a></li>
-			<li><a href="lab.html">Lab</a></li>
-		</ul>
-	</div>	<!-- Fin menu_wrapper -->
-</div>	<!-- Fin header_wrapper -->
+<body ng-app="sirius" ng-controller="main" class="cloak">
+<ng-include src="'angular/blocks/header.html'"></ng-include>
 
 <div id="body_wrapper">
 	<h1 class="page_title">Download</h1>
@@ -47,16 +29,16 @@
 		<div id="tab_eclipse" class="tab_content" style="display: block">
 			<div class="dwnld_wrapper">
 
-				<ul class="installnav">
-					<li id="eclipse_package" class="active">
-						<a>
+				<ul class="installnav" ng-init="tab = 1">
+					<li id="eclipse_package" ng-class="{'active': tab === 1}">
+						<a ng-click="tab = 1">
 							<span>
 								<img src="images/download/icon_packages.png" alt="Eclipse ready-to-Use package" />
 								<p>Ready-to-Use Package</p>
 							</span>
 						</a>
 
-						<div id="eclipse_package_content">
+						<div id="eclipse_package_content" ng-show="tab === 1">
 							<h2>Download a Ready-to-Use Package</h2>
 							
 							<p>This free package has been created by Sirius commiters to facilitate your first steps with Sirius. It contains Sirius, neatly integrated with other Open Source technologies (EMF Compare, eGit and SWTBot).</p>
@@ -78,19 +60,19 @@
 						</div>
 					</li>
 				
-					<li id="eclipse_drag2install">
-						<a>
+					<li id="eclipse_drag2install" ng-class="{'active': tab === 2}">
+						<a ng-click="tab = 2">
 							<span>
 								<img src="images/download/icon_drag2install.png" alt="Drag to Install Icon" />
 								<p>Drag to Install</p>
 							</span>
 						</a>
-						<div id="content_drag2install_1">
+						<div id="content_drag2install_1" class="ng-hide" ng-show="tab === 2">
 							<h2>Install Sirius with the Drag'n Drop Install</h2>
-							<p><a id="install_1" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" onmouseover="drag2InstallTooltip()" onmouseout="drag2InstallTooltip_out()">
+							<p><a id="install_1" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" ng-mouseenter="popupTooltip = true" ng-mouseleave="popupTooltip = false">
 								<img src="images/download/drag2install_button.png" id="drag2install_img" /></a>
 							</p>
-							<div class="drag2install_tooltip">
+							<div class="drag2install_tooltip" ng-show="popupTooltip === true">
 								<p>Drag to your running Eclipse workspace!</p>
 							</div>
 							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
@@ -104,14 +86,14 @@
 						</div>
 					</li>
 
-					<li id="eclipse_install_emc">
-						<a>
+					<li id="eclipse_install_emc" ng-class="{'active': tab === 3}">
+						<a ng-click="tab = 3">
 							<span>
 								<img src="images/download/icon_emc.png" alt="Marketplace Icon">
 								<p>Marketplace</p>
 							</span>
 						</a>
-						<div id="content_emc_1">
+						<div id="content_emc_1" class="ng-hide" ng-show="tab === 3">
 							<h2>Install Sirius with Eclipse Marketplace</h2>
 							
 							<p>Browse the Marketplace, choose Sirius and just click on the install button.</p>
@@ -119,8 +101,8 @@
 						
 							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
 							<p>For more details, please refer to <a href="http://marketplace.eclipse.org/marketplace-client-intro" target="_blank">Introducing the Eclipse Marketplace Client</a> installation guide.</p>
-							
-							<div class="intro_gallery bg_light_gray services margin_top">
+							<br />
+							<div class="intro_gallery bg_light_gray services">
 								<h3>Need help to set-up your modeling workbench created with Sirius?</h3>
 								<p>Obeo, co-leader of Sirius, provides professional support services to help you with Sirius: <a href="http://www.obeodesigner.com/sirius" target="_blank">Consulting & Coaching</a>, <a href="http://www.obeodesigner.com/sirius" target="_blank">Custom Development</a>, <a href="http://www.obeodesigner.com/sirius" target="_blank">Training</a>.</p>
 							</div>
@@ -128,15 +110,15 @@
 						</div>
 					</li>
 
-					<li id="eclipse_updatesite">
-						<a>
+					<li id="eclipse_updatesite" ng-class="{'active': tab === 4}">
+						<a ng-click="tab = 4">
 							<span>
 								<img src="images/download/icon_updatesite.png" alt="Drag to Install Icon" />
 								<p>Update Site</p>
 							</span>
 						</a>
 
-						<div id="content_updatesite_1" >
+						<div id="content_updatesite_1" class="ng-hide" ng-show="tab === 4">
 							<h2>Install Sirius from Update Site</h2>
 			
 							<h3>Latest Release</h3>
@@ -167,58 +149,7 @@
 </div> <!-- Fin body_wrapper -->
 
 <div class="clear"></div>
-
-<div id="footer_wrapper">
-	<div id="footer_content">
-		<div class="column">
-			<div class="columntitle">
-				<h3>Eclipse Links</h3>
-			</div>
-			<ul>
-				<li><a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy</a></li>
-				<li><a href="http://eclipse.org/"> Eclipse</a></li>
-				<li><a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use</a></li>
-				<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-				<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
-				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
-			</ul>
-		</div>
-
-		<div class="column">
-			<div class="columntitle">
-				<h3>Community</h3>
-			</div>
-			<ul>
-				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
-				<li><a href="http://www.obeodesigner.com/sirius">Professional Support</a></li>
-				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
-				<li><a href="getstarted.html">Get Started</a></li>
-				<li><a href="articles-videos.html">Articles & Videos</a></li>
-				<li><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></li>
-				<li><a href="http://wiki.eclipse.org/Sirius">Wiki</a></li>
-				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
-				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
-			</ul>
-		</div>
-
-		<div class="column">
-			<a href="http://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo"></a>
-			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
-		</div>
-	</div>
-</div>
-
-<div id="download_banner_wrapper" class="bg_dark_fushia">
-	<div class="closeButton"><img src="images/closeButton.png" border="0"/></div>
-	<div id="download_banner_content">
-		<script> 
-			jQuery.get( "call2action.html", function(data) {
-			  jQuery( "#download_banner_content" ).html( data );
-			  //alert( "Load was performed : " + data );
-			});
-		</script>
-	</div>
-</div>
-
+<ng-include src="'angular/blocks/footer.html'"></ng-include>
+<ng-include src="'angular/blocks/call2action.html'"></ng-include>
 </body>
 </html>
