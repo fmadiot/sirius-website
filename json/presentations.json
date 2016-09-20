@@ -1,5 +1,97 @@
 {"presentations":[
+       {
+            "header": {
+             	"title": "French Department of Defense",
+             	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/dSohfpAAqOsEFz" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/department_defense.png",
+            	"imgAlt": "French Department of Defense"
+             }
+        },
         {
+            "header": {
+             	"title": "EIP Designer: Filling the Gap Between Enterprise Architecture and Software Dev",
+             	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/JPPl06giQrhlD2" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/eip_designer.png",
+            	"imgAlt": "EIP Designer: Filling the Gap Between Enterprise Architecture and Software Dev"
+             }
+        },
+        {
+            "header": {
+             	"title": "Functional Modelling Tool for the Avionics Domain",
+             	"lnk": "https://www.slideshare.net/slideshow/embed_code/key/HrdPJD3KlQCuvt" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/modeling_tool_avionics_sintef.png",
+            	"imgAlt": "Functional Modelling Tool for the Avionics Domain"
+             }
+        },
+        {
+            "header": {
+             	"title": "Constraint Graph: Graphical Modeling of Physical Equation Systems",
+             	"lnk": "https://www.slideshare.net/slideshow/embed_code/key/j7otrAvkvZDueC" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/etas.png",
+            	"imgAlt": "Constraint Graph: Graphical Modeling of Physical Equation Systems"
+             }
+        },
+        {
+            "header": {
+             	"title": "Sirius Roadmap",
+             	"lnk": "https://www.slideshare.net/slideshow/embed_code/key/NUWh9qHoTzpXHL" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/eclipse_sirius_roadmap.png",
+            	"imgAlt": "Sirius Roadmap"
+             }
+        },
+        {
+            "header": {
+             	"title": "Collaborative Modeling with Sirius: from Model Fragments to Shared-Repository",
+             	"lnk": "https://www.slideshare.net/slideshow/embed_code/key/ibydjfNu1gSxXo" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/collaborative_modeling.png",
+            	"imgAlt": "Collaborative Modeling with Sirius: from Model Fragments to Shared-Repository"
+             }
+        },
+        {
+            "header": {
+             	"title": "Breath Life into Your Designer",
+             	"lnk": "https://www.slideshare.net/slideshow/embed_code/key/F8xUm9uTdtW9kH" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/breathe_life_intoyour_designer.png",
+            	"imgAlt": "Breath Life into Your Designer"
+             }
+        },
+        {
+            "header": {
+             	"title": "All the Little Things That Make Your Graphical Tool Shine (or not)",
+             	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/hLWugCUUpqtNs3" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/effective_modeler.png",
+            	"imgAlt": "All the Little Things That Make Your Graphical Tool Shine (or not)"
+             }
+		},
+		{
+            "header": {
+             	"title": "Tip & Tricks: How to Make Robust and Scalable Modeling Workbenches",
+             	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/18jWzz7Nh4FPUo" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/robust_modeling_workbenches.png",
+            	"imgAlt": "Tip & Tricks: How to Make Robust and Scalable Modeling Workbenches"
+             }
+		},
+		
+		
+		{
             "header": {
              	"title": "Arduino designer : the making of!",
              	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/A3tlZzytLaMTlK" 
@@ -42,7 +134,7 @@
         {
             "header": {
              	"title": "EclipseCon Europe 2013 - Sirius By Example",
-             	"lnk": "https:////fr.slideshare.net/slideshow/embed_code/key/BU1OREG54vcPfQ" 
+             	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/BU1OREG54vcPfQ" 
             },
             "thumb": {
             	"photoSrc": "images/resources/videos/sirius_examples.png",
@@ -76,7 +168,7 @@
             },
             "thumb": {
             	"photoSrc": "images/resources/presentations/sirius_democamp_2013.png",
-            	"imgAlt": "Sirius - EclipseDemoCamp Paris 2013kids"
+            	"imgAlt": "Sirius - EclipseDemoCamp Paris 2013"
              }
 		}
 ]}
