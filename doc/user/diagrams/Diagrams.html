@@ -29,6 +29,9 @@
 								<a href="#Movingthediagram">Moving the diagram</a>
 							</li>
 							<li>
+								<a href="#zooming_diagram_id">Zooming the diagram</a>
+							</li>
+							<li>
 								<a href="#Resizingelements">Resizing elements</a>
 							</li>
 							<li>
@@ -41,7 +44,7 @@
 								<a href="#distribute">Distribute elements</a>
 							</li>
 							<li>
-								<a href="#ResetDiagramorContainerOrigin">Reset Diagram or Container Origin</a>
+								<a href="#reset_origin">Reset Diagram or Container Origin</a>
 							</li>
 							<li>
 								<a href="#Hidingelements">Hiding elements</a>
@@ -62,7 +65,7 @@
 								<a href="#PortshiftingPortDragandDrop">Port shifting - Port Drag and Drop</a>
 							</li>
 							<li>
-								<a href="#Copypasteoflayout">Copy/paste of layout</a>
+								<a href="#copy_paste_format">Copy/paste of format</a>
 							</li>
 							<li>
 								<a href="#diagram_element_pinning">Diagram element pinning</a>
@@ -214,7 +217,8 @@
 		<p>Capability to allow edit parts to snap to the grid when editing (during creation, moving or resizing). It is also possible to have connection bendpoints snap to it. Grid snapping and visibility are two distinct properties, and it is possible to enable one without the other.</p>
 		<h5 id="snap_to_shapes">Snap to shapes</h5>
 		<p>The 
-			<em>Snap to shapes</em> feature allows you to quickly align parts being dragged or resized to other parts in the diagram or that share the same parent (e.g: edit parts inside a compartment can only snap to each other). The snap is effective on top, bottom, right, left and center of the figure. Feedback is shown in the form of a gray line when a part is being attached to another part. This feature is not enabled on border nodes.
+			<em>Snap to shapes</em> feature allows you to quickly align parts being dragged or resized to other parts in the diagram or that share the same parent (e.g: edit parts inside a compartment can only snap to each other). The snap is effective on top, bottom, right, left and center of the figure. Feedback is shown in the form of a gray line when a part is being attached to another part.
+			<br/>This drag part of this feature is also available on border nodes since Sirius 4.1.0. Note: For border nodes, the snap is effective only on the center of the figure. This is why the resize part is not handled for border nodes.
 			<br/>
 			<img border="0" src="images/snap_to_shape.png"/>
 		</p>
@@ -227,6 +231,12 @@
 		<h3 id="Movingthediagram">Moving the diagram</h3>
 		<p>When the diagram is larger than the editor area, you can move it in all directions by pressing the middle-button and dragging the mouse (keeping the button pressed).</p>
 		<p><video height="240" src="videos/moveInAllDirections.mp4" target="_self" autoplay="autoplay" loop="loop"></video></p>
+		<h3 id="zooming_diagram_id">Zooming the diagram</h3>
+		<p>The zoom on a diagram can be done by using the tools in the palette like explained in 
+			<a href="#standardToolId">Chapter Standard Tools</a>.
+			<br/>Or by using the combination of the keyboard key 
+			<em>CTRL</em> and the mouse wheel. Since Sirius 4.1.0, in this case, the zoom is done on the mouse location instead of the center of the editor.
+		</p>
 		<h3 id="Resizingelements">Resizing elements</h3>
 		<p>If the specifier has authorized it, it is possible to resize a shape by dragging them until they are the size that you want.</p>
 		<p>There are specific shortcuts to change the resize behavior:</p>
@@ -257,6 +267,27 @@
 			</li>
 		</ul>
 		<h3 id="Manageedges">Manage edges</h3>
+		<h4 id="Snapbackedgelabels">Snap back edge labels</h4>
+		<p>All visible edge labels can be snapped back to their default position by using the action 
+			<em>Snap back label(s)</em>. This action is available within the edge contextual menu under the format section 
+			<em>Format/Snap back label(s)</em>:
+			<br/>
+			<img border="0" src="images/snap-back-label.png"/>
+		</p>
+		<p>The result of this action is visible here: 
+			<br/>
+			<img border="0" src="images/snapped-back-label.png"/>
+		</p>
+		<p>This action is also available individually for each visible label of an edge. To use it, you have to use the action 
+			<em>Snap Back</em> under the label contextual menu 
+			<em>Format/Snap Back</em>:
+			<br/>
+			<img border="0" src="images/snap-back-label-from-label.png"/>
+		</p>
+		<p>The result of this action is visible here: </p>
+		<p>
+			<img border="0" src="images/snapped-back-label-from-label.png"/>
+		</p>
 		<h4 id="Movebendpoints">Move bend-points</h4>
 		<p>It is possible to snap the bend-points to all shapes by pressing <kdb>F4</kdb> shortcut key during the move. This feature is only available if the 
 			<a href="#snap_to_shapes">Snap to shapes</a> is already activated for the current diagram. As for 
@@ -276,9 +307,52 @@
 			<br/>
 			<img border="0" src="images/afterRemoveBendpoints.png"/>
 		</p>
+		<h4 id="straighten_an_edge">Straighten an edge</h4>
+		<p>There are four actions to straighten an edge, i.e. to transform an edge to an horizontal, or vertical, straight edge (with only one starting point and one ending point).
+			<br/>If the edge is connected to a border node, the border node is moved too.
+		</p>
+		<p>These actions are available on edge contextual menu 
+			<em>Layout/Straighten</em>: 
+			<img border="0" src="images/straightenToMenu.png"/>
+		</p>
+		<p>Example of initial state of horizontal cases: 
+			<img border="0" src="images/straightenHorizontalInitialState.png"/>
+			<br/>Result after 
+			<em>Straighten to top</em> action: 
+			<img border="0" src="images/straightenToTop.png"/>
+			<br/>Result after 
+			<em>Straighten to bottom</em> action: 
+			<img border="0" src="images/straightenToBottom.png"/>
+			<br/>Example of initial state of vertical cases: 
+			<img border="0" src="images/straightenVerticalInitialState.png"/>
+			<br/>Result after 
+			<em>Straighten to left</em> action: 
+			<img border="0" src="images/straightenToLeft.png"/>
+			<br/>Result after 
+			<em>Straighten to right</em> action: 
+			<img border="0" src="images/straightenToRight.png"/>
+		</p>
+		<p>The action can be disabled (grayed menu) in some conditions:</p>
+		<ul>
+			<li>The edge is connected to border node and the border node have several incoming and outgoing edges.</li>
+			<li>The action is not possible because it does not respect the source or target node boundaries.</li>
+			<li>The source and the target of the edge are not on the same &#8220;axis&#8221; (left and right sides, or, top and bottom sides).</li>
+			<li>After the action, the border node (source or target) would be overlapped by another border node.
+				<ul>
+					<li>Known limitation: In case of multi-selection, the overlap is done in the current context of existing border nodes and not in the context of location of border nodes after each straighten edges.</li>
+				</ul>
+			</li>
+			<li>A straighten action will be disabled if the 
+				<a href="../../specifier/diagrams/Diagrams.html#edgecentering">edge centering</a> constraint will be violated. For oblique edges, the action is disabled if at least one side is centered. For rectilinear edges, the action is disabled if the moved side is centered. There is an exception to this rule when the edge centering is activated on both source and target, and both source and target are border nodes.
+			</li>
+			<li>The source or the target of the edge is another edge.</li>
+			<li>The source and the target is the same element.</li>
+		</ul>
+		<p>The action is available (menu is displayed) if the selection contains only edges (note and text attachments are not considered as edges).</p>
 		<h4 id="move_edge_group">Move edge group</h4>
 		<p>In specific cases, we can find edges connected to border nodes. For example in a diagram representing data flows, exchanges are connected to port in and port out. When the user wants to move an exchange on a layouted diagram, he has to move the source port, then the target port and possibly move some bendpoints of the edge.
-			<br/>This feature aims to move the group {edge, labels, ports} in a single “drag like” operation when using the F3 shortcut and drag/move the edge. The F3 key has no effect if you attempt a reconnect by moving the first or last edge end.
+			<br/>This feature aims to move the group {edge, labels, ports} in a single 
+			<i>drag like</i> operation when using the F3 shortcut and drag/move the edge. The F3 key has no effect if you attempt a reconnect by moving the first or last edge end.
 		</p>
 		<p>Example when activating the tool and moving the second edge toward the top:
 			<br/>
@@ -304,6 +378,28 @@
 		<p>Examples of authorized moving:
 			<br/>
 			<img border="0" src="images/compoundmoves2.png"/>
+		</p>
+		<p>Furthermore, since Sirius 4.1, it is possible to move several edge groups at once. However, the selection needs to validate the following rules:</p>
+		<ul>
+			<li>each selected elements must be an edge with border nodes as source and target.</li>
+			<li>each edge groups must be horizontal (source and target on the west or east border) or vertical (source and target on the north or south border).</li>
+			<li>each edge groups must remain in its source and target parent bounds at the end of the move. Therefore, the move is not limited by the primary selection only (the edge that is grabbed to move the whole selection) but by each edge group.</li>
+		</ul>
+		<p>Note that an edge group new location corresponding to the former location of another edge group in the selection is valid.</p>
+		<h4 id="edge_label_attachment">Display attachment link between edge and its labels</h4>
+		<p>It is possible to display an attachment link between an edge and its labels when edge or label is selected. This is not the default behavior but it can be activated by a preference in 
+			<em>Sirius/Sirius Diagram/Connections</em> preference page.
+		</p>
+		<p>	
+			<img border="0" src="images/edgeLabelAttachment_preference.png"/>
+		</p>
+		<p>If the edge is selected, one attachment is displayed for all associated labels. </p>
+		<p>	
+			<img border="0" src="images/edgeLabelAttachment_edgeSelected.png"/>
+		</p>
+		<p>If a label is selected, only the attachment between the edge and this label is displayed.</p>
+		<p>	
+			<img border="0" src="images/edgeLabelAttachment_labelSelected.png"/>
 		</p>
 		<h3 id="distribute">Distribute elements</h3>
 		<p>Four new actions allow to distribute shapes: </p>
@@ -357,8 +453,8 @@
 			<li>the first shape is the highest one (with its center at the minimum y coordinate). If several shapes are aligned on middle, the leftmost one is the first.</li>
 			<li>the last shape is the lowest one (with the bottom side with the maximum y coordinate). If several shapes are aligned by middle, the rightmost one is the last.</li>
 		</ul>
-		<h3 id="ResetDiagramorContainerOrigin">Reset Diagram or Container Origin</h3>
-		<p>This action is available within the diagram or containers contextual menu (&#8220;Reset Origin&#8221;) or via &#8220;M1&#8221; + &#8220;&amp;&#8221; shortcut.
+		<h3 id="reset_origin">Reset Diagram or Container Origin</h3>
+		<p>This action is available within the diagram or containers contextual menu (&#8220;Reset Origin&#8221;) or via &#8220;M1&#8221; + &#8220;HOME&#8221; shortcut.
 			<br/>The diagram (or container) bounds (the rectangle formed by the highest, the leftmost, the lowest and the rightmost elements) can have a negative origin or can be shifted toward the bottom-right with a blank zone at the top-left.
 			<br/>This action aims to move all diagram (or container) elements so that the diagram (or container) retrieves its origin while keeping the element layout.
 		</p>
@@ -593,22 +689,61 @@
 			<img border="0" src="images/diagram_editor_dnd03b.png"/>
 		</p>
 		<p>The port is dropped in the container above the mouse location and linked to its closest edge.</p>
-		<h3 id="Copypasteoflayout">Copy/paste of layout</h3>
-		<p>It is possible to duplicate layout of diagram elements, that is to say to replicate mutual organization of diagram elements from one diagram to another. This replication only applies to the same semantic elements between diagrams.</p>
-		<p>The next picture shows a partial view of a diagram. The tool to replicate the layout is called &#8220;Copy layout&#8221; and can be activated from the tab-bar or the contextual menu (see &#8220;edit&#8221; section). In this picture, layout of John Doe and Earvin Johnson persons will be replicated to another diagram.</p>
-		<p>	
-			<img border="0" src="images/diagram_editor_copy_layout1.png"/>
+		<h3 id="copy_paste_format">Copy/paste of format</h3>
+		<p>It is possible to duplicate format of diagram elements, that is to say to replicate mutual organization and style of diagram elements from one diagram to another. This replication only applies to the same semantic elements between diagrams.
+			<br/>By default, this copy/paste replicates the layout (x, y width and height) AND the style (colors, font, ...).
 		</p>
-		<p>The next picture shows the diagram where the layout will be replicated. The tool to paste layout is called &#8220;Paste layout&#8221; and can be activated from the toolbar or the contextual menu (see &#8220;edit&#8221; section).</p>
+		<p>But it is also possible to only 
+			<em>Paste Layout</em> or only 
+			<em>Paste Style</em>. The initial copy is always a 
+			<em>Copy Format</em> in all cases.
+		</p>
+		<p>The next picture shows a partial view of a diagram. The tool to replicate the format is called &#8220;Copy Format&#8221; and can be activated from the tab-bar when the diagram elements are selected, from the contextual menu (see 
+			<em>Edit</em> section) or through the 
+			<em>Ctrl+Alt+Shift+C</em> shortcut. In this picture, format of John Doe and Earvin Johnson persons will be replicated to another diagram.
+		</p>
 		<p>	
-			<img border="0" src="images/diagram_editor_copy_layout2.png"/>
+			<img border="0" src="images/diagram_editor_copy_format.png"/>
+		</p>
+		<h4 id="PasteLayout">Paste Layout</h4>
+		<p>The next picture shows the diagram where the layout will be replicated. The tool to paste layout is called &#8220;Paste Layout&#8221; and can be activated from the tab-bar or from the contextual menu (see 
+			<em>Edit</em> section).
+		</p>
+		<p>	
+			<img border="0" src="images/diagram_editor_paste_layout1.png"/>
 		</p>
 		<p>The layout applies to John Doe and Earvin Johnson and is exactly the same as the original one (compare John Doe and Earvin Johnson each other positions with first screenshot).</p>
 		<p>	
-			<img border="0" src="images/diagram_editor_copy_layout3.png"/>
+			<img border="0" src="images/diagram_editor_paste_layout2.png"/>
 		</p>
 		<p>
 			<strong>Warning</strong> : This copy/paste operation copies exactly what you see on a diagram. When using low zoom level, some diagram elements can be twisted and the paste operation will duplicate theses twistings on the other diagram. Please, zoom in to reduce twistings.
+		</p>
+		<h4 id="PasteStyle">Paste Style</h4>
+		<p>The next picture shows the diagram where the layout will be replicated. The tool to paste style is called &#8220;Paste Style&#8221; and can be activated from the tab-bar or from the contextual menu (see 
+			<em>Edit</em> section).
+		</p>
+		<p>	
+			<img border="0" src="images/diagram_editor_paste_style1.png"/>
+		</p>
+		<p>The red font applies to John Doe.</p>
+		<p>	
+			<img border="0" src="images/diagram_editor_paste_style2.png"/>
+		</p>
+		<h4 id="PasteFormat">Paste Format</h4>
+		<p>The next picture shows the diagram where the layout will be replicated. The tool to paste format is called &#8220;Paste Format&#8221; and can be activated from the tab-bar when the diagram is selected, from the contextual menu (see 
+			<em>Edit</em> section) or through the 
+			<em>Ctrl+Alt+Shift+V</em> shortcut.
+		</p>
+		<p>	
+			<img border="0" src="images/diagram_editor_paste_format1.png"/>
+		</p>
+		<p>The result is the same as applying 
+			<em>Paste Format</em> and 
+			<em>Paste Style</em>.
+		</p>
+		<p>	
+			<img border="0" src="images/diagram_editor_paste_format2.png"/>
 		</p>
 		<h3 id="diagram_element_pinning">Diagram element pinning</h3>
 		<h4 id="Introduction">Introduction</h4>
@@ -859,8 +994,8 @@
 		<p>The star, 
 			<code>*</code>, is a joker character, allowing you to search with more complicated patterns. Regarding this, an element is found if there is a word in its name or one of its attributes that match with the text in the filter, so if you want to search within words too, add 
 			<code>*</code> at the start of your pattern. Also, you can navigate along the matching elements with 
-			<code>↑</code> and 
-			<code>↓</code>, and go to the selected element in your editor with 
+			<code>â†‘</code> and 
+			<code>â†“</code>, and go to the selected element in your editor with 
 			<code>Enter</code>.
 		</p>
 		<h3 id="styleCustomizations">Style customizations </h3>
@@ -923,7 +1058,7 @@
 		<p>	
 			<img border="0" src="images/palette_moving.png"/>
 		</p>
-		<h4 id="StandardTools">Standard Tools</h4>
+		<h4 id="standardToolId">Standard Tools</h4>
 		<p>A few general tools are available in standard on all Sirius diagrams. They appear in the top row of the palette, just below the header.</p>
 		<p>	
 			<img border="0" src="images/palette_tools.png"/>

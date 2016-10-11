@@ -672,6 +672,7 @@
 			<li>The Show/Hide, Hide filter features are disabled on regions (hide filter can be created to the compartment content but not the compartment). The Show/Hide label feature is supported.</li>
 			<li>The move and drag and drop of regions are disabled. Reordering regions can be done by reordering their semantic elements.</li>
 			<li>The resize of compartments might evolve in future versions. The current behavior is to redistribute space between adjacent regions and to resize the first/last region when the region container is resized from top/bottom for a vertical stack and left/right for an horizontal one.</li>
+			<li>A compartment is always considered as auto-sized (except after creation time when it contains no region).</li>
 			<li>The capability to define complex or recursive stack of regions mixing both stack directions has been introduced in Sirius 3.1.0 as an 
 				<em>experimental</em> configuration. Some layout-related actions might produce unexpected result. The limitations only concerns the visual aspects, there is no risk of corrupting the underlying models.
 			</li>
@@ -718,6 +719,81 @@
 		</p>
 		<p>Most of the properties used to configure the various styles are self-explanatory. See the 
 			<a href="#styling">styles</a> section below for a general discussion. You can also refer to the tool-tips available directly in the editor on the &#8220;question mark&#8221; icon of each property.
+		</p>
+		<h6 id="compartments_layout">Specific compartments layout</h6>
+		<p>Due to layout specificity of compartments, there are specific rules for this kind of containers:</p>
+		<ul>
+			<li>It is recommended to set to &#8220;-1&#8221; the 
+				<code>Width Computation Expression</code> and 
+				<code>Height Computation Expression</code>. The size of the compartment is expected to be computed from their regions.
+			</li>
+			<li>For the same reason, the 
+				<code>Width Computation Expression</code> should be the same for each region of the same vertical compartment (same 
+				<code>Height Computation Expression</code> for horizontal compartment ). If they are not the same the maximum is used.
+			</li>
+			<li>When a 
+				<code>Width Computation Expression</code> and 
+				<code>Height Computation Expression</code> are defined for the compartments, they are used at the creation time. You have the same effect if the end-user creates a compartment by drawing a rectangle for creation (instead of just clicking on the diagram). This dimension is kept for the first region creation. After the first region creation, the compartment is considered as auto-sized. A second region creation resizes the compartment (in the direction of the stack of the compartment).
+			</li>
+		</ul>
+		<p>Examples of some layout results according to VSM configuration:</p>
+		<ul>
+			<li>1st example:
+				<ul>
+					<li>Compartment with horizontal stack and with 
+						<code>Width Computation Expression</code> and 
+						<code>Height Computation Expression</code> equal to 10.
+					</li>
+					<li>Regions with 
+						<code>Width Computation Expression</code> and 
+						<code>Height Computation Expression</code> equal to 5.
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="images/compartmentsLayout-Creation1.png"/>
+			<br/>1- Creation of a compartment: The compartment has a size of 100x100 pixels. The result would be the same if the end-user drawn a rectangle of 100x100 pixels at the creation time.
+			<br/>2- Creation of a first region: The first region uses the free size of the compartment. The compartment keeps its size.
+			<br/>3- Creation of a second region: The second region uses the height of the first region (highest than the 50 pixels defined in the VSM) and has a width of 50 pixels. The compartment is increased in width.
+		</p>
+		<ul>
+			<li>2nd example:
+				<ul>
+					<li>Compartment with horizontal stack and with 
+						<code>Width Computation Expression</code> and 
+						<code>Height Computation Expression</code> equal to 10.
+					</li>
+					<li>Regions with 
+						<code>Width Computation Expression</code> and 
+						<code>Height Computation Expression</code> equal to 15.
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="images/compartmentsLayout-Creation2.png"/>
+			<br/>The first and second steps are the same. But the third is different. The second region has a width of 150 pixels and also a height of 150 pixels (highest than the first one). The compartment is increased in both directions.
+		</p>
+		<ul>
+			<li>3rd example:
+				<ul>
+					<li>Compartment with horizontal stack and with 
+						<code>Width Computation Expression</code> and 
+						<code>Height Computation Expression</code> equal to -1.
+					</li>
+					<li>Regions with 
+						<code>Width Computation Expression</code> and 
+						<code>Height Computation Expression</code> equal to 5.
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="images/compartmentsLayout-Creation3.png"/>
+			<br/>1- Creation of a compartment: The compartment is auto-sized and fits to the title.
+			<br/>2- Creation of a first region: The first region uses the width of the compartment (highest than the 50 pixels defined in the VSM) and has a height of 50 pixels. The compartment is increased in height.
+			<br/>3- Creation of a second region: The second region has a size of 50x50 pixels. The compartment is increased in both directions.
 		</p>
 		<h4 id="container_tools">Container Tools</h4>
 		<p>See the 
@@ -964,7 +1040,7 @@
 			<em>Target</em>, the element (node or container) at the source or target of the edge will have a small &#8220; - &#8221; sign in its top-left corner. If the user clicks on it, the edges instance of this mapping for which the element is a source (resp. target) will fold: the edges and the elements they are connected to at the other side will disappear from view. The behavior is recursive: if the elements hidden were connected to other elements using this kind edges, those too will be hidden. When an element has been folded, the &#8220; - &#8221; sign becomes a &#8220; + &#8221; sign which can be used to unfold the edges. This is useful when representing trees of elements: if you enable folding, users will be able with a single click to hide or reveal complete sub-hierarchies of elements.
 		</p>
 		<p>
-			<strong>Edge Centering.</strong> The edge source and edge target are not systematically oriented toward the center of the node, depending on where the edge has been created or moved by the end user. You can specify that an edge end (the source, target or both) will always be centered. The 
+			<strong id="edgecentering">Edge Centering.</strong> The edge source and edge target are not systematically oriented toward the center of the node, depending on where the edge has been created or moved by the end user. You can specify that an edge end (the source, target or both) will always be centered. The 
 			<em>Centered Source Mappings</em> and the 
 			<em>Centered Target Mappings</em> (within the edge style description advanced properties tab) lets you select for which mapping the source or the target will be centered. The 
 			<em>Ends Centering</em> section (on the same advanced tab) allows you to generalize this behavior for any edge source/target mapping. Note that this behavior can be customized by the end user via the edge style 
@@ -991,7 +1067,7 @@
 			<strong>Edge Creation.</strong> This tool is used to create new edges. They work like all the other creation tools. You simply specify the 
 			<em>Edge Mappings</em> that this tool can create and specify the behavior of the tool inside the 
 			<em>Begin</em> element using all the standard 
-			<a href="../general/Model_Operations.html">model operations</a>.
+			<a href="../general/Model_Operations.html">model operations</a>. The body of the tool will be executed in the context of the semantic element of the source of the new edge.
 		</p>
 		<p>Because edges have two ends, their creation requires users to specify both the source and target elements. By default, the possible sources are all the instances of one of the 
 			<em>Source Mappings</em> specified for this kind of edge (and similarly for the possible targets). You can restrict this using the 
