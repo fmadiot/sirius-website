@@ -1,6 +1,16 @@
 {"presentations":[
        {
             "header": {
+             	"title": "Sirius Viewpoints and Software Modernization",
+             	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/ehbLL3toBVMDEy" 
+        },
+            "thumb": {
+            	"photoSrc": "images/resources/presentations/paranor.jpg",
+            	"imgAlt": "Sirius Viewpoints and Software Modernization"
+             }
+        },
+       {
+            "header": {
              	"title": "French Department of Defense",
              	"lnk": "https://fr.slideshare.net/slideshow/embed_code/key/dSohfpAAqOsEFz" 
             },
