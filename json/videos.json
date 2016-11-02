@@ -1,4 +1,55 @@
 {"videos":[
+		
+        {
+            "header": {
+             	"title": "EclipseCon 2016 - eWORMS, the eclipse WORkflow Modeling System for Flight Physicists at AIRBUS",
+             	"lnk": "https://www.youtube.com/watch?v=vquHXt_8HH4" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_airbus.jpg",
+            	"imgAlt": "EclipseCon 2016 - eWORMS, the eclipse WORkflow Modeling System for Flight Physicists at AIRBUS"
+             }
+        },
+		{
+            "header": {
+             	"title": "Sirius 3.x: Faster, Stronger and Smarter Diagram Editors",
+             	"lnk": "https://www.youtube.com/watch?v=7GLyrnKQl7c" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_mpo.jpg",
+            	"imgAlt": "Sirius 3.x: Faster, Stronger and Smarter Diagram Editors"
+             }
+        },
+        {
+            "header": {
+             	"title": "IncQuery gets Sirius: faster and better diagrams",
+             	"lnk": "https://www.youtube.com/watch?v=_78rRHgiNSo" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_incquery.jpg",
+            	"imgAlt": "IncQuery gets Sirius: faster and better diagrams"
+             }
+        },
+        {
+            "header": {
+             	"title": "Be Serious With Sirius: Your Journey From First Experimentation to Large Deployment",
+             	"lnk": "https://www.youtube.com/watch?v=GLdD6oZOrw4" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_eju.jpg",
+            	"imgAlt": "Be Serious With Sirius: Your Journey From First Experimentation to Large Deployment"
+             }
+        },
+       	{
+            "header": {
+             	"title": "Sirius Workshop Advanced graphical editors for your DSL",
+             	"lnk": "https://www.youtube.com/watch?v=qLnjXekSCDU" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius_workshop.jpg",
+            	"imgAlt": "Sirius Workshop Advanced graphical editors for your DSL"
+             }
+        },
 		{
             "header": {
              	"title": "EclipseCon North America 2015 - Arduino Designer: the Making of!",
@@ -46,7 +97,7 @@
             },
             "thumb": {
             	"photoSrc": "images/resources/videos/sirius_openworldforum.png",
-            	"imgAlt": "Sirius: the new Open Source way for systems design - StŽphane Lacrampe (Co-founder, CEO, Obeo) (french)"
+            	"imgAlt": "Sirius: the new Open Source way for systems design - Stï¿½phane Lacrampe (Co-founder, CEO, Obeo) (french)"
              }
         },
         {
@@ -56,7 +107,7 @@
             },
             "thumb": {
             	"photoSrc": "images/resources/videos/sirius_florence.png",
-            	"imgAlt": "Eclipse Day Florence 2014 - Sirius by MŽlanie Bats / Sirius:build diagram,table and tree editors in 20 minutes!"
+            	"imgAlt": "Eclipse Day Florence 2014 - Sirius by Mï¿½lanie Bats / Sirius:build diagram,table and tree editors in 20 minutes!"
              }
         },
         {
@@ -146,7 +197,7 @@
             },
             "thumb": {
             	"photoSrc": "images/resources/videos/sirius_cbrun.png",
-            	"imgAlt": "Sirius with CŽdric Brun, Obeo - EclipseCon France"
+            	"imgAlt": "Sirius with Cï¿½dric Brun, Obeo - EclipseCon France"
              }
         }
 ]}

@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -9,56 +8,39 @@
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="../js/googleAnalytics.js"></script>
 	<script type="text/javascript" src="../js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="../angular/sirius.js"></script>
 
 	<link rel="icon" type="image/png" href="../favicon.ico" />
 	<title>Sirius - What's New in Sirius 3.1</title>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
 </head>
 
-<body>
-
-<div id="header_wrapper">
-	<div id="logo">
-		<a href="index.html"><img alt="logo" src="http://www.eclipse.org/sirius/images/logos/logo.png" /></a>
-	</div>
-
-	<div id="menu_wrapper">
-		<ul id="nav">
-			<li><a href="../overview.html">Overview</a></li>
-			<li><a href="../gallery.html">Gallery</a></li>
-			<li><a href="../getstarted.html">Get Started</a></li>
-			<li><a href="../features.html">Features</a></li>
-			<li><a href="../community.html">Community</a></li>
-			<li><a href="../download.html">Download</a></li>
-            <li><a href="../lab.html">Lab</a></li>
-		</ul>
-	</div>	<!-- Fin menu_wrapper -->
-</div>	<!-- Fin header_wrapper -->
+<body ng-app="sirius" ng-controller="main" class="cloak">
+<ng-include src="'../angular/blocks/header.html'"></ng-include>
 
 <div id="body_wrapper">
 	<h1 class="page_title">What's New in Sirius 3.1</h1>
 
-
-		<p>Need to provide a better visualization experience to the users of your modeling tools?</p>
-<p>Sirius 3.1 offers new graphical options that increase the expressivity of your diagrams.</p>
+	<p>Need to provide a better visualization experience to the users of your modeling tools?</p>
+	<p>Sirius 3.1 offers new graphical options that increase the expressivity of your diagrams.</p>
 
 	<br /><br />
-	
 	<div class="section left">
 		<div class="image">
 			<img class="shadow" width="400"  src="../images/whatsnew3_1/collapse-resize.gif" />
 		</div>
-	
 		<h2>Compartments</h2>
 		<p>Sirius 3.1 comes with the possibility to create compartments where you can group and stack your model elements. The way your data is represented is better structured and the information is easier to understand.</p>
 		<p>With Sirius 3.0, it was already possible to create compartments, but we had introduced it as an "experimental" feature since some behaviors were not supported yet. Now compartments are fully operational.</p>
 		<p>For example, you can create compartments inside containers having rounded corners. We have also added the possibility to collapse a compartment in order to hide its contents. In addition, you can manually resize compartments to improve their layout. </p>
 		<p>A new tutorial explains how to create compartments: <a href="getstarted.html#compartments">https://www.eclipse.org/sirius/getstarted.html#compartments</a></p>
 	</div>
-	
+	<div class="clear"></div>
 	<div class="section right">
 		<div class="image">
 			<img class="shadow" width="400"  src="../images/whatsnew3_1/border-style.png" />
@@ -68,38 +50,35 @@
 		<p>The border style of your diagram elements can have a semantic meaning defined by your graphical notation: you may want to express a different information whether the border shape is dashed or plain.</p>
 		<p>Now, with Sirius 3.1, it is possible to define such styles for both the nodes and the containers (like it was already possible for edges).</p>	
 	</div>
-	
+	<div class="clear"></div>
 	<div class="section left">
 		<div class="image">
 			<img class="shadow" width="400"  src="../images/whatsnew3_1/link.gif" />
 		</div>
-
 		<h2>Bi-directional link with editor</h2>
 		<p>When exploring a complex model, users frequently need to switch from the tree representation (provided by the Model Explorer) to the current diagram and vice-versa.</p>
 		<p>Before Sirius 3.1, the “link with editor” option was uni-directional: selecting a model element in the Model Browser was selecting the same element in the diagram, but not the opposite.</p>
 		<p>Now, this option is bi-directional: selecting a diagram element automatically selects the corresponding model element in the Model browser.</p>		
 	</div>
-	
+	<div class="clear"></div>
 	<div class="section right">
 		<div class="image">
 			<img class="shadow" width="400"  src="../images/whatsnew3_1/align.gif" />
 		</div>
-	
 		<h2>Snap to all shapes</h2>
 		<p>Ideas you are expecting to communicate deserve clean and easy to understand diagrams. This is the reason why alignment matters!</p>
 		<p>Sirius 3.1 improved the <b>“Snap to Shapes”</b> option so that you can now align shapes that belong to different containers. This new option, available when you move a object shape while pressing the F4 key, displays vertical or horizontal guides which allow you to simply align a shape with other shapes from other containers.</p>	
 	</div>
-	
+	<div class="clear"></div>	
 	<div class="section left">
 		<div class="image">
 			<img class="shadow" width="400"  src="../images/whatsnew3_1/post-execution_options.png" />
 		</div>
-
 		<h2>Selection after tool execution</h2>
 		<p>For users who need to rapidly create new models and efficient representations, reducing the number of clicks is very important to improve their productivity.</p>
 		<p>With Sirius 3.1, we have added the possibility to specify which elements to automatically select after a tool execution. On each kind of tool (creation, edition, navigation, etc) we have added two new options <b>“Element To Select”</b> and <b>“Inverse Selection Order”</b> that can be used to specify which model elements to select after the execution of the tool.</p>		
 	</div>
-	
+	<div class="clear"></div>
 	<div>
 		<h2>AQL becomes the recommended query language!</h2>
 		<p>AQL (Acceleo Query Language), the new query language introduced with Sirius 3.0, has proven successful. We recommend its usage, in preference to Acceleo 3 or OCL, in order to benefit from its many advantages:</p>
@@ -112,7 +91,6 @@
 	</div>
 	
 	<br /><br />
-	
 	<div>
 		<h2>Performance and scalability</h2>
 		<p>It seems to be our catch phrase now, but once again we have improved the performance and scalability of Sirius! This is definitively a concern of every day for us, because each Sirius release is used by more and more organizations on bigger and bigger models.</p>
@@ -124,59 +102,8 @@
 	<br />
 </div> <!-- Fin body_wrapper -->
 
-<div class="clear"></div>
-
-<div id="footer_wrapper">
-	<div id="footer_content">
-		<div class="column">
-			<div class="columntitle">
-				<h3>Eclipse Links</h3>
-			</div>
-			<ul>
-				<li><a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy</a></li>
-				<li><a href="http://eclipse.org/"> Eclipse</a></li>
-				<li><a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use</a></li>
-				<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-				<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
-				<li><a href="http://www.eclipse.org/org/foundation/contact.php"> Contact Us</a></li>
-			</ul>
-		</div>
-
-		<div class="column">
-			<div class="columntitle">
-				<h3>Community</h3>
-			</div>
-			<ul>
-				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></li>
-				<li><a href="http://www.obeodesigner.com/sirius">Professional Support</a></li>
-				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius">Bug Tracker</a></li>
-				<li><a href="../getstarted.html">Get Started</a></li>
-				<li><a href="../articles-videos.html">Articles & Videos</a></li>
-				<li><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></li>
-				<li><a href="http://wiki.eclipse.org/Sirius">Wiki</a></li>
-				<li><a href="https://dev.eclipse.org/mailman/listinfo/sirius-dev">Developer Mailing List</a></li>
-				<li><a href="http://git.eclipse.org/c/sirius/org.eclipse.sirius.git ">Source Code</a></li>
-			</ul>
-		</div>
-
-		<div class="column">
-			<a href="http://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo"></a>
-			<span id="copyright">Copyright © <span id="year">YEAR</span> The Eclipse Foundation. All Rights Reserved.</span>
-		</div>
-	</div>
-</div>
-
-<div id="download_banner_wrapper" class="bg_dark_fushia">
-	<div class="closeButton"><img src="../images/closeButton.png" border="0"/></div>
-	<div id="download_banner_content">
-		<script> 
-			jQuery.get( "../call2action.html", function(data) {
-			  jQuery( "#download_banner_content" ).html( data );
-			  //alert( "Load was performed : " + data );
-			});
-		</script>
-	</div>
-</div>
-
+	<div class="clear"></div>
+	<ng-include src="'../angular/blocks/footer.html'"></ng-include>
+	<ng-include src="'../angular/blocks/call2action.html'"></ng-include>
 </body>
 </html>

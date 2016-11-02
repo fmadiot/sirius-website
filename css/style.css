@@ -404,18 +404,10 @@ section.highlight_banner {
 	width: 510px;
 }
 
-.section.left {
-	padding-right: 470px;
-}
-
 .section.left .image {
 	float: right;
 	margin-right: -477px;
 	margin-top: 5px;
-}
-
-.section.right {
-	padding-left: 483px;
 }
 
 .section.right .image {
