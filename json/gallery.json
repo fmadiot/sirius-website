@@ -1,39 +1,5 @@
 {"usecases":[
-         {
-            "medias": {
-            	"mainSrc": "images/gallery/capella-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/capella-2.jpg"},
-            		{"src": "images/gallery/capella-3.jpg"},
-            		{"src": "images/gallery/capella-4.jpg"},
-            		{"src": "images/gallery/capella-5.jpg"},
-            		{"src": "images/gallery/capella-6.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "Capella",
-             	"author": "Thales",
-             	"description": "<p>Capella is a field-proven model driven engineering solution based on a graphical modeling workbench for engineers developing systems, software and hardware architectures.</p><p>It provides a domain-specific language (DSL) implementing Arcadia, both as a simplification and a semantic enrichment of the UML and SysML standards.</p>",
-             	"tags": [
-             		{
-             			"nom": "Systems Engineering",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project page",
-             			"url": "https://polarsys.org/capella/"
-             		},
-             		{
-             			"nom": "Strategy for building custom modeling workbenches",
-             			"url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"
-             		}
-             	]
-             }
-        },
-                {
+        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/maif-1.png",
 	            	"imgAlt": "Put image name here",
@@ -62,9 +28,7 @@
 	             		}
 	             	]
 	             }
-	        },
-
-
+	   },
        {
             "medias": {
             	"mainSrc": "images/gallery/uml-1.png",
@@ -88,13 +52,13 @@
              	],
              "lnks": [
              		{
-             			"nom": "Product web site",
+             			"nom": "Product website",
              			"url": "http://www.umldesigner.org/"
              		}
                          	]
              }
         },
-               {
+        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/ecore-1.png",
 	            	"imgAlt": "Put image name here",
@@ -119,7 +83,7 @@
 	             	],
 	             "lnks": [
              		{
-             			"nom": "eclipse.org/ecoretools",
+             			"nom": "Product website",
              			"url": "http://www.eclipse.org/ecoretools/"
              		}
 	             	]
@@ -147,13 +111,43 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Project page",
+	             			"nom": "EclipseCon Talk",
 	             			"url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
 	             		}
 	             	]
 	             }
 	        },
-                 {
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/modulestudio-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/modulestudio-2.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "ModuleStudio",
+	             	"author": "Guite",
+	             	"description": "<p>A DSL with tooling based on Sirius and Xtext to describe structure and behavior of web applications. The models are used to generate extensions for a PHP-based web application framework.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Project page",
+	             			"url": "http://modulestudio.de/en/"
+	             		},
+	             		{
+	             			"nom": "Video",
+	             			"url": "https://www.youtube.com/watch?v=sZcOIh92zxY"
+	             		}
+	             	]
+	             }
+	        },
+            {
 	            "medias": {
 	            	"mainSrc": "images/gallery/pep-1.png",
 	            	"imgAlt": "Put image name here",
@@ -203,10 +197,6 @@
 	             		{
 	             			"nom": "Leveraging Sensor-based Interactions in Multimodal Mobile Applications",
 	             			"url": "http://www.lifl.fr/~rouillar/publi/2014_Elouali_Lepallec_Rouillard_Tarby_EA_CHI.pdf"
-	             		},
-	             		{
-	             			"nom": "Nadia Elaoui's blog",
-	             			"url": "http://www.lifl.fr/~eloualin/tool.html"
 	             		}
 	             	]
 	             }
@@ -426,10 +416,6 @@
              	],
              "lnks": [
              		{
-             			"nom": "Obeo Marketplace",
-             			"url": "http://marketplace.obeonetwork.com/module/risk-analysis"
-             		},
-             		{
              			"nom": "Fr&eacute;d&eacute;ric Thomas' blog",
              			"url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"
              		}
@@ -574,7 +560,7 @@
 	             "lnks": [
 	             		{
 	             			"nom": "Github",
-	             			"url": "https://github.com/juli1/emfta"
+	             			"url": "https://github.com/cmu-sei/emfta"
 	             		}
 	             	]
 	             }
@@ -598,8 +584,8 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Obeo Markeplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/bpmn"
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/ObeoNetwork/BPMN-Designer"
 	             		}
 	             	]
 	             }
@@ -701,8 +687,8 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Obeo Marketplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/cinematic"
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/ObeoNetwork/InformationSystem"
 	             		}
 	             	]
 	             }
@@ -726,8 +712,8 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Obeo Marketplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/database"
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/ObeoNetwork/InformationSystem"
 	             		}
 	             	]
 	             }
@@ -758,8 +744,8 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Obeo Marketplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/graal"
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/ObeoNetwork/InformationSystem"
 	             		}
 	             	]
 	             }
@@ -811,8 +797,8 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Obeo Markeplace",
-	             			"url": "http://marketplace.obeonetwork.com/module/sysml"
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/ObeoNetwork/SysML-Designer"
 	             		}
 	             	]
 	             }

@@ -1,5 +1,173 @@
 {"articles":[
-	{
+		{
+			"header": {
+             	"title": "Graphical Modeling from 2016 to 2017: Better, Faster, Stronger",
+             	"date": "20/12/2016",
+             	"description": "<p>At Obeo, we believe that modeling is the right way to help IT and industry engineers collaborate efficiently on the design...</p>",
+             	"lnk": "http://cedric.brun.io/eclipse/modeling-2016-2017-better-faster-stronger/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/cbrun.png",
+            	"imgAlt": "C&eacute;dric Brun",
+            	"lnks": [
+             		{
+             			"blog": "http://cedric.brun.io/",
+             			"mail": "mailto:cedric.brun@obeo.fr",
+             			"twitter" : "https://twitter.com/bruncedric",
+             			"google" : "https://plus.google.com/+C%C3%A9dricBrun",
+             			"github" : "https://github.com/cbrun"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Sirius 4.1 is Out! What’s Inside ? Sadness",
+             	"date": "28/10/2016",
+             	"description": "<p>That’s too sad! EclipseCon Europe finished yesterday. It was again a great conference, with inspiring talks and excellent discussions...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-1-is-out-whats-inside-sadness/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Sirius 4.1 is Out! What’s Inside ? Anger",
+             	"date": "27/10/2016",
+             	"description": "<p>Do you ever feel that? This week I often dreamt I had the gift of ubiquity… I could replicate myself and be in several places at once. It would be a really...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-1-is-out-whats-inside-anger/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Sirius 4.1 is Out! What’s Inside ? Fear",
+             	"date": "26/10/2016",
+             	"description": "<p>Wednesday will be a huge day for Obeo at EclipseCon Europe 2016. You will find several talks about Eclipse Sirius in the program, and one thing for you...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-1-is-out-whats-inside-fear/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Sirius 4.1 is Out! What’s Inside ? Disgust",
+             	"date": "25/10/2016",
+             	"description": "<p>What feeling do you never want to encounter in life? For me it’s Disgust! Nevertheless, I encounter it sometimes, in very special cases...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-1-is-out-whats-inside-disgust/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Sirius 4.1 is Out! What’s Inside ? Joy",
+             	"date": "24/10/2016",
+             	"description": "<p>This week I am participating to EclipseCon Europe to present what’s new in Eclipse Sirius 4.1. What I feel like on monday morning: Joy!...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-1-is-out-whats-inside-joy/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Sirius 4.1: Ready? Go!",
+             	"date": "13/10/2016",
+             	"description": "<p>When I was a child one of my favorite game was Puzzle Bobble, you may remember these two little dragons Bub and Bob. What I loved in this game...</p>",
+             	"lnk": "http://melb.enix.org/sirius/sirius-4-1-ready-go/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/mbats.png",
+            	"imgAlt": "M&eacute;lanie Bats",
+            	"lnks": [
+             		{
+             			"blog": "http://melb.enix.org/",
+             			"mail": "mailto:melanie.bats@obeo.fr",
+             			"twitter" : "https://twitter.com/melaniebats",
+             			"google" : "https://plus.google.com/+M&eacute;lanieBats",
+             			"github" : "https://github.com/mbats"
+             		}
+             	]
+             }
+        },
+	    {
+			"header": {
+             	"title": "Sirius – The easiest way to get your own modeling tool",
+             	"date": "26/10/2016",
+             	"description": "<p>I started using Sirius around two years ago when we built an open source editor for IFML (Interaction Flow Modeling Language) with it...</p>",
+             	"lnk": "http://modeling-languages.com/sirius-eclipse-obeo-graphical-modeling-tool/" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/jcabot.jpeg",
+            	"imgAlt": "Jordi Cabot",
+            	"lnks": [
+             		{
+             			"blog": "http://modeling-languages.com/",
+             			"mail": "mailto:jordi.cabot@icrea.cat",
+             			"twitter" : "https://twitter.com/softmodeling",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+       },
+	   {
 			"header": {
              	"title": "Sirius for dummies",
              	"date": "10/08/2016",
@@ -41,7 +209,7 @@
              	]
              }
         },
-        {
+		{
 			"header": {
              	"title": "Eclipse Modeling Package Neon M6 is ready for testing",
              	"date": "30/03/2016",

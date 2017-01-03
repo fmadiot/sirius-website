@@ -798,6 +798,12 @@ a.social {
 	margin-right: 20px;
 }
 
+.blogger p a img {
+	max-width: 48px;
+	border-radius: 48px;
+}
+
+
 h3, .blogger .name,.videos h3 a {	
 	font-family: 'Open Sans Condensed', Arial, sans-serif;
 	font-weight: bold;
