@@ -1,4 +1,38 @@
 {"usecases":[
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/capella-1.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/capella-2.jpg"},
+            		{"src": "images/gallery/capella-3.jpg"},
+            		{"src": "images/gallery/capella-4.jpg"},
+            		{"src": "images/gallery/capella-5.jpg"},
+            		{"src": "images/gallery/capella-6.jpg"}
+            		]
+             },
+             "infos": {
+             	"title": "Capella",
+             	"author": "Thales",
+             	"description": "<p>Capella is a field-proven model driven engineering solution based on a graphical modeling workbench for engineers developing systems, software and hardware architectures.</p><p>It provides a domain-specific language (DSL) implementing Arcadia, both as a simplification and a semantic enrichment of the UML and SysML standards.</p>",
+             	"tags": [
+             		{
+             			"nom": "Systems Engineering",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project page",
+             			"url": "https://polarsys.org/capella/"
+             		},
+             		{
+             			"nom": "Strategy for building custom modeling workbenches",
+             			"url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"
+             		}
+             	]
+             }
+        },
         {
 	            "medias": {
 	            	"mainSrc": "images/gallery/maif-1.png",
@@ -147,6 +181,33 @@
 	             	]
 	             }
 	        },
+	        {
+	            "medias": {
+	            	"mainSrc": "images/gallery/nosql_visualization-1.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		{"src": "images/gallery/nosql_visualization-2.png"},
+	            		{"src": "images/gallery/nosql_visualization-3.png"}
+	            		]
+	             },
+	             "infos": {
+	             	"title": "NoSQL Visualization Tool",
+	             	"author": "Cátedra SAES & University of Murcia",
+	             	"description": "<p>NoSQLVisualization is a tool designed to visualize schemas and schema versions which have been inferred from NoSQL databases. This tool defines several viewpoints such as trees and diagram compositions in order to visualize the main elements of NoSQL schemas: entities, versions, fields, aggregations and references.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Software Development",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "GitHub",
+	             			"url": "https://github.com/Soltari/NoSQLVisualizationTools/"
+	             		}
+	             	]
+	             }
+	        },
             {
 	            "medias": {
 	            	"mainSrc": "images/gallery/pep-1.png",
@@ -222,7 +283,7 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Github",
+	             			"nom": "GitHub",
 	             			"url": "http://dartdesigner.github.io/"
 	             		},
 	             		{
@@ -253,7 +314,7 @@
              	],
              "lnks": [
              		{
-             			"nom": "Github",
+             			"nom": "GitHub",
              			"url": "http://ifml.github.io/"
              		}
                          	]
@@ -286,7 +347,7 @@
              	],
              "lnks": [
              		{
-             			"nom": "Github",
+             			"nom": "GitHub",
              			"url": "https://github.com/mbats/arduino"
              		}
                          	]
@@ -441,7 +502,7 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Github",
+	             			"nom": "GitHub",
 	             			"url": "https://github.com/lbroudoux/eip-designer"
 	             		},
              		{
@@ -559,7 +620,7 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Github",
+	             			"nom": "GitHub",
 	             			"url": "https://github.com/cmu-sei/emfta"
 	             		}
 	             	]
