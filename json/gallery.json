@@ -34,6 +34,42 @@
              }
         },
         {
+            "medias": {
+            	"mainSrc": "images/gallery/iri-tmb.png",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/iri-er.png"},
+            		{"src": "images/gallery/iri-flow.png"},
+            		{"src": "images/gallery/iri-tmb.png"}
+            	]
+             },
+             "infos": {
+             	"title": "IRI Workbench for Voracity",
+             	"author": "IRI, The CoSort Company",
+             	"description": "<p>IRI Workbench provides a simple visual interface and ergonomic modules to design and run all job scripts. In this graphical IDE built on Eclipse, you build, modify, share, and execute the simple, portable job scripts of IRI tools, and the state-of-the-art, portable workflows of the new IRI Voracity platform.</p><p>IRI Workbench features metadata creation, conversion, discovery, and application wizards to help you generate, deploy, and manage the simple job scripts (SortCL, etc.), data definition files (DDF), and XML workflows common to all IRI software.</p>",
+             	"tags": [
+             		{
+             			"nom": "Big Data",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "ETL",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "Data Masking",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Product website",
+             			"url": "http://www.iri.com/products/workbench"
+             		}
+             	]
+             }
+        },
+        {
 	            "medias": {
 	            	"mainSrc": "images/gallery/maif-1.png",
 	            	"imgAlt": "Put image name here",
