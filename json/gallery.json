@@ -35,6 +35,74 @@
         },
         {
             "medias": {
+            	"mainSrc": "images/gallery/etas-1.png",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/etas-2.png"}
+            		]
+             },
+             "infos": {
+             	"title": "ASCET-CONGRA",
+             	"author": "ETAS GmbH",
+             	"description": "<p>ETAS ASCET-CONGRA (CONstraint GRAph) allows function developers to depict mathematically describable relationships using interactive graphs. These describe the overall system based on equations, differential equations, maps, and curves. The tool checks all input for computability, automatically carries out the mathematical work in the background, and offers various analyses and functions that serve to implement, correctly and efficiently, the system to be developed. It includes interaction with an XText based model and cooperation with a textual representation.</p>",
+             	"tags": [
+             		{
+             			"nom": "Systems Engineering",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "Embedded Software Development",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "Domain Driven Development",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "Constraint Graph",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project page",
+             			"url": "https://www.etas.com/fr/products/ascet_congra.php"
+             		}
+             	]
+             }
+        },
+        {
+            "medias": {
+            	"mainSrc": "images/gallery/palladio-1.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/palladio-2.jpg"}
+            		]
+             },
+             "infos": {
+             	"title": "Palladio Component Model",
+             	"author": "Karlsruhe Institute of Technology",
+             	"description": "<p>Palladio is an approach for performance evaluation and design-time performance prediction for component-based software architectures. When creating a Palladio model, at first, components are specified including their interfaces and abstractions of their behavior. This includes performance properties like resource demands. From these components, a system architecture can be assembled. The instances of the components can then be deployed on resource containers. A workload is then be applied to the system interface. Such a model can then be analyzed by the simulators of the Palladio approach.</p>",
+             	"tags": [
+             		{
+             			"nom": "Software Architecture",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "Software Performance Engineering",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project page",
+             			"url": "http://palladio-simulator.com/"
+             		}
+             	]
+             }
+        },
+        {
+            "medias": {
             	"mainSrc": "images/gallery/iri-tmb.png",
             	"imgAlt": "Put image name here",
             	"thumbs": [
