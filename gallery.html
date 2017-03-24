@@ -52,7 +52,7 @@
 	        	var lnk = " ";
 	        	var infos = " ";
 
-	   	    medias += "<div class='medias'><div class='popup-gallery-" + i + "'><a href='" + data.usecases[i].medias.mainSrc + "' title='" + data.usecases[i].medias.mainSrc + "'><img class='shadow' src='" + data.usecases[i].medias.mainSrc + "' alt='" + data.usecases[i].medias.imgAlt + "' width='520' /></a></div>";
+	   	    medias += "<div class='medias' id='" + data.usecases[i].infos.title + "'><div class='popup-gallery-" + i + "'><a href='" + data.usecases[i].medias.mainSrc + "' title='" + data.usecases[i].medias.mainSrc + "'><img class='shadow' src='" + data.usecases[i].medias.mainSrc + "' alt='" + data.usecases[i].medias.imgAlt + "' width='520' /></a></div>";
 	   	    
 	   	 	if(data.usecases[i].medias.thumbs.length < 1){
 	   	 		thumblist += "<div class='thumbs'><ul>";
