@@ -81,7 +81,7 @@
              },
              "infos": {
              	"title": "Palladio Component Model",
-             	"author": "Karlsruhe Institute of Technology",
+             	"author": "The Palladio Simulator group",
              	"description": "<p>Palladio is an approach for performance evaluation and design-time performance prediction for component-based software architectures. When creating a Palladio model, at first, components are specified including their interfaces and abstractions of their behavior. This includes performance properties like resource demands. From these components, a system architecture can be assembled. The instances of the components can then be deployed on resource containers. A workload is then be applied to the system interface. Such a model can then be analyzed by the simulators of the Palladio approach.</p>",
              	"tags": [
              		{
