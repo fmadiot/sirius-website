@@ -296,7 +296,8 @@ section.highlight_banner {
 }
 
 .back1 {
-    background-image: url("../images/banners/banner_siriuscon_2016.jpg");
+    background-image: url("../images/banners/banner_siriuscon_2017.jpg");
+	height: 530px !important;
 }
 .parallax {
     background-position: 50% 50%;
