@@ -148,7 +148,7 @@
 			<em>Model Explorer</em>, end-users will be able to create new instances of this diagram on semantic elements of this type (assuming the corresponding viewpoint is enabled in the 
 			<em>Modeling Project</em>). The syntax for the domain class name can be the basic name, like 
 			<code>Package</code>, a qualified name using name of the EMF EPackage which defines the type, like 
-			<code>uml.Package</code>, or a fully qualified URI like 
+			<code>uml::Package</code>, or a fully qualified URI like 
 			<code>http://www.eclipse.org/uml2/3.0.0/UML#//Package</code>.
 		</p>
 		<p>By default, new diagrams can be created on 
@@ -177,20 +177,13 @@
 			<em>Initialization</em> and 
 			<em>Show on startup</em> flags control whether diagram instances are created and/or opened automatically without user intervention. If 
 			<em>Initialization</em> is set, then when the viewpoint which contains this diagram description is enabled, instances of this diagram description will be automatically created on all compatible semantic elements. If 
-			<em>Show on startup</em> in set, then when a modeling project is opened which contains instances of this diagram description, they will be opened: if only one such representation exist, it will be opened automatically; if there are more than one, a dialog box will appear to allow the user to select which one(s) to open. 
+			<em>Show on startup</em> is set, then when a modeling project is opened which contains instances of this diagram description, they will be opened: if only one such representation exist, it will be opened automatically; if there are more than one, a dialog box will appear to allow the user to select which one(s) to open. 
 			<strong>WARNING</strong>: Then 
 			<em>Initialization</em> flag can have a negative impact on performance: if it is set on a given diagram, then when the user enables the viewpoint which defines this diagram Sirius will attempt to find all possible elements in the semantic model on which it may be possible to create such a diagram. This can take a long time on big semantic models.
 		</p>
 		<p>If 
 			<em>Enable Popup Bars</em> flag is set, then when the end-user leaves the mouse pointer still on a diagram (or diagram element) for a small time, a 
 			<em>popup bar</em> will appear with shortcut buttons to all the tools which can be applied in this context. It can be useful to create elements without going to the palette to select tools, but it can also become visually distracting if too many tools are available in the popup bar.
-		</p>
-		<p>The 
-			<em>Reused Mappings</em> and 
-			<em>Reused Tools</em> properties in the 
-			<em>Imports</em> category are depreciated. They should not be used for new diagram descriptions. If you have existing diagram descriptions which use these features (or which contained mappings directly inside the 
-			<em>Diagram Description</em>), these should be moved inside the 
-			<em>Default Layer</em> of the diagram instead.
 		</p>
 		<p>The content of the 
 			<em>Diagram Description</em> is mostly made of 
@@ -263,6 +256,17 @@
 			<em>L2</em> are enabled, the elements are enabled only once (i.e. graphical elements do not appear once for 
 			<em>L1</em> and once for 
 			<em>L2</em>).
+		</p>
+		<h4 id="Transientlayer">Transient layer</h4>
+		<p>A transient layer is a layer that contains only 
+			<em>Decoration Description</em> and/or tools.
+			<br/>When applying a transient layer, the diagram is 
+			<strong>never</strong> modified. Tools are displayed in the palette and decorations are refreshed in opened editors.
+		</p>
+		<p>Note that the 
+			<em>Active by default</em> flag have a different meaning for transient layer. If 
+			<em>Active by default</em> is set, the transient layer will be automatically enabled when the user 
+			<strong>opens</strong> a diagram (and not specially when he creates a new diagram).
 		</p>
 		<h3 id="graphical_elements">Graphical Elements and Mappings</h3>
 		<p>This section describes the different kinds of graphical elements supported on Sirius diagrams and the general principle of how they are specified inside the VSM, through the notion of 
@@ -407,7 +411,7 @@
 			</li>
 			<li>
 				<em>Unsynchronizable</em>: This is the default. This mode is similar to 
-				<em>Synchronized</em> be default, but hives some control to end-users: if they put the whole diagram in 
+				<em>Synchronized</em> be default, but gives some control to end-users: if they put the whole diagram in 
 				<em>Unsynchronized mode</em> (using the context menu on the diagram), all the diagram&#8217;s mappings which are 
 				<em>Unsynchronizable</em> will behave as if they were 
 				<em>Unsynchronized</em>. They will go back to a 
@@ -584,9 +588,7 @@
 				<code>SQUARE</code> The gauges are aligned in a square, which may not be complete. Gauges are added from left to right in lines, and lines added from top to bottom.
 			</li>
 		</ul>
-		<p>You can specify the gauge composite&#8217;s border color using a color sub-element,
-			<br/>which can be any of:
-		</p>
+		<p>You can specify the gauge composite&#8217;s border color using a color sub-element.</p>
 		<p>Gauge composites need one or more 
 			<strong>Gauge Section</strong>, which represent an individual gauge. Each 
 			<em>Gauge Section</em> has a 
@@ -1051,7 +1053,7 @@
 			<br/>The first edge, the highest one, is oriented to the node&#8217;s center
 		</p>
 		<h4 id="bracket_edge_style">Bracket Edge Style</h4>
-		<p>The bracket edge figure is designed to be drawn from the middle of a node side to the middle of another node side.The user can move the main segment and rotate the figure (horizontal-&gt; vertical or vertical-&gt;horizontal).</p>
+		<p>The bracket edge figure is designed to be drawn from the middle of a node side to the middle of another node side. The user can move the main segment and rotate the figure (horizontal-&gt; vertical or vertical-&gt;horizontal).</p>
 		<p>	
 			<img border="0" src="images/styles/Edge_Style_bracketStyle.png"/>
 		</p>
@@ -1191,22 +1193,117 @@
 		</ul>
 		<h3 id="decorations">Decorations</h3>
 		<p>Decorations can be used to add small graphical annotations to the elements of a diagram. They are defined directly inside a layer, and they can be either 
-			<em>Mapping Based Decorations</em> or 
-			<em>Semantic Based Decorations</em>. Both have a name, a 
-			<em>Position</em> which indicate where the decorator should be place relative to its target element, and a 
-			<em>Decorator Path</em>, which should point to a small icon to use as decorator.
+			<em>Mapping Based Decorations</em>, 
+			<em>Semantic Based Decorations</em> or 
+			<em>Generic Decorations</em>.
 		</p>
 		<p>
-			<em>Mapping Based Decorations</em> have a list of 
-			<em>Mappings</em> to which they may apply, while 
-			<em>Semantic Based Decoration</em> have a 
+			<strong>Mapping Based Decorations</strong> have a list of 
+			<em>Mappings</em> to which they may apply.
+			<br/> 
+			<img border="0" src="./images/mappingBasedDecoration.png"/>
+		</p>
+		<p>
+			<strong>Semantic Based Decoration</strong> have a 
 			<em>Domain Class</em> and will apply to all graphical elements which have an instance of this class as their semantic element, whatever are the mapping(s) used to represent them.
+			<br/> 
+			<img border="0" src="./images/semanticBasedDecoration.png"/>
+		</p>
+		<p>
+			<strong>Generic Decoration</strong> is only based on the 
+			<em>Precondition Expression</em> to know if it applies on the current graphical Element.
 		</p>
 		<p>The 
-			<em>Precondition Expression</em> is evaluated in the context of a candidate semantic element (as selected by either the 
-			<em>Mappings</em> or 
-			<em>Domain Class</em> property, and if the expression returns true, the decorator will be shown as the specified location on top of the graphical element&#8217;s shape.
+			<em>Precondition Expression</em> is evaluated in the context of a candidate semantic element which is the semantic element of the current graphical element (that is 
+			<em>DSemanticDecorator.target</em>). If the expression returns true, the decorator will be shown.
 		</p>
+		<h4 id="Decorationdisplay">Decoration display</h4>
+		<p>The 
+			<em>Decoration Description</em> has a 
+			<em>Position</em> which indicates where the decorator should be placed. The position can be chosen among the four corners (NORTH_WEST, NORTH_EAST, SOUTH_WEST and SOUTH_EAST), the middle of each bounding box sides (NORTH, SOUTH, WEST and EAST) and the CENTER positions. 
+		</p>
+		<img align="center" border="0" src="./images/decoration_positions.png"/>
+		<p>Many decorations can be specified at the same 
+			<em>Position</em>. To manage that, the decorations are displayed from their defined position along the border of the bounding box according to the 
+			<em>Distribution Direction</em>.
+		</p>
+		<ul>
+			<li>For corner decorations, it is possible to choose between vertical or horizontal direction.</li>
+			<li>For NORTH, SOUTH and CENTER positions, the direction is only horizontal from the left to right.</li>
+			<li>For WEST and EAST positions, the direction is only vertical from top to bottom.</li>
+		</ul>
+		<p>Decorations example: 
+			<img align="center" border="0" src="./images/decoration_example.png"/>
+		</p>
+		<p>By default the margin between the decoration and the border of the figure is 2 pixels.
+			<br/>When a node contains border nodes, the node decorations are shifted from the border to avoid overlap with border node
+			<br/>Decorations example with border nodes: 
+			<img align="center" border="0" src="./images/decoration_borderNode.png"/>
+		</p>
+		<p>The decoration icon is defined with 
+			<em>Image Expression</em> which is an InterpretedExpression. 
+			<em>Image Expression</em> may be:
+		</p>
+		<ul>
+			<li>a path to an image which can be absolute or relative to the workspace. A workspace path example: 
+				<em>/org.eclipse.sirius.tests.sample.component.design/images/square16x16.png</em>
+			</li>
+			<li>an expression that gives a path to an image</li>
+			<li>an expression that provides an instance of 
+				<code>org.eclipse.swt.graphics.Image</code>. Provider will have to define a cache of image to optimize memory consumption and performance. For now, there is no mechanism to release the cache.
+			</li>
+			<li>an expression that provides an instance of 
+				<code>org.eclipse.draw2d.IFigure</code>. The figure life cycle is managed by Sirius.
+			</li>
+		</ul>
+		<p>The 
+			<em>Decoration Description</em> has a 
+			<em>TooltipExpression</em> which may be:
+		</p>
+		<ul>
+			<li>a fixed tooltip string</li>
+			<li>an expression that provides a tooltip String</li>
+			<li>an expression that provides an instance of 
+				<code>org.eclipse.draw2d.IFigure</code>. The figure life cycle is managed by Sirius.
+			</li>
+		</ul>
+		<p>Decoration tooltip example: 
+			<img align="center" border="0" src="./images/decoration_tooltip_example.png"/>
+		</p>
+		<p>Sometimes, according to the graphical element size, the decorations are represented with a 
+			<em>list decoration</em> which is a 16x16 pixels frame containing three dots. The tooltip of a 
+			<em>list decoration</em> displays as lines, the contained decorations with its tooltip. 
+			<br/>Sometimes, the graphical element size can be too small to display all decorations without overlapping. In this condition, decorations will be gathered into one decoration called 
+			<em>list decoration</em>. This 
+			<em>list decoration</em> is represented with a 16x16 pixels frame containing three dots. The tooltip of a 
+			<em>list decoration</em> displays, as lines, the contained decorations with its tooltip.
+		</p>
+		<p>List decoration example: 
+			<img align="center" border="0" src="./images/decoration_group_example.png"/>
+		</p>
+		<p>Tooltip example on list decoration: 
+			<img align="center" border="0" src="./images/decoration_group_tooltip_example.png"/>
+		</p>
+		<h4 id="Decorationdisplayupdate">Decoration display update</h4>
+		<p>The decorations can be manually and automatically refreshed.</p>
+		<ul>
+			<li>Manually, when the user clicks on the refresh button in the diagram tool bar.</li>
+			<li>Automatically, according to semantic changes when:
+				<ul>
+					<li>the 
+						<em>target semantic element</em> of the 
+						<code>DDiagramElement</code> (
+						<code>DSemanticDecorator_Target</code> feature) is changed,
+					</li>
+					<li>the 
+						<em>semantic elements</em> of the 
+						<code>DDiagramElement</code> (
+						<code>DRepresentationElement_SemanticElements</code> feature) are changed. They are defined with 
+						<em>Associated Elements Expression</em> on the mapping. It means that a specifier that defined decorations can not add new &#8220;semantic element&#8221;, dedicated to decorations, that would be listened to for the automatic refresh.
+					</li>
+				</ul>
+			</li>
+		</ul>
 		<h2 id="styling">Styling</h2>
 		<p>Styles define the graphical appearance of diagram elements. Sirius supports a rich set of possible styles, including conditional styles which can dynamically change depending on the current state of the underlying model elements. Each mapping must define at least one style do be visible on the diagram.</p>
 		<h3 id="conditional_styles">Conditional Styles</h3>

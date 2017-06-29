@@ -988,9 +988,7 @@
 		</p>
 		<p>The star, 
 			<code>*</code>, is a joker character, allowing you to search with more complicated patterns. Regarding this, an element is found if there is a word in its name or one of its attributes that match with the text in the filter, so if you want to search within words too, add 
-			<code>*</code> at the start of your pattern. Also, you can navigate along the matching elements with 
-			<code>â†‘</code> and 
-			<code>â†“</code>, and go to the selected element in your editor with 
+			<code>*</code> at the start of your pattern. Also, you can navigate along the matching elements with the &#8220;Up&#8221; and &#8220;Down&#8221; arrow keys, and go to the selected element in your editor with 
 			<code>Enter</code>.
 		</p>
 		<h3 id="styleCustomizations">Style customizations </h3>
@@ -1198,6 +1196,10 @@
 		</p>
 		<p>
 			<img border="0" src="images/diagram_editor7.png"/>
+		</p>
+		<p id="transientLayer">Transient layers are displayed, in the drop down menu, after the non transients&#8217;s. They are separated with an horizontal separator. 
+			<br/>
+			<img border="0" src="images/diagram_editor_transient_layer.png"/>
 		</p>
 		<p>
 			<img border="0" src="images/tabbar_filters_selection.png"/> 
@@ -1470,11 +1472,18 @@
 			<em>Appearance</em> preferences page (see below) gives you two preferences to control whether or not to show the labels on shapes (nodes, containers, bordered nodes) and connectors (edges). It also allows you to customize the default font and colors used for some basic diagram elements. Diagram configurations already specify default values for these style attributes, so in practice these preferences are mostly useful for notes.
 		</p> 
 		<img border="0" src="images/preferences_sirius_diagram_appearance.png"/>
+		<p>The 
+			<em>Authorize decoration overlapping</em> preference lets, if checked, the decorations of different positions overlapping each other or displaying outside the diagram element bounding. If unchecked, decorations may be grouped in a 
+			<em>list decorator</em> to avoid overlapping.
+		</p>
 		<h3 id="Printing">Printing</h3>
 		<p>The 
 			<em>Printing</em> page (see below) gives you various preferences related to page layout for layout printing.
 		</p> 
 		<img border="0" src="images/preferences_sirius_diagram_printing.png"/>
+		<p>The 
+			<em>Print decoration</em> preference allows to print decorations displayed on diagram graphical elements.
+		</p>
 		<h3 id="RulersAndGrid">Rulers And Grid</h3>
 		<p>Finally, the 
 			<em>Rulers And Grid</em> page (see below) contains preferences to control whether or not new diagrams should initially show the rulers and/or grids, and whether to enable the 

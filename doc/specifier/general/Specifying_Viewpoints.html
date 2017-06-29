@@ -37,6 +37,9 @@
 								<a href="#interpreted_expressions">Interpreted Expressions</a>
 							</li>
 							<li>
+								<a href="#feature_name">Feature Name</a>
+							</li>
+							<li>
 								<a href="#translatable_messages">Translatable Messages</a>
 							</li>
 							<li>
@@ -243,6 +246,10 @@
 				<a href="Writing_Queries.html#acceleo">use Acceleo 3 to write your expressions</a>, you can also use these elements to declare Acceleo modules in the project that define MTL queries you want to use in your expressions.
 			</li>
 		</ul>
+		<p>To discover all elements in the 
+			<em>VSM</em>, it is possible to use the button <img src="images/specifier-guide/expandall.png" style="box-shadow:none;display:inline;margin:0px;padding:0px;"/>, at the top right corner of the editor to expand the 
+			<em>VSM</em> tree. Obviously, it is possible to collapse this tree by using the button <img src="images/specifier-guide/collapseall.png" style="box-shadow:none;display:inline;margin:0px;padding:0px;"/>, at the top right corner of the editor.
+		</p>
 		<h3 id="common_attributes">Common attributes</h3>
 		<p>Many of the elements used to specify viewpoint share some common configuration attributes. They are described in general terms in this section, and referenced from the specific element&#8217;s sections which used them (sometimes with additional details only relevant for this element).</p>
 		<p><img src="images/common_attributes.png" style="box-shadow:none;display:inline;margin:0px;padding:0px;"/></p>
@@ -282,11 +289,28 @@
 		</p>
 		<p>
 			<img border="0" src="images/domain_class.png"/>
-			<br/>The syntax for type names can be the basic name, like 
-			<code>Class</code>, a qualified name using name of the EMF EPackage which defines the type, like 
-			<code>uml.Class</code>, or a fully qualified URI like 
-			<code>http://www.eclipse.org/uml2/3.0.0/UML#//Class</code>.
+			<br/>The syntax for type names are the following:
 		</p>
+		<ul>
+			<li>
+				<strong>minimal syntax:</strong> it is the basic name, like 
+				<code>Class</code>,
+			</li>
+			<li>
+				<strong>AQL/OCL syntax:</strong> a qualified name using name of the EMF EPackage which defines the type with the separator 
+				<code>::</code> like  
+				<code>uml::Class</code>. It is the default and 
+				<strong>recommended</strong> syntax, consistent with how qualified type names are written in AQL
+			</li>
+			<li>
+				<strong>legacy qualified name like syntax:</strong> it is a qualified name using name of the EMF EPackage which defines the type, like 
+				<code>uml.Class</code>.
+			</li>
+			<li>
+				<strong>fully qualified URI</strong>: like 
+				<code>http://www.eclipse.org/uml2/3.0.0/UML#//Class</code>.
+			</li>
+		</ul>
 		<p>Auto-completion is available in these fields using the 
 			<em>Ctrl+Space</em> shortcut. It is recommended to explicitly associate a meta-model (or more) to your representations definitions to allow for smarter completion. Otherwise by default it will include all types from any EMF meta-model available.
 		</p>
@@ -306,6 +330,21 @@
 		<p>Also, by clicking on the button next to the text field, you can open a dialog with a bigger text area (providing auto-completion too) to type your expression more comfortably. Note that you can add line feeds or tabulations if you want, since they are removed when clicking on the &#8220;OK&#8221; button.</p>
 		<p>
 			<img border="0" src="images/textAreaDialog.png"/>
+		</p>
+		<h3 id="feature_name">Feature Name</h3>
+		<p>Some 
+			<em>VSM</em> elements will need you to specify a 
+			<em>Feature Name</em> (or 
+			<em>Reference Name</em> on 
+			<em>Create Instance</em>) to configure them (Create Instance, Set, Unset, etc.). You can easily identify 
+			<em>Feature Name</em> fields by their light green background in the 
+			<em>Properties</em> sheet of an element.
+		</p>
+		<p>
+			<img border="0" src="images/featureName.png"/>
+		</p>
+		<p>Auto-completion is available in these fields using the 
+			<em>Ctrl+Space</em> shortcut except if the current element type cannot be inferred, usually in the case of a generic tool where the target element will be known only at runtime.
 		</p>
 		<h3 id="translatable_messages">Translatable Messages</h3>
 		<p>Many 
