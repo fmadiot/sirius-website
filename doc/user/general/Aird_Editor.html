@@ -29,6 +29,9 @@
 						<a href="#opening">Opening the Aird Editor</a>
 					</li>
 					<li>
+						<a href="#closing">Closing the Aird Editor and unloading models</a>
+					</li>
+					<li>
 						<a href="#semantic_models">Managing the Semantic Models</a>
 						<ol style="list-style: disc;">
 							<li>
@@ -38,7 +41,10 @@
 								<a href="#model_creation_wizard">Creating New Models</a>
 							</li>
 							<li>
-								<a href="#removing_model">Removing a Model From The aird Editor</a>
+								<a href="#removing_model">Removing Model Dependencies And Representations From The Aird Editor</a>
+							</li>
+							<li>
+								<a href="#removing_representation">Removing Representations From The Aird Editor</a>
 							</li>
 							<li>
 								<a href="#quick_editing">Models Quick Editing</a>
@@ -145,11 +151,44 @@
 		<p>
 			<img border="0" src="images/aird_editor_expand_aird_file.png"/>
 		</p>
+		<h2 id="closing">Closing the Aird Editor and unloading models</h2>
+		<p>You have four different ways to close the aird editor. But not all the ways have the same behaviour.</p>
+		<p>There is one thing to take in consideration when it comes to close the aird editor:</p>
+		<ul>
+			<li>An opened aird editor has all its referenced models loaded in memory as well as any representation opened in a Sirius editor. For big models and big representations, this can have a big memory footprint. So when you want to close the aird editor you must ask yourself if you want to free the memory used by the loaded aird or not. Then you have to choose the right way to close the editor accordingly. Indeed some way to close the editor will not free this memory and some others will.</li>
+		</ul>
+		<p>The closing mechanism which does not unload models and representations is the following:</p>
+		<ul>
+			<li>Clicking on the editor white cross on the top right corner of editor&#8217;s tab. This will only close the aird editor and will not free memory used by loaded models and representations opened in Sirius editors.</li>
+		</ul>
 		<p>
-			<em>Important note:</em> Closing the aird editor will not close representations you may have opened, nor unload the associated files and models. If you are using a 
-			<em>Modeling Project</em> in the 
-			<em>Model Explorer</em> view, you need to close the whole project to unload the models. In other contexts you can use the 
-			<em>Close</em> action available in the context menu of the aird file.
+			<img border="0" src="images/aird_editor_close_editor_with_cross.png"/>
+		</p>
+		<p>The closing mechanisms which do unload models and representations from memory are the following:</p>
+		<ul>
+			<li>If your aird editor refers to an aird file on a 
+				<em>Modeling Project</em>, the only way to unload models and representations from memory is to close it.
+			</li>
+		</ul>
+		<ul>
+			<li>If your aird editor does not refer to an aird file on a 
+				<em>Modeling Project</em>, a button 
+				<em>Unload models</em> is provided by the editor and allows to close the aird editor and free memory used by loaded models and representations.
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="images/aird_editor_close_editor_with_button.png"/>
+		</p>
+		<ul>
+			<li>When aird editor is not in a 
+				<em>Modeling Project</em>, 
+				<em>Close</em> action in contextual menu of the aird file is available. This action is reachable in any view showing the aird as an IFile like 
+				<em>Model Explorer</em>, 
+				<em>Package Explorer</em> etc... 
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="images/aird_editor_close_editor_with_right_click.png"/>
 		</p>
 		<h2 id="semantic_models">Managing the Semantic Models</h2>
 		<p>This section describes how to manage the semantic models associated to your aird file, which are visible in the 
@@ -220,16 +259,50 @@
 				<code>aird</code> file and have a generated name.
 			</li>
 		</ul>
-		<h3 id="removing_model">Removing a Model From The aird Editor</h3>
-		<p>To remove a semantic model loaded in the aird file, just select it in the editor and click on the 
+		<h3 id="removing_model">Removing Model Dependencies And Representations From The Aird Editor</h3>
+		<p>To remove 
+			<strong>models dependencies</strong>, you must select the root model items and click on the 
 			<strong>
 				<i>Remove</i>
-			</strong> button. This action does not delete the physical file.
+			</strong> button:
 		</p>
-		<p>Note that if you are working inside a project with the 
-			<em>Modeling</em> nature, it is not possible to remove a semantic model which is located inside the project. Indeed, the 
-			<em>Modeling</em> nature ensures that all model files stored inside the project are always loaded in the project&#8217;s 
-			<code>aird</code> file.
+		<p>
+			<img border="0" src="images/aird_editor_remove_semantic_model.png"/>
+		</p>Note that this action does not delete the physical model file.
+		<p>The removal can be applied only if some rules are respected. If they are not, the remove button will still be active and its activation, will inform you of the reasons why you cannot proceed the removal.</p>
+		<p>The rules regarding models dependencies removal are the following :</p>
+		<ul>
+			<li>A model dependency cannot be removed if at least one of its element contains a representation. Note that the representation can be invisible if the viewpoint providing it is not enabled.</li>
+		</ul>
+		<p>
+			<img border="0" src="images/aird_editor_remove_semantic_model_representation.png"/>
+		</p>
+		<ul>
+			<li>A model dependency cannot be removed if you are working inside a project with the 
+				<em>Modeling</em> nature and the semantic model is located inside this project. Indeed, the 
+				<em>Modeling</em> nature ensures that all model files stored inside the project are always loaded in the project&#8217;s 
+				<code>aird</code> file.
+			</li>
+		</ul>
+		<ul>
+			<li>A model dependency cannot be removed if it is a fragment of a model. In this situation you need to use the 
+				<strong>
+					<i>Uncontrol</i>
+				</strong> action to remove it.
+			</li>
+		</ul>
+		<p>
+			<img border="0" src="images/aird_editor_remove_semantic_model_uncontrol.png"/>
+		</p>
+		<h3 id="removing_representation">Removing Representations From The Aird Editor</h3>
+		<p>To remove a 
+			<strong>representation</strong> from the aird file, you can either select it in the editor and use the right click contextual action 
+			<strong>
+				<i>Delete</i>
+			</strong> or the 
+			<strong>
+				<i>DEL</i>
+			</strong> keyboard key.
 		</p>
 		<h3 id="quick_editing">Models Quick Editing</h3>
 		<p>The normal way to display and edit models with Sirius is to do it through one or several Sirius-defined representations (
