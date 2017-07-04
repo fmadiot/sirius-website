@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="../angular/sirius.js"></script>
+
+	<link rel="icon" type="image/png" href="../favicon.ico" />
+	<title>Sirius - What's New in Sirius 4.1</title>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
+</head>
+
+<body ng-app="sirius" ng-controller="main" class="cloak">
+<ng-include src="'../angular/blocks/header.html'"></ng-include>
+
+	<div id="body_wrapper">
+		<h1 class="page_title">What's New in Sirius 5.0</h1>
+
+		<p>This new release, seeks to provide your end-users with a smoother experience as they work with the great modeling tools you created with Eclipse Sirius.</p>
+<p>&nbsp;</p>
+<h2><a name="modeling-project"></a>A fresh look at your Modeling Projects</h2>
+<p>We decided to make life even easier for first-time Sirius-based modeling tool users.</p>
+<p>It could be challenging for a beginner opening a Modeling Project for the first time to understand how to create a model, what viewpoints actually mean, and how to activate them in order to visualize and create specific representations.</p>
+<p>With Sirius 5.0 all this information can be simply presented to the end-user commencing a Modeling Project. When the user has selected a specific preference, Sirius automatically opens up a new editor that presents all the models and representations organized by the various viewpoints.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_aird-editor.png" alt="aird editor" width="800" border="0" /></p>
+<p>This can greatly improve how users explore all current Modeling Projects, and the new editor can also facilitate how users can augment their Modeling Project.</p>
+<p>Firstly a new wizard guides users through the model creation process so they no longer have to find the right wizard themselves to match their domain model.</p>
+<p>Secondly, users no longer have to select a viewpoint in order to create the related representations. With the new UI, users just have to select the representation and Sirius automatically selects the appropriate viewpoint.</p>
+<p>This new editor is experimental and as such it does not yet open by default. Your feedback on this feature is greatly welcomed.</p>
+<p>&nbsp;</p>
+<h2><a name="property-fields"></a>Create property fields with ease</h2>
+<p>Sirius 4.0 enabled the creation of customer properties views allowing you to provide rich edition capabilities to your diagrams.</p>
+<p>Now Sirius 5.0 enables you to create your properties views much faster.</p>
+<p>Once you have specified the right domain model for a properties group, Sirius 5.0 offers a new menu entry called <i>New Widget From Domain Class</i>. This allows you to create pre-configured widgets from each feature that has been defined in the corresponding domain class. End-users of your tool can use these widgets <i>As-Is</i> within the Properties View.</p>
+<p>For instance, from the domain class <i>Address</i>, Sirius 5.0 enables you to populate a properties group containing a widget for each feature defined within the class <i>Address</i>, namely <i>street, city, zipCode, city, country</i>.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_create-widget.png" alt="create widgets from domain model" width="800" border="0" /></p>
+<p>With this new feature you can save a great deal of time when building your custom properties views by simply adapting ready-to-use widgets created with just one click.</p>
+<p>You can spend the time saved on implementing our enhancements for making your properties views even easier to use such as adding small buttons to the properties pages and groups toolbars as well as adding images to buttons and actions.</p>
+<p>&nbsp;</p>
+<h2><a name="reuse-extend"></a>Reuse and extend your properties views</h2>
+<p>If you need to specify distinct properties views comprising similar widgets, Sirius 5.0 allows you to reuse them and extend them with ease to comprise specific views without duplicating their specifications.</p>
+<p>For instance if you have created a group that displays somebody's address, you can reuse this group to display the address of this person's father.</p>
+<p>Furthermore, this group can be specialized to display fields in a specific colour. And you also can extend it to add new widgets, so for example, you can add a button that copies the address from the person in question to the father and vice-versa.</p>
+<p>This extended group can then be reused to display the address of the person's mother and with a specific colour too.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_extension.png" alt="reuse and extend properties views" width="800" border="0" /></p>
+<p>This is available at all levels (widgets, groups, pages) and can be used to override inherited specifications.</p>
+<p>By simplifying your specifications, your tools maintainability is enhanced and you can better keep a consistent user experience with the same look and feel across your different properties views.</p>
+<p>&nbsp;</p>
+<h2><a name="wizards"></a>Add smart wizards to your modeling tool</h2>
+<p>Some situations may require smart wizards to assist users effect efficient and contextual editing workflows at the right time.</p>
+<p>With Sirius 5.0 you can use the properties views related mechanism to easily specify dialogs and wizards.</p>
+<p>These dialogs and wizards are defined as operations that you can branch onto your tools (object creation, double-click, menus, etc.), and you can apply the new extension mechanisms as well as reuse some of your existing properties views when defining their contents.</p>
+<p>For example, you can reuse the groups previously defined for the address and open a specific wizard when a user double-clicks a person.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_wizard.gif" alt="wizard" border="0" /></p>
+<p>Now you have the means to offer users a better model editing experience and perform pre-defined contextural and customized operations.</p>
+<p>&nbsp;</p>
+<h2><a name="decorations"></a>Added control over displaying decorations</h2>
+<p>Sirius 5.0 gives you a new mechanism to better display decorations on diagrams.</p>
+<p>Decorations are the small shapes and icons that can be displayed on nodes (on a corner, in the centre, or in the middle of a border) that provide additional information depending on the properties of the relevant model object.</p>
+<p>Prior to Sirius 5.0 multiple decorations would overlap, whereas now you can decide if a new decoration should move vertically or horizontally from wherever a previously displayed decoration still displays.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_decorator1.png" alt="decorator edition" width="700" border="0" /></p>
+<p>So for example you can use this mechanism to display the different ways to communciate with someone, namely with email and phone numbers (home, mobile, work) on the top right and social networks (LinkedIn, Facebook, Twitter) on the bottom left.</p>
+<p>For each person, only the relevant decoration should be used and Sirius 5.0 automatically computes the layout enabling users to see these decorations.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_decorator2.png" alt="decorator visualization" border="0" /></p>
+<p>This new feature is particularly useful when several extensions add decorations to the same modeling tool. In this case Sirius ensures that the end-users continue to benefit from decorations displayed as before and if Sirius detects insufficient room for full display, then it provides a tooltip with all the decorations.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_decorator3.png" alt="decorations tooltip" border="0" /></p>
+<p>If you don't want these decoration to be made visible by default you can now place them on a transient layer.</p>
+<p><img class="shadow" src="../images/whatsnew5_0/sirius50_transient-layer.png" alt="transient layer" border="0" /></p>
+<p>With Sirius 5.0 a layer exclusively containing decorations or tools is considered as a transient layer, meaning that it is only applied if the user activates it and the <i>Active by default</i> option has not been selected. Even if the layer was activated the last time the user has closed the diagram, it will not be activated at the next opening.</p>
+<p>&nbsp;</p>
+<h2><a name="more"></a>And even more</h2>
+<p>Sirius 5.0 comprises some 100 changes (new features, enhancements, bug fixes) that the Sirius team has been working hard on for several months.</p>
+<p>A comprehensive list of changes can be found in the <a href="https://www.eclipse.org/sirius/doc/Release_Notes.html#sirius5.0.0" target="_blank">Official Release Notes</a>.</p>
+<p>You can also watch the video of the Sirius 5.0 webinar <a href="https://www.youtube.com/watch?time_continue=6&amp;v=EkLkhuA40zw" target="_blank">All about UX</a> by M&eacute;lanie Bats &amp; Steacute;phane Beacute;gaudeau (Eclipse Foundation Oxygen MeetUp Series).</p>
+<p>&nbsp;</p>
+<h2><a name="config"></a>Configuration requirements</h2>
+<p>This version now requires Java 8 and is compatible with Neon and Oxygen (support for Eclipse Mars has been dropped). This version is also compatible with Guava 21.</p>
+	</div>
+	<!-- Fin body_wrapper -->
+
+	<div class="clear"></div>
+	<ng-include src="'../angular/blocks/footer.html'"></ng-include>
+	<ng-include src="'../angular/blocks/call2action.html'"></ng-include>
+</body>
+</html>
