@@ -167,6 +167,43 @@
 	             	]
 	             }
 	   },
+	   {
+	            "medias": {
+	            	"mainSrc": "images/gallery/schema_ea_en.png",
+	            	"imgAlt": "Put image name here",
+	            	"thumbs": [
+	            		]
+	             },
+	             "infos": {
+	             	"title": "Obeo SmartEA (Archimate for Enterprise Architecture)",
+	             	"author": "Obeo",
+	             	"description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor–made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture. With Obeo SmartEA, Enterprise Architects are freed from the tedious task of manual mapping and can therefore spend more time focusing on analysis and consulting.</p>",
+	             	"tags": [
+	             		{
+	             			"nom": "Enterprise Architecture",
+	             			"url": "#"
+	             		},
+	             		{
+	             			"nom": "Archimate",
+	             			"url": "#"
+	             		},
+	             		{
+	             			"nom": "Information System",
+	             			"url": "#"
+	             		},
+	             		{
+	             			"nom": "Strategic Changes Management",
+	             			"url": "#"
+	             		}
+	             	],
+	             "lnks": [
+	             		{
+	             			"nom": "Product website",
+	             			"url": "https://www.obeosmartea.com/en/"
+	             		}
+	             	]
+	             }
+	   },
        {
             "medias": {
             	"mainSrc": "images/gallery/uml-1.png",
