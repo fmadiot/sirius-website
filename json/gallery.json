@@ -169,15 +169,18 @@
 	   },
 	   {
 	            "medias": {
-	            	"mainSrc": "images/gallery/schema_ea_en.png",
+	            	"mainSrc": "images/gallery/graphicalModelingWorkbench.png",
 	            	"imgAlt": "Put image name here",
 	            	"thumbs": [
+	            		{"src": "images/gallery/appsComponentsArtifacts.png"},
+	            		{"src": "images/gallery/tripSellingProcessBO.png"},
+	            		{"src": "images/gallery/graphicalModelingWorkbench.png"}
 	            		]
 	             },
 	             "infos": {
-	             	"title": "Obeo SmartEA (Archimate for Enterprise Architecture)",
+	             	"title": "Obeo SmartEA",
 	             	"author": "Obeo",
-	             	"description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor–made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture. With Obeo SmartEA, Enterprise Architects are freed from the tedious task of manual mapping and can therefore spend more time focusing on analysis and consulting.</p>",
+	             	"description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor–made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
 	             	"tags": [
 	             		{
 	             			"nom": "Enterprise Architecture",
