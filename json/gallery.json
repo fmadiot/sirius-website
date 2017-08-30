@@ -1,4 +1,5 @@
 {"usecases":[
+
 		{
             "medias": {
             	"mainSrc": "images/gallery/capella-1.jpg",
@@ -33,7 +34,107 @@
              	]
              }
         },
-        {
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/mindstorms-1.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/mindstorms-1.jpg"},
+            		{"src": "images/gallery/mindstorms-2.jpg"}
+            		]
+             },
+             "infos": {
+             	"title": "MindStorms Designer",
+             	"author": "Obeo",
+             	"description": "<p>A tool for describing the choreography of a Lego Mindstorms robot: go forward, rotate, grab, release.<br>Java code is generated automatically and can be uploaded on the robot to execute the described choreography.</p>",
+             	"tags": [
+             		{
+             			"nom": "Robotics",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Github",
+             			"url": "https://github.com/mbats/mindstorms"
+             		},
+             		{
+             			"nom": "Video,
+             			"url": "https://www.youtube.com/watch?v=ywAHnBl8gz4"
+             		},
+             		{
+             			"nom": "EclipseCon slides",
+             			"url": "https://www.eclipsecon.org/france2016/sites/default/files/slides/Sirius%20Workshop%20Slides.pdf"
+             		}             		
+             	]
+             }
+        },
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/crala-1.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/crala-1.jpg"},
+            		{"src": "images/gallery/crala-2.jpg"},
+            		{"src": "images/gallery/crala-3.jpg"},
+            		{"src": "images/gallery/crala-4.jpg"},
+            		{"src": "images/gallery/crala-5.jpg"}
+            		]
+             },
+             "infos": {
+             	"title": "CRALA",
+             	"author": "Huaxi Yulin ZHANG (University of Picardie Jules Verne, France)<br>Lei ZHANG (Northeastern University, China)",
+             	"description": "<p>A tool for modeling Cloud robotic systems from IaaS, PaaS and Saas 3-levels, including their variability.</p>",
+             	"tags": [
+             		{
+             			"nom": "Robotics",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Article",
+             			"url": "https://arxiv.org/abs/1701.03608
+             		},
+             		{
+             			"nom": "Video",
+             			"url": "https://www.youtube.com/watch?v=rmeAzF2dCSQ"
+             		}
+             	]
+             }
+        },
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/ubibots-1.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/ubibots-1.jpg"},
+            		{"src": "images/gallery/ubibots-2.jpg"}
+            		]
+             },
+             "infos": {
+             	"title": "UbiBots",
+             	"author": "Leibniz Universität Hannover",
+             	"description": "<p>Ubibots allows specifying complex interaction behaviors of ubiquitous cyber-physical systems.<br>In includes a simulation tool to execute scenarios on distributed robots. Sirius has been used to implement the visualization part.</p>",
+             	"tags": [
+             		{
+             			"nom": "Robotics",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project",
+             			"url": "http://ubibots2015.scenariotools.org"
+             		},
+             		{
+             			"nom": "Video",
+             			"url": "https://www.youtube.com/watch?v=g0hcGSYC2Wk"
+             		}
+             	]
+             }
+        },
+        	{
             "medias": {
             	"mainSrc": "images/gallery/etas-1.png",
             	"imgAlt": "Put image name here",
