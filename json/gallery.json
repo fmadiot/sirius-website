@@ -44,7 +44,7 @@
             		]
              },
              "infos": {
-             	"title": "MindStorms Designer",
+             	"title": "Mindstorms Designer",
              	"author": "Obeo",
              	"description": "<p>A tool for describing the choreography of a Lego Mindstorms robot: go forward, rotate, grab, release.<br>Java code is generated automatically and can be uploaded on the robot to execute the described choreography.</p>",
              	"tags": [
@@ -114,7 +114,7 @@
              },
              "infos": {
              	"title": "UbiBots",
-             	"author": "Leibniz Universit�t Hannover",
+             	"author": "Leibniz Universität Hannover",
              	"description": "<p>Ubibots allows specifying complex interaction behaviors of ubiquitous cyber-physical systems.<br>In includes a simulation tool to execute scenarios on distributed robots. Sirius has been used to implement the visualization part.</p>",
              	"tags": [
              		{
@@ -281,7 +281,7 @@
 	             "infos": {
 	             	"title": "Obeo SmartEA",
 	             	"author": "Obeo",
-	             	"description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor–made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
+	             	"description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor-made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
 	             	"tags": [
 	             		{
 	             			"nom": "Enterprise Architecture",
