@@ -294,7 +294,9 @@
 			<em>Snap to grid</em>, and unlike to snap for node, there is no guide drawn during the move.
 		</p>
 		<h4 id="RemoveBendpoints">Remove Bend-points</h4>
-		<p>You can define some bend-points (or inflection points) on an edge. It is possible to remove all these bend-points to retrieve the original Straight edge. This action is available within the edge context menu or by using the shortcut &#8220;Ctrl&#8221; + &#8220;Shift&#8221; + &#8220;-&#8221;. This action is only available on edges with a &#8220;Straight&#8221; routing style.</p>
+		<p>You can define some bend-points (or inflection points) on an edge. It is possible to remove bend-points to retrieve simple edge. 
+			<br/>For oblique edges, all bend-points will be removed to retrieve the original Straight edge.
+		</p>
 		<p>The edge state just after its creation:
 			<br/>
 			<img border="0" src="images/beforeBendpoints.png"/>
@@ -307,31 +309,68 @@
 			<br/>
 			<img border="0" src="images/afterRemoveBendpoints.png"/>
 		</p>
-		<h4 id="straighten_an_edge">Straighten an edge</h4>
-		<p>There are four actions to straighten an edge, i.e. to transform an edge to an horizontal, or vertical, straight edge (with only one starting point and one ending point).
+		<p>For rectilinear edges, bend-points will be removed to retrieve a rectilinear edge with source and target connection points centered on the middle of the source or target node appropriate side. One additional  bend-point is inserted if source side and target side are in opposite direction. Two intermediates bend-points are inserted if source side and target side are in the same direction.
+			<br/>If number of bend-points can not be reduced, remove action will be inefficient (for example, case when the rectilinear edge is straight).
+		</p>
+		<p>The rectilinear edge after defining some bend-points:
+			<br/>
+			<img border="0" src="images/rectilinearWithBendpoints.png"/>
+		</p>
+		<p>The user executes the &#8220;Remove Bend-points&#8221; action:
+			<br/>
+			<img border="0" src="images/rectilinearAfterRemoveBendpoints.png"/>
+		</p>
+		<p>This action is available within the edge context menu or by using the shortcut &#8220;Ctrl&#8221; + &#8220;Shift&#8221; + &#8220;-&#8221; and it is not available on edges with a &#8220;Tree&#8221; routing style.</p>
+		<h4 id="straighten_an_edge">Straighten edges</h4>
+		<h5 id="Straightenasingleedge">Straighten a single edge</h5>
+		<p>There are eight actions to straighten an edge, i.e. to transform an edge to an horizontal, or vertical, straight edge (with only one starting point and one ending point).
 			<br/>If the edge is connected to a border node, the border node is moved too.
 		</p>
-		<p>These actions are available on edge contextual menu 
+		<p>These actions can be triggered on edge contextual menu 
 			<em>Layout/Straighten</em>: 
+		</p>
+		<p>
 			<img border="0" src="images/straightenToMenu.png"/>
 		</p>
-		<p>Example of initial state of horizontal cases: 
-			<img border="0" src="images/straightenHorizontalInitialState.png"/>
-			<br/>Result after 
-			<em>Straighten to top</em> action: 
-			<img border="0" src="images/straightenToTop.png"/>
-			<br/>Result after 
-			<em>Straighten to bottom</em> action: 
-			<img border="0" src="images/straightenToBottom.png"/>
-			<br/>Example of initial state of vertical cases: 
-			<img border="0" src="images/straightenVerticalInitialState.png"/>
-			<br/>Result after 
-			<em>Straighten to left</em> action: 
-			<img border="0" src="images/straightenToLeft.png"/>
-			<br/>Result after 
-			<em>Straighten to right</em> action: 
-			<img border="0" src="images/straightenToRight.png"/>
+		<p>and also in the tabbar if at least one edge is selected: </p>
+		<p>
+			<img border="0" src="images/straightenToTabbarButton.png"/>
 		</p>
+		<p>There are two distinct kinds of straightening actions. The following examples show how they can be used.</p>
+		<p>Example for horizontal cases of result with the same initial state (the moved nodes are in red): </p>
+		<ul>
+			<li>Result after 
+				<em>Straighten to top</em> action: 
+				<img border="0" src="images/straightenToTop.png"/>
+			</li>
+			<li>Result after 
+				<em>Straighten with left side pinned</em> action: 
+				<img border="0" src="images/straightenWithLeftPinned.png"/>
+			</li>
+			<li>Result after 
+				<em>Straighten with right side pinned</em> action: 
+				<img border="0" src="images/straightenWithRightPinned.png"/>
+			</li>
+			<li>Result after 
+				<em>Straighten to bottom</em> action: 
+				<img border="0" src="images/straightenToBottom.png"/>
+			</li>
+		</ul>
+		<p>Example of initial state of vertical cases: 
+			<img border="0" src="images/straightenVerticalInitialState.png"/>
+		</p>
+		<ul>
+			<li>Result after 
+				<em>Straighten to left</em> or 
+				<em>Straighten with bottom side pinned</em> action: 
+				<img border="0" src="images/straightenToRight.png"/>
+			</li>
+			<li>Result after 
+				<em>Straighten to right</em> or 
+				<em>Straighten with top side pinned</em> action: 
+				<img border="0" src="images/straightenToLeft.png"/>
+			</li>
+		</ul>
 		<p>The action can be disabled (grayed menu) in some conditions:</p>
 		<ul>
 			<li>The action is not possible because it does not respect the source or target node boundaries.</li>
@@ -343,7 +382,11 @@
 			<li>The source or the target of the edge is another edge.</li>
 			<li>The source and the target is the same element.</li>
 		</ul>
-		<p>The action is available (menu is displayed) if the selection contains only edges (note and text attachments are not considered as edges).</p>
+		<p>The action is available (menu is displayed) if the selection contains at least one edge (note, labels and text attachments are not considered as edges). The menu will show all actions available for all edges in the selection. So if a straighten to top is available on one edge and straighten to left on another, both action will be available. Their execution will only affects the edges compatible with it.</p>
+		<h5 id="Straightenmanyedges">Straighten many edges</h5>
+		<p>The straighten actions can be triggered on one edge but also in case of a multi-selection containing more than one edges.</p>
+		<p>In this case the straighten actions available will be the union of actions available for each edges of the selection. I.e if an edge can be only straighten to top and another edge in the selection can be only straighten to top, then available actions on the selection of both edges will be both the top and left actions.</p>
+		<p>When executing a straighten action, only edges from the selection that can be affected by this action will be impacted (if a constraint prevent an edge to be straighten to the direction of the executed action, then it is untouched). </p>
 		<h4 id="move_edge_group">Move edge group</h4>
 		<p>In specific cases, we can find edges connected to border nodes. For example in a diagram representing data flows, exchanges are connected to port in and port out. When the user wants to move an exchange on a layouted diagram, he has to move the source port, then the target port and possibly move some bendpoints of the edge.
 			<br/>This feature aims to move the group {edge, labels, ports} in a single 
@@ -633,6 +676,19 @@
 		<p>	
 			<img border="0" src="images/diagram_export_wrong_extension.png"/>
 		</p>
+		<p>Three checkboxes are available to customize the export:</p>
+		<ul>
+			<li>
+				<em>Export decorations</em>: if checked, some decorations which can appear in diagram elements and are declared as transient in the modeler definition (for example validation errors) are exported in the image.
+			</li>
+			<li>
+				<em>Export to HTLM</em>: if checked, the export will produce a 
+				<code>.html</code> file which references the exported image in addition to the image file itself.
+			</li>
+			<li>
+				<em>Auto-scale</em>: if checked, the exported diagram will be scaled to the maximum possible size (limited by system-specific limitations) while keeping its aspect ratio. This can produce higher resolution images (but also larger files).
+			</li>
+		</ul>
 		<p>
 			<em>
 				<strong>Note:</strong>
@@ -860,7 +916,21 @@
 		</p>
 		<p>When the action is checked, the mode is 
 			<i>Unsynchronized</i>. Otherwise, the mode is 
-			<i>Synchronized</i>. With 
+			<i>Synchronized</i>. 
+			<br/>When the editor is activated, the status bar informs if the diagram is 
+			<i>Synchronized</i> or 
+			<i>Unsynchronized</i> (according to preference 
+			<a href="#show_status_line">
+				<em>Sirius/Sirius Diagram/Show status line</em>
+			</a> ).
+			<br/>
+			<img border="0" src="images/synchronized_diagram_statusbar.png"/>
+			<br/>It is also possible to see this status with a decorator at the bottom-right corner of the diagram (according to preference 
+			<a href="#show_sync_decorator">_Sirius/Sirius Diagram/Show synchronize status decorator on diagram</a> )
+			<br/>
+			<img border="0" src="images/decoratorsSyncStatus.png"/>
+		</p>
+		<p>With 
 			<i>Synchronized</i> mode, the displayed diagram represents what is provided by the modeler. However, with 
 			<i>Unsynchronized</i> mode, the diagram may not display all elements provided by the modeler, but only the elements that the user selected.
 		</p>
@@ -1441,7 +1511,9 @@
 				<em>Enable anti-aliasing:</em> If checked, the graphics on the diagram will use anti-aliasing. This preference does not take effect on all platforms.
 			</li>
 			<li>
-				<em>Show status line:</em> This has no effect for Sirius diagram (it is inherited from the standard GMF settings).
+				<span id="show_status_line">
+					<em>Show status line:</em>
+				</span> This allows to display the GMF status line. It is used in Sirius to display the synchronize status of the diagram..
 			</li>
 		</ul>
 		<ul>
@@ -1459,12 +1531,24 @@
 				<a href="#pinning">pinned</a> and consider it should not be moved by the automatic layout. You can still explicitly 
 				<a href="#pinning">unpin</a> these elements.
 			</li>
-			<li><span id="synchronized_preference">
-				<em>Synchronized mode for new diagrams:</em></span> If checked, all newly created diagrams will initially be in 
+			<li>
+				<span id="synchronized_preference">
+					<em>Synchronized mode for new diagrams:</em>
+				</span> If checked, all newly created diagrams will initially be in 
 				<a href="#synchronized_diagram">synchronized</a> mode. You can still change the mode manually after the diagram is created.
 			</li>
 			<li>
+				<span id="show_sync_decorator">
+					<em>Show synchronize status decorator on diagram:</em>
+				</span> If checked, a decorator in the bottom-right corner of the diagram is displayed to show the 
+				<a href="#synchronized_diagram">synchronize</a> status of the diagram. A value change of this preference will be applied on the next status changed for already opened diagrams.
+			</li>
+			<li>
 				<em>Remove/hide note when the annotated element is removed/hidden:</em> If checked, then notes attached to a diagram element will be deleted if the element is deleted, or hidden if the element is hidden.
+			</li>
+			<li>
+				<em>Auto-scale when exporting as image</em>: determines the default behavior when exporting diagrams programmatically, and the initial value of the corresponding checkbox in the 
+				<em>Export as image</em> dialog.
 			</li>
 		</ul>
 		<h3 id="Appearance">Appearance</h3>
