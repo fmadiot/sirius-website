@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="../angular/sirius.js"></script>
+
+	<link rel="icon" type="image/png" href="../favicon.ico" />
+	<title>Sirius - What's New in Sirius 4.1</title>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
+</head>
+
+<body ng-app="sirius" ng-controller="main" class="cloak">
+<ng-include src="'../angular/blocks/header.html'"></ng-include>
+
+	<div id="body_wrapper">
+		<h1 class="page_title">What's New in Sirius 5.1</h1>
+				
+		<p>This new release brings several improvements:</p>
+		<ul>
+		<li><a href="#auto-scale">Auto-scaled exported images</a></li>
+		<li><a href="#edges-layout">Improved edges layout</a></li>
+		</ul>
+		<p>&nbsp;</p>
+		<h2><a name="auto-scale"></a>Auto-scaled exported images</h2>
+		<p>A new option allows the user to export a diagram automatically scaled to the maximum size allowed by his OS.</p>
+		<p><img class="shadow" src="../images/whatsnew5_1/sirius51_auto-scale-1.png"></p>
+		<p>&nbsp;</p>
+		<p>With small diagrams this option will result in larger images (with a higher resolution). On the contrary, very large diagrams will result in smaller images (with a lower resolution).</p>
+		<p><img src="../images/whatsnew5_1/sirius51_auto-scale-2.png" width="800"></p>
+		<p>&nbsp;</p>
+		<h2><a name="edges-layout"></a>Improved edges layout</h2>
+		<p>Several new options allow the user to better arrange the layout of edges.</p>
+		<h3>New straighten actions</h3>
+		<p>Four new layout actions have been added to straighten edges :</p>
+		<ul>
+		<li>with top side pinned</li>
+		<li>with bottom side pinned</li>
+		<li>with left side pinned</li>
+		<li>with right side pinned</li>
+		</ul>
+		<p>With this new actions, the chosen side of the selected edges (top, bottom, left or right) is kept unchanged: only the opposite side is moved.</p>
+		<p><img src="../images/whatsnew5_1/sirius51_edges-3.png" width="800"></p>
+		<p>&nbsp;</p>
+		<h3>Straighten actions in the tab-bar menu</h3>
+		<p>A new tab-bar menu has been added to select straighten actions applicable on selected edges</p>
+		<p><img src="../images/whatsnew5_1/sirius51_edges-1.png"></p>
+		<p>&nbsp;</p>
+		<p>These straighten action are now available even if it is not applicable on one of the selected edges. In this case it will only affect compatible edges.</p>
+		<h3>Bend-points removing</h3>
+		<p>The removing of bend-points (the inflection points) has been improved to also apply on rectilinear edges.</p>
+		<p><img src="../images/whatsnew5_1/sirius51_edges-2.png"></p>
+		<p>&nbsp;</p>
+		<h3>No more automatic reveal</h3>
+		<p>In a diagram, when selecting an edge or a node that are not fully displayed in the editor, now, the display area is not moved anymore to automatically reveal the object.</p>
+		<p>If the user wants to fully see the selected element, he may still drag the editor content using the center mouse button, the outline view or the scroll bars.</p>
+		<p>&nbsp;</p>
+		<h2><a name="more"></a>And even more</h2>
+		<p>A comprehensive list of Sirius 5.1 changes can be found in the <a href="https://www.eclipse.org/sirius/doc/Release_Notes.html#sirius5.1.0" target="_blank">Official Release Notes</a>.</p>
+		<p>&nbsp;</p>
+		<h2><a name="config"></a>Previous versions</h2>
+		<p>Read <a href="http://eclipse.org/sirius/whatsnew/whatsnew50.html" title="New & Noteworthy">What's new in Sirius 5.0</a> to see the new and noteworthy features of previous version.</p>
+
+	
+</div>
+
+	<!-- Fin body_wrapper -->
+
+	<div class="clear"></div>
+	<ng-include src="'../angular/blocks/footer.html'"></ng-include>
+	<ng-include src="'../angular/blocks/call2action.html'"></ng-include>
+</body>
+</html>
