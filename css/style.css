@@ -296,7 +296,7 @@ section.highlight_banner {
 }
 
 .back1 {
-    background-image: url("../images/banners/banner_siriuscon_2017.jpg");
+    background-image: url("../images/banners/banner_sirius_day_eindhoven_2018.jpg");
 	height: 530px !important;
 }
 .parallax {
@@ -312,8 +312,13 @@ section.highlight_banner {
 	font-weight: bold;
 }
 
-.logo_siriuscon img{
-	margin-bottom: 40px;
+.event p {
+	line-height: 1.4em;
+    font-size: 14px;
+}
+
+.logo_event img{
+	margin-bottom: 30px;
 }
 
 /* Download Bottom Banner
