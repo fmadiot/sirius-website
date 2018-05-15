@@ -1,5 +1,4 @@
 {"usecases":[
-
 		{
             "medias": {
             	"mainSrc": "images/gallery/capella-1.jpg",
@@ -66,6 +65,40 @@
              			"nom": "EclipseCon slides",
              			"url": "https://www.eclipsecon.org/france2016/sites/default/files/slides/Sirius%20Workshop%20Slides.pdf"
              		}             		
+             	]
+             }
+        },
+        {
+            "medias": {
+            	"mainSrc": "images/gallery/lyo-designer.png",
+            	"imgAlt": "Lyo Designer",
+            	"thumbs": [
+            		{"src": "images/gallery/lyo-designer.png"}
+            		]
+             },
+             "infos": {
+             	"title": "Lyo Designer",
+             	"author": "KTH Royal Institute of Technology",
+             	"description": "<p>If you are developing modelling tools, you might be already considering their interoperability with other software applications.<br>Lyo Designer is an open source modeling tool that supports the architectural design and implementation of tool interfaces based on <a href='https://open-services.net/' target='_blank'>OSLC</a> (Open Services for Lifecycle Collaboration) - an OASIS standard  for the interoperability of heterogeneous software applications.<br>Lyo Designer includes an integrated code generator that synthesizes the toolchain model into almost-complete <a href='https://wiki.eclipse.org/Lyo/LyoOSLC4J' target='_blank'>OSLC4J</a> - compliant running implementation. </p>",
+             	"tags": [
+             		{
+             			"nom": "Systems Engineering",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Lyo Designer",
+             			"url": "https://wiki.eclipse.org/Lyo/Lyo_Designer"
+             		},
+             		{
+             			"nom": "OASIS OSLC",
+             			"url": "http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part1-overview.html"
+             		},
+             		{
+             			"nom": "Lyo Designer Workshop",
+             			"url": "https://github.com/kth-mda/workshop-lyo-designer"
+             		}
              	]
              }
         },
