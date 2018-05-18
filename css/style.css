@@ -64,7 +64,12 @@ a,#menu_wrapper a:hover {
 }
 
 a:hover {
-	color: #383838;
+	color: #7269a4;
+	text-decoration: none;
+}
+
+.back1 a:hover {
+	color: #fff;
 }
 
 img, img:focus{
