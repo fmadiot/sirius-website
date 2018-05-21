@@ -343,7 +343,7 @@
              	"lnk": "http://modeling-languages.com/sirius-eclipse-obeo-graphical-modeling-tool/" 
             },
             "aside": {
-            	"photoSrc": "images/resources/jcabot.jpeg",
+            	"photoSrc": "images/resources/avatars/jcabot.jpeg",
             	"imgAlt": "Jordi Cabot",
             	"lnks": [
              		{
@@ -364,7 +364,7 @@
              	"lnk": "http://accso.de/magazin/sirius_for_dummies" 
             },
             "aside": {
-            	"photoSrc": "images/resources/blogger.png",
+            	"photoSrc": "images/resources/avatars/blogger.png",
             	"imgAlt": "Accso",
             	"lnks": [
              		{
@@ -514,7 +514,7 @@
              	"lnk": "http://www.urbanisation-si.com/didacticiel-tutoriel-eclipse-sirius-obeo-designer-community-on-peaufine-l-editeur-de-diagramme" 
             },
             "aside": {
-            	"photoSrc": "images/resources/blogger.png",
+            	"photoSrc": "images/resources/avatars/blogger.png",
             	"imgAlt": "urbanisation-si",
             	"lnks": [
              		{
@@ -682,7 +682,7 @@
              	"lnk": "http://melb.enix.org/sirius/refine-diagrams-with-interpolated-colors/" 
             },
             "aside": {
-            	"photoSrc": "images/resources/blogger.png",
+            	"photoSrc": "images/resources/avatars/blogger.png",
             	"imgAlt": "Steve Monnier",
             	"lnks": [
              		{
@@ -850,7 +850,7 @@
              	"lnk": "http://eclipsesource.com/blogs/2014/06/13/sirius-top-eclipse-luna-feature-9/" 
             },
             "aside": {
-            	"photoSrc": "images/resources/blogger.png",
+            	"photoSrc": "images/resources/avatars/blogger.png",
             	"imgAlt": "Ian Bull",
             	"lnks": [
              		{
@@ -871,7 +871,7 @@
              	"lnk": "http://alain-bernard.developpez.com/tutoriels/eclipse/sirius-intro/" 
             },
             "aside": {
-            	"photoSrc": "images/resources/blogger.png",
+            	"photoSrc": "images/resources/avatars/blogger.png",
             	"imgAlt": "Alain Bernard",
             	"lnks": [
              		{

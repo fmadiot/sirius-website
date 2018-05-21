@@ -64,12 +64,7 @@ a,#menu_wrapper a:hover {
 }
 
 a:hover {
-	color: #7269a4;
-	text-decoration: none;
-}
-
-.back1 a:hover {
-	color: #fff;
+	color: #383838;
 }
 
 img, img:focus{
@@ -1415,4 +1410,24 @@ input[type="button"] {
 
 .cloak {
   display: none  !important;
+}
+
+/* Cookies consent
+-------------------------- */
+.cc-color-override-1434350510.cc-window, .cc-color-override-1434350510.cc-revoke, .cc-color-override-1434350510 .cc-btn {
+	font-family: "Open Sans Condensed", Arial, sans-serif !important;
+	}
+
+.cc-color-override-1434350510.cc-window, .cc-color-override-1434350510.cc-revoke {
+background-color: #261e58 !important;
+}
+.cc-color-override-1434350510 .cc-btn:last-child {
+background-color: #be1a78 !important;}
+
+.cc-color-override-1434350510 .cc-btn:hover, .cc-color-override-1434350510 .cc-btn:focus {
+    background-color: #7269a4 !important;
+}
+
+.cc-banner .cc-message {
+    padding-right: 50px;
 }
