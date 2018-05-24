@@ -30,7 +30,7 @@ body>#body_wrapper {
 	margin: 0 auto;
 }
 
-#header_wrapper,#body_wrapper,#footer_content,.row {
+#header_wrapper, #body_wrapper, #footer_content, .row {
 	width: 995px;
 	display: block;
 	position: relative;
@@ -1430,4 +1430,11 @@ background-color: #be1a78 !important;}
 
 .cc-banner .cc-message {
     padding-right: 50px;
+}
+
+/* Tweets 
+-------------------------- */
+
+#tweets {
+	overflow-y: scroll; height: 300px; width: 520px; margin: 0 auto;
 }
