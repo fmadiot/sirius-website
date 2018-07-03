@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="../angular/sirius.js"></script>
+
+	<link rel="icon" type="image/png" href="../favicon.ico" />
+	<title>Sirius - What's New in Sirius 6.0</title>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
+
+	<!-- Eclipse Foundation Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Eclipse Foundation cookie consent: -->
+	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
+</head>
+
+<body ng-app="sirius" ng-controller="main" class="cloak">
+<ng-include src="'../angular/blocks/header.html'"></ng-include>
+ 
+	<div id="body_wrapper" class="whatsnew">
+		<h1 class="page_title">What's New in Sirius 6.0</h1>
+
+		<p>For this new version released with Eclipse Photon, we have worked on two main axis:</p>
+		<ul>
+		<li><a class="smooth-scroll" href="#user-experience" data-row="#user-experience">improve the user experience for creating better visualizations</a></li>
+		<li><a class="smooth-scroll" href="#tools-developers" data-row="#tools-developers">increase the productivity of tools developers</a></li>
+		</ul>
+		<p>&nbsp;</p>
+		<div id="user-experience"></div>
+		<h2>Better visualizations</h2>
+		<p>End-user experience has always been a key point for Sirius team. Because allowing the experts of your business domain to easily create nice and readable visualizations is one of the most important adoption factor for the tools you create with Sirius.</p>
+		<p>Sirius 6.0 brings comes with several new features that provide new graphical helpers and more visual possibilities.</p>
+		<h3>New layout algorithms</h3>
+		<p>Sirius 6.0 provides a first integration with ELK (Eclipse Layout Kernel), the Eclipse project that provides rich layout <a href="https://www.eclipse.org/elk/reference/algorithms.html" target="_blank">algorithms</a>.</p>
+		<p>Thanks to this integration, you can select one of these algorithms as a new layout for your own diagram. Each algorithm comes with a set of options that you can customize with the Sirius editor.</p>
+		<p>Your specific layout is automatically applied when the end-user clicks on the "Arrange all" option.</p>
+		<p class="text-center"><iframe width="680" height="380" src="https://www.youtube.com/embed/P7G7DxbY7Hg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+		<p>Note that this integration is considered experimental and is not installed by default.</p>
+		<p>&nbsp;</p>
+		<h3>More colors</h3>
+		<p>Now the basic colors (blue, light_blue, dark_blue, ...) proposed in the Sirius editor to customize your graphical elements (nodes, containers, borders, edges and labels) are also available for the end-users in the Appearance tab of the Properties view.</p>
+		<p>User Fixed Colors (based on RGB parameters) that you may have defined in a specific Color Palette are also added to the end-users' palette.</p>
+		<p>This allows them to reuse exactly the same color scheme defined in your brand design, making their visualizations more consistent and meaningful.</p>
+		<p class="text-center"><img class="shadow" src="../images/whatsnew6_0/sirius60_color_palette.gif"></p>
+
+		<p>In addition, you can also define a specific background color for your diagrams.</p>
+		<p class="text-center"><img class="shadow" src="../images/whatsnew6_0/sirius60_background_color.png"></p>
+
+		<h3>New "magic" edge creation tool</h3>
+		<p>A new generic tool is available on all the diagrams to facilitate the creation of relations between diagram elements.</p>
+		<p class="text-center"><img class="shadow" src="../images/whatsnew6_0/sirius60_magic_connector.gif"></p>
+
+		<p>This tool, available in the top of the palette, automatically proposes a set of possible relations. Based on the edge creation tools that you have defined, this new tool selects the ones that are compliant with the source and target objects selected by the end-user.</p>
+		<p>&nbsp;</p>
+		<h3>Links to other representations</h3>
+		<p>Navigating from a representation directly to another was only possible with the Navigation tools that you had specified in your tool.</p>
+		<p>Now the end-users can also create their own links to any other diagram, table or tree. These links are created as special notes. Double-clicking on the note automatically opens the other representation.</p>
+		<p class="text-center"><img class="shadow" src="../images/whatsnew6_0/sirius60_diagram_link.gif"></p>
+
+		<p>&nbsp;</p>
+		<div id="tools-developers"></div>
+		<h2>Faster development</h2>
+		<h3>Support for "hot reload"</h3>
+		<p>When the modeling tool that you are developing uses mechanisms like extension points, you need to test the tool in a separate Eclipse runtime.</p>
+		<p>With Sirius 6.0, you no more need to restart this runtime each time your Viewpoint Specification Model (VSM) changes. A new "Reload install VSMs" button in the main toolbar allows a "hot reload" that takes effect immediately.</p>
+		<p class="text-center"><img class="shadow" src="../images/whatsnew6_0/sirius60_hot_reload.png"></p>
+
+		<p>&nbsp;</p>
+		<h3>Quick navigation to service implementation</h3>
+		<p>When editing an interpreted expression in the VSM editor, if the cursor is on a position which corresponds to the invocation of a Java service, hitting F3 now opens the Java editor directly on the corresponding method's implementation. If multiple candidate methods are found and could not be disambiguated statically, a dialog opens with all the candidates for the user to choose which one(s) to open.</p>
+		<p class="text-center"><img class="shadow" src="../images/whatsnew6_0/service-navigation.gif"></p>
+
+		<p>&nbsp;</p>
+		<h2><a name="more"></a>And even more</h2>
+		<p>A comprehensive list of Sirius 6.0 changes can be found in the <a href="https://www.eclipse.org/sirius/doc/Release_Notes.html#sirius6.0.0" target="_blank">Official Release Notes</a>.</p>
+		<p>&nbsp;</p>
+		<h2><a name="config"></a>Previous versions</h2>
+		<p>Read <a href="https://eclipse.org/sirius/whatsnew/whatsnew5-1.html" title="New & Noteworthy">What's new in Sirius 5.1</a> to see the new and noteworthy features of previous version.</p>
+
+
+</div>
+
+	<!-- Fin body_wrapper -->
+
+	<div class="clear"></div>
+	<ng-include src="'../angular/blocks/footer.html'"></ng-include>
+	<ng-include src="'../angular/blocks/call2action.html'"></ng-include>
+</body>
+</html>

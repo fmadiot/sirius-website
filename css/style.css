@@ -378,6 +378,10 @@ section.highlight_banner {
 	background-color: #261e58;
 }
 
+.whatsnew p img, .whatsnew iframe{
+	margin: 20px 0;
+	}
+
 #download_banner_content a.bg_light_purple {
 	background-color: #7269a4;
 }
