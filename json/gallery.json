@@ -54,17 +54,13 @@
              	],
              "lnks": [
              		{
+             			"nom": "Tutorial",
+             			"url": "https://wiki.eclipse.org/Sirius/Tutorials/Mindstorms"
+             		},
+             		{
              			"nom": "Github",
              			"url": "https://github.com/mbats/mindstorms"
-             		},
-             		{
-             			"nom": "Video",
-             			"url": "https://www.youtube.com/watch?v=ywAHnBl8gz4"
-             		},
-             		{
-             			"nom": "EclipseCon slides",
-             			"url": "https://www.eclipsecon.org/france2016/sites/default/files/slides/Sirius%20Workshop%20Slides.pdf"
-             		}             		
+             		}        		
              	]
              }
         },
