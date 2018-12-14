@@ -1,5 +1,24 @@
 {"videos":[
-		
+		{
+            "header": {
+             	"title": "Modeling tools go up to the cloud…",
+             	"lnk": "https://www.youtube.com/watch?v=OQRFUyBt1r4" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius-modeling-tools-cloud.png",
+            	"imgAlt": "Modeling tools go up to the cloud…"
+             }
+        },
+		{
+            "header": {
+             	"title": "Sirius - Mindstorms Robot Tutorial - Part 1",
+             	"lnk": "https://www.youtube.com/watch?v=uKBGVwmRzi0" 
+            },
+            "thumb": {
+            	"photoSrc": "images/resources/videos/sirius-mindstorms-robot-tutorial.png",
+            	"imgAlt": "Sirius - Mindstorms Robot Tutorial - Part 1"
+             }
+        },
         {
             "header": {
              	"title": "EclipseCon 2016 - eWORMS, the eclipse WORkflow Modeling System for Flight Physicists at AIRBUS",

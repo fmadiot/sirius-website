@@ -1,6 +1,132 @@
 {"articles":[
 		{
 			"header": {
+             	"title": "Moving Sirius into the cloud",
+             	"date": "19/10/2018",
+             	"description": "<p>Earlier this year, we have talked about our work to move Sirius in the web. Back in Sirius 6.0, we have introduced our workflow...</p>",
+             	"lnk": "https://blog.obeo.fr/a-small-glimpse-of-eclipsecon-eu-4-4-moving-sirius-into-the-cloud" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/avatars/stephane-begaudeau.jpg",
+            	"imgAlt": "Stéphane Bégaudeau",
+            	"lnks": [
+             		{
+             			"blog": "https://www.sbegaudeau.com/",
+             			"mail": "mailto:stephane.begaudeau@obeo.fr",
+             			"twitter" : "https://www.twitter.com/sbegaudeau",
+             			"google" : "",
+             			"github" : "https://www.github.com/sbegaudeau"
+             		}
+             	]
+             }
+        },
+        {
+			"header": {
+             	"title": "A visibility mode for Sirius diagrams",
+             	"date": "16/10/2018",
+             	"description": "<p>Sirius has always given end-users fine-grained control on the visibility of diagram elements to help put the focus on the most...</p>",
+             	"lnk": "https://blog.obeo.fr/a-visibility-mode-for-sirius-diagrams" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/avatars/pierre-guilet.jpg",
+            	"imgAlt": "Pierre Guilet",
+            	"lnks": [
+             		{
+             			"blog": "https://www.linkedin.com/in/pierre-guilet-91521061",
+             			"mail": "mailto:pierre.guilet@obeo.fr",
+             			"twitter" : "https://twitter.com/pierre_guilet",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Organize your actions in diagram's contextual menus",
+             	"date": "12/10/2018",
+             	"description": "<p>With Sirius 6.1, the specifier has more control on the actions contributed to the diagram's contextual menus. Until Sirius 6.0,...</p>",
+             	"lnk": "https://blog.obeo.fr/organize-your-actions-in-diagrams-contextual-menus" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/avatars/laurent-redor.jpg",
+            	"imgAlt": "Laurent Redor",
+            	"lnks": [
+             		{
+             			"blog": "https://fr.linkedin.com/in/laurent-redor-661733a5",
+             			"mail": "mailto:laurent.redor@obeo.fr",
+             			"twitter" : "https://twitter.com/lredor",
+             			"google" : "",
+             			"github" : "https://github.com/lredor"
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "One more step in Sirius tables customization!",
+             	"date": "10/10/2018",
+             	"description": "<p>For the sake of representation customization, a new table configuration is available. Indeed, specifiers can now customize ...</p>",
+             	"lnk": "https://blog.obeo.fr/one-more-step-in-sirius-tables-customization" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/avatars/jessy-mallet.png",
+            	"imgAlt": "Jessy Mallet",
+            	"lnks": [
+             		{
+             			"blog": "https://fr.linkedin.com/in/jessy-mallet-0ab64753",
+             			"mail": "mailto:jessy.mallet@obeo.fr",
+             			"twitter" : "",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
+             	"title": "Mindstorms Robot Tutorial is now online",
+             	"date": "18/09/2018",
+             	"description": "<p>After being presented for two years in many conferences and schools, the Sirius tutorial based on the Mindstorms Robot...</p>",
+             	"lnk": "https://blog.obeo.fr/mindstorms-robot-tutorial-is-now-online" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/avatars/fmadiot.jpg",
+            	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
+            	"lnks": [
+             		{
+             			"blog": "http://fmadiot.blogspot.fr/",
+             			"mail": "",
+             			"twitter" : "http://twitter.com/fmadiot",
+             			"google" : "",
+             			"github" : "http://github.com/fmadiot"
+             		}
+             	]
+             }
+        },
+        {
+			"header": {
+             	"title": "A picture is worth a thousand words: Sirius integrates ELK",
+             	"date": "25/09/2018",
+             	"description": "<p>One of the main benefits of diagrams is that they can make it very easy to quickly grasp the overall structure of a model...</p>",
+             	"lnk": "https://blog.obeo.fr/a-picture-is-worth-a-thousand-words" 
+            },
+            "aside": {
+            	"photoSrc": "images/resources/avatars/pierre-guilet.jpg",
+            	"imgAlt": "Pierre Guilet",
+            	"lnks": [
+             		{
+             			"blog": "https://www.linkedin.com/in/pierre-guilet-91521061",
+             			"mail": "mailto:pierre.guilet@obeo.fr",
+             			"twitter" : "https://twitter.com/pierre_guilet",
+             			"google" : "",
+             			"github" : ""
+             		}
+             	]
+             }
+        },
+		{
+			"header": {
              	"title": "What’s Coming in Sirius 6.0?",
              	"date": "19/04/2017",
              	"description": "<p>The next major version of Sirius , version 6.0, will be released on June 27, 2018 as part of the Eclipse Photon Simultaneous...</p>",
