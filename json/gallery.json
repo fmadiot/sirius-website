@@ -23,7 +23,7 @@
              	],
              "lnks": [
              		{
-             			"nom": "Project page",
+             			"nom": "Project Page",
              			"url": "https://polarsys.org/capella/"
              		},
              		{
@@ -63,7 +63,109 @@
              		}        		
              	]
              }
-        },
+		},
+
+
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/modane-1.png",
+            	"imgAlt": "Modane - CEA-DAM",
+            	"thumbs": [
+            		{"src": "images/gallery/modane-1.png"},
+            		{"src": "images/gallery/modane-2.png"},
+            		{"src": "images/gallery/modane-3.png"}
+				]
+             },
+             "infos": {
+             	"title": "Modane",
+             	"author": "CEA-DAM",
+             	"description": "<p>The continual increasing power of supercomputers allows numerical simulation codes to take into account more complex physical phenomena. Therefore, physicists and mathematicians have to implement complex algorithms using cutting edge technologies and integrate them in large simulators. To improve its simulators development cycle, the CEA-DAM has developed Modane, a tool based on Sirius, Xtext and EMF Compare.</p>",
+             	"tags": [
+             		{
+             			"nom": "Simulation",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Talk at SiriusCon",
+             			"url": "https://www.slideshare.net/slideshow/embed_code/key/F7aJYWBvhs4i77"
+             		}
+             	]
+             }
+		},
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/simqri-1.png",
+            	"imgAlt": "SimQRi - CETIC",
+            	"thumbs": [
+            		{"src": "images/gallery/simqri-1.png"}
+            		]
+             },
+             "infos": {
+             	"title": "SimQRi",
+             	"author": "CETIC",
+             	"description": "<p>Companies have to face increasing procurement risks especially in the globalisation context. SimQRi aims at providing a holistic approach to conduct and obtain procurement-specified risk assessments including internal risk treatment, with a specific focus on small and medium enterprises in the field of Mechanical Engineering. The methodology is supported by a Sirius-based Open Source tool that guides the user through the whole process of risk assessment with a logistics DSL and tables presenting results of Monte Carlo simulations.</p>",
+             	"tags": [
+             		{
+             			"nom": "Risk Analysis",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+					{
+						"nom": "Talk at SiriusCon",
+						"url": "https://fr.slideshare.net/slideshow/embed_code/key/xqpCfkrx5xLhvr"
+					},
+					{
+						"nom": "Source Code",
+						"url": "https://github.com/cetic/SimQRI"
+					}
+             	]
+             }
+		},
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/iris-1.png",
+            	"imgAlt": "IRIS - Grace Park (University of Texas at Dallas)",
+            	"thumbs": [
+            		{"src": "images/gallery/iris-1.png"},
+            		{"src": "images/gallery/iris-2.png"}
+            		]
+             },
+             "infos": {
+             	"title": "IRIS",
+             	"author": "Grace Park (University of Texas at Dallas)",
+             	"description": "<p>IRIS is a framework for aligning big data analytics with business in a goal-oriented approach in order to address the problems of big data/IoT, i.e., lack of business context around the data, lack of expertise to connect the dots, and implicit business objectives. It is composed of ontology for a business context model, analytics methods for connecting big data with business, a process for collaborative work and an assistant tool utilizing Spark for big data processing and Sirius for visualizing conceptual models of the ontology.</p>",
+             	"tags": [
+             		{
+             			"nom": "Big Data",
+             			"url": "#"
+					 },
+					 {
+						"nom": "IoT",
+						"url": "#"
+					},
+					{
+						"nom": "Business Analytics",
+						"url": "#"
+					},
+					{
+						"nom": "Goal-orientation",
+						"url": "#"
+					}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project Page",
+             			"url": "https://sites.google.com/site/irisforbigdata/"
+             		}
+             	]
+             }
+		},
+		
+
+
         {
             "medias": {
             	"mainSrc": "images/gallery/lyo-designer.png",
@@ -195,7 +297,7 @@
              	],
              "lnks": [
              		{
-             			"nom": "Project page",
+             			"nom": "Project Page",
              			"url": "https://www.etas.com/fr/products/ascet_congra.php"
              		}
              	]
@@ -225,7 +327,7 @@
              	],
              "lnks": [
              		{
-             			"nom": "Project page",
+             			"nom": "Project Page",
              			"url": "http://palladio-simulator.com/"
              		}
              	]
@@ -445,7 +547,7 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Project page",
+	             			"nom": "Project Page",
 	             			"url": "http://modulestudio.de/en/"
 	             		},
 	             		{
@@ -849,7 +951,9 @@
 	            	"mainSrc": "images/gallery/all4tec-1.png",
 	            	"imgAlt": "Put image name here",
 	            	"thumbs": [
-	            		{"src": "images/gallery/all4tec-2.png"}
+	            		{"src": "images/gallery/all4tec-2.png"},
+	            		{"src": "images/gallery/all4tec-3.png"},
+	            		{"src": "images/gallery/all4tec-4.png"}
 	            		]
 	             },
 	             "infos": {
@@ -1217,7 +1321,7 @@
 	             	],
 	             "lnks": [
 	             		{
-	             			"nom": "Project page",
+	             			"nom": "Project Page",
 	             			"url": "https://team.inria.fr/scale/software/vercors/"
 	             		}
 	             	]
