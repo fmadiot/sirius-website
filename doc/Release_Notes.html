@@ -13,10 +13,24 @@
 				<a href="#ReleaseNotesforSirius">Release Notes for Sirius</a>
 				<ol style="list-style: disc;">
 					<li>
+						<a href="#sirius6.1.2">Changes in Sirius 6.1.2</a>
+						<ol style="list-style: disc;">
+							<li>
+								<a href="#UserVisibleChanges">User-Visible Changes</a>
+							</li>
+							<li>
+								<a href="#SpecifierVisibleChanges">Specifier-Visible Changes</a>
+							</li>
+							<li>
+								<a href="#DeveloperVisibleChanges">Developer-Visible Changes</a>
+							</li>
+						</ol>
+					</li>
+					<li>
 						<a href="#sirius6.1.1">Changes in Sirius 6.1.1</a>
 						<ol style="list-style: disc;">
 							<li>
-								<a href="#DeveloperVisibleChanges">Developer-Visible Changes</a>
+								<a href="#Changesinorg.eclipse.sirius.diagram2">Changes in  @org.eclipse.sirius.diagram@</a>
 							</li>
 						</ol>
 					</li>
@@ -24,10 +38,10 @@
 						<a href="#sirius6.1.0">Changes in Sirius 6.1.0</a>
 						<ol style="list-style: disc;">
 							<li>
-								<a href="#UserVisibleChanges">User-Visible Changes</a>
+								<a href="#UserVisibleChanges2">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges2">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges2">Developer-Visible Changes</a>
@@ -38,10 +52,10 @@
 						<a href="#sirius6.0.0">Changes in Sirius 6.0.0</a>
 						<ol style="list-style: disc;">
 							<li>
-								<a href="#UserVisibleChanges2">User-Visible Changes</a>
+								<a href="#UserVisibleChanges3">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges2">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges3">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges3">Developer-Visible Changes</a>
@@ -52,7 +66,7 @@
 						<a href="#sirius5.1.1">Changes in Sirius 5.1.1</a>
 						<ol style="list-style: disc;">
 							<li>
-								<a href="#UserVisibleChanges3">User-Visible Changes</a>
+								<a href="#UserVisibleChanges4">User-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges4">Developer-Visible Changes</a>
@@ -63,10 +77,10 @@
 						<a href="#sirius5.1.0">Changes in Sirius 5.1.0</a>
 						<ol style="list-style: disc;">
 							<li>
-								<a href="#UserVisibleChanges4">User-Visible Changes</a>
+								<a href="#UserVisibleChanges5">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges3">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges4">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges5">Developer-Visible Changes</a>
@@ -79,23 +93,139 @@
 		<p>This document contains the release notes for recent major releases of Sirius. See also 
 			<a href="Release_Notes_Previous.html">the release notes from previous versions</a> for details about older releases.
 		</p>
-		<h2 id="sirius6.1.1">Changes in Sirius 6.1.1</h2>
+		<h2 id="sirius6.1.2">Changes in Sirius 6.1.2</h2>
+		<h3 id="UserVisibleChanges">User-Visible Changes</h3>
+		<ul>
+			<li><span class="label label-success">Added</span> On sequence diagrams, it is now possible to remove vertical blank spaces on standard edition mode by dragging the mouse from bottom to top anywhere in the canvas with the Ctrl+Shift keys pressed. This 
+				<a href="user/sequences/Sequence%20Diagrams.html#remove_vertical_blank_space">feature</a> was here since version 6.0.0 but was only accessible through the ruler.
+			</li>
+			<li><span class="label label-info">Modified</span> Invalid representations, that are either representations which semantic target does not exist anymore or representations that can not be retrieved anymore, are grayed in the Model Explorer and the only available action is 
+				<em>Delete</em>. It was previously the case only for representations which semantic target does not exist anymore.
+			</li>
+		</ul>
+		<h3 id="SpecifierVisibleChanges">Specifier-Visible Changes</h3>
+		<ul>
+			<li><span class="label label-success">Added</span> It is now possible to add action/group in the &#8220;New&#8221; contextual menu of diagram elements. This menu was missed in Sirius 6.1.0. It is now documented in the 
+				<a href="specifier/diagrams/Diagrams.html#group">corresponding documentation</a> .
+			</li>
+		</ul>
 		<h3 id="DeveloperVisibleChanges">Developer-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> If the 
 				<code>org.eclipse.sirius.diagam.ui.hidePrintingOfPermissionAuthorityDecoration</code> system property is set to true and if there is no other printable decoration provided at the same location (South-West), the permission authority decorations displayed on diagrams are not printed nor exported in images (export as image actions).
 			</li>
 		</ul>
+		<h4 id="Changesinorg.eclipse.sirius">Changes in  
+			<code>org.eclipse.sirius</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> The methods 
+				<code>org.eclipse.sirius.business.api.query.DRepresentationDescriptorQuery.isRepresentationReachable()</code> and 
+				<code>org.eclipse.sirius.business.api.query.DRepresentationDescriptorQuery.isRepresentationValid()</code> have been added. The former allows to know if the 
+				<code>DRepresentation</code> can be retrieved from the 
+				<code>DRepresentationDescriptor.repPath</code>: the repPath is correctly set and the representation effectively exists. The latter returns true if the 
+				<code>DRepresentationDescriptor</code> is either dangling (
+				<code>DRepresentationDescriptor.repPath</code> can not be found) or can not by retrieved.
+			</li>
+		</ul>
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui">Changes in  
+			<code>org.eclipse.sirius.diagram.ui</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span>  A new field 
+				<code>CustomLayoutConfiguration layoutConfiguration</code> has been added to 
+				<code>org.eclipse.sirius.diagram.ui.tools.api.layout.provider.DefaultLayoutProvider</code> and its setter method 
+			</li>
+		</ul>
+		<p>
+			<code>setLayoutConfiguration(CustomLayoutConfiguration)</code>. It allows any layout provider to be aware of any VSM layout configuration that should be used.
+		</p>
+		<ul>
+			<li><span class="label label-info">Modified</span> The method 
+				<code>getDiagramLayoutProvider(DiagramEditPart, IAdaptable)</code> in package  
+				<code>org.eclipse.sirius.diagram.ui.tools.api.layout.provider.AbstractLayoutProvider</code> has been made protected to allow to provide layout provider from other mechanism than LayoutService.
+			</li>
+			<li><span class="label label-danger">Removed</span> The message 
+				<code>org.eclipse.sirius.diagram.ui.provider.Messages.SynchronizeGMFModelCommand_label</code> has been removed. It has been replaced in 
+				<code>org.eclipse.sirius.diagram.Messages</code>.
+			</li>
+		</ul>
 		<h4 id="Changesinorg.eclipse.sirius.diagram">Changes in  
+			<code>org.eclipse.sirius.diagram</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> The message 
+				<code>org.eclipse.sirius.diagram.Messages.SynchronizeGMFModelCommand_label</code> has been added. It replaces 
+				<code>org.eclipse.sirius.diagram.ui.provider.Messages.SynchronizeGMFModelCommand_label</code>.
+			</li>
+			<li><span class="label label-info">Added</span> The extension point org.eclipse.sirius.diagram.customBundledImageShape has been created in order to provide custom shape to the bundled image style. This extension point offers more flexibility on the specification of the svg tags and attributes holding the color, border color and border size information than the extension point org.eclipse.sirius.diagram.bundledImageShape.</li>
+			<li><span class="label label-success">Added</span> The getter and setter methods have been added for the new attribute 
+				<code>org.eclipse.sirius.diagram.ui.tools.api.decoration.DecorationDescriptor.isPrintable</code>. This attribute is used to know if the decoration should be hidden when printing or exporting the diagram. The behavior is applied only if there is no printable decoration in its diagram element location (South, West, South-West etc).
+			</li>
+			<li><span class="label label-info">Modified</span> The extension point org.eclipse.sirius.diagram.bundledImageShape has been marked as deprecated. Shapes provided by this extension point still work.</li>
+		</ul>
+		<h4 id="Changesinorg.eclipse.sirius.common">Changes in  
+			<code>org.eclipse.sirius.common</code>
+		</h4>
+		<ul>
+			<li><span class="label label-danger">Removed</span> The class 
+				<code>org.eclipse.sirius.common.tools.api.util.SiriusCopier</code> has been replaced by the internal class 
+				<code>org.eclipse.sirius.tools.internal.SiriusCopierHelper</code>. 
+				<code>SiriusCopier.Helper.copy(T)</code> and 
+				<code>SiriusCopier.Helper.copyAll(Collection&lt;? extends T&gt;)</code> have been replaced by 
+				<code>SiriusCopierHelper.copyWithNoUidDuplication(T)</code>, 
+				<code>SiriusCopierHelper.copyAllWithNoUidDuplication(Collection&lt;? extends T&gt;)</code> and 
+				<code>SiriusCopierHelper.copyAllWithNoUidDuplication(Collection&lt;? extends EObject&gt;, boolean, boolean, boolean)</code>. It provides the ability to copy an object without copying the EAttribute 
+				<code>IDENTIFIED_ELEMENT__UID</code>. For all these methods, this id is not set by the factory or during object creation, it is set during the copy using 
+				<code>org.eclipse.emf.ecore.util.EcoreUtil.generateUUID()</code>.
+			</li>
+		</ul>
+		<h4 id="Changesinorg.eclipse.sirius.diagram.sequence">Changes in 
+			<code>org.eclipse.sirius.diagram.sequence</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> A new translatable message 
+				<code>org.eclipse.sirius.diagram.sequence.Messages.VerticalSpaceReduction_operationName</code> has been added. It&#8217;s key is 
+				<code>VerticalSpaceReduction_operationName</code> and its default value is 
+				<code>Auto-reduction of {0}</code>. It is used when reducing spaces in sequence diagram.
+			</li>
+			<li><span class="label label-success">Added</span> A new translatable message 
+				<code>org.eclipse.sirius.diagram.ui.provider.Messages.RemoveBlankSpace_cmdName</code> has been added. It&#8217;s key is 
+				<code>RemoveBlankSpace_cmdName</code> and its default value is 
+				<code>Remove blank space</code>. It is used when removing spaces in sequence diagram.
+			</li>
+			<li><span class="label label-success">Added</span>  The methods 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusDiagramEditor.dragWithKeys(int, int, int, int, AtomicBoolean, int...)</code>, 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusGefViewer.dragWithKeys(int, int, int, int, AtomicBoolean, int...)</code>, 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.widget.SWTBotSiriusFigureCanvas.mouseDragWithKeys(int, int, int, int, AtomicBoolean, int...)</code>, have been added to make a drag an drop with more than one key modifier.
+			</li>
+		</ul>
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support">Changes in 
+			<code>org.eclipse.sirius.tests.swtbot.support</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> The methods 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusDiagramEditor.dragWithKeys(int, int, int, int, AtomicBoolean, int...)</code>, 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusGefViewer.dragWithKeys(int, int, int, int, AtomicBoolean, int...)</code> and 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.widget.SWTBotSiriusFigureCanvas.mouseDragWithKeys(int, int, int, int, AtomicBoolean, int...)</code> have been added and allows to do a drag and drop with any key modifier you want.
+			</li>
+			<li><span class="label label-info">Modified</span> The methods 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusDiagramEditor.dragWithKey(int, int, int, int, int, AtomicBoolean)</code>, 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusGefViewer.dragWithKey(int, int, int, int, int, AtomicBoolean)</code> and 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.widget.SWTBotSiriusFigureCanvas.mouseDragWithKey(int, int, int, int, int, AtomicBoolean)</code> have been marked as deprecated. The method 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusDiagramEditor.dragWithKeys(int, int, int, int, AtomicBoolean, int...)</code>, 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.editor.SWTBotSiriusGefViewer.dragWithKeys(int, int, int, int, AtomicBoolean, int...)</code> and 
+				<code>org.eclipse.sirius.tests.swtbot.support.api.widget.SWTBotSiriusFigureCanvas.mouseDragWithKeys(int, int, int, int, AtomicBoolean, int...)</code> should be used instead.
+			</li>
+		</ul>
+		<h2 id="sirius6.1.1">Changes in Sirius 6.1.1</h2>
+		<h4 id="Changesinorg.eclipse.sirius.diagram2">Changes in  
 			<code>org.eclipse.sirius.diagram</code>
 		</h4>
 		<ul>
 			<li><span class="label label-success">Added</span> Add method 
 				<code>allowsVisibilityModeActivation()</code> in 
 				<code>org.eclipse.sirius.diagram.business.api.diagramtype.IDiagramDescriptionProvider</code> This method is used to know if the visibility mode is supported by a specific diagram description.
-			</li>
-			<li><span class="label label-success">Added</span> The getter and setter methods have been added for the new attribute 
-				<code>org.eclipse.sirius.diagram.ui.tools.api.decoration.DecorationDescriptor.isPrintable</code>. This attribute is used to know if the decoration should be hidden when printing or exporting the diagram. The behavior is applied only if there is no printable decoration in its diagram element location (South, West, South-West etc).
 			</li>
 		</ul>
 		<h2 id="sirius6.1.0">Changes in Sirius 6.1.0</h2>
@@ -109,7 +239,7 @@
 				<a href="https://www.eclipse.org/legal/epl-2.0/faq.php">the official FAQ</a> for details about the difference between EPL v1.0 (which was used before) and v2.0.
 			</li>
 		</ul>
-		<h3 id="UserVisibleChanges">User-Visible Changes</h3>
+		<h3 id="UserVisibleChanges2">User-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> A new preference has been added in the Sirius preference panel. It allows Sirius to ask the user if he wants to save session resources after an automatic migration. If the new preference is ticked, the pop-up will only appear for session opening caused by a direct action of the user (i.e. opening a diagram or unfolding the resources in the model explorer). You can refer to the 
 				<a href="user/general/Modeling%20Project.html#Migration">user documentation </a> for more details.
@@ -140,7 +270,7 @@
 				<a href="user/diagrams/Diagrams.html#notes">user documentation</a> for more details.
 			</li>
 		</ul>
-		<h3 id="SpecifierVisibleChanges">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges2">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> 
 				<a href="specifier/workflows/Workflows.html">Initial documentation</a> has been added for the &#8220;Workflow&#8221; feature introduced in 6.0.0 (which is still experimental).
@@ -233,7 +363,7 @@
 				<code>org.eclipse.sirius.ui.business.api.preferences.SiriusUIPreferencesKeys.PREF_DISPLAY_VSM_USER_FIXED_COLOR_IN_PALETTE</code> has been added. Its default value is true. It allows to display, in the color palette, the user fixed color(defined in the activated viewpoints) in addition to standard colors. The color palette is available in Appearance tab of the Properties view.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui2">Changes in 
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -400,7 +530,7 @@
 				<code>org.eclipse.sirius.ext.gmf.runtime.gef.ui.figures</code> package.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.common2">Changes in  
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -414,7 +544,7 @@
 				<code>org.eclipse.emf.ecore.util.EcoreUtil.generateUUID()</code>.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support2">Changes in 
 			<code>org.eclipse.sirius.tests.swtbot.support</code>
 		</h4>
 		<ul>
@@ -443,7 +573,7 @@
 			</li>
 		</ul>
 		<h2 id="sirius6.0.0">Changes in Sirius 6.0.0</h2>
-		<h3 id="UserVisibleChanges2">User-Visible Changes</h3>
+		<h3 id="UserVisibleChanges3">User-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> A new feature allows user to insert vertical blank space in sequence diagram. You can refer to the 
 				<a href="user/sequences/Sequence%20Diagrams.html#insert_vertical_blank_space">user documentation </a> for more details. 
@@ -468,7 +598,7 @@
 		<p>
 			<img border="0" src="images/color_palette.png"/>
 		</p>
-		<h3 id="SpecifierVisibleChanges2">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges3">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> An action is added in main toolbar to reload the VSM of installed plug-ins that may have changed. Refer to the 
 				<a href="specifier/general/Specifying_Viewpoints.html#reloadVSM">specifier documentation</a> for details.
@@ -529,7 +659,7 @@
 				<code>SemanticBasedDecoration</code>.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common2">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.common3">Changes in 
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -539,7 +669,7 @@
 				<code>org.eclipse.sirius.common.tools.api.contentassist</code> which has its own types.  
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius2">Changes in 
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -593,7 +723,7 @@
 				<code>ToolMangament</code> mechanism used to handle tools and layer changes.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram2">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram3">Changes in 
 			<code>org.eclipse.sirius.diagram</code>
 		</h4>
 		<ul>
@@ -622,7 +752,7 @@
 				<code>org.eclipse.sirius.diagram.tools.api.managment</code>
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui2">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui3">Changes in 
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -678,7 +808,7 @@
 				<code>org.eclipse.sirius.tests.swtbot.Activator.PLUGIN_ID</code>). It avoids to build a wrong target platform containing each Sirius plug-ins twice. 
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support2">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support3">Changes in 
 			<code>org.eclipse.sirius.tests.swtbot.support</code>
 		</h4>
 		<ul>
@@ -696,7 +826,7 @@
 		</ul>
 		<h4 id="TranslationKeysChanges">Translation Keys Changes</h4>
 		<h2 id="sirius5.1.1">Changes in Sirius 5.1.1</h2>
-		<h3 id="UserVisibleChanges3">User-Visible Changes</h3>
+		<h3 id="UserVisibleChanges4">User-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-info">Modified</span> When exporting a diagram as an image, it is now possible to choose an image size level. Before this, a preference called 
 				<em>AutoScale</em> was available and when it was enable, the diagram was scaled to the maximum size safely allowed by the system. Now, a new preference named 
@@ -720,7 +850,7 @@
 			</li>
 		</ul>
 		<h3 id="DeveloperVisibleChanges4">Developer-Visible Changes</h3>
-		<h4 id="Changesinorg.eclipse.sirius2">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius3">Changes in 
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -734,7 +864,7 @@
 				<code>org.eclipse.sirius.business.api.query.SiriusReferenceFinder.getReferencingSiriusElements(Collection&lt;EObject&gt;, SearchScope)</code>. The SearchScope.LOADED_REPRESENTATIONS_SCOPE scope covers the search and result scope. Then, no additional resource will be loaded using this scope.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui3">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui4">Changes in 
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -781,7 +911,7 @@
 		</ul>
 		<p>testcase.</p>
 		<h2 id="sirius5.1.0">Changes in Sirius 5.1.0</h2>
-		<h3 id="UserVisibleChanges4">User-Visible Changes</h3>
+		<h3 id="UserVisibleChanges5">User-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> When exporting a diagram as an image, it is now possible to choose whether or not the diagram should be scaled. If disabled, the diagram will be exported with its normal size (equivalent to a 100% zoom level). If auto-scaling is enabled, the diagram will be scaled to the maximum size safely allowed by the system (this can be different on different OSes). Note that when auto-scaling is enabled, the image files produced may be larger than without. When exporting very large diagrams it is also possible that the diagram will be scaled 
 				<em>down</em> (i.e. with a zoom level smaller than 100%). Enabling auto-scaling can be chosen on a case by case basis from the export dialog; the initial value in the dialog can be controlled by a new preference available in the 
@@ -830,7 +960,7 @@
 				<a href="developer/extensions-provide_custom_bundled_image_shape.html#bundleImageShape">bundleImageShape</a> ), opening or refreshing a diagram will not display exception anymore when the bundleImageShape extension is not valid. A warning is now displayed in the Error Log view to inform user of which attribute of the extension is not correct.
 			</li>
 		</ul>
-		<h3 id="SpecifierVisibleChanges3">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges4">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> An 
 				<a href="./user/general/Modeling%20Project.html#Migration">automatic migration</a> has been added in this version to fix diagram with edge labels corrupted (see 
@@ -894,7 +1024,7 @@
 			<code>createLocalRepresentationInSeparateResource</code> at true. For more detail, see the developer documentation: 
 			<a href="./developer/representations_lazy_loading.html">Representations lazy loading (experimental)</a>.
 		</p>
-		<h4 id="Changesinorg.eclipse.sirius3">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius4">Changes in 
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -968,7 +1098,7 @@
 				<code>DialectManagerImpl</code>.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common3">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.common4">Changes in 
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -980,7 +1110,7 @@
 				<code>getFilesFromWorkspace(Collection&lt;IContainer&gt;, String)</code> to be more generic.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram3">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram4">Changes in 
 			<code>org.eclipse.sirius.diagram</code>
 		</h4>
 		<ul>
@@ -990,7 +1120,7 @@
 				<code>DDiagram.getActivatedLayers</code> in several cases if you directly use it.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui4">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui5">Changes in 
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
