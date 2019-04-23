@@ -1,5 +1,15 @@
 {"videos":[
-		{
+          {
+               "header": {
+                    "title": "Video recordings of SiriusCon 2018 sessions",
+                    "lnk": "https://www.siriuscon.org/#recordings" 
+               },
+               "thumb": {
+                    "photoSrc": "images/resources/videos/siriuscon2018.png",
+                    "imgAlt": "Video recordings of SiriusCon 2018 sessions"
+               }
+          },
+    		{
             "header": {
              	"title": "Modeling tools go up to the cloud…",
              	"lnk": "https://www.youtube.com/watch?v=OQRFUyBt1r4" 

@@ -1,6 +1,27 @@
 {"articles":[
 		{
 			"header": {
+				"title": "How NASA is using Sirius to develop Safety Cases",
+				"date": "26/11/2018",
+				"description": "<p>Ewen Denney from NASA's Robust Software Engineering Group presents AdvoCATE, a toolset developed to specify Safety/assurance cases.</p>",
+				"lnk": "https://blog.obeo.fr/sirius-used-by-nasa-to-develop-safety-cases" 
+			},
+			"aside": {
+				"photoSrc": "images/resources/avatars/fmadiot.jpg",
+				"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
+				"lnks": [
+					{
+						"blog": "https://blog.obeo.fr/blogger/fmadiot",
+						"mail": "",
+						"twitter" : "http://twitter.com/fmadiot",
+						"google" : "",
+						"github" : "http://github.com/fmadiot"
+					}
+				]
+			}
+		},
+		{
+			"header": {
              	"title": "Moving Sirius into the cloud",
              	"date": "19/10/2018",
              	"description": "<p>Earlier this year, we have talked about our work to move Sirius in the web. Back in Sirius 6.0, we have introduced our workflow...</p>",
@@ -95,7 +116,7 @@
             	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
             	"lnks": [
              		{
-             			"blog": "http://fmadiot.blogspot.fr/",
+             			"blog": "https://blog.obeo.fr/blogger/fmadiot",
              			"mail": "",
              			"twitter" : "http://twitter.com/fmadiot",
              			"google" : "",
@@ -616,14 +637,14 @@
              	"title": "Group And Stack Your Diagram Elements With Sirius 3.1",
              	"date": "2/11/2015",
              	"description": "<p>Want to group diagram elements into vertical or horizontal stacks? Since Sirius 3.1, it is possible...</p>",
-             	"lnk": "http://fmadiot.blogspot.fr/2015/11/group-and-stack-your-diagram-elements.html" 
+             	"lnk": "https://blog.obeo.fr/blogger/fmadiot2015/11/group-and-stack-your-diagram-elements.html" 
             },
             "aside": {
             	"photoSrc": "images/resources/avatars/fmadiot.jpg",
             	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
             	"lnks": [
              		{
-             			"blog": "http://fmadiot.blogspot.fr/",
+             			"blog": "https://blog.obeo.fr/blogger/fmadiot",
              			"mail": "",
              			"twitter" : "http://twitter.com/fmadiot",
              			"google" : "",
@@ -658,14 +679,14 @@
              	"title": "SiriusCon Paris 2015: Be Part of the Program!",
              	"date": "18/09/2015",
              	"description": "<p>After a successful Sirius roadshow that led us to Toulouse, Paris, Munich and Montreal we have decided to go one step beyond with...</p>",
-             	"lnk": "http://fmadiot.blogspot.fr/2015/09/siriuscon-paris-2015-its-time-to-submit.html" 
+             	"lnk": "https://blog.obeo.fr/blogger/fmadiot2015/09/siriuscon-paris-2015-its-time-to-submit.html" 
             },
             "aside": {
             	"photoSrc": "images/resources/avatars/fmadiot.jpg",
             	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
             	"lnks": [
              		{
-             			"blog": "http://fmadiot.blogspot.fr/",
+             			"blog": "https://blog.obeo.fr/blogger/fmadiot",
              			"mail": "",
              			"twitter" : "http://twitter.com/fmadiot",
              			"google" : "",
@@ -931,14 +952,14 @@
              	"title": "Multi-Viewpoints on EclipseCon Program",
              	"date": "23/10/2014",
              	"description": "<p>To demonstrate Sirius on short talks, I'm used to create a modeler from scratch, in ten minutes, on a topic that everybody in the audience knows: the conference they are attending...</p>",
-             	"lnk": "http://fmadiot.blogspot.fr/2014/10/multi-viewpoints-on-eclipsecon-program.html" 
+             	"lnk": "https://blog.obeo.fr/blogger/fmadiot2014/10/multi-viewpoints-on-eclipsecon-program.html" 
             },
             "aside": {
             	"photoSrc": "images/resources/avatars/fmadiot.jpg",
             	"imgAlt": "Fr&eacute;d&eacute;ric Madiot",
             	"lnks": [
              		{
-             			"blog": "http://fmadiot.blogspot.fr/",
+             			"blog": "https://blog.obeo.fr/blogger/fmadiot",
              			"mail": "",
              			"twitter" : "http://twitter.com/fmadiot",
              			"google" : "",
