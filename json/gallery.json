@@ -64,6 +64,50 @@
              	]
              }
 		},
+		{
+            "medias": {
+            	"mainSrc": "images/gallery/advocate-1.jpg",
+            	"imgAlt": "Put image name here",
+            	"thumbs": [
+            		{"src": "images/gallery/advocate-2.jpg"},
+            		{"src": "images/gallery/advocate-3.jpg"},
+            		{"src": "images/gallery/advocate-4.jpg"}
+            		]
+             },
+             "infos": {
+             	"title": "Advocate",
+             	"author": "Nasa",
+             	"description": "<p>AdvoCATE is a toolset developed by NASA's Ames Research Center to specify Safety/assurance cases. AdvoCATE facilitates model-based development, exploiting validations, transformations, and a range of views in the construction of (some of) the artifacts constituting a safety case. NASA has used AdvoCATE to successfully obtain regulatory approval for flight operations involving a fleet of small unmanned aircraft systems (UAS) flying beyond visual line of sight.</p>",
+             	"tags": [
+             		{
+             			"nom": "Safety",
+             			"url": "#"
+             		},
+             		{
+             			"nom": "Risk Analysis",
+             			"url": "#"
+             		}
+             	],
+             "lnks": [
+             		{
+             			"nom": "Project Page",
+             			"url": "https://ti.arc.nasa.gov/tech/rse/research/advocate/"
+             		},
+             		{
+             			"nom": "Article: Tool Support for Assurance Case Development",
+             			"url": "https://ti.arc.nasa.gov/publications/45370/download"
+             		},
+             		{
+             			"nom": "Article: Model-driven Development of Safety Architectures",
+             			"url": "http://ti.arc.nasa.gov/publications/48294/download/"
+             		},
+             		{
+             			"nom": "Talk at SiriusCon",
+             			"url": "https://fr.slideshare.net/slideshow/embed_code/key/8UYZkyAZjVFWko"
+             		}
+             	]
+             }
+        },
 
 
 		{
