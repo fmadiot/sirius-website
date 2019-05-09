@@ -1,1375 +1,1372 @@
 {"usecases":[
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/capella-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/capella-2.jpg"},
-            		{"src": "images/gallery/capella-3.jpg"},
-            		{"src": "images/gallery/capella-4.jpg"},
-            		{"src": "images/gallery/capella-5.jpg"},
-            		{"src": "images/gallery/capella-6.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "Capella",
-             	"author": "Thales",
-             	"description": "<p>Capella is a field-proven model driven engineering solution based on a graphical modeling workbench for engineers developing systems, software and hardware architectures.</p><p>It provides a domain-specific language (DSL) implementing Arcadia, both as a simplification and a semantic enrichment of the UML and SysML standards.</p>",
-             	"tags": [
-             		{
-             			"nom": "Systems Engineering",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project Page",
-             			"url": "https://polarsys.org/capella/"
-             		},
-             		{
-             			"nom": "Strategy for building custom modeling workbenches",
-             			"url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"
-             		}
-             	]
-             }
+    {
+        "medias": {
+            "mainSrc": "images/gallery/capella-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/capella-2.jpg"},
+                {"src": "images/gallery/capella-3.jpg"},
+                {"src": "images/gallery/capella-4.jpg"},
+                {"src": "images/gallery/capella-5.jpg"},
+                {"src": "images/gallery/capella-6.jpg"}
+            ]
         },
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/mindstorms-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/mindstorms-1.jpg"},
-            		{"src": "images/gallery/mindstorms-2.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "Mindstorms Designer",
-             	"author": "Obeo",
-             	"description": "<p>A tool for describing the choreography of a Lego Mindstorms robot: go forward, rotate, grab, release.<br>Java code is generated automatically and can be uploaded on the robot to execute the described choreography.</p>",
-             	"tags": [
-             		{
-             			"nom": "Robotics",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Tutorial",
-             			"url": "https://wiki.eclipse.org/Sirius/Tutorials/Mindstorms"
-             		},
-             		{
-             			"nom": "Github",
-             			"url": "https://github.com/mbats/mindstorms"
-             		}        		
-             	]
-             }
-		},
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/advocate-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/advocate-2.jpg"},
-            		{"src": "images/gallery/advocate-3.jpg"},
-            		{"src": "images/gallery/advocate-4.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "Advocate",
-             	"author": "Nasa",
-             	"description": "<p>AdvoCATE is a toolset developed by NASA's Ames Research Center to specify Safety/assurance cases. AdvoCATE facilitates model-based development, exploiting validations, transformations, and a range of views in the construction of (some of) the artifacts constituting a safety case. NASA has used AdvoCATE to successfully obtain regulatory approval for flight operations involving a fleet of small unmanned aircraft systems (UAS) flying beyond visual line of sight.</p>",
-             	"tags": [
-             		{
-             			"nom": "Safety",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Risk Analysis",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project Page",
-             			"url": "https://ti.arc.nasa.gov/tech/rse/research/advocate/"
-             		},
-             		{
-             			"nom": "Article: Tool Support for Assurance Case Development",
-             			"url": "https://ti.arc.nasa.gov/publications/45370/download"
-             		},
-             		{
-             			"nom": "Article: Model-driven Development of Safety Architectures",
-             			"url": "http://ti.arc.nasa.gov/publications/48294/download/"
-             		},
-             		{
-             			"nom": "Talk at SiriusCon",
-             			"url": "https://fr.slideshare.net/slideshow/embed_code/key/8UYZkyAZjVFWko"
-             		}
-             	]
-             }
+        "infos": {
+            "title": "Capella",
+            "author": "Thales",
+            "description": "<p>Capella is a field-proven model driven engineering solution based on a graphical modeling workbench for engineers developing systems, software and hardware architectures.</p><p>It provides a domain-specific language (DSL) implementing Arcadia, both as a simplification and a semantic enrichment of the UML and SysML standards.</p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "https://polarsys.org/capella/"
+                },
+                {
+                    "nom": "Strategy for building custom modeling workbenches",
+                    "url": "http://neptune.irit.fr/images/Neptune_2013/transparents/P11_SBonnet.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/mindstorms-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/mindstorms-1.jpg"},
+                {"src": "images/gallery/mindstorms-2.jpg"}
+            ]
         },
+        "infos": {
+            "title": "Mindstorms Designer",
+            "author": "Obeo",
+            "description": "<p>A tool for describing the choreography of a Lego Mindstorms robot: go forward, rotate, grab, release.<br>Java code is generated automatically and can be uploaded on the robot to execute the described choreography.</p>",
+            "tags": [
+                {
+                    "nom": "Robotics",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Tutorial",
+                    "url": "https://wiki.eclipse.org/Sirius/Tutorials/Mindstorms"
+                },
+                {
+                    "nom": "Github",
+                    "url": "https://github.com/mbats/mindstorms"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/advocate-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/advocate-2.png"},
+                {"src": "images/gallery/advocate-3.png"},
+                {"src": "images/gallery/advocate-4.png"}
+            ]
+        },
+        "infos": {
+            "title": "Advocate",
+            "author": "Nasa",
+            "description": "<p>AdvoCATE is a toolset developed by NASA's Ames Research Center to specify Safety/assurance cases. AdvoCATE facilitates model-based development, exploiting validations, transformations, and a range of views in the construction of (some of) the artifacts constituting a safety case. NASA has used AdvoCATE to successfully obtain regulatory approval for flight operations involving a fleet of small unmanned aircraft systems (UAS) flying beyond visual line of sight.</p>",
+            "tags": [
+                {
+                    "nom": "Safety",
+                    "url": "#"
+                },
+                {
+                    "nom": "Risk Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "https://ti.arc.nasa.gov/tech/rse/research/advocate/"
+                },
+                {
+                    "nom": "Article: Tool Support for Assurance Case Development",
+                    "url": "https://ti.arc.nasa.gov/publications/45370/download"
+                },
+                {
+                    "nom": "Article: Model-driven Development of Safety Architectures",
+                    "url": "http://ti.arc.nasa.gov/publications/48294/download/"
+                },
+                {
+                    "nom": "Talk at SiriusCon",
+                    "url": "https://fr.slideshare.net/slideshow/embed_code/key/8UYZkyAZjVFWko"
+                }
+            ]
+        }
+    },
 
+    {
+        "medias": {
+            "mainSrc": "images/gallery/modane-1.png",
+            "imgAlt": "Modane - CEA-DAM",
+            "thumbs": [
+                {"src": "images/gallery/modane-1.png"},
+                {"src": "images/gallery/modane-2.png"},
+                {"src": "images/gallery/modane-3.png"}
+            ]
+        },
+        "infos": {
+            "title": "Modane",
+            "author": "CEA-DAM",
+            "description": "<p>The continual increasing power of supercomputers allows numerical simulation codes to take into account more complex physical phenomena. Therefore, physicists and mathematicians have to implement complex algorithms using cutting edge technologies and integrate them in large simulators. To improve its simulators development cycle, the CEA-DAM has developed Modane, a tool based on Sirius, Xtext and EMF Compare.</p>",
+            "tags": [
+                {
+                    "nom": "Simulation",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Talk at SiriusCon",
+                    "url": "https://www.slideshare.net/slideshow/embed_code/key/F7aJYWBvhs4i77"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/simqri-1.png",
+            "imgAlt": "SimQRi - CETIC",
+            "thumbs": [
+                {"src": "images/gallery/simqri-1.png"}
+            ]
+        },
+        "infos": {
+            "title": "SimQRi",
+            "author": "CETIC",
+            "description": "<p>Companies have to face increasing procurement risks especially in the globalisation context. SimQRi aims at providing a holistic approach to conduct and obtain procurement-specified risk assessments including internal risk treatment, with a specific focus on small and medium enterprises in the field of Mechanical Engineering. The methodology is supported by a Sirius-based Open Source tool that guides the user through the whole process of risk assessment with a logistics DSL and tables presenting results of Monte Carlo simulations.</p>",
+            "tags": [
+                {
+                    "nom": "Risk Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Talk at SiriusCon",
+                    "url": "https://fr.slideshare.net/slideshow/embed_code/key/xqpCfkrx5xLhvr"
+                },
+                {
+                    "nom": "Source Code",
+                    "url": "https://github.com/cetic/SimQRI"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/iris-1.png",
+            "imgAlt": "IRIS - Grace Park (University of Texas at Dallas)",
+            "thumbs": [
+                {"src": "images/gallery/iris-1.png"},
+                {"src": "images/gallery/iris-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "IRIS",
+            "author": "Grace Park (University of Texas at Dallas)",
+            "description": "<p>IRIS is a framework for aligning big data analytics with business in a goal-oriented approach in order to address the problems of big data/IoT, i.e., lack of business context around the data, lack of expertise to connect the dots, and implicit business objectives. It is composed of ontology for a business context model, analytics methods for connecting big data with business, a process for collaborative work and an assistant tool utilizing Spark for big data processing and Sirius for visualizing conceptual models of the ontology.</p>",
+            "tags": [
+                {
+                    "nom": "Big Data",
+                    "url": "#"
+                },
+                {
+                    "nom": "IoT",
+                    "url": "#"
+                },
+                {
+                    "nom": "Business Analytics",
+                    "url": "#"
+                },
+                {
+                    "nom": "Goal-orientation",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "https://sites.google.com/site/irisforbigdata/"
+                }
+            ]
+        }
+    },
 
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/modane-1.png",
-            	"imgAlt": "Modane - CEA-DAM",
-            	"thumbs": [
-            		{"src": "images/gallery/modane-1.png"},
-            		{"src": "images/gallery/modane-2.png"},
-            		{"src": "images/gallery/modane-3.png"}
-				]
-             },
-             "infos": {
-             	"title": "Modane",
-             	"author": "CEA-DAM",
-             	"description": "<p>The continual increasing power of supercomputers allows numerical simulation codes to take into account more complex physical phenomena. Therefore, physicists and mathematicians have to implement complex algorithms using cutting edge technologies and integrate them in large simulators. To improve its simulators development cycle, the CEA-DAM has developed Modane, a tool based on Sirius, Xtext and EMF Compare.</p>",
-             	"tags": [
-             		{
-             			"nom": "Simulation",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Talk at SiriusCon",
-             			"url": "https://www.slideshare.net/slideshow/embed_code/key/F7aJYWBvhs4i77"
-             		}
-             	]
-             }
-		},
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/simqri-1.png",
-            	"imgAlt": "SimQRi - CETIC",
-            	"thumbs": [
-            		{"src": "images/gallery/simqri-1.png"}
-            		]
-             },
-             "infos": {
-             	"title": "SimQRi",
-             	"author": "CETIC",
-             	"description": "<p>Companies have to face increasing procurement risks especially in the globalisation context. SimQRi aims at providing a holistic approach to conduct and obtain procurement-specified risk assessments including internal risk treatment, with a specific focus on small and medium enterprises in the field of Mechanical Engineering. The methodology is supported by a Sirius-based Open Source tool that guides the user through the whole process of risk assessment with a logistics DSL and tables presenting results of Monte Carlo simulations.</p>",
-             	"tags": [
-             		{
-             			"nom": "Risk Analysis",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-					{
-						"nom": "Talk at SiriusCon",
-						"url": "https://fr.slideshare.net/slideshow/embed_code/key/xqpCfkrx5xLhvr"
-					},
-					{
-						"nom": "Source Code",
-						"url": "https://github.com/cetic/SimQRI"
-					}
-             	]
-             }
-		},
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/iris-1.png",
-            	"imgAlt": "IRIS - Grace Park (University of Texas at Dallas)",
-            	"thumbs": [
-            		{"src": "images/gallery/iris-1.png"},
-            		{"src": "images/gallery/iris-2.png"}
-            		]
-             },
-             "infos": {
-             	"title": "IRIS",
-             	"author": "Grace Park (University of Texas at Dallas)",
-             	"description": "<p>IRIS is a framework for aligning big data analytics with business in a goal-oriented approach in order to address the problems of big data/IoT, i.e., lack of business context around the data, lack of expertise to connect the dots, and implicit business objectives. It is composed of ontology for a business context model, analytics methods for connecting big data with business, a process for collaborative work and an assistant tool utilizing Spark for big data processing and Sirius for visualizing conceptual models of the ontology.</p>",
-             	"tags": [
-             		{
-             			"nom": "Big Data",
-             			"url": "#"
-					 },
-					 {
-						"nom": "IoT",
-						"url": "#"
-					},
-					{
-						"nom": "Business Analytics",
-						"url": "#"
-					},
-					{
-						"nom": "Goal-orientation",
-						"url": "#"
-					}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project Page",
-             			"url": "https://sites.google.com/site/irisforbigdata/"
-             		}
-             	]
-             }
-		},
-		
+    {
+        "medias": {
+            "mainSrc": "images/gallery/lyo-designer.png",
+            "imgAlt": "Lyo Designer",
+            "thumbs": [
+                {"src": "images/gallery/lyo-designer.png"}
+            ]
+        },
+        "infos": {
+            "title": "Lyo Designer",
+            "author": "KTH Royal Institute of Technology",
+            "description": "<p>If you are developing modelling tools, you might be already considering their interoperability with other software applications.<br>Lyo Designer is an open source modeling tool that supports the architectural design and implementation of tool interfaces based on <a href='https://open-services.net/' target='_blank'>OSLC</a> (Open Services for Lifecycle Collaboration) - an OASIS standard  for the interoperability of heterogeneous software applications.<br>Lyo Designer includes an integrated code generator that synthesizes the toolchain model into almost-complete <a href='https://wiki.eclipse.org/Lyo/LyoOSLC4J' target='_blank'>OSLC4J</a> - compliant running implementation. </p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Lyo Designer",
+                    "url": "https://wiki.eclipse.org/Lyo/Lyo_Designer"
+                },
+                {
+                    "nom": "OASIS OSLC",
+                    "url": "http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part1-overview.html"
+                },
+                {
+                    "nom": "Lyo Designer Workshop",
+                    "url": "https://github.com/kth-mda/workshop-lyo-designer"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/crala-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/crala-1.jpg"},
+                {"src": "images/gallery/crala-2.jpg"},
+                {"src": "images/gallery/crala-3.jpg"},
+                {"src": "images/gallery/crala-4.jpg"},
+                {"src": "images/gallery/crala-5.jpg"}
+            ]
+        },
+        "infos": {
+            "title": "CRALA",
+            "author": "Huaxi Yulin ZHANG (University of Picardie Jules Verne, France)<br>Lei ZHANG (Northeastern University, China)",
+            "description": "<p>A tool for modeling Cloud robotic systems from IaaS, PaaS and Saas 3-levels, including their variability.</p>",
+            "tags": [
+                {
+                    "nom": "Robotics",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Article",
+                    "url": "https://arxiv.org/abs/1701.03608"
+                },
+                {
+                    "nom": "Video",
+                    "url": "https://www.youtube.com/watch?v=rmeAzF2dCSQ"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/ubibots-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/ubibots-1.jpg"},
+                {"src": "images/gallery/ubibots-2.jpg"}
+            ]
+        },
+        "infos": {
+            "title": "UbiBots",
+            "author": "Leibniz Universität Hannover",
+            "description": "<p>Ubibots allows specifying complex interaction behaviors of ubiquitous cyber-physical systems.<br>In includes a simulation tool to execute scenarios on distributed robots. Sirius has been used to implement the visualization part.</p>",
+            "tags": [
+                {
+                    "nom": "Robotics",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project",
+                    "url": "http://ubibots2015.scenariotools.org"
+                },
+                {
+                    "nom": "Video",
+                    "url": "https://www.youtube.com/watch?v=g0hcGSYC2Wk"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/etas-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/etas-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "ASCET-CONGRA",
+            "author": "ETAS GmbH",
+            "description": "<p>ETAS ASCET-CONGRA (CONstraint GRAph) allows function developers to depict mathematically describable relationships using interactive graphs. These describe the overall system based on equations, differential equations, maps, and curves. The tool checks all input for computability, automatically carries out the mathematical work in the background, and offers various analyses and functions that serve to implement, correctly and efficiently, the system to be developed. It includes interaction with an XText based model and cooperation with a textual representation.</p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                },
+                {
+                    "nom": "Embedded Software Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "Domain Driven Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "Constraint Graph",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "https://www.etas.com/fr/products/ascet_congra.php"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/palladio-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/palladio-2.jpg"}
+            ]
+        },
+        "infos": {
+            "title": "Palladio Component Model",
+            "author": "The Palladio Simulator group",
+            "description": "<p>Palladio is an approach for performance evaluation and design-time performance prediction for component-based software architectures. When creating a Palladio model, at first, components are specified including their interfaces and abstractions of their behavior. This includes performance properties like resource demands. From these components, a system architecture can be assembled. The instances of the components can then be deployed on resource containers. A workload is then be applied to the system interface. Such a model can then be analyzed by the simulators of the Palladio approach.</p>",
+            "tags": [
+                {
+                    "nom": "Software Architecture",
+                    "url": "#"
+                },
+                {
+                    "nom": "Software Performance Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "http://palladio-simulator.com/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/iri-tmb.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/iri-er.png"},
+                {"src": "images/gallery/iri-flow.png"},
+                {"src": "images/gallery/iri-tmb.png"}
+            ]
+        },
+        "infos": {
+            "title": "IRI Workbench for Voracity",
+            "author": "IRI, The CoSort Company",
+            "description": "<p>IRI Workbench provides a simple visual interface and ergonomic modules to design and run all job scripts. In this graphical IDE built on Eclipse, you build, modify, share, and execute the simple, portable job scripts of IRI tools, and the state-of-the-art, portable workflows of the new IRI Voracity platform.</p><p>IRI Workbench features metadata creation, conversion, discovery, and application wizards to help you generate, deploy, and manage the simple job scripts (SortCL, etc.), data definition files (DDF), and XML workflows common to all IRI software.</p>",
+            "tags": [
+                {
+                    "nom": "Big Data",
+                    "url": "#"
+                },
+                {
+                    "nom": "ETL",
+                    "url": "#"
+                },
+                {
+                    "nom": "Data Masking",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Product website",
+                    "url": "http://www.iri.com/products/workbench"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/maif-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "P&C Insurance Products",
+            "author": "MAIF",
+            "description": "The MAIF insurance company has developped a graphical tool to manage the P&C products (property and casualty, IARD in french for Incendie, Accidents et Risques Divers).</p><p>It provides graphical representations to create, modify, consult, version and validate the products.</p>",
+            "tags": [
+                {
+                    "nom": "Business Analysis",
+                    "url": "#"
+                },
+                {
+                    "nom": "Domain Driven Development",
+                    "url": "#"
+                }
 
+            ],
+            "lnks": [
+                {
+                    "nom": "Fr&eacute;d&eacute;ric Madiot's blog",
+                    "url": "http://fmadiot.blogspot.fr/2012/05/modeling-p-insurance-products-maif-case.html"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/graphicalModelingWorkbench.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/appsComponentsArtifacts.png"},
+                {"src": "images/gallery/tripSellingProcessBO.png"},
+                {"src": "images/gallery/graphicalModelingWorkbench.png"}
+            ]
+        },
+        "infos": {
+            "title": "Obeo SmartEA",
+            "author": "Obeo",
+            "description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor-made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
+            "tags": [
+                {
+                    "nom": "Enterprise Architecture",
+                    "url": "#"
+                },
+                {
+                    "nom": "Archimate",
+                    "url": "#"
+                },
+                {
+                    "nom": "Information System",
+                    "url": "#"
+                },
+                {
+                    "nom": "Strategic Changes Management",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Product website",
+                    "url": "https://www.obeosmartea.com/en/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/uml-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs":[
+                {"src": "images/gallery/uml-2.png"},
+                {"src": "images/gallery/uml-3.png"},
+                {"src": "images/gallery/uml-4.png"},
+                {"src": "images/gallery/uml-5.png"}
+            ]
+        },
+        "infos": {
+            "title": "UML Designer",
+            "author": "Obeo",
+            "description": "<p>UML Designer is an open source modeling tool to edit and vizualize UML 2.5 models.</p><p>It provides the following generic UML diagrams: Package, Class, Component, Composite Structure, Deployment, Use Case, Activity, State Machine, Sequence, Profile</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Product website",
+                    "url": "http://www.umldesigner.org/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/ecore-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/ecore-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "Ecore Tools",
+            "author": "Obeo",
+            "description": "<p>Ecore Tools allows you to design Classes, Datatypes, References and all the classical Ecore constructions</p><p>It also provides specific layers to support concerns involved in expressing your domain model: documenting, reviewing the referencing mechanism of elements, identifying business constraints, exploring the model.</p>",
+            "tags": [
+                {
+                    "nom": "Domain Driven Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
 
-        {
-            "medias": {
-            	"mainSrc": "images/gallery/lyo-designer.png",
-            	"imgAlt": "Lyo Designer",
-            	"thumbs": [
-            		{"src": "images/gallery/lyo-designer.png"}
-            		]
-             },
-             "infos": {
-             	"title": "Lyo Designer",
-             	"author": "KTH Royal Institute of Technology",
-             	"description": "<p>If you are developing modelling tools, you might be already considering their interoperability with other software applications.<br>Lyo Designer is an open source modeling tool that supports the architectural design and implementation of tool interfaces based on <a href='https://open-services.net/' target='_blank'>OSLC</a> (Open Services for Lifecycle Collaboration) - an OASIS standard  for the interoperability of heterogeneous software applications.<br>Lyo Designer includes an integrated code generator that synthesizes the toolchain model into almost-complete <a href='https://wiki.eclipse.org/Lyo/LyoOSLC4J' target='_blank'>OSLC4J</a> - compliant running implementation. </p>",
-             	"tags": [
-             		{
-             			"nom": "Systems Engineering",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Lyo Designer",
-             			"url": "https://wiki.eclipse.org/Lyo/Lyo_Designer"
-             		},
-             		{
-             			"nom": "OASIS OSLC",
-             			"url": "http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part1-overview.html"
-             		},
-             		{
-             			"nom": "Lyo Designer Workshop",
-             			"url": "https://github.com/kth-mda/workshop-lyo-designer"
-             		}
-             	]
-             }
+            ],
+            "lnks": [
+                {
+                    "nom": "Product website",
+                    "url": "http://www.eclipse.org/ecoretools/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/view1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/view2.jpg"},
+                {"src": "images/gallery/view9.jpg"},
+                {"src": "images/gallery/view10.jpg"}
+            ]
         },
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/crala-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/crala-1.jpg"},
-            		{"src": "images/gallery/crala-2.jpg"},
-            		{"src": "images/gallery/crala-3.jpg"},
-            		{"src": "images/gallery/crala-4.jpg"},
-            		{"src": "images/gallery/crala-5.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "CRALA",
-             	"author": "Huaxi Yulin ZHANG (University of Picardie Jules Verne, France)<br>Lei ZHANG (Northeastern University, China)",
-             	"description": "<p>A tool for modeling Cloud robotic systems from IaaS, PaaS and Saas 3-levels, including their variability.</p>",
-             	"tags": [
-             		{
-             			"nom": "Robotics",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Article",
-             			"url": "https://arxiv.org/abs/1701.03608"
-             		},
-             		{
-             			"nom": "Video",
-             			"url": "https://www.youtube.com/watch?v=rmeAzF2dCSQ"
-             		}
-             	]
-             }
+        "infos": {
+            "title": "ARTIST",
+            "author": "Safran-Sagem",
+            "description": "<p>ARTIST eases engineering activities while developing safety-critical software embedded in complex system. It provides a wide set of services and interacts with a whole ecosystem.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "EclipseCon Talk",
+                    "url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/modulestudio-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/modulestudio-2.png"}
+            ]
         },
-		{
-            "medias": {
-            	"mainSrc": "images/gallery/ubibots-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/ubibots-1.jpg"},
-            		{"src": "images/gallery/ubibots-2.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "UbiBots",
-             	"author": "Leibniz Universität Hannover",
-             	"description": "<p>Ubibots allows specifying complex interaction behaviors of ubiquitous cyber-physical systems.<br>In includes a simulation tool to execute scenarios on distributed robots. Sirius has been used to implement the visualization part.</p>",
-             	"tags": [
-             		{
-             			"nom": "Robotics",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project",
-             			"url": "http://ubibots2015.scenariotools.org"
-             		},
-             		{
-             			"nom": "Video",
-             			"url": "https://www.youtube.com/watch?v=g0hcGSYC2Wk"
-             		}
-             	]
-             }
+        "infos": {
+            "title": "ModuleStudio",
+            "author": "Guite",
+            "description": "<p>A DSL with tooling based on Sirius and Xtext to describe structure and behavior of web applications. The models are used to generate extensions for a PHP-based web application framework.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "http://modulestudio.de/en/"
+                },
+                {
+                    "nom": "Video",
+                    "url": "https://www.youtube.com/watch?v=sZcOIh92zxY"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/nosql_visualization-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/nosql_visualization-2.png"},
+                {"src": "images/gallery/nosql_visualization-3.png"}
+            ]
         },
-        	{
-            "medias": {
-            	"mainSrc": "images/gallery/etas-1.png",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/etas-2.png"}
-            		]
-             },
-             "infos": {
-             	"title": "ASCET-CONGRA",
-             	"author": "ETAS GmbH",
-             	"description": "<p>ETAS ASCET-CONGRA (CONstraint GRAph) allows function developers to depict mathematically describable relationships using interactive graphs. These describe the overall system based on equations, differential equations, maps, and curves. The tool checks all input for computability, automatically carries out the mathematical work in the background, and offers various analyses and functions that serve to implement, correctly and efficiently, the system to be developed. It includes interaction with an XText based model and cooperation with a textual representation.</p>",
-             	"tags": [
-             		{
-             			"nom": "Systems Engineering",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Embedded Software Development",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Domain Driven Development",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Constraint Graph",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project Page",
-             			"url": "https://www.etas.com/fr/products/ascet_congra.php"
-             		}
-             	]
-             }
+        "infos": {
+            "title": "NoSQL Visualization Tool",
+            "author": "Cátedra SAES & University of Murcia",
+            "description": "<p>NoSQLVisualization is a tool designed to visualize schemas and schema versions which have been inferred from NoSQL databases. This tool defines several viewpoints such as trees and diagram compositions in order to visualize the main elements of NoSQL schemas: entities, versions, fields, aggregations and references.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/Soltari/NoSQLVisualizationTools/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/pep-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/pep-2.png"},
+                {"src": "images/gallery/pep-3.png"}
+            ]
         },
-        {
-            "medias": {
-            	"mainSrc": "images/gallery/palladio-1.jpg",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/palladio-2.jpg"}
-            		]
-             },
-             "infos": {
-             	"title": "Palladio Component Model",
-             	"author": "The Palladio Simulator group",
-             	"description": "<p>Palladio is an approach for performance evaluation and design-time performance prediction for component-based software architectures. When creating a Palladio model, at first, components are specified including their interfaces and abstractions of their behavior. This includes performance properties like resource demands. From these components, a system architecture can be assembled. The instances of the components can then be deployed on resource containers. A workload is then be applied to the system interface. Such a model can then be analyzed by the simulators of the Palladio approach.</p>",
-             	"tags": [
-             		{
-             			"nom": "Software Architecture",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Software Performance Engineering",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Project Page",
-             			"url": "http://palladio-simulator.com/"
-             		}
-             	]
-             }
-        },
-        {
-            "medias": {
-            	"mainSrc": "images/gallery/iri-tmb.png",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/iri-er.png"},
-            		{"src": "images/gallery/iri-flow.png"},
-            		{"src": "images/gallery/iri-tmb.png"}
-            	]
-             },
-             "infos": {
-             	"title": "IRI Workbench for Voracity",
-             	"author": "IRI, The CoSort Company",
-             	"description": "<p>IRI Workbench provides a simple visual interface and ergonomic modules to design and run all job scripts. In this graphical IDE built on Eclipse, you build, modify, share, and execute the simple, portable job scripts of IRI tools, and the state-of-the-art, portable workflows of the new IRI Voracity platform.</p><p>IRI Workbench features metadata creation, conversion, discovery, and application wizards to help you generate, deploy, and manage the simple job scripts (SortCL, etc.), data definition files (DDF), and XML workflows common to all IRI software.</p>",
-             	"tags": [
-             		{
-             			"nom": "Big Data",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "ETL",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Data Masking",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Product website",
-             			"url": "http://www.iri.com/products/workbench"
-             		}
-             	]
-             }
-        },
-        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/maif-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "P&C Insurance Products",
-	             	"author": "MAIF",
-	             	"description": "The MAIF insurance company has developped a graphical tool to manage the P&C products (property and casualty, IARD in french for Incendie, Accidents et Risques Divers).</p><p>It provides graphical representations to create, modify, consult, version and validate the products.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Analysis",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Domain Driven Development",
-	             			"url": "#"
-	             		}
-	             		
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
-	             			"url": "http://fmadiot.blogspot.fr/2012/05/modeling-p-insurance-products-maif-case.html"
-	             		}
-	             	]
-	             }
-	   },
-	   {
-	            "medias": {
-	            	"mainSrc": "images/gallery/graphicalModelingWorkbench.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/appsComponentsArtifacts.png"},
-	            		{"src": "images/gallery/tripSellingProcessBO.png"},
-	            		{"src": "images/gallery/graphicalModelingWorkbench.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Obeo SmartEA",
-	             	"author": "Obeo",
-	             	"description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor-made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Enterprise Architecture",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Archimate",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Information System",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Strategic Changes Management",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Product website",
-	             			"url": "https://www.obeosmartea.com/en/"
-	             		}
-	             	]
-	             }
-	   },
-       {
-            "medias": {
-            	"mainSrc": "images/gallery/uml-1.png",
-            	"imgAlt": "Put image name here",
-            	"thumbs":[
-            		{"src": "images/gallery/uml-2.png"},
-            		{"src": "images/gallery/uml-3.png"},
-            		{"src": "images/gallery/uml-4.png"},
-            		{"src": "images/gallery/uml-5.png"}
-            		]
-             },
-             "infos": {
-             	"title": "UML Designer",
-             	"author": "Obeo",
-             	"description": "<p>UML Designer is an open source modeling tool to edit and vizualize UML 2.5 models.</p><p>It provides the following generic UML diagrams: Package, Class, Component, Composite Structure, Deployment, Use Case, Activity, State Machine, Sequence, Profile</p>",
-             	"tags": [
-             		{
-             			"nom": "Software Development",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Product website",
-             			"url": "http://www.umldesigner.org/"
-             		}
-                         	]
-             }
-        },
-        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/ecore-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/ecore-2.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Ecore Tools",
-	             	"author": "Obeo",
-	             	"description": "<p>Ecore Tools allows you to design Classes, Datatypes, References and all the classical Ecore constructions</p><p>It also provides specific layers to support concerns involved in expressing your domain model: documenting, reviewing the referencing mechanism of elements, identifying business constraints, exploring the model.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Domain Driven Development",
-	             			"url": "#"
-	             		},
-	          		{
-					"nom": "Software Development",
-					"url": "#"
-				}
+        "infos": {
+            "title": "Plastic Manufacturing",
+            "author": "PEP",
+            "description": "<p>This modeler allows the collaborative design and development of complex plastic products.</p><p>It provides views dedicated to the several different business experts involved in the creation of such products: projects/solution, resources, costs, process, sequence</p>",
+            "tags": [
+                {
+                    "nom": "Business Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
 
-	             	],
-	             "lnks": [
-             		{
-             			"nom": "Product website",
-             			"url": "http://www.eclipse.org/ecoretools/"
-             		}
-	             	]
-	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/view1.jpg",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/view2.jpg"},
-	            		{"src": "images/gallery/view9.jpg"},
-	            		{"src": "images/gallery/view10.jpg"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "ARTIST",
-	             	"author": "Safran-Sagem",
-	             	"description": "<p>ARTIST eases engineering activities while developing safety-critical software embedded in complex system. It provides a wide set of services and interacts with a whole ecosystem.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "EclipseCon Talk",
-	             			"url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
-	             		}
-	             	]
-	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/modulestudio-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/modulestudio-2.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "ModuleStudio",
-	             	"author": "Guite",
-	             	"description": "<p>A DSL with tooling based on Sirius and Xtext to describe structure and behavior of web applications. The models are used to generate extensions for a PHP-based web application framework.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Project Page",
-	             			"url": "http://modulestudio.de/en/"
-	             		},
-	             		{
-	             			"nom": "Video",
-	             			"url": "https://www.youtube.com/watch?v=sZcOIh92zxY"
-	             		}
-	             	]
-	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/nosql_visualization-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/nosql_visualization-2.png"},
-	            		{"src": "images/gallery/nosql_visualization-3.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "NoSQL Visualization Tool",
-	             	"author": "Cátedra SAES & University of Murcia",
-	             	"description": "<p>NoSQLVisualization is a tool designed to visualize schemas and schema versions which have been inferred from NoSQL databases. This tool defines several viewpoints such as trees and diagram compositions in order to visualize the main elements of NoSQL schemas: entities, versions, fields, aggregations and references.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/Soltari/NoSQLVisualizationTools/"
-	             		}
-	             	]
-	             }
-	        },
-            {
-	            "medias": {
-	            	"mainSrc": "images/gallery/pep-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/pep-2.png"},
-	            		{"src": "images/gallery/pep-3.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Plastic Manufacturing",
-	             	"author": "PEP",
-	             	"description": "<p>This modeler allows the collaborative design and development of complex plastic products.</p><p>It provides views dedicated to the several different business experts involved in the creation of such products: projects/solution, resources, costs, process, sequence</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Analysis",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-
-	             	]
-	             }
-	        },
-                {
-	            "medias": {
-	            	"mainSrc": "images/gallery/mimic-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/mimic-2.png"},
-	            		{"src": "images/gallery/mimic-3.png"},
-	            		{"src": "images/gallery/mimic-4.png"},
-	            		{"src": "images/gallery/mimic-5.png"},
-	            		{"src": "images/gallery/mimic-6.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "MIMIC (Mobile Multimodality Creator)",
-	             	"author": "LIFL (University of Lille)",
-	             	"description": "<p>MIMIC is a model-based framework that enables the modeling and generation of multimodal mobile applications (Android and iPhone).</p><p> It allows multimodal mobile interfaces to be created more quickly, enabling rapid prototyping based on their designed models.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Leveraging Sensor-based Interactions in Multimodal Mobile Applications",
-	             			"url": "http://www.lifl.fr/~rouillar/publi/2014_Elouali_Lepallec_Rouillard_Tarby_EA_CHI.pdf"
-	             		}
-	             	]
-	             }
-	        },
-                {
-	            "medias": {
-	            	"mainSrc": "images/gallery/dart-module.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/dart-class.png"},
-	            		{"src": "images/gallery/dart-package.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Dart Designer",
-	             	"author": "Obeo",
-	             	"description": "<p>Dart Designer is an open source tool to build diagrams of your Dart applications.</p><p>It is based on a DSL defining concepts like Stylesheet, Package, Class, Mixin or even HTML pages. These concepts that you will manipulate in Dart Designer are either coming from the Dart programming language specification or from regular web application development.",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "http://dartdesigner.github.io/"
-	             		},
-	             		{
-	             			"nom": "St&eacute;phane B&eacute;gaudeau's blog",
-	             			"url": "http://stephanebegaudeau.tumblr.com/post/94470472420/introducing-dart-designer"
-	             		}
-	             	]
-	             }
-	        },
-       {
-            "medias": {
-            	"mainSrc": "images/gallery/ifml-1.png",
-            	"imgAlt": "Put image name here",
-            	"thumbs":[
-            		{"src": "images/gallery/ifml-2.png"},
-            		{"src": "images/gallery/ifml-3.png"}
-            		]
-             },
-             "infos": {
-             	"title": "IFML Editor",
-             	"author": "WebRatio / Atlanmod",
-             	"description": "<p>IFML is an OMG standard designed for expressing the content, user interaction and control behavior of the front-end of software applications.</p><p>An IFML model supports the following design perspectives: view structure, view content, events, event transition, parameter binding, actions triggered by the user's events.</p>",
-             	"tags": [
-             		{
-             			"nom": "Software Development",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "GitHub",
-             			"url": "http://ifml.github.io/"
-             		}
-                         	]
-             }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/mimic-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/mimic-2.png"},
+                {"src": "images/gallery/mimic-3.png"},
+                {"src": "images/gallery/mimic-4.png"},
+                {"src": "images/gallery/mimic-5.png"},
+                {"src": "images/gallery/mimic-6.png"}
+            ]
         },
-       {
-            "medias": {
-            	"mainSrc": "images/gallery/arduino-5.png",
-            	"imgAlt": "Put image name here",
-            	"thumbs":[
-            		{"src": "images/gallery/arduino-1.png"},
-            		{"src": "images/gallery/arduino-2.png"},
-            		{"src": "images/gallery/arduino-3.png"},
-            		{"src": "images/gallery/arduino-4.png"}
-            		]
-             },
-             "infos": {
-             	"title": "Arduino Designer",
-             	"author": "Obeo",
-             	"description": "<p>The Arduino Designer allows kids to create small programs for Arduino.</p><p>It provides a graphical block language to be able to develop simple programs and run them on electronic modules.</p>",
-             	"tags": [
-             		{
-             			"nom": "Software Development",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "IoT",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "GitHub",
-             			"url": "https://github.com/mbats/arduino"
-             		}
-                         	]
-             }
+        "infos": {
+            "title": "MIMIC (Mobile Multimodality Creator)",
+            "author": "LIFL (University of Lille)",
+            "description": "<p>MIMIC is a model-based framework that enables the modeling and generation of multimodal mobile applications (Android and iPhone).</p><p> It allows multimodal mobile interfaces to be created more quickly, enabling rapid prototyping based on their designed models.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Leveraging Sensor-based Interactions in Multimodal Mobile Applications",
+                    "url": "http://www.lifl.fr/~rouillar/publi/2014_Elouali_Lepallec_Rouillard_Tarby_EA_CHI.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/dart-module.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/dart-class.png"},
+                {"src": "images/gallery/dart-package.png"}
+            ]
         },
+        "infos": {
+            "title": "Dart Designer",
+            "author": "Obeo",
+            "description": "<p>Dart Designer is an open source tool to build diagrams of your Dart applications.</p><p>It is based on a DSL defining concepts like Stylesheet, Package, Class, Mixin or even HTML pages. These concepts that you will manipulate in Dart Designer are either coming from the Dart programming language specification or from regular web application development.",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/orange-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Telecom Reference Architecture",
-	             	"author": "Orange",
-	             	"description": "<p>This modeling tool implements Orange Lab's internal approach (RAL kit) to describe the architecture of IT solutions and services platforms.</p><p>It supports 4 viewpoints (usage, functional, software and infrastructure) and integrates with UML Designer.",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Analysis",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             	]
-	             }
-	        },
-                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/esa-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/esa-2.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Satellite Software Modeling",
-	             	"author": "ESA (European Space Agency)",
-	             	"description": "<p>This tool is dedicated to the creation of satellite applications.</p><p>It supports seven views (Data Component, Behavioural, Hardware/Deployment, Non Functional, Implementation/Analysis and Packet Utilization Standard) via 19 kinds of diagrams and 8 kinds of tables.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Systems Engineering",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Real Time",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
-	             			"url": "http://fmadiot.blogspot.fr/2012/09/esa-case-study.html"
-	             		},
-	             		{
-	             			"nom": "Cordet Project",
-	             			"url": "http://cordet.gmv.com/"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/timing-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/timing-2.png"},
-	            		{"src": "images/gallery/timing-3.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Timing Constraints",
-	             	"author": "Obeo",
-	             	"description": "This modeling tool provides additional layers over UML models in order to specify timing constraints: multi-clock, logical time, physical time.",
-	             	"tags": [
-	             		{
-	             			"nom": "Real Time",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "RT-Simex project presentation",
-	             			"url": "http://prezi.com/dbf2jtx0dgtr/rt-simex-reverse-engineering-of-simulated-and-executed-real-time-traces/"
-	             		},
-	             		{
-	             			"nom": "RT-Simex video: Analysis",
-	             			"url": "http://www.rtsimex.org/demos/demo-analyse"
-	             		},
-	             		{
-	             			"nom": "RT-Simex video: Constraints",
-	             			"url": "http://www.rtsimex.org/demos/demo-contrainte"
-	             		}
-	             	]
-	             }
-	        },
-        {
-            "medias": {
-            	"mainSrc": "images/gallery/safety-risks.png",
-            	"imgAlt": "Put image name here",
-            	"thumbs": [
-            		{"src": "images/gallery/safety-pha-tree.png"},
-            		{"src": "images/gallery/safety-sysml.png"},
-            		{"src": "images/gallery/safety-library.png"}
-            		]
-             },
-             "infos": {
-             	"title": "Risk Analysis Designer",
-             	"author": "Alstom",
-             	"description": "A tool to capture both parts of the system designs and parts of the safety analysis needed to build a critical systems.",
-             	"tags": [
-             		{
-             			"nom": "Safety",
-             			"url": "#"
-             		},
-             		{
-             			"nom": "Systems Engineering",
-             			"url": "#"
-             		}
-             	],
-             "lnks": [
-             		{
-             			"nom": "Fr&eacute;d&eacute;ric Thomas' blog",
-             			"url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"
-             		}
-             	]
-             }
+                    "nom": "GitHub",
+                    "url": "http://dartdesigner.github.io/"
+                },
+                {
+                    "nom": "St&eacute;phane B&eacute;gaudeau's blog",
+                    "url": "http://stephanebegaudeau.tumblr.com/post/94470472420/introducing-dart-designer"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/ifml-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs":[
+                {"src": "images/gallery/ifml-2.png"},
+                {"src": "images/gallery/ifml-3.png"}
+            ]
         },
+        "infos": {
+            "title": "IFML Editor",
+            "author": "WebRatio / Atlanmod",
+            "description": "<p>IFML is an OMG standard designed for expressing the content, user interaction and control behavior of the front-end of software applications.</p><p>An IFML model supports the following design perspectives: view structure, view content, events, event transition, parameter binding, actions triggered by the user's events.</p>",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/eip-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "EIP Designer",
-	             	"author": "Laurent Broudoux",
-	             	"description": "<p>A Sirius designer for Enterprise Integration Patterns.</p><p>It allows you to design integration routes using the common patterns and vocabulary used within Enterprise Application Integration or Enterprise Services Bus solutions.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/lbroudoux/eip-designer"
-	             		},
-             		{
-             			"nom": "InfoQ",
-             			"url": "http://www.infoq.com/articles/eip-designer"
-             		}
-	             	]
-	             }
-	        },
-	        	{
-	            "medias": {
-	            	"mainSrc": "images/gallery/POOSL-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/POOSL-2.png"},
-	            		{"src": "images/gallery/POOSL-3.png"},
-	            		{"src": "images/gallery/POOSL-4.png"}	            		            		
-	            		]
-	             },
-	             "infos": {
-	             	"title": "POOSL IDE",
-	             	"author": "TNO-ESI",
-	             	"description": "<p>POOSL (Parallel Object-Oriented Specification Language) is an expressive industry-proven modelling language with a formal semantics to describe both structure and concurrent, real-time and stochastic behavior. It exploits a combination of Xtext with Sirius to realize synchronized textual and graphical editing of POOSL models.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software-Development", 
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Systems-Engineering",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "POOSL IDE",
-	             			"url": "http://poosl.esi.nl"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/citrus-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/citrus-2.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Citrus",
-	             	"author": "Isoneo",
-	             	"description": "<p>Citrus is a product that supports the development cycle of a system, with an approach based on modeling and simulation.</p><p>It provides a studio to capture the system architecture, its interfaces and its breakdown structure into sub-systems/equipments.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Systems Engineering",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Citrus page",
-	             			"url": "http://solutions-isoneo.com/?page_id=499"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "GitHub",
+                    "url": "http://ifml.github.io/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/arduino-5.png",
+            "imgAlt": "Put image name here",
+            "thumbs":[
+                {"src": "images/gallery/arduino-1.png"},
+                {"src": "images/gallery/arduino-2.png"},
+                {"src": "images/gallery/arduino-3.png"},
+                {"src": "images/gallery/arduino-4.png"}
+            ]
+        },
+        "infos": {
+            "title": "Arduino Designer",
+            "author": "Obeo",
+            "description": "<p>The Arduino Designer allows kids to create small programs for Arduino.</p><p>It provides a graphical block language to be able to develop simple programs and run them on electronic modules.</p>",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/all4tec-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/all4tec-2.png"},
-	            		{"src": "images/gallery/all4tec-3.png"},
-	            		{"src": "images/gallery/all4tec-4.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Safety Architect",
-	             	"author": "All4Tec",
-	             	"description": "<p>Safety Architect is a tool achieving risk analysis of complex systems using functional or physical architectures from usual modeling tools (for example SysML or UML).</p><p>It provides support to the implementation of FMEA and automatically deducts the FTA corresponding to the identified feared events.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Systems Engineering",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Safety",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Eclipse Marketplace",
-	             			"url": "http://marketplace.eclipse.org/content/safety-architect"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Software Development",
+                    "url": "#"
+                },
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/emfta-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/emfta-2.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "EMFTA",
-	             	"author": "Julien Delange",
-	             	"description": "<p>EMFTA is an EMF-based FTA editor/visualizer. It provides a table to edit the content of the FTA (Gates and Events) and a diagram to graphically represent the FTA.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Safety",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/cmu-sei/emfta"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "IoT",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/bpmn-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "BPMN Designer",
-	             	"author": "Obeo",
-	             	"description": "<p>BPMN Designer is based on the BPMN Domain Model of Eclipse Modeling MDT project.</p><p>It supports Flow Objects (Events, Activities, Gateways), Connecting Objects (Sequence Flow, Message Flow, Association), Swim lanes (Pool, Lane) and Artifacts (Data Object, Group, Annotation)</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Process",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/ObeoNetwork/BPMN-Designer"
-	             		}
-	             	]
-	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/intelhome-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/intelhome-2.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "IntelHome Designer",
-	             	"author": "University of South Britanny",
-	             	"description": "<p>IntelHome Designer is a graphical tool to configure home automation systems for disabled persons.</p><p>It consists in modeling a home with all its automated equipments. The model is used to generate configuration files for DANAH, a assistive technology system that pilots automated homes or medical structures.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Domain Driven Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Willy All&egrave;gre's thesis",
-	             			"url": "https://tel.archives-ouvertes.fr/tel-00803402/document"
-	             		},
-	             		{
-	             			"nom": "Fr&eacute;d&eacute;ric Madiot's blog",
-	             			"url": "http://fmadiot.blogspot.fr/2013/03/model-based-configuration-of-assistive.html"
-	             		}
-	             	]
-	             }
-	        }
-,
+                    "nom": "GitHub",
+                    "url": "https://github.com/mbats/arduino"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/orange-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Telecom Reference Architecture",
+            "author": "Orange",
+            "description": "<p>This modeling tool implements Orange Lab's internal approach (RAL kit) to describe the architecture of IT solutions and services platforms.</p><p>It supports 4 viewpoints (usage, functional, software and infrastructure) and integrates with UML Designer.",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/rj45-map.jpg",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Lan Map Designer",
-	             	"author": "Obeo",
-	             	"description": "<p>This modeler provides a map of RJ45 cable wiring in a building.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Analysis",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
+                    "nom": "Business Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/esa-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/esa-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "Satellite Software Modeling",
+            "author": "ESA (European Space Agency)",
+            "description": "<p>This tool is dedicated to the creation of satellite applications.</p><p>It supports seven views (Data Component, Behavioural, Hardware/Deployment, Non Functional, Implementation/Analysis and Packet Utilization Standard) via 19 kinds of diagrams and 8 kinds of tables.</p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                },
+                {
+                    "nom": "Real Time",
+                    "url": "#"
+                },
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Fr&eacute;d&eacute;ric Madiot's blog",
+                    "url": "http://fmadiot.blogspot.fr/2012/09/esa-case-study.html"
+                },
+                {
+                    "nom": "Cordet Project",
+                    "url": "http://cordet.gmv.com/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/timing-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/timing-2.png"},
+                {"src": "images/gallery/timing-3.png"}
+            ]
+        },
+        "infos": {
+            "title": "Timing Constraints",
+            "author": "Obeo",
+            "description": "This modeling tool provides additional layers over UML models in order to specify timing constraints: multi-clock, logical time, physical time.",
+            "tags": [
+                {
+                    "nom": "Real Time",
+                    "url": "#"
+                },
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "RT-Simex project presentation",
+                    "url": "http://prezi.com/dbf2jtx0dgtr/rt-simex-reverse-engineering-of-simulated-and-executed-real-time-traces/"
+                },
+                {
+                    "nom": "RT-Simex video: Analysis",
+                    "url": "http://www.rtsimex.org/demos/demo-analyse"
+                },
+                {
+                    "nom": "RT-Simex video: Constraints",
+                    "url": "http://www.rtsimex.org/demos/demo-contrainte"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/safety-risks.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/safety-pha-tree.png"},
+                {"src": "images/gallery/safety-sysml.png"},
+                {"src": "images/gallery/safety-library.png"}
+            ]
+        },
+        "infos": {
+            "title": "Risk Analysis Designer",
+            "author": "Alstom",
+            "description": "A tool to capture both parts of the system designs and parts of the safety analysis needed to build a critical systems.",
+            "tags": [
+                {
+                    "nom": "Safety",
+                    "url": "#"
+                },
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Fr&eacute;d&eacute;ric Thomas' blog",
+                    "url": "http://modeldrivenblog.blogspot.fr/2011/12/performing-safety-analyses-and-system.html"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/eip-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "EIP Designer",
+            "author": "Laurent Broudoux",
+            "description": "<p>A Sirius designer for Enterprise Integration Patterns.</p><p>It allows you to design integration routes using the common patterns and vocabulary used within Enterprise Application Integration or Enterprise Services Bus solutions.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/lbroudoux/eip-designer"
+                },
+                {
+                    "nom": "InfoQ",
+                    "url": "http://www.infoq.com/articles/eip-designer"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/POOSL-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/POOSL-2.png"},
+                {"src": "images/gallery/POOSL-3.png"},
+                {"src": "images/gallery/POOSL-4.png"}
+            ]
+        },
+        "infos": {
+            "title": "POOSL IDE",
+            "author": "TNO-ESI",
+            "description": "<p>POOSL (Parallel Object-Oriented Specification Language) is an expressive industry-proven modelling language with a formal semantics to describe both structure and concurrent, real-time and stochastic behavior. It exploits a combination of Xtext with Sirius to realize synchronized textual and graphical editing of POOSL models.</p>",
+            "tags": [
+                {
+                    "nom": "Software-Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "Systems-Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "POOSL IDE",
+                    "url": "http://poosl.esi.nl"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/citrus-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/citrus-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "Citrus",
+            "author": "Isoneo",
+            "description": "<p>Citrus is a product that supports the development cycle of a system, with an approach based on modeling and simulation.</p><p>It provides a studio to capture the system architecture, its interfaces and its breakdown structure into sub-systems/equipments.</p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Citrus page",
+                    "url": "http://solutions-isoneo.com/?page_id=499"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/all4tec-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/all4tec-2.png"},
+                {"src": "images/gallery/all4tec-3.png"},
+                {"src": "images/gallery/all4tec-4.png"}
+            ]
+        },
+        "infos": {
+            "title": "Safety Architect",
+            "author": "All4Tec",
+            "description": "<p>Safety Architect is a tool achieving risk analysis of complex systems using functional or physical architectures from usual modeling tools (for example SysML or UML).</p><p>It provides support to the implementation of FMEA and automatically deducts the FTA corresponding to the identified feared events.</p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                },
+                {
+                    "nom": "Safety",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Eclipse Marketplace",
+                    "url": "http://marketplace.eclipse.org/content/safety-architect"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/emfta-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/emfta-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "EMFTA",
+            "author": "Julien Delange",
+            "description": "<p>EMFTA is an EMF-based FTA editor/visualizer. It provides a table to edit the content of the FTA (Gates and Events) and a diagram to graphically represent the FTA.</p>",
+            "tags": [
+                {
+                    "nom": "Safety",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/cmu-sei/emfta"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/bpmn-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "BPMN Designer",
+            "author": "Obeo",
+            "description": "<p>BPMN Designer is based on the BPMN Domain Model of Eclipse Modeling MDT project.</p><p>It supports Flow Objects (Events, Activities, Gateways), Connecting Objects (Sequence Flow, Message Flow, Association), Swim lanes (Pool, Lane) and Artifacts (Data Object, Group, Annotation)</p>",
+            "tags": [
+                {
+                    "nom": "Business Process",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/BPMN-Designer"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/intelhome-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/intelhome-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "IntelHome Designer",
+            "author": "University of South Britanny",
+            "description": "<p>IntelHome Designer is a graphical tool to configure home automation systems for disabled persons.</p><p>It consists in modeling a home with all its automated equipments. The model is used to generate configuration files for DANAH, a assistive technology system that pilots automated homes or medical structures.</p>",
+            "tags": [
+                {
+                    "nom": "Domain Driven Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Willy All&egrave;gre's thesis",
+                    "url": "https://tel.archives-ouvertes.fr/tel-00803402/document"
+                },
+                {
+                    "nom": "Fr&eacute;d&eacute;ric Madiot's blog",
+                    "url": "http://fmadiot.blogspot.fr/2013/03/model-based-configuration-of-assistive.html"
+                }
+            ]
+        }
+    }
+    ,
+    {
+        "medias": {
+            "mainSrc": "images/gallery/rj45-map.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Lan Map Designer",
+            "author": "Obeo",
+            "description": "<p>This modeler provides a map of RJ45 cable wiring in a building.</p>",
+            "tags": [
+                {
+                    "nom": "Business Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
 
-	             	]
-	             }
-	        },
-		{
-	            "medias": {
-	            	"mainSrc": "images/gallery/eseo-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "LOA Graphical Editor",
-	             	"author": "ESEO",
-	             	"description": "This editor is based on LOA (Active Operations Language), a DSL dedicated to the design and the integration of rich graphical components and interactions.",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Slides by O. Beaudoux and M. Clavreul",
-	             			"url": "http://api.ning.com/files/S7hsBCvqKXFwZfsIm-52lXSg7wS3rubAfJxbJXGt9pJJuv7*9bhF6zx-vZJQlFKO6hhrMQrh7hHloLguVawWWsPlYR6hcdhI/LoaDesigner.pdf"
-	             		}
-	             	]
-	             }
-	        },
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/eseo-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "LOA Graphical Editor",
+            "author": "ESEO",
+            "description": "This editor is based on LOA (Active Operations Language), a DSL dedicated to the design and the integration of rich graphical components and interactions.",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/cinematic-1.jpg",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Cinematic Designer",
-	             	"author": "Obeo",
-	             	"description": "Cinematic Designer allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/ObeoNetwork/InformationSystem"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/database-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Database Designer",
-	             	"author": "Obeo",
-	             	"description": "<p>Database Designer is a graphical designer to define or edit relational tables and relations.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/ObeoNetwork/InformationSystem"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Slides by O. Beaudoux and M. Clavreul",
+                    "url": "http://api.ning.com/files/S7hsBCvqKXFwZfsIm-52lXSg7wS3rubAfJxbJXGt9pJJuv7*9bhF6zx-vZJQlFKO6hhrMQrh7hHloLguVawWWsPlYR6hcdhI/LoaDesigner.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/cinematic-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Cinematic Designer",
+            "author": "Obeo",
+            "description": "Cinematic Designer allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/graal-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/graal-2.png"},
-	            		{"src": "images/gallery/graal-3.png"},
-	            		{"src": "images/gallery/graal-4.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Graal Designer",
-	             	"author": "Obeo",
-	             	"description": "<p>Graal Designer provides the ability to specify the users needs and their interactions with a system by defining tasks, use cases, user stories and interaction aspects a system should offer.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Analysis",
-	             			"url": "#"
-	             		},
-	             		{
-	             			"nom": "Software Development",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/ObeoNetwork/InformationSystem"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/graf-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "GRAF Designer",
-	             	"author": "Capgemini",
-	             	"description": "<p>GRAF is a method created by Capgemini to describe the architecture of complex Information Systems.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Enterprise Architecture",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Graf overview (in french)",
-	             			"url": "http://api.ning.com/files/auMGdvCc6abQ5SJitpd9KAdL-rOZ3cvzM2-mWNv1gJUWnW95AJ0bPDMwcKCuEjIZpK2C4D8qdHe3lFehGagJ8UMuqNtDJKEn/CapgeminiGRAFDesigner.pdf"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/InformationSystem"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/database-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Database Designer",
+            "author": "Obeo",
+            "description": "<p>Database Designer is a graphical designer to define or edit relational tables and relations.</p>",
+            "tags": [
                 {
-	            "medias": {
-	            	"mainSrc": "images/gallery/sysml-1.jpg",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/sysml-2.jpg"},
-	            		{"src": "images/gallery/sysml-3.jpg"},
-	            		{"src": "images/gallery/sysml-4.jpg"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "SysML Designer",
-	             	"author": "Obeo",
-	             	"description": "<p>SysML Designer is an open source modeling tool to edit and vizualize SysML 1.2 models.</p><p>It provides the following generic SysML representations: Block Definition Diagram (BBD), Internal Block Diagram (IBD), Requirements Table, Requirements Cross Table, Parametric Diagram and UML standard diagrams.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Systems Engineering",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/ObeoNetwork/SysML-Designer"
-	             		}
-	             	]
-	             }
-	        },
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/InformationSystem"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/graal-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/graal-2.png"},
+                {"src": "images/gallery/graal-3.png"},
+                {"src": "images/gallery/graal-4.png"}
+            ]
+        },
+        "infos": {
+            "title": "Graal Designer",
+            "author": "Obeo",
+            "description": "<p>Graal Designer provides the ability to specify the users needs and their interactions with a system by defining tasks, use cases, user stories and interaction aspects a system should offer.</p>",
+            "tags": [
+                {
+                    "nom": "Business Analysis",
+                    "url": "#"
+                },
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/InformationSystem"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/graf-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "GRAF Designer",
+            "author": "Capgemini",
+            "description": "<p>GRAF is a method created by Capgemini to describe the architecture of complex Information Systems.</p>",
+            "tags": [
+                {
+                    "nom": "Enterprise Architecture",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Graf overview (in french)",
+                    "url": "http://api.ning.com/files/auMGdvCc6abQ5SJitpd9KAdL-rOZ3cvzM2-mWNv1gJUWnW95AJ0bPDMwcKCuEjIZpK2C4D8qdHe3lFehGagJ8UMuqNtDJKEn/CapgeminiGRAFDesigner.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/sysml-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/sysml-2.jpg"},
+                {"src": "images/gallery/sysml-3.jpg"},
+                {"src": "images/gallery/sysml-4.jpg"}
+            ]
+        },
+        "infos": {
+            "title": "SysML Designer",
+            "author": "Obeo",
+            "description": "<p>SysML Designer is an open source modeling tool to edit and vizualize SysML 1.2 models.</p><p>It provides the following generic SysML representations: Block Definition Diagram (BBD), Internal Block Diagram (IBD), Requirements Table, Requirements Cross Table, Parametric Diagram and UML standard diagrams.</p>",
+            "tags": [
+                {
+                    "nom": "Systems Engineering",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/SysML-Designer"
+                }
+            ]
+        }
+    },
 
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/mosart-1.png",
-	            	"imgAlt": "Put image name here",
-	            	"thumbs": [
-	            		{"src": "images/gallery/mosart-2.png"},
-	            		{"src": "images/gallery/mosart-3.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "MoSaRT Framework",
-	             	"author": "ENSMA",
-	             	"description": "<p>MoSaRT (Modeling oriented Scheduling analysis of Real-Time systems) is a model-based framework for designing and analyzing real-time systems.</p><p>The framework is based on the MoSaRT design language and the MoSaRT analysis repository, and presents a helpful modeling support for both designers and analysts.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Real Time",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "MoSaRT project",
-	             			"url": "http://www.lias-lab.fr/forge/projects/mosart"
-	             		}
-	             	]
-	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/agrodsl-1.png",
-	            	"imgAlt": "Farming DSLs - Inria Rennes / Obeo",
-	            	"thumbs": [
-	            		]
-	             },
-	             "infos": {
-	             	"title": "Farming DSLs",
-	             	"author": "Inria Rennes / Obeo",
-	             	"description": "<p>A set of DSLs with tooling based on Sirius and Xtext to describe an agricultural exploitation from a structural and behavioral point of view.</p><p>This description is then used for simulation and constraints statisfaction checking.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Business Analysis",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Slides",
-	             			"url": "http://devlog.cnrs.fr/_media/idm2014_mdeandsle_combemale-web.pdf"
-	             		},
-	             		{
-	             			"nom": "GitHub",
-	             			"url": "https://github.com/gemoc/farmingmodeling"
-	             		}
-	             	]
-	             }
-	        },
-	        {
-	            "medias": {
-	            	"mainSrc": "images/gallery/vercors-1.png",
-	            	"imgAlt": "VerCors - Inria Sophia Antipolis",
-	            	"thumbs": [
-	            		{"src": "images/gallery/vercors-2.png"},
-	            		{"src": "images/gallery/vercors-3.jpg"},
-	            		{"src": "images/gallery/vercors-4.png"}
-	            		]
-	             },
-	             "infos": {
-	             	"title": "VerCors",
-	             	"author": "Inria Sophia Antipolis",
-	             	"description": "<p>VerCors is a tool platform for the analysis and verification of safety and security properties of distributed applications.</p>",
-	             	"tags": [
-	             		{
-	             			"nom": "Safety",
-	             			"url": "#"
-	             		}
-	             	],
-	             "lnks": [
-	             		{
-	             			"nom": "Project Page",
-	             			"url": "https://team.inria.fr/scale/software/vercors/"
-	             		}
-	             	]
-	             }
-	        }
+    {
+        "medias": {
+            "mainSrc": "images/gallery/mosart-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/mosart-2.png"},
+                {"src": "images/gallery/mosart-3.png"}
+            ]
+        },
+        "infos": {
+            "title": "MoSaRT Framework",
+            "author": "ENSMA",
+            "description": "<p>MoSaRT (Modeling oriented Scheduling analysis of Real-Time systems) is a model-based framework for designing and analyzing real-time systems.</p><p>The framework is based on the MoSaRT design language and the MoSaRT analysis repository, and presents a helpful modeling support for both designers and analysts.</p>",
+            "tags": [
+                {
+                    "nom": "Real Time",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "MoSaRT project",
+                    "url": "http://www.lias-lab.fr/forge/projects/mosart"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/agrodsl-1.png",
+            "imgAlt": "Farming DSLs - Inria Rennes / Obeo",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Farming DSLs",
+            "author": "Inria Rennes / Obeo",
+            "description": "<p>A set of DSLs with tooling based on Sirius and Xtext to describe an agricultural exploitation from a structural and behavioral point of view.</p><p>This description is then used for simulation and constraints statisfaction checking.</p>",
+            "tags": [
+                {
+                    "nom": "Business Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Slides",
+                    "url": "http://devlog.cnrs.fr/_media/idm2014_mdeandsle_combemale-web.pdf"
+                },
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/gemoc/farmingmodeling"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/vercors-1.png",
+            "imgAlt": "VerCors - Inria Sophia Antipolis",
+            "thumbs": [
+                {"src": "images/gallery/vercors-2.png"},
+                {"src": "images/gallery/vercors-3.jpg"},
+                {"src": "images/gallery/vercors-4.png"}
+            ]
+        },
+        "infos": {
+            "title": "VerCors",
+            "author": "Inria Sophia Antipolis",
+            "description": "<p>VerCors is a tool platform for the analysis and verification of safety and security properties of distributed applications.</p>",
+            "tags": [
+                {
+                    "nom": "Safety",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Project Page",
+                    "url": "https://team.inria.fr/scale/software/vercors/"
+                }
+            ]
+        }
+    }
 
 ]}
