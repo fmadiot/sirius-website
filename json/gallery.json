@@ -241,6 +241,9 @@
             ]
         }
     },
+
+
+
     {
         "medias": {
             "mainSrc": "images/gallery/crala-1.jpg",
@@ -1367,6 +1370,45 @@
                 }
             ]
         }
-    }
+    },
+    
+        {
+            "medias": {
+                "mainSrc": "images/gallery/nasdanika-1.png",
+                "imgAlt": "Nasdanika Vinci",
+                "thumbs": [
+                    {"src": "images/gallery/nasdanika-1.png"},
+                    {"src": "images/gallery/nasdanika-2.png"},
+                    {"src": "images/gallery/nasdanika-3.png"}
+                ]
+            },
+            "infos": {
+                "title": "Nasdanika Vinci",
+                "author": "Nasdanika LLC",
+                "description": "<p>A Sirius-based tool for modeling and generation of web sites using diagram and tree representations. </p>",
+                "tags": [
+                    {
+                        "nom": "Software Development",
+                        "url": "#"
+                    }
+                ],
+                "lnks": [
+                    {
+                        "nom": "Home page",
+                        "url": "https://nasdanika.org"
+                    },
+                    {
+                        "nom": "Get Started Guide",
+                        "url": "https://nasdanika.org/builds/master/doc/guides/vinci/get-started/index.html"
+                    },
+                    {
+                        "nom": "Site created in Get Started guide",
+                        "url": "https://nasdanika.github.io/vinci-get-started/"
+                    }
+                ]
+            }
+        }
+    
+
 
 ]}
