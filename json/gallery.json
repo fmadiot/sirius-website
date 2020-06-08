@@ -1407,6 +1407,33 @@
                     }
                 ]
             }
+        },
+    
+        {
+            "medias": {
+                "mainSrc": "images/gallery/fhir-1.jpg",
+                "imgAlt": "FHIR Designer",
+                "thumbs": [
+                    {"src": "images/gallery/fhir-1.jpg"}
+                ]
+            },
+            "infos": {
+                "title": "FHIR Designer",
+                "author": "Maria Cecilia Ariste",
+                "description": "<p>FHIR Designer is based on the open-source healthcare standard FHIR of HL7. It allows to design conceptual models of healthcare systems based on an international open source standard that defines resources of information for interoperatibily between heathcare systems. </p>",
+                "tags": [
+                    {
+                        "nom": "Healthcare",
+                        "url": "#"
+                    }
+                ],
+                "lnks": [
+                    {
+                        "nom": "HL7 FHIR",
+                        "url": "https://www.hl7.org/fhir/"
+                    }
+                ]
+            }
         }
     
 
