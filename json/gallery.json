@@ -167,6 +167,221 @@
             ]
         }
     },
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/iri-tmb.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/iri-er.png"},
+                {"src": "images/gallery/iri-flow.png"},
+                {"src": "images/gallery/iri-tmb.png"}
+            ]
+        },
+        "infos": {
+            "title": "IRI Workbench for Voracity",
+            "author": "IRI, The CoSort Company",
+            "description": "<p>IRI Workbench provides a simple visual interface and ergonomic modules to design and run all job scripts. In this graphical IDE built on Eclipse, you build, modify, share, and execute the simple, portable job scripts of IRI tools, and the state-of-the-art, portable workflows of the new IRI Voracity platform.</p><p>IRI Workbench features metadata creation, conversion, discovery, and application wizards to help you generate, deploy, and manage the simple job scripts (SortCL, etc.), data definition files (DDF), and XML workflows common to all IRI software.</p>",
+            "tags": [
+                {
+                    "nom": "Big Data",
+                    "url": "#"
+                },
+                {
+                    "nom": "ETL",
+                    "url": "#"
+                },
+                {
+                    "nom": "Data Masking",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Product website",
+                    "url": "http://www.iri.com/products/workbench"
+                }
+            ]
+        }
+    },
+
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/smartmdsd-1.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/smartmdsd-1.png"},
+                {"src": "images/gallery/smartmdsd-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "SmartMDSD",
+            "author": "Technische Hochschule Ulm",
+            "description": "<p>SmartMDSD is an integrated development environment (IDE) that allows different roles that act around the development of robotics systems to offer building blocks and/or to reuse them and easily compose them to complex robotic software systems.</p>",
+            "tags": [
+                {
+                    "nom": "Robotics",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "The SmartMDSD Toolchain",
+                    "url": "https://wiki.servicerobotik-ulm.de/smartmdsd-toolchain:start"
+                },
+                {
+                    "nom": "SiriusCon slides",
+                    "url": "https://fr.slideshare.net/Obeo_corp/siriuscon-2020-the-smartmdsd-toolchain-modeldriven-software-development-for-robotics-software-systems"
+                }
+            ]
+        }
+    },
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/plat4mc-1.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/plat4mc-1.png"},
+                {"src": "images/gallery/plat4mc-2.jpg"}
+            ]
+        },
+        "infos": {
+            "title": "PLAT4MC",
+            "author": "Robert Bosch",
+            "description": "<p>PLAT4MC is tailored platform for the development of multi-core software systems. In this platform several visualization tools have been created with Eclipse Sirius.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "Automotive",
+                    "url": "#"
+                },
+                {
+                    "nom": "Microcontrollers",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+            
+                {
+                    "nom": "Article",
+                    "url": "https://www.microconsult.de/files/fachinfo_ese_multicore_plat4mc_-_multicore_performance_optimization_with_open_source_robert_bosch_raza.pdf"
+                },
+                {
+                    "nom": "SiriusCon slides",
+                    "url": "https://fr.slideshare.net/Obeo_corp/siriuscon-2020-pushing-limits-in-automotive-model-visualization-at-bosch-why-so-sirius"
+                }
+            ]
+        }
+    },
+
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/xatkit-1.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/xatkit-1.png"}
+            ]
+        },
+        "infos": {
+            "title": "Xatkit Chatbot Diagrams",
+            "author": "Xatkit",
+            "description": "<p>Xatkit is a generic and extensible platform for developing all kinds of digital assistants.</p><p>Xtext and Sirius are work together inside Xatkit to make textual and graphical representations co-exist together in harmony</p>",
+            "tags": [
+                {
+                    "nom": "Chatbot",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Sirius integration within Xatkit",
+                    "url": "https://xatkit.com/graphical-rendering-of-your-chatbot-models/"
+                }
+            ]
+        }
+    },
+
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/nxp-1.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/nxp-1.png"}
+            ]
+        },
+        "infos": {
+            "title": "S32 Design Studio",
+            "author": "NXP",
+            "description": "<p>The S32 Design Studio is a complimentary Integrated Development Environment (IDE) for automotive and ultra-reliable Power Architecture® (e200 core) and Arm®-based microcontrollers and processors.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "Automotive",
+                    "url": "#"
+                },
+                {
+                    "nom": "Microcontrollers",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "EclipseCon slides",
+                    "url": "https://www.eclipsecon.org/sites/default/files/slides/NXP%20S32Design%20Studio%20%28Eclipse%20Conf%202020%29.pdf"
+                },
+                {
+                    "nom": "Getting started with S32 Design Studio (video)",
+                    "url": "https://www.nxp.com/design/training/getting-started-with-s32-design-studio-ide-for-vision-2018-r1:TIP-S32DS"
+                }
+                
+            ]
+        }
+    },
+
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/trades-1.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/trades-1.png"}
+            ]
+        },
+        "infos": {
+            "title": "TRADES Tool",
+            "author": "Israel Aerospace Industries \ ELTA Cyber Division",
+            "description": "<p>A threat and risk assessment (TRA) tool for the design of engineered systems. TRADES Tool is an open-source design tool, implementing a risk-based, cybersecurity assessment methodology. The underlying model-based approach promotes establishing and maintaining the system's cybersecurity posture throughout the system life cycle.</p>",
+            "tags": [
+                {
+                    "nom": "Risk Analysis",
+                    "url": "#"
+                },
+                {
+                    "nom": "Cybersecurity",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Github project",
+                    "url": "https://github.com/iai-cyber/TRADES"
+                }
+            ]
+        }
+    },
+
+
+    
     {
         "medias": {
             "mainSrc": "images/gallery/iris-1.png",
@@ -379,42 +594,6 @@
     },
     {
         "medias": {
-            "mainSrc": "images/gallery/iri-tmb.png",
-            "imgAlt": "Put image name here",
-            "thumbs": [
-                {"src": "images/gallery/iri-er.png"},
-                {"src": "images/gallery/iri-flow.png"},
-                {"src": "images/gallery/iri-tmb.png"}
-            ]
-        },
-        "infos": {
-            "title": "IRI Workbench for Voracity",
-            "author": "IRI, The CoSort Company",
-            "description": "<p>IRI Workbench provides a simple visual interface and ergonomic modules to design and run all job scripts. In this graphical IDE built on Eclipse, you build, modify, share, and execute the simple, portable job scripts of IRI tools, and the state-of-the-art, portable workflows of the new IRI Voracity platform.</p><p>IRI Workbench features metadata creation, conversion, discovery, and application wizards to help you generate, deploy, and manage the simple job scripts (SortCL, etc.), data definition files (DDF), and XML workflows common to all IRI software.</p>",
-            "tags": [
-                {
-                    "nom": "Big Data",
-                    "url": "#"
-                },
-                {
-                    "nom": "ETL",
-                    "url": "#"
-                },
-                {
-                    "nom": "Data Masking",
-                    "url": "#"
-                }
-            ],
-            "lnks": [
-                {
-                    "nom": "Product website",
-                    "url": "http://www.iri.com/products/workbench"
-                }
-            ]
-        }
-    },
-    {
-        "medias": {
             "mainSrc": "images/gallery/maif-1.png",
             "imgAlt": "Put image name here",
             "thumbs": [
@@ -566,7 +745,7 @@
             "lnks": [
                 {
                     "nom": "EclipseCon Talk",
-                    "url": "https://www.eclipsecon.org/france2015/session/synchronizing-architecture-and-requirements-better-specifications-sponsored-obeo"
+                    "url": "https://www.eclipsecon.org/france2015/sites/default/files/slides/Synchronizing_DOORS_SIRIUS-SAGEM_session.pdf"
                 }
             ]
         }
