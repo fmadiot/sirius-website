@@ -38,7 +38,6 @@
             "mainSrc": "images/gallery/mindstorms-1.jpg",
             "imgAlt": "Put image name here",
             "thumbs": [
-                {"src": "images/gallery/mindstorms-1.jpg"},
                 {"src": "images/gallery/mindstorms-2.jpg"}
             ]
         },
@@ -67,7 +66,7 @@
     {
         "medias": {
             "mainSrc": "images/gallery/advocate-1.png",
-            "imgAlt": "Put image name here",
+            "imgAlt": "",
             "thumbs": [
                 {"src": "images/gallery/advocate-2.png"},
                 {"src": "images/gallery/advocate-3.png"},
@@ -102,8 +101,39 @@
                     "url": "http://ti.arc.nasa.gov/publications/48294/download/"
                 },
                 {
-                    "nom": "Talk at SiriusCon",
+                    "nom": "SiriusCon slides",
                     "url": "https://fr.slideshare.net/slideshow/embed_code/key/8UYZkyAZjVFWko"
+                }
+            ]
+        }
+    },
+
+    {
+        "medias": {
+            "mainSrc": "images/gallery/cft-1.png",
+            "imgAlt": "",
+            "thumbs": [
+                {"src": "images/gallery/cft-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "Component Fault Tree",
+            "author": "Siemens",
+            "description": "<p>A Component Fault Tree is an extension of classic fault trees introducing a component concept which extends the advantages of model-based development to safety and reliability engineering. This provides a modular, hierarchical composition of system fault trees and facilitates their reuse.</p><p>The seamlessly integration of a Component Fault Tree approach in Capella allows safety engineers to define Fault Trees directly on components defined by systems architects.</p>",
+            "tags": [
+                {
+                    "nom": "Safety",
+                    "url": "#"
+                },
+                {
+                    "nom": "Risk Analysis",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "SiriusCon slides",
+                    "url": "https://www.slideshare.net/slideshow/embed_code/key/fTfWaXYyqacwHY"
                 }
             ]
         }
@@ -114,7 +144,6 @@
             "mainSrc": "images/gallery/modane-1.png",
             "imgAlt": "Modane - CEA-DAM",
             "thumbs": [
-                {"src": "images/gallery/modane-1.png"},
                 {"src": "images/gallery/modane-2.png"},
                 {"src": "images/gallery/modane-3.png"}
             ]
@@ -131,7 +160,7 @@
             ],
             "lnks": [
                 {
-                    "nom": "Talk at SiriusCon",
+                    "nom": "SiriusCon slides",
                     "url": "https://www.slideshare.net/slideshow/embed_code/key/F7aJYWBvhs4i77"
                 }
             ]
@@ -142,7 +171,6 @@
             "mainSrc": "images/gallery/simqri-1.png",
             "imgAlt": "SimQRi - CETIC",
             "thumbs": [
-                {"src": "images/gallery/simqri-1.png"}
             ]
         },
         "infos": {
@@ -157,7 +185,7 @@
             ],
             "lnks": [
                 {
-                    "nom": "Talk at SiriusCon",
+                    "nom": "SiriusCon slides",
                     "url": "https://fr.slideshare.net/slideshow/embed_code/key/xqpCfkrx5xLhvr"
                 },
                 {
@@ -174,8 +202,7 @@
             "imgAlt": "",
             "thumbs": [
                 {"src": "images/gallery/iri-er.png"},
-                {"src": "images/gallery/iri-flow.png"},
-                {"src": "images/gallery/iri-tmb.png"}
+                {"src": "images/gallery/iri-flow.png"}
             ]
         },
         "infos": {
@@ -200,6 +227,10 @@
                 {
                     "nom": "Product website",
                     "url": "http://www.iri.com/products/workbench"
+                },
+                {
+                    "nom": "SiriusCon slides",
+                    "url": "https://www.slideshare.net/slideshow/embed_code/key/hNmwbQGGsLW2DY"
                 }
             ]
         }
@@ -211,7 +242,6 @@
             "mainSrc": "images/gallery/smartmdsd-1.jpg",
             "imgAlt": "",
             "thumbs": [
-                {"src": "images/gallery/smartmdsd-1.jpg"},
                 {"src": "images/gallery/smartmdsd-2.jpg"}
             ]
         },
@@ -232,7 +262,7 @@
                 },
                 {
                     "nom": "SiriusCon slides",
-                    "url": "https://fr.slideshare.net/Obeo_corp/siriuscon-2020-the-smartmdsd-toolchain-modeldriven-software-development-for-robotics-software-systems"
+                    "url": "https://www.slideshare.net/slideshow/embed_code/key/Nk9uhKm1DC2ZPR"
                 }
             ]
         }
@@ -243,7 +273,6 @@
             "mainSrc": "images/gallery/plat4mc-1.png",
             "imgAlt": "",
             "thumbs": [
-                {"src": "images/gallery/plat4mc-1.png"},
                 {"src": "images/gallery/plat4mc-2.jpg"}
             ]
         },
@@ -273,7 +302,7 @@
                 },
                 {
                     "nom": "SiriusCon slides",
-                    "url": "https://fr.slideshare.net/Obeo_corp/siriuscon-2020-pushing-limits-in-automotive-model-visualization-at-bosch-why-so-sirius"
+                    "url": "https://www.slideshare.net/slideshow/embed_code/key/zdThE4VJE0Ctii"
                 }
             ]
         }
@@ -283,7 +312,6 @@
             "mainSrc": "images/gallery/xatkit-1.png",
             "imgAlt": "",
             "thumbs": [
-                {"src": "images/gallery/xatkit-1.png"}
             ]
         },
         "infos": {
@@ -310,7 +338,6 @@
             "mainSrc": "images/gallery/nxp-1.png",
             "imgAlt": "",
             "thumbs": [
-                {"src": "images/gallery/nxp-1.png"}
             ]
         },
         "infos": {
@@ -350,7 +377,6 @@
             "mainSrc": "images/gallery/trades-1.png",
             "imgAlt": "",
             "thumbs": [
-                {"src": "images/gallery/trades-1.png"}
             ]
         },
         "infos": {
@@ -381,7 +407,6 @@
             "mainSrc": "images/gallery/iris-1.png",
             "imgAlt": "IRIS - Grace Park (University of Texas at Dallas)",
             "thumbs": [
-                {"src": "images/gallery/iris-1.png"},
                 {"src": "images/gallery/iris-2.png"}
             ]
         },
@@ -421,7 +446,6 @@
             "mainSrc": "images/gallery/lyo-designer.png",
             "imgAlt": "Lyo Designer",
             "thumbs": [
-                {"src": "images/gallery/lyo-designer.png"}
             ]
         },
         "infos": {
@@ -458,7 +482,6 @@
             "mainSrc": "images/gallery/crala-1.jpg",
             "imgAlt": "Put image name here",
             "thumbs": [
-                {"src": "images/gallery/crala-1.jpg"},
                 {"src": "images/gallery/crala-2.jpg"},
                 {"src": "images/gallery/crala-3.jpg"},
                 {"src": "images/gallery/crala-4.jpg"},
@@ -492,7 +515,6 @@
             "mainSrc": "images/gallery/ubibots-1.jpg",
             "imgAlt": "Put image name here",
             "thumbs": [
-                {"src": "images/gallery/ubibots-1.jpg"},
                 {"src": "images/gallery/ubibots-2.jpg"}
             ]
         },
@@ -622,8 +644,7 @@
             "imgAlt": "Put image name here",
             "thumbs": [
                 {"src": "images/gallery/appsComponentsArtifacts.png"},
-                {"src": "images/gallery/tripSellingProcessBO.png"},
-                {"src": "images/gallery/graphicalModelingWorkbench.png"}
+                {"src": "images/gallery/tripSellingProcessBO.png"}
             ]
         },
         "infos": {
@@ -1550,7 +1571,6 @@
                 "mainSrc": "images/gallery/nasdanika-1.png",
                 "imgAlt": "Nasdanika Vinci",
                 "thumbs": [
-                    {"src": "images/gallery/nasdanika-1.png"},
                     {"src": "images/gallery/nasdanika-2.png"},
                     {"src": "images/gallery/nasdanika-3.png"}
                 ]
@@ -1587,7 +1607,6 @@
                 "mainSrc": "images/gallery/fhir-1.jpg",
                 "imgAlt": "FHIR Designer",
                 "thumbs": [
-                    {"src": "images/gallery/fhir-1.jpg"}
                 ]
             },
             "infos": {
