@@ -208,11 +208,11 @@
 
     {
         "medias": {
-            "mainSrc": "images/gallery/smartmdsd-1.png",
+            "mainSrc": "images/gallery/smartmdsd-1.jpg",
             "imgAlt": "",
             "thumbs": [
-                {"src": "images/gallery/smartmdsd-1.png"},
-                {"src": "images/gallery/smartmdsd-2.png"}
+                {"src": "images/gallery/smartmdsd-1.jpg"},
+                {"src": "images/gallery/smartmdsd-2.jpg"}
             ]
         },
         "infos": {
@@ -278,8 +278,6 @@
             ]
         }
     },
-
-
     {
         "medias": {
             "mainSrc": "images/gallery/xatkit-1.png",
@@ -307,7 +305,6 @@
         }
     },
 
-
     {
         "medias": {
             "mainSrc": "images/gallery/nxp-1.png",
@@ -319,7 +316,7 @@
         "infos": {
             "title": "S32 Design Studio",
             "author": "NXP",
-            "description": "<p>The S32 Design Studio is a complimentary Integrated Development Environment (IDE) for automotive and ultra-reliable Power Architecture� (e200 core) and Arm�-based microcontrollers and processors.</p>",
+            "description": "<p>The S32 Design Studio is a complimentary Integrated Development Environment (IDE) for automotive and ultra-reliable Power Architecture® (e200 core) and Arm®-based microcontrollers and processors.</p>",
             "tags": [
                 {
                     "nom": "Software Development",
@@ -348,7 +345,6 @@
         }
     },
 
-
     {
         "medias": {
             "mainSrc": "images/gallery/trades-1.png",
@@ -359,7 +355,7 @@
         },
         "infos": {
             "title": "TRADES Tool",
-            "author": "Israel Aerospace Industries \ ELTA Cyber Division",
+            "author": "Israel Aerospace Industries / ELTA Cyber Division",
             "description": "<p>A threat and risk assessment (TRA) tool for the design of engineered systems. TRADES Tool is an open-source design tool, implementing a risk-based, cybersecurity assessment methodology. The underlying model-based approach promotes establishing and maintaining the system's cybersecurity posture throughout the system life cycle.</p>",
             "tags": [
                 {
@@ -379,8 +375,6 @@
             ]
         }
     },
-
-
     
     {
         "medias": {
@@ -504,7 +498,7 @@
         },
         "infos": {
             "title": "UbiBots",
-            "author": "Leibniz Universität Hannover",
+            "author": "Leibniz UniversitÃ¤t Hannover",
             "description": "<p>Ubibots allows specifying complex interaction behaviors of ubiquitous cyber-physical systems.<br>In includes a simulation tool to execute scenarios on distributed robots. Sirius has been used to implement the visualization part.</p>",
             "tags": [
                 {
@@ -635,7 +629,7 @@
         "infos": {
             "title": "Obeo SmartEA",
             "author": "Obeo",
-            "description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMate® and TOGAF®. It operates natively with EMF and Sirius for defining metamodels and creating tailor-made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
+            "description": "Obeo SmartEA is an enterprise architecture solution based on standards: ArchiMateÂ® and TOGAFÂ®. It operates natively with EMF and Sirius for defining metamodels and creating tailor-made modelling diagrams. It adapts to your domain to integrate your approach and help you manage your company's strategic changes. Thanks to its common repository shared between all the members of your Enterprise Architecture team, users can work on different versions of the same architecture.</p>",
             "tags": [
                 {
                     "nom": "Enterprise Architecture",
@@ -791,7 +785,7 @@
         },
         "infos": {
             "title": "NoSQL Visualization Tool",
-            "author": "Cátedra SAES & University of Murcia",
+            "author": "CÃ¡tedra SAES & University of Murcia",
             "description": "<p>NoSQLVisualization is a tool designed to visualize schemas and schema versions which have been inferred from NoSQL databases. This tool defines several viewpoints such as trees and diagram compositions in order to visualize the main elements of NoSQL schemas: entities, versions, fields, aggregations and references.</p>",
             "tags": [
                 {
