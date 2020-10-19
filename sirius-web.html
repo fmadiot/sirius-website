@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en">
+	<meta name="description" content="Graphical Editors for your DSL">
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.video.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="angular/sirius.js"></script>
+	<!-- wow js -->
+
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<title>Sirius - The easiest way to get your own Modeling Tool</title>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/media.css" />
+	<link type="text/css" rel="stylesheet" href="css/animate.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
+
+	<script src="js/wow.min.js"></script>
+	<script>
+	   new WOW().init();
+	</script>
+
+	<!-- Eclipse Foundation Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Eclipse Foundation cookie consent: -->
+	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
+	<script type="text/javascript" src="js/ga.js"></script>
+</head>
+
+<body ng-app="sirius" ng-controller="main" class="cloak">
+<div id="header_wrapper" ng-cloak class="ng-cloak">
+	<div id="menu_wrapper" style="padding-top: 0px;">
+		<ul id="nav">
+			<li><a style="text-transform: uppercase" class="unselected_main_menu" href=".">Sirius Desktop</a></li>
+			<li><a style="text-transform: uppercase" class="selected_main_menu" href="sirius-web.html">Sirius Web</a></li>
+		</ul>
+	</div>	<!-- Fin menu_wrapper -->
+	<div id="logo">
+		<a href="."><img alt="logo" src="images/logos/logo.png" /></a>
+	</div>
+	<div id="menu_wrapper">
+		<ul id="nav">
+			<li><a href="#features" target="_self">Features</a></li>
+			<li><a href="#download" target="_self">Download</a></li>
+			<li><a href="#try" target="_self">Try It</a></li>
+			<li><a href="https://www.obeo.fr/en/products/ocp-modeler" target="_self">Support</a></li>
+		</ul>
+	</div>	<!-- Fin menu_wrapper -->
+</div>	<!-- Fin header_wrapper -->
+
+<section class="centered highlight_banner_web wow fadeInUp bg_light_gray" data-wow-delay=".3s">
+		<img style="-webkit-filter: contrast(93%);" src="images/sirius-web/siriusweb-visuel1.gif"/>
+		<p>&nbsp;</p>
+		<h1>Easily create and deploy studios to the web</h1>
+		<h3>Principles you like in Sirius Desktop, available on a modern cloud-based stack</h3>
+	<article class="row wow fadeInUp" data-wow-delay=".6s">
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+			<div class="col-md-3">
+	            <p><img src="images/sirius-web/stack.png" /></p>
+	            <h3>Graphical and<br>Domain-Specific</h3>
+	            <p>Created custom graphical modeling workbenches support both your specific visual notation and your own domain concepts.</p>
+	        </div>
+
+	        <div class="col-md-3">
+	            <p><img src="images/sirius-web/config.png" /></p>
+	            <h3>Defined by<br>a Configuration File</h3>
+	            <p>Visual editors are declared by a configuration file which is interpreted at runtime, meaning very few lines of code and easy tuning.</p>
+	        </div>
+
+	        <div class="col-md-3">
+	            <p><img src="images/sirius-web/server.png" /></p>
+	            <h3>Deployed on<br>a Web Server</h3>
+	            <p>The backend of your modeling tool is deployed on a web server running with state-of-the-art technologies: Spring, React, PostgreSQL, GraphQL.</p>
+	        </div>
+
+	        <div class="col-md-3">
+	            <p><img src="images/sirius-web/html5.png" /></p>
+	            <h3>Rendered in<br>a Web Browser</h3>
+	            <p>Once deployed on a server, just start using the modeling tool directly from a web browser, without specific installation on user's desktop.</p>
+	        </div>
+
+	</article>
+</section>
+
+<!--		<div class="wow fadeInUp" data-wow-delay=".3s"> -->
+
+
+
+<section class="wow fadeInUp" data-wow-delay=".3s">
+
+	<header class="centered">
+	<div id="features"></div>
+		<h2 class="uppercase">Features</h2>
+		<p>&nbsp;</p>
+	</header>
+
+	<article class="row">
+		<div class="col-md-6">
+		<h3>Shared projects</h3>
+			<p>A project created with Sirius Web contains a set of models. These models can be defined based on the domain models installed on the server.</p>
+			<p>Once created, you can share the project's URL to allow others to simultaneously access and modify its contents.</p>
+			<p>Projects can also be download locally in an open format and re-uploaded later to any other Sirius Web repository.</p>
+		</div>
+
+		<div class="col-md-6">
+			<iframe class="shadow" width="465" height="262" src="https://www.youtube.com/embed/oI7ierlTXzA?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+		</div>
+
+
+
+	</article>
+</section>
+
+
+<section class="wow fadeInUp" data-wow-delay=".3s">
+	<article class="row">
+		<div class="col-md-6">
+			<iframe class="shadow" width="465" height="262" src="https://www.youtube.com/embed/lG_h5hC_2ak?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+		</div>
+
+		<div class="col-md-6">
+		<h3>Assisted Layout</h3>
+			<p>Graphical modeling allows users to better understand complex systems by revealing objects' dependencies (edges and nesting) and visually highlighting properties (images, colors, shapes, sizes).</p>
+			<p>But manually layouting diagram containing dozens of graphical objects to produce highly effective representations can be very tedious.</p>
+			<p>Sirius Web assists the users in layouting diagrams, so that he can concentrate on providing and analysing data, rather than aligning boxes and edges to the pixel.</p>
+			<p>In first versions of Sirius Web, layout is automatic. Different kinds of assisted-layout mechanisms will come progressively.</p>
+		</div>
+
+
+	</article>
+</section>
+
+<section class="wow fadeInUp" data-wow-delay=".3s">
+	<article class="row">
+		<div class="col-md-6">
+		<h3>Modern UX</h3>
+			<p>Sirius Web is not just a revamping of Sirius Desktop. Relying on a modern technical stack, it implements a new UX design to offer a fluent and intuitive experience adapted to web usages.</p>
+			<p>While recognizing Sirius principles, you will notice many slight changes that make graphical modeling more efficient: less mouse moves, intuitive tools, onboarding process, ...</p>
+			<p>Tools created with Sirius Web can be easily used by end-users with no experience in classic Eclipse workbench.</p>
+		</div>
+
+		<div class="col-md-6">
+			<iframe class="shadow" width="465" height="262" src="https://www.youtube.com/embed/VJFfzzAnL5c?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+		</div>
+
+	</article>
+</section>
+
+<section class="wow fadeInUp" data-wow-delay=".3s">
+	<article class="row">
+		<div class="col-md-6">
+			<p align="center"><img src="/images/sirius-web/brick.png"></p>
+		</div>
+		<div class="col-md-6">
+		<h3>Extensibility</h3>
+			<p>Faithful to the principles of Sirius, Sirius Web is designed as an extensible and adaptable web platform. It can fit with your specific context and smoothly integrate with your own web applications.</p>
+			<p>You can add new kinds of representations in Sirius Web, or directly integrate components of Sirius Web (a representation for example) within other applications.</p>
+		</div>
+
+	</article>
+</section>
+
+
+<section class="bg_light_gray" class="wow fadeInUp" data-wow-delay=".5s">
+	<article class="row">
+		<header class="centered">
+			<div id="download"></div>
+			<h2 class="uppercase">Download from GitHub</h2>
+
+			<p><b>Sirius Web</b> is a sub-project of Eclipse Sirius. It is <b>open-source</b> and hosted at the <a href="http://eclipse.org/">Eclipse Foundation</a></p>
+			<p>Source code is available on <a href="https://github.com/eclipse-sirius/sirius-web">GitHub</a>. It contains an example application, built using the frontend and backend components.</p>
+			<p>&nbsp;</p>
+
+			<p><a class="btn" href="https://github.com/eclipse-sirius/sirius-web">Go to Source Code</a></p>
+
+		</header>
+	</article>
+</section>
+
+<section class="wow fadeInUp" data-wow-delay=".5s">
+	<article class="row">
+		<header class="centered">
+			<a id="try"></a>
+			<h2 class="uppercase">Try it on the cloud</h2>
+
+			<p>Obeo provides a private instance that allows you to try <b>Sirius Web</b>'s features.</p>
+			<p>It also enables you to experience <b>additional features</b> coming with <b><a href="https://www.obeo.fr/en/products/ocp-modeler">Obeo Cloud Platform</a></b>:<br>users management, teams, public/private projects, notifications of currently active users, ...</p>
+			<p>&nbsp;</p>
+
+			<p><a class="btn" href="https://www.obeocloudplatform-demo.com/">Register</a></p>
+
+		</header>
+	</article>
+</section>
+
+
+<ng-include src="'angular/blocks/footer.html'"></ng-include>
+<ng-include src="'angular/blocks/call2action.html'"></ng-include>
+
+</body>
+</html>
+

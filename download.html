@@ -12,18 +12,18 @@
 	<link rel="icon" type="image/png" href="favicon.ico" />
 	<title>Sirius - Download</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
-	
+	<script src="https://kit.fontawesome.com/16edf37727.js" crossorigin="anonymous"></script>
 	<!-- Eclipse Foundation Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
-	<!-- End Google Tag Manager -->  
-	
+	<!-- End Google Tag Manager -->
+
 	<!-- Eclipse Foundation cookie consent: -->
 	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
 	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
@@ -34,7 +34,7 @@
 <ng-include src="'angular/blocks/header.html'"></ng-include>
 
 <div id="body_wrapper">
-	<h1 class="page_title">Download</h1>
+	<h1 class="page_title">Download Sirius Desktop</h1>
 
 	<div id="tabs_content_container">
 
@@ -52,26 +52,17 @@
 
 						<div id="eclipse_package_content" ng-show="tab === 1">
 							<h2>Download a Ready-to-Use Package</h2>
-							
+
 							<p>This free package has been created by Sirius commiters to facilitate your first steps with Sirius. It contains Sirius, neatly integrated with other Open Source technologies (EMF Compare, eGit and SWTBot).</p>
 							<p><a class="btn btn_large" href="http://www.obeodesigner.com/download" target="_blank">Download Obeo Designer Community</a></p>
 							<br />
-							
-							<div class="intro_gallery bg_light_gray services margin_top">
-								<h3>Need help to deploy Sirius?</h3>
-								<p>Obeo, co-leader of Sirius, provides professional services from the set-up to the deployment of your industrial-strength modeling workbenches created with Sirius.</p>
-								<p><a href="https://www.obeodesigner.com/en/services" target="_blank">Training | Consulting & Coaching | Custom Development | Support <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-							</div>
-							
-							<div class="intro_gallery bg_light_gray services margin_top">
-								<h3>Need collaborative features for Sirius?</h3>
-								<p>Obeo Designer Team edition  facilitates the collaboration with your other team members by storing your models and representations (diagrams, tables, trees) created with Sirius in a shared repository.</p>
-								<p><a href="https://www.obeodesigner.com/en/collaborative-features" target="_blank">Read more <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-							</div>
-							
+
+							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
+							<ng-include src="'angular/blocks/collab_web_block.html'"></ng-include>
+
 						</div>
 					</li>
-				
+
 					<li id="eclipse_drag2install" ng-class="{'active': tab === 2}">
 						<a ng-click="tab = 2">
 							<span>
@@ -89,19 +80,10 @@
 							</div>
 							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
 							<br />
-							
-							<div class="intro_gallery bg_light_gray services margin_top">
-								<h3>Need help to deploy Sirius?</h3>
-								<p>Obeo, co-leader of Sirius, provides professional services from the set-up to the deployment of your industrial-strength modeling workbenches created with Sirius.</p>
-								<p><a href="https://www.obeodesigner.com/en/services" target="_blank">Training | Consulting & Coaching | Custom Development | Support <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-							</div>
-							
-							<div class="intro_gallery bg_light_gray services margin_top">
-								<h3>Need collaborative features for Sirius?</h3>
-								<p>Obeo Designer Team edition  facilitates the collaboration with your other team members by storing your models and representations (diagrams, tables, trees) created with Sirius in a shared repository.</p>
-								<p><a href="https://www.obeodesigner.com/en/collaborative-features" target="_blank">Read more <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-							</div>
-							
+
+							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
+							<ng-include src="'angular/blocks/collab_web_block.html'"></ng-include>
+
 						</div>
 					</li>
 
@@ -114,19 +96,14 @@
 						</a>
 						<div id="content_emc_1" class="ng-hide" ng-show="tab === 3">
 							<h2>Install Sirius with Eclipse Marketplace</h2>
-							
+
 							<p>Browse the Marketplace, choose Sirius and just click on the install button.</p>
 							<p><img src="images/download/install_marketplace_module.png" alt="Obeo Marketplace"></p>
-						
-							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
-							<p>For more details, please refer to <a href="http://marketplace.eclipse.org/marketplace-client-intro" target="_blank">Introducing the Eclipse Marketplace Client</a> installation guide.</p>
-							<br />
-							<div class="intro_gallery bg_light_gray services margin_top">
-								<h3>Need help to deploy Sirius?</h3>
-								<p>Obeo, co-leader of Sirius, provides professional services from the set-up to the deployment of your industrial-strength modeling workbenches created with Sirius.</p>
-								<p><a href="https://www.obeodesigner.com/en/services" target="_blank">Training | Consulting & Coaching | Custom Development | Support <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-							</div>
-							
+
+							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected. For more details, please refer to <a href="http://marketplace.eclipse.org/marketplace-client-intro" target="_blank">Introducing the Eclipse Marketplace Client</a> installation guide.</p>
+
+							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
+
 						</div>
 					</li>
 
@@ -140,7 +117,7 @@
 
 						<div id="content_updatesite_1" class="ng-hide" ng-show="tab === 4">
 							<h2>Install Sirius from Update Site</h2>
-			
+
 							<h3>Latest Release</h3>
 							<p>Add this URL to your Eclipse Installation to reach Sirius Update Site.</p>
 							<input type="text" value="http://download.eclipse.org/sirius/updates/releases/6.3.4/2020-06" />
@@ -152,13 +129,9 @@
 							<input type="text" value="http://download.eclipse.org/sirius/updates/nightly/latest/2020-06" />
 							<br />
 							<br />
-							
-							<div class="intro_gallery bg_light_gray services margin_top">
-								<h3>Need help to deploy Sirius?</h3>
-								<p>Obeo, co-leader of Sirius, provides professional services from the set-up to the deployment of your industrial-strength modeling workbenches created with Sirius.</p>
-								<p><a href="https://www.obeodesigner.com/en/services" target="_blank">Training | Consulting & Coaching | Custom Development | Support <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-							</div>
-							
+
+							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
+
 						</div>
 					</li>
 				</ul>

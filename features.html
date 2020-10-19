@@ -16,18 +16,18 @@
 	<title>Sirius - Features</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 	<link type="text/css" rel="stylesheet" href="css/media.css" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
-	
+
 	<!-- Eclipse Foundation Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
-	<!-- End Google Tag Manager -->  
-	
+	<!-- End Google Tag Manager -->
+
 	<!-- Eclipse Foundation cookie consent: -->
 	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
 	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
@@ -38,13 +38,118 @@
 <ng-include src="'angular/blocks/header.html'"></ng-include>
 
 <div id="body_wrapper">
-	<h1 class="page_title">Features</h1>
-	
-	<div class="intro_gallery">
-		<h3>What's new in the latest release?</h3>
-		<p>Discover <a href="https://www.eclipse.org/sirius/whatsnew/whatsnew6.html">the latest major features</a> recently added to Sirius. See also the <a href="https://www.eclipse.org/sirius/doc/Release_Notes.html">release notes</a> for the full details.</p>
-	</div>
-	
+
+
+	<h1 class="page_title">Features for the End-Users</h1>
+	<p>Tools created with <b>Sirius Desktop</b> offer a rich modeling experience for the end-users having to manage very specific or complex models.
+	In addition to classic graphical modeling features (arranging, zooming, palettes, etc), Sirius provides extended mechanisms that can be adapted to each domain.</p>
+	<p>&nbsp;</p>
+	<div id="body_wrapper">
+		<div class="section left">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/workbench.png" width="400"  border="0" alt="">
+			</div>
+			<h2>Complete Modeling Workbench</h2>
+			<p>Natively integrated in Eclipse, end-users benefit from a complete and widely adopted workbench offering a large set of pre-built features:
+			<ul>
+			<li>frames organization,</li>
+			<li>search,</li>
+			<li>errors management,</li>
+			<li>navigation,</li>
+			<li>etc.</li>
+			</ul></p>
+		</div>
+
+		<div class="section right">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/conditional-styles.gif" width="400"  border="0" alt="">
+			</div>
+			<h2>Conditional Styles</h2>
+			<p>Elements on a diagram created with Sirius can dynamically adapt their graphical style (size, color, label, etc) to the values of their properties.</p>
+			<p>It allows the end-user to easily detect the objects of interest.</p>
+		</div>
+
+		<div class="section left">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/synchronized-diagrams.gif" width="400"  border="0" alt="">
+			</div>
+			<h2>Synchronized diagrams</h2>
+			<p>With Sirius it is possible to create diagrams that automatically populate and update their content.</p>
+			<p>This kind of diagram allows the end-user to benefit from representations that are always synchronized with the current model state.</p>
+		</div>
+
+		<div class="section right">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/filters.gif" width="400"  border="0" alt="">
+			</div>
+		<h2>Layers and filters</h2>
+			<p>Layers and filters on a diagram allow the end-user to hide or show some diagram elements depending on specific conditions.</p>
+			<p>They help in dynamically adapting and simplifying the diagram for focusing on particular aspects.</p>
+		</div>
+
+		<div class="section left">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/validation.gif" width="400"  border="0" alt="">
+			</div>
+			<h2>Validation</h2>
+			<p>Validation rules can be applied by the users to detect problems in their models.</p>
+			<p>The rules can relate to semantic or graphical elements. They can have several severity levels and provide quickfixes to automatically apply solutions.</p>
+		</div>
+
+	</div> <!-- Fin body_wrapper -->
+
+	<h1 class="page_title">Features for the Tools Makers</h1>
+	<p>Instead of coding your modeling editors from scratch, Sirius provides an innovative approach supported by a set of integrated features for defining, testing and packaging your modeling workbench.</p>
+	<p>&nbsp;</p>
+	<div id="body_wrapper">
+		<div class="section left">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/emf.png" width="400"  border="0" alt="">
+			</div>
+			<h2>EMF-based</h2>
+			<p>Relying on EMF (Eclipse Modeling Framework), Sirius benefits from very powerful features for defining and managing structured data model: domain model definition, reflective API, change notification, etc.</p>
+			<p>It also facilitates the integration with a large ecosystem of modeling technologies also based on EMF (Acceleo, Xtext, EMF Compare, etc).</p>
+		</div>
+
+		<div class="section right">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/sirius-editor.png" width="400"  border="0" alt="">
+			</div>
+			<h2>DSL for modeling tools</h2>
+			<p>Creating a modeling tool with Sirius consists in using a dedicated DSL for defining model editors (diagrams, trees, tables, sequences) and properties views without writing any code.</p>
+			<p>This DSL is supported by a specific editor and productivity tools. </p>
+		</div>
+
+		<div class="section left">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/runtime.png" width="400"  border="0" alt="">
+			</div>
+			<h2>Interpreted mode</h2>
+			<p>The definition of a modeling tool defined with Sirius’ internal DSL is interpreted at runtime.</p>
+			<p>It allows the tool maker to rapidly evaluate the tool under construction and  facilitates the deployment of a new version.</p>
+		</div>
+
+		<div class="section right">
+			<div class="image">
+				<img class="shadow" src="images/screenshots/features/java.png" width="400"  border="0" alt="">
+			</div>
+			<h2>Java extensibility</h2>
+			<p>Complex or specific behaviours can be implemented by writing Java code.</p>
+			<p>It also allows to easily reuse external components providing additional features not supported natively by Sirius.</p>
+		</div>
+	</div> <!-- Fin body_wrapper -->
+
+
+	<h1 class="page_title">What's new in the latest release?</h1>
+
+		<p>Discover <a href="https://www.eclipse.org/sirius/whatsnew/whatsnew6.html">the latest major features</a> recently added to <b>Sirius Desktop</b>.</p>
+		<p>See also the <a href="https://www.eclipse.org/sirius/doc/Release_Notes.html">release notes</a> for the full details.</p>
+
+		<p>&nbsp;</p>
+
+
+
+	<h1 class="page_title">Detailed Features</h1>
 
 		<ul id="myTab" class="nav nav-tabs">
 			<li class="active"><a href="#home" data-toggle="tab">Create a Modeling Tool</a></li>

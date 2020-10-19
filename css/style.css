@@ -67,6 +67,14 @@ a:hover {
 	color: #383838;
 }
 
+hr {
+	margin-top: 5px;
+    	margin-bottom: 5px;
+    	border: 0;
+    	border-top: 2px solid #dedede;
+}
+
+
 img, img:focus{
 	border: none;
 }
@@ -191,25 +199,24 @@ img, img:focus{
 }
 
 #menu_wrapper {
-	display: block;
-	float: right;
-	font-size: 14px;
-	padding-top: 37px;
+    	font-size: 14px;
+	padding-top: 25px;
 }
 
 #menu_wrapper ul {
-	float: left;
+	display: inline;
+	float:right;
+	text-align: center;
 	clear: both;
 	padding-left: 2px;
 	margin: 0;
 }
 
 #menu_wrapper ul li {
-	display: block;
-	float: left;
+	display: inline;
 	list-style: none;
-	padding-left: 35px;
-	text-transform: uppercase;
+	padding-left: 25px;
+	
 }
 
 #menu_wrapper ul li:first-child {
@@ -232,6 +239,17 @@ img, img:focus{
 	-o-transition: all 500ms ease-in-out;
 	transition: all 500ms ease-in-out;
 }
+
+#menu_wrapper .selected_main_menu {
+	color: #be1a78;
+	border-bottom: 4px solid #be1a78;
+	padding-bottom: 4px;
+}
+
+#menu_wrapper .unselected_main_menu {
+	color: #939393; 
+}
+
 
 #menu_wrapper li.current_menu_item a {
 	color: #be1a78;
@@ -312,6 +330,12 @@ section.highlight_banner {
 	font-weight: bold;
 }
 
+.highlight_banner_web h1 {
+	color: #261e58;
+	font-weight: bold;
+}
+
+
 .event p {
 	line-height: 1.4em;
     font-size: 14px;
@@ -391,6 +415,9 @@ section.highlight_banner {
 	background-color: #fff;
 	color: #261e58;
 }
+
+
+
 
 /* Overview Page
 ------------------------------ */
@@ -1196,6 +1223,19 @@ margin: 0 5px;
 .features_icon:hover {
 	background: url("../images/icons/icon_features_hover.png") no-repeat;
 }
+
+
+.left_block {
+	display: inline-block; 
+	width: 315px;  
+	margin-top: 1em; 
+	vertical-align: top; 
+	align: left; 
+	margin-right: 1em;
+}
+
+
+
 
 /* Gallery Page
 ------------------------------*/
