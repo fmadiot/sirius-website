@@ -13,18 +13,18 @@
 				<a href="#ReleaseNotesforSirius">Release Notes for Sirius</a>
 				<ol style="list-style: disc;">
 					<li>
-						<a href="#sirius6.3.4">Changes in Sirius 6.3.4</a>
+						<a href="#sirius6.4.0">Changes in Sirius 6.4.0</a>
 						<ol style="list-style: disc;">
 							<li>
 								<a href="#UserVisibleChanges">User-Visible Changes</a>
 							</li>
 							<li>
+								<a href="#SpecifierVisibleChanges">Specifier-Visible Changes</a>
+							</li>
+							<li>
 								<a href="#DeveloperVisibleChanges">Developer-Visible Changes</a>
 							</li>
 						</ol>
-					</li>
-					<li>
-						<a href="#sirius6.3.3">Changes in Sirius 6.3.3</a>
 					</li>
 					<li>
 						<a href="#sirius6.3.2">Changes in Sirius 6.3.2</a>
@@ -55,7 +55,7 @@
 								<a href="#UserVisibleChanges4">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges2">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges4">Developer-Visible Changes</a>
@@ -80,7 +80,7 @@
 								<a href="#UserVisibleChanges5">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges2">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges3">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges6">Developer-Visible Changes</a>
@@ -113,7 +113,7 @@
 								<a href="#UserVisibleChanges7">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges3">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges4">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges8">Developer-Visible Changes</a>
@@ -127,7 +127,7 @@
 								<a href="#UserVisibleChanges8">User-Visible Changes</a>
 							</li>
 							<li>
-								<a href="#SpecifierVisibleChanges4">Specifier-Visible Changes</a>
+								<a href="#SpecifierVisibleChanges5">Specifier-Visible Changes</a>
 							</li>
 							<li>
 								<a href="#DeveloperVisibleChanges9">Developer-Visible Changes</a>
@@ -140,24 +140,153 @@
 		<p>This document contains the release notes for recent major releases of Sirius. See also 
 			<a href="Release_Notes_Previous.html">the release notes from previous versions</a> for details about older releases.
 		</p>
-		<h2 id="sirius6.3.4">Changes in Sirius 6.3.4</h2>
+		<h2 id="sirius6.4.0">Changes in Sirius 6.4.0</h2>
+		<p><span class="label label-info">Important</span> In order to reduce the maintenance burden of Sirius, we have decided to deprecate some older mechanisms for which there exist better alternatives. In Sirius 6.4.x all of these are still available, but they may be removed in future versions
+			<br/>(6.5 or 7.0) without further notice. If any of these planned removals are an issue for you, please 
+			<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Sirius">open a ticket</a> so we can discuss options.
+		</p>
+		<p>The features which are deprecated starting from 6.4.0 are:</p>
+		<ul>
+			<li>
+				<b>Exporting diagrams as GIF, BMP or PDF</b>. We will focus on PNG and JPG support for raster formats, and SVG for vector formats. If you need another image format, use an external tool to do the conversion.
+			</li>
+			<li>
+				<b>OCL expressions in VSMs (
+					<code>odesign</code> files)
+				</b>, as supported by the 
+				<code>org.eclipse.sirius.common.ocl</code> plug-in. Use AQL expressions instead.
+			</li>
+			<li>
+				<b>The &#8220;Workflow&#8221; feature</b>. Workflow was experimental and to our knowledge not used in practice. This corresponds to the 
+				<code>org.eclipse.sirius.workflow.*</code> and 
+				<code>org.eclipse.sirius.editor.workflow</code> plug-ins.
+			</li>
+			<li>
+				<b>The server parts which supported the Workflow feature</b>. It was our first experiment in moving Sirius to the web, but this is now replaced by the newly published 
+				<a href="https://www.eclipse.org/sirius/sirius-web.html">Sirius Web</a>. This corresponds to all the 
+				<code>org.eclipse.sirius.server.*</code> plug-ins.
+			</li>
+		</ul>
+		<p>Also note that Sirius 6.4 is still compatible with Java 8, but we may move to Java 11 (LTS) in 2021. Eclipse 2020-09 already requires Java 11 to start, and Java 8 is quite old at this point. When we move to Java 11 we will drop support for Eclipse versions older than 2020-09. Again, if that is an issue for you, please open a ticket so we can discuss it.</p>
+		<p>Sirius 6.4 is officially supported on Eclipse 2020-03 to 2020-12, with Eclipse 2020-06 being the reference platform (where the tests are run and verified). It most likely works fine with any Eclipse from 2019-06 onward, but this is not guaranteed.</p>
 		<h3 id="UserVisibleChanges">User-Visible Changes</h3>
 		<ul>
-			<li><span class="label label-info">Modified</span> In properties views, the labels are correctly rendered again. There used to be a regression on recent versions of Eclipse which made changes in styling/theming. Sirius now includes an updated version of EEF (v2.1.5) which fixes [the issue](https://bugs.eclipse.org/bugs/show_bug.cgi?id=552626).</li>
+			<li><span class="label label-success">Added</span> With a non modeling project (a.k.a. legacy project), a &#8220;Invalid representations&#8221; section is displayed under the aird node. It is displayed only if a representation is invalid in the Sirius Session.</li>
 		</ul>
+		<h3 id="SpecifierVisibleChanges">Specifier-Visible Changes</h3>
+		<p>Several improvements have been done concerning ELK integration. This feature is always considered as experimental (because several bugs remain). Additional documentation is available 
+			<a href="specifier/diagrams/Diagrams.html#useElk">here</a> .
+		</p>
 		<h3 id="DeveloperVisibleChanges">Developer-Visible Changes</h3>
 		<ul>
-			<li>Sirius 6.3.4 is compatible with Eclipse 2020-09 (this required some internal changes to adapt to changes in the platform).</li>
-			<li>EEF has been updated to version 2.1.5 which fixes </li>
+			<li><span class="label label-success">Added</span> 
+				<code>org.eclipse.sirius.ui.tools.api.dialogs.AnalysisSelectorFilteredItemsSelectionDialog</code> has been created in order to have custom analysis selector provider able to modify the analysis selector dialog.
+			</li>
+			<li><span class="label label-success">Added</span> The method 
+				<code>org.eclipse.sirius.tools.api.command.ui.UICallBack.askUserToRefreshTheDiagram()</code> has been added. It is used to ask the user to refresh the representation when something wrong happens when opening the editor. This method allows to skip the UI part.
+			</li>
+			<li><span class="label label-success">Added</span> The method 
+				<code>org.eclipse.sirius.ui.business.api.dialect.DialectEditor.isLastRepresentationRefreshSucceeded()</code> to know if the last refresh done in the editor has succeeded.
+			</li>
+			<li><span class="label label-info">Modified</span> Upgraded ELK version from 0.6.1 to 0.7.0, see the 
+				<a href="https://projects.eclipse.org/projects/modeling.elk/releases/0.7.0">ELK documentation</a> for the list of changes in that version (and previous).
+			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support">Changes in 
-			<code>org.eclipse.sirius.tests.swtbot.support</code>
+		<h4 id="Changesinorg.eclipse.sirius">Changes in  
+			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
-			<li>The Sirius SWTBot test APIs have been updated to be compatible with SWTBot 3.0 final (in addition to SWTBot 3.0M2).</li>
+			<li><span class="label label-info">Modified</span> The method  
+				<code>org.eclipse.sirius.business.api.session.danalysis.DAnalysisSelectorProvider.getPriority()</code> has been added. It is used in 
+				<code>org.eclipse.sirius.business.api.session.danalysis.DAnalysisSelectorService.getSelector(DAnalysisSession)</code> to ensure that the right DAnalysisSelector is used. The DAnalysisSelector is searched first with the DAnalysisSelectorProvider with higher priority.
+			</li>
 		</ul>
-		<h2 id="sirius6.3.3">Changes in Sirius 6.3.3</h2>
-		<p>Sirius 6.3.3 fixes a single performance issue which only occurred in specific circumstances should not have any visible impact in normal use.</p>
+		<h4 id="Changesinorg.eclipse.sirius.common">Changes in  
+			<code>org.eclipse.sirius.common</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> A new method, 
+				<code>org.eclipse.sirius.common.tools.api.util.CommandStackUtil.flushOperations(CommandStack)</code> has been added to flush the command stack. By default the 
+				<code>CommandStack.flush()</code> &#8220;disposes all the commands in the stack&#8221;. Concretely, it removes the default context from the list of contexts of all operations. And operations without context, after this, are removed from history. In several cases, it is not enough. The 
+				<code>ResourceUndoContext</code> must also be removed. This is what this method done to really removed operations from IOperationHistory. This method was already used in 
+				<code>org.eclipse.sirius.business.internal.session.danalysis.DAnalysisSessionImpl</code>, it has been extracted from here.
+			</li>
+			<li><span class="label label-success">Added</span> A new query, 
+				<code>org.eclipse.sirius.common.tools.api.query.IllegalStateExceptionQuery.isAConnectionLostException()</code>, has been added to detect a specific kind of 
+				<code>IllegalStateException</code>. In a collaborative environment, Obeo Designer Team Edition or Team For Capella for example, when the data is hosted on a server, the connection with the server can be lost. Sirius is not ready to handle this context. If Sirius tries to access to data, for example with an async refresh of the UI that needs information from data to be refreshed, a 
+				<code>org.eclipse.net4j.util.lifecycle.LifecycleException</code> is thrown with the message 
+				<code>"Not active: CDOTransactionImpl"</code>. This kind of errors is showed to the end-user instead of silently be caught. Indeed, in this situation, the UI should be refreshed with &#8220;blank data&#8221; instead of displaying an &#8220;incomprehensible&#8221; popup to the end-user. This new query allows to detect this specific case. The template to use it is:
+			</li>
+		</ul>
+		<pre><code>try {
+    //code to protect
+} catch (IllegalStateException e) {
+	if (new IllegalStateExceptionQuery(e).isAConnectionLostException()) {
+	    // Generally catch silently the exception
+	} else {
+	    throw e;
+	}
+}
+
+</code></pre>
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui">Changes in  
+			<code>org.eclipse.sirius.diagram.ui</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> A new method, 
+				<code>getDefaultDimension()</code> has been added in 
+				<code>org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramElementContainerEditPart()</code>. This method was already used previously in Sirius but was private. It is now public and is used for example for having information during ELK layout.
+			</li>
+			<li><span class="label label-success">Added</span> A new method, 
+				<code>layoutEditParts(List, IAdaptable, boolean)</code> has been added in 
+				<code>org.eclipse.sirius.diagram.ui.tools.api.layout.provider.AbstractLayoutProvider</code>. It allows for implementations to do specific code according to the arrangeAll or arrangeSelection aspect when layoutEditParts is called. By default, the code called is the same than the 
+				<code>org.eclipse.gmf.runtime.diagram.ui.services.layout.AbstractLayoutEditPartProvider.layoutEditParts(List, IAdaptable)</code> implementation.
+			</li>
+			<li><span class="label label-success">Added</span> A new method, 
+				<code>useStandardArrangeSelectionMechanism()</code> has been added in 
+				<code>org.eclipse.sirius.diagram.ui.api.layout.CustomLayoutAlgorithm</code> to know if a specific layout algorithm relies on the behavior of 
+				<code>org.eclipse.sirius.diagram.ui.tools.internal.layout.provider.ArrangeSelectionLayoutProvider</code>. Previously, this was the case for all layout algorithm but it can be useful to disable it (for ELK layout for example). This method is associated with 
+				<code>org.eclipse.sirius.diagram.ui.api.layout.CustomLayoutAlgorithm.CustomLayoutAlgorithmBuilder.setStandardArrangeSelectionMechanism(boolean)</code>
+			</li>
+		</ul>
+		<ul>
+			<li><span class="label label-success">Added</span> A new API in 
+				<code>org.eclipse.sirius.diagram.ui.tools.api.format.MappingBasedSiriusFormatManagerFactory</code> has been added to make it possible to apply a copy-paste format to an existing or a new diagram with different semantic targets. This API receives a mapping between the source and target semantic elements to retrieve which graphical element in the target diagram corresponds to the one in source diagram. See the 
+				<a href="developer/copy_paste_format_new_semantic.html">developer</a> documentation for more details.
+			</li>
+		</ul>
+		<h4 id="Changesinorg.eclipse.sirius.ui">Changes in  
+			<code>org.eclipse.sirius.ui</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> A new method, 
+				<code>preClose()</code> has been added in 
+				<code>org.eclipse.sirius.ui.business.api.dialect.DialectEditor</code>. This method is called in sync when the editor is asking to be closed (the real closure is done in async). This allows to dispose actions, for example, as soon as the closure is requested. There is a default implementation, that does nothing, for all dialect editors.
+			</li>
+		</ul>
+		<h4 id="Changesinorg.eclipse.sirius.tests.junit.support">Changes in  
+			<code>org.eclipse.sirius.tests.junit.support</code>
+		</h4>
+		<ul>
+			<li><span class="label label-success">Added</span> New methods have been added to 
+				<code>org.eclipse.sirius.tests.support.api.TestsUtil</code> to check the current Java runtime version. The parameter is the expected version of Java, i.e: ...7, 8, 9, ..., 13, 14, ...
+				<ul>
+					<li>
+						<code>isJavaVersion(int)</code>
+					</li>
+					<li>
+						<code>isJavaVersionOrOlder(int)</code>
+					</li>
+					<li>
+						<code>isJavaVersionOrNewer(int)</code>
+					</li>
+				</ul>
+			</li>
+			<li><span class="label label-success">Added</span> The method 
+				<code>org.eclipse.sirius.tests.support.api.SiriusTestCase.waitSaveSessionJob()</code> has been added to ensure that the SaveSessionJob, potentially triggered by 
+				<code>org.eclipse.sirius.ui.business.internal.session.SaveSessionWhenNoDialectEditorsListener.statusChangedInternal(Collection&lt;ResourceStatusChange&gt;)</code> is finished before continue. It can be call, for example, after changing the list of selected viewpoints, without any editor opened.
+			</li>
+		</ul>
 		<h2 id="sirius6.3.2">Changes in Sirius 6.3.2</h2>
 		<h3 id="UserVisibleChanges2">User-Visible Changes</h3>
 		<ul>
@@ -172,7 +301,7 @@
 		<img border="0" src="images/combined_fragment_label_before.png"/> With Sirius 6.3.2, the label is now on the top of execution: 
 		<img border="0" src="images/combined_fragment_label_after.png"/>
 		<h3 id="DeveloperVisibleChanges2">Developer-Visible Changes</h3>
-		<h4 id="Changesinorg.eclipse.sirius.common">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.common2">Changes in  
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -180,7 +309,7 @@
 				<code>org.eclipse.sirius.common.package_meta_data</code> extension point, it is now possible for a given metamodel (nsURI) to declare some EClasses as potential DocumentRoots. This is needed with some XSD-derived metamodels which normally declare some of their containment references as transient to make sure Sirius will properly consider these classes (and their contents) as needing to be serialized. 
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui2">Changes in  
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -208,6 +337,10 @@
 			</li>
 		</ul>
 		<h2 id="sirius6.3.1">Changes in Sirius 6.3.1</h2>
+		<p>
+			<strong>IMPORTANT NOTE:</strong> Sirius 6.3.1 includes a change in internal data structures used to store diagrams which is not backward-compatible with previous versions, including Sirius 6.3.0. In practice this means that once opened and saved with Sirius 6.3.1, 
+			<code>aird</code> files can no longer be opened with Sirius 6.3.0 or earlier.
+		</p>
 		<h3 id="UserVisibleChanges3">User-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> A new type of jump link has been added in Sirius 6.3.1. As reminder, a jump link is a way to graphically improve the way how 2 edges intersect. This new type is graphically represented by a blank line instead of the classical &#8220;jump&#8221;. This new type is documented in the 
@@ -296,7 +429,7 @@
 				<em>deprecated</em>. Their support may be removed in a future version, as they cause various issues depending on the platform and increase the maintenance costs for little value. If you really need diagram images in these formats, you can export in PNG (which is lossless), and convert the image into the required format using an external tool.
 			</li>
 		</ul>
-		<h3 id="SpecifierVisibleChanges">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges2">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> A new column 
 				<code>Target</code> has been added in the dialog allowing to choose layout options to override for ELK layout algorithms. It describes the element to which the option applies. The filter textfield in that dialog also applies on columns&amp; 
@@ -310,7 +443,7 @@
 			<li><span class="label label-info">Modified</span> Upgraded ELK version from 0.4.1 to 0.5.0, see the <a href="https://projects.eclipse.org/projects/modeling.elk/releases/0.5.0" target="_blank">ELK documentation</a> for the list of changes in that version.</li>
 			<li><span class="label label-info">Modified</span> Upgraded EEF version from 2.1.2 to 2.1.3 (which contains a single bugfix, for <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=550436" target="_blank">#550436</a>).</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius2">Changes in  
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -373,7 +506,7 @@
 				<code>DREPRESENTATION_DESCRIPTOR</code> has been removed because they are not available anymore in custom data.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common2">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.common3">Changes in  
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -444,7 +577,7 @@
 		<p>There are no user-visible changes in Sirius 6.2.2 compared to 6.2.1. The only changes are internal and related either to the build process or to the automated tests.</p>
 		<h2 id="sirius6.2.1">Changes in Sirius 6.2.1</h2>
 		<h3 id="DeveloperVisibleChanges5">Developer-Visible Changes</h3>
-		<h4 id="Changesinorg.eclipse.sirius2">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius3">Changes in  
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -471,7 +604,7 @@
 				<code>org.eclipse.sirius.business.api.helper.task.NotificationTask</code> class has been removed. It was not used anywhere.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui2">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui3">Changes in  
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -479,7 +612,7 @@
 				<code>org.eclipse.sirius.diagram.ui.business.api.image.ImageSelector.IMAGES_RESOURCE_NAME</code> constant has been deprecated. It was present in the initial commit of Sirius but has never been used in its open source components.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support2">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support">Changes in  
 			<code>org.eclipse.sirius.tests.swtbot.support</code>
 		</h4>
 		<ul>
@@ -512,14 +645,14 @@
 				<a href="user/sequences/Sequence%20Diagrams.html#remove_vertical_blank_space">feature</a> was here since version 6.0.0 but was only accessible through the ruler.
 			</li>
 		</ul>
-		<h3 id="SpecifierVisibleChanges2">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges3">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> It is now possible to add action/group in the &#8220;New&#8221; contextual menu of diagram elements. This menu was missed in Sirius 6.1.0. It is now documented in the 
 				<a href="specifier/diagrams/Diagrams.html#group">corresponding documentation</a> .
 			</li>
 		</ul>
 		<h3 id="DeveloperVisibleChanges6">Developer-Visible Changes</h3>
-		<h4 id="Changesinorg.eclipse.sirius.common3">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.common4">Changes in 
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -796,7 +929,7 @@
 				</ul>
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui3">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui4">Changes in  
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -870,7 +1003,7 @@
 				<code>java.util.Optional&lt;T&gt;</code> instead.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support3">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support2">Changes in 
 			<code>org.eclipse.sirius.tests.swtbot.support</code>
 		</h4>
 		<ul>
@@ -901,7 +1034,7 @@
 				<code>org.eclipse.sirius.diagam.ui.hidePrintingOfPermissionAuthorityDecoration</code> system property is set to true and if there is no other printable decoration provided at the same location (South-West), the permission authority decorations displayed on diagrams are not printed nor exported in images (export as image actions).
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius3">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius4">Changes in  
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -914,7 +1047,7 @@
 				<code>DRepresentationDescriptor.repPath</code> can not be found) or can not by retrieved.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui4">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui5">Changes in  
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -940,7 +1073,7 @@
 				<code>org.eclipse.sirius.diagram.ui.tools.api.decoration.DecorationDescriptor.isPrintable</code>. This attribute is used to know if the decoration should be hidden when printing or exporting the diagram. The behavior is applied only if there is no printable decoration in its diagram element location (South, West, South-West etc).
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common4">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.common5">Changes in  
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -1005,7 +1138,7 @@
 				<a href="user/diagrams/Diagrams.html#notes">user documentation</a> for more details.
 			</li>
 		</ul>
-		<h3 id="SpecifierVisibleChanges3">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges4">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> 
 				<a href="specifier/workflows/Workflows.html">Initial documentation</a> has been added for the &#8220;Workflow&#8221; feature introduced in 6.0.0 (which is still experimental).
@@ -1090,7 +1223,7 @@
 				<code>org.eclipse.sirius.business.internal.metamodel.description.validation.operations.ValidationRuleOperations</code> class.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.ui">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.ui2">Changes in 
 			<code>org.eclipse.sirius.ui</code>
 		</h4>
 		<ul>
@@ -1098,7 +1231,7 @@
 				<code>org.eclipse.sirius.ui.business.api.preferences.SiriusUIPreferencesKeys.PREF_DISPLAY_VSM_USER_FIXED_COLOR_IN_PALETTE</code> has been added. Its default value is true. It allows to display, in the color palette, the user fixed color(defined in the activated viewpoints) in addition to standard colors. The color palette is available in Appearance tab of the Properties view.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui5">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui6">Changes in 
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -1265,7 +1398,7 @@
 				<code>org.eclipse.sirius.ext.gmf.runtime.gef.ui.figures</code> package.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common5">Changes in  
+		<h4 id="Changesinorg.eclipse.sirius.common6">Changes in  
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -1279,7 +1412,7 @@
 				<code>org.eclipse.emf.ecore.util.EcoreUtil.generateUUID()</code>.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support4">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support3">Changes in 
 			<code>org.eclipse.sirius.tests.swtbot.support</code>
 		</h4>
 		<ul>
@@ -1337,7 +1470,7 @@
 		<p>
 			<img border="0" src="images/color_palette.png"/>
 		</p>
-		<h3 id="SpecifierVisibleChanges4">Specifier-Visible Changes</h3>
+		<h3 id="SpecifierVisibleChanges5">Specifier-Visible Changes</h3>
 		<ul>
 			<li><span class="label label-success">Added</span> An action is added in main toolbar to reload the VSM of installed plug-ins that may have changed. Refer to the 
 				<a href="specifier/general/Specifying_Viewpoints.html#reloadVSM">specifier documentation</a> for details.
@@ -1402,7 +1535,7 @@
 				<code>SemanticBasedDecoration</code>.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.common6">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.common7">Changes in 
 			<code>org.eclipse.sirius.common</code>
 		</h4>
 		<ul>
@@ -1412,7 +1545,7 @@
 				<code>org.eclipse.sirius.common.tools.api.contentassist</code> which has its own types.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius4">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius5">Changes in 
 			<code>org.eclipse.sirius</code>
 		</h4>
 		<ul>
@@ -1495,7 +1628,7 @@
 				<code>org.eclipse.sirius.diagram.tools.api.managment</code>
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.diagram.ui6">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.diagram.ui7">Changes in 
 			<code>org.eclipse.sirius.diagram.ui</code>
 		</h4>
 		<ul>
@@ -1530,7 +1663,7 @@
 				<code>DDiagram</code>.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.ui2">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.ui3">Changes in 
 			<code>org.eclipse.sirius.ui</code>
 		</h4>
 		<ul>
@@ -1538,7 +1671,7 @@
 				<code>org.eclipse.sirius.ui.business.api.viewpoint.ViewpointSelectionDialog</code> has been removed.
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.junit.support">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.tests.junit.support2">Changes in 
 			<code>org.eclipse.sirius.tests.junit.support</code>
 		</h4>
 		<ul>
@@ -1551,7 +1684,7 @@
 				<code>org.eclipse.sirius.tests.swtbot.Activator.PLUGIN_ID</code>). It avoids to build a wrong target platform containing each Sirius plug-ins twice. 
 			</li>
 		</ul>
-		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support5">Changes in 
+		<h4 id="Changesinorg.eclipse.sirius.tests.swtbot.support4">Changes in 
 			<code>org.eclipse.sirius.tests.swtbot.support</code>
 		</h4>
 		<ul>
