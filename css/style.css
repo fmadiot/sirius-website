@@ -781,6 +781,11 @@ padding-right: 8px;
 .blogger .fa-fw {
    text-align: left;
 }
+
+a.linkback{
+	color: #dedede;
+	font-size: 10px;
+}
 	
 /* ------- Resources Page ------*/
 
