@@ -1,148 +1,324 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="Content-language" content="en">
-	<meta name="description" content="Graphical Editors for your DSL">
 
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/magnific-popup.video.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="angular/sirius.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <title>Sirius | Get Started</title>
+  
+    <meta name="description" content="The Eclipse Foundation - home to a global community, the Eclipse IDE, Jakarta EE and over 350 open source projects, including runtimes, tools and frameworks">
+    <link rel="shortcut icon" type="image/png" href="/sirius/images/favicon_sirius.ico"/>
+  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-	<link rel="icon" type="image/png" href="favicon.ico" />
-	<title>Sirius - Get Started</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link type="text/css" rel="stylesheet" href="css/media.css" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="/sirius/common_assets/css/styles.css">
+    <link rel="stylesheet" href="/sirius/common_assets/css/animate.css">
+    <link rel="stylesheet" href="/sirius/common_assets/css/media.css"/>
+    <link rel="stylesheet" href="/sirius/assets/css/main.css"/>
 
-	<!-- Eclipse Foundation Google Tag Manager -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/sirius/common_assets/js/magnific-popup.video.js"></script>
+    <script src="/sirius/common_assets/js/magnific-popup.min.js"></script>
+
+    <!-- Eclipse Foundation Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
-	<!-- End Google Tag Manager -->
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+        <!-- End Google Tag Manager -->  
+        
+        <!-- Eclipse Foundation cookie consent: -->
+        <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+        <script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>  
+        
+        <script src= "/sirius/assets/js/ga.js"></script>
 
-	<!-- Eclipse Foundation cookie consent: -->
-	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
-	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
-	<script type="text/javascript" src="js/ga.js"></script>
+    <!-- Old version of font awesome for some icons -->
+    <script src="https://use.fontawesome.com/b51f77a16a.js"></script>    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <script>
+        jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+    </script>
+    <!-- Triggers tooltips -->
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('.hasTooltip').tooltip();
+        });
+    </script>
 </head>
+  
+  <body>
 
-<body ng-app="sirius" ng-controller="main" class="cloak">
-<ng-include src="'angular/blocks/header.html'"></ng-include>
-
-<div id="body_wrapper">
-	<h1 class="page_title">Get Started</h1>
-
-	<div class="section left">
-		<div class="image">
-			<iframe class="popup-youtube shadow" width="400" height="250" src="https://www.youtube.com/embed/08XIW8hZOyQ?fs=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
-			<p align="center"><a href="http://www.obeo.fr/videos/sirius/Sirius%20-%20Getting%20Started.mp4" target="_blank">Download Video <i class="fa fa-download"></i></a></p>
-			<p  align="center"><a href="articles-videos.html">More Articles and Videos <i class="fa fa-arrow-circle-right"></i></a></p>
-		</div>
-		<h2>Introduction</h2>
-		<p>Watch this video to discover how to simply create a graphical modeling tool with Sirius Desktop.</p>
-		<p>With this video, you will see how to: </p>
-		<ul>
-			<li>create a Sirius project (Viewpoint Specification project)</li>
-			<li>initialize a Diagram to graphically vizualize and edit the model elements</li>
-			<li>define Nodes and Edges to display model elements on the diagram</li>
-			<li>add a Creation Tool to create new model elements from a palette</li>
-		</ul>
-	</div>
-
-	<div class="clear"></div>
-
-	<div class="section">
-	<h2>Tutorials</h2>
-	<p>Follow a step-by-step scenario to create your first modeling tool with Sirius Desktop.
-	</p>
-	</div>
-
-	<p><a id="basicfamily"></a></p>
-	<br />
-	<div class="usecase" >
-		<div class="medias">
-			<div class="popup-gallery">
-				<a href="images/screenshots/screenshot_advanced_tutorial.png" title="Sirius - Advanced Tutorial">
-					<img class="shadow" src="images/screenshots/screenshot_starter_tutorial.png" alt="Sirius - Advanced Tutorial" width="520" />
-				</a>
-			</div>
-		</div>
-		<div class="infos">
-			<div class="title">
-				<h2>BasicFamily Tutorial</h2>
-			</div>
-
-			<div class="descr">
-				<p>This tutorial explains how to use Eclipse Sirius to create graphical editors for visually describing a family.</p>
-				<p>It is composed of five parts, from the definition of the domain model to the deployment to end-users via an updatesite, including the creation of advanced editors and tools (ports, compartments, tables, etc.).</p>
-				<p>&nbsp;</p>
-				<p><a href="https://wiki.eclipse.org/Sirius/Tutorials/BasicFamily">Start the tutorial <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-			</div>
-		</div>
-	</div>
-
-	<p><a id="mindstorms"></a></p>
-	<br />
-	<div class="usecase">
-		<div class="medias">
-			<div class="popup-gallery">
-				<a href="images/screenshots/screenshot_compartments_tutorial.png" title="Sirius - Compartments Tutorial">
-					<img class="shadow" src="images/screenshots/screenshot_mindstorms_robot_tutorial.png" alt="Sirius - Compartments Tutorial" width="520" />
-				</a>
-			</div>
-		</div>
-		<div class="infos">
-			<div class="title">
-				<h2>Mindstorms Robot Tutorial</h2>
-			</div>
-
-			<div class="descr">
-				<p>This tutorial explains how to use Eclipse Sirius to create a graphical modeling tool for a Mindstorms Robot.</p>
-				<p>It is composed of four parts, illustrated with videos, from the definition of the domain model to the creation of a simple graphical diagram with navigation and creation tools, including the customization of properties views.</p>
-				<p>&nbsp;</p>
-				<p><a href="https://wiki.eclipse.org/Sirius/Tutorials/Mindstorms">Start the tutorial <i class="fa fa-arrow-circle-right">&nbsp;</i></a></p>
-			</div>
-		</div>
-	</div>
-
-
-</div> <!-- Fin body_wrapper -->
-
-<div class="clear"></div>
-
-<section class="bg_light_gray">
-	<article class="row centered">
-		<div class="community_links">
-			<div class="community_item">
-				<h2><a href="http://www.eclipse.org/sirius/doc/">Documentation</a></h2>
-				<a href="http://www.eclipse.org/sirius/doc/"><span class="community_icons" id="doc"></span></a>
-				<p>Complete user guide and specifier manual</p>
-			</div>
-			<div class="community_item">
-				<h2><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262">Forum</a></h2>
-				<a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262"><span class="community_icons" id="forum"></span></a>
-				<p>Find relevant posts/answers. No solution yet to your concern? Come and ask your question</p>
-			</div>
-			<div class="community_item last_item">
-				<h2><a href="https://www.obeodesigner.com/en/services">Professional Support</a></h2>
-				<a href="https://www.obeodesigner.com/en/services"><span class="community_icons" id="support"></span></a>
-				<p>Obeo, co-leader of Sirius, provides professional support services to help you with Sirius: training, custom development & expertise</p>
-			</div>
-		</div> <!-- Fin community_links -->
-
-		<div class="clear" ></div>
-	</article>
+    <!-- Navigation -->
+<header id="top-bar" class="navbar navbar-expand-xl fixed-top">
+    <div class="container">
+        <div id="super-menu" class="d-flex">
+            <nav class="main-menu ml-auto">
+                <ul class="nav navbar-nav">
+                    <li class="current"><a href=".">Sirius Desktop</a></li>
+                    <li><a class="txt_purple" href="sirius-web">Sirius Web</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex" id="main-menu-items">
+            <a class="navbar-brand" href="/sirius">
+                <img src="/sirius/common_assets/images/logos/logo_sirius.png" alt="Logo Sirius">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> 
+            <nav class="navbar-collapse collapse" id="navbarResponsive">
+                <div class="main-menu ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="overview">Overview</a>
+                        </li>
+                        <li>
+                            <a href="gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="getstarted">Get Started</a>
+                        </li>
+                        <li>
+                            <a href="features">Features</a>
+                        </li>
+                        <li>
+                            <a href="resource-center">Resources</a>
+                        </li>
+                        <li>
+                            <a href="support">Support</a>
+                        </li>
+                        <li id="dwnld">
+                            <a href="download">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="sirius-web-bar" class="bg_purple">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-xs-12 my-auto">
+                <p class="cloud txt_white text-center"><i class="fas fa-cloud" aria-hidden="true"></i></p>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <h5 class="txt_white">Web version is now available!</h5>
+                <p class="descr txt_white">What you like in Sirius Desktop, in a modern cloud-based stack.</p>
+            </div>                                
+            <div class="col-md-3 col-xs-12 my-auto">
+                <p><a class="text-uppercase txt_yellow" href="sirius-web" target="">Discover Sirius Web <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section>
+    <div class="container">
+       
+        <div class="row">
+    <div class="col-md-5 order-1 wow fadeInLeft" data-wow-delay=".1s">
+        <h3>Introduction</h3>
+        
+            <p>Watch this video to discover how to simply create a graphical modeling tool with Sirius Desktop.</p>
+            <p>With this video, you will see how to:</p>
+            <ul>
+                <li>create a Sirius project (Viewpoint Specification project)</li>
+                <li>initialize a Diagram to graphically vizualize and edit the model elements</li>
+                <li>define Nodes and Edges to display model elements on the diagram</li>
+                <li>add a Creation Tool to create new model elements from a palette</li>
+            </ul>
+            
+        <p><a href="resource-center.html" target="_self">More articles and videos   <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i></a></p>
+    </div>
+    <div class="col-md-7 text-center order-2 wow fadeInUp" data-wow-delay=".2s">
+        <iframe class="shadow popup-youtube" width="530" height="350" src="https://www.youtube.com/embed/08XIW8hZOyQ?fs=1&amp;loop=1&amp;autohide=1&amp;theme=light&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+</div>
+    </div>
 </section>
 
-<div class="clear"></div>
-<ng-include src="'angular/blocks/footer.html'"></ng-include>
-<ng-include src="'angular/blocks/call2action.html'"></ng-include>
-</body>
+<section class="text-center bg_lightest_grey">
+    <div class="container">
+        <h2 class="title wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".2s">Tutorials</h2> 
+<h3 class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s"></h3>
+<p class="wow fadeInDown" data-wow-duration="500ms" data-w ow-delay=".4s"><p>Follow a step-by-step scenario to create your first modeling tool with Sirius Desktop.</p></p>
+
+
+
+    </div>       
+</section>
+
+<section>
+    <div class="container">
+       
+        <div class="row">
+    <div class="col-md-5 order-1 wow fadeInLeft" data-wow-delay=".1s">
+        <h3>BasicFamily Tutorial</h3>
+        
+            <p>This tutorial explains how to use Eclipse Sirius to create graphical editors for visually describing a family.</p>
+            <p>It is composed of five parts, from the definition of the domain model to the deployment to end-users via an updatesite, including the creation of advanced editors and tools (ports, compartments, tables, etc.).</p>
+            
+        <p><a href="https://wiki.eclipse.org/Sirius/Tutorials/BasicFamily" target="_blank">Start the tutorial   <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i></a></p>
+    </div>
+    <div class="col-md-7 popup-gallery text-center order-2 wow fadeInUp" data-wow-delay=".2s">
+        <a href="images/screenshots/screenshot_advanced_tutorial.png" target="_blank" title="Sirius - BasicFamily Tutorial"><img src="images/screenshots/screenshot_advanced_tutorial.png" class="shadow" alt="Sirius - BasicFamily Tutorial"></a>
+    </div>
+</div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+       
+        <div class="row">
+    <div class="col-md-5 order-2 wow fadeInLeft" data-wow-delay=".1s">
+        <h3>Mindstorms Robot Tutorial</h3>
+        
+            <p>This tutorial explains how to use Eclipse Sirius to create a graphical modeling tool for a Mindstorms Robot.</p>
+            <p>It is composed of four parts, illustrated with videos, from the definition of the domain model to the creation of a simple graphical diagram with navigation and creation tools, including the customization of properties views.</p>
+            
+        <p><a href="https://wiki.eclipse.org/Sirius/Tutorials/Mindstorms" target="_blank">Start the tutorial   <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i></a></p>
+    </div>
+    <div class="col-md-7 popup-gallery text-center order-1 wow fadeInUp" data-wow-delay=".2s">
+        <a href="images/screenshots/screenshot_compartments_tutorial.png" target="_blank" title="Sirius - Mindstorms Robot Tutorial"><img src="images/screenshots/screenshot_compartments_tutorial.png" class="shadow" alt="Sirius - Mindstorms Robot Tutorial"></a>
+    </div>
+</div>
+    </div>
+</section>
+
+<section id="support" class="text-center bg_lightest_grey">
+    <div class="container">
+        <h2 class="title wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".2s">Need Support?</h2> 
+<h3 class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s"></h3>
+<p class="wow fadeInDown" data-wow-duration="500ms" data-w ow-delay=".4s"></p>
+
+
+
+
+    <div class="row">
+        <div class="col-md-4 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-file-alt fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Documentation</h4>
+        <p>Learn how to use Sirius, thanks to online complete user guides and reference manuals</p>
+        <p><a class="" href="http://www.eclipse.org/sirius/doc/" target="">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
+
+
+
+
+        <div class="col-md-4 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-comment fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Forum</h4>
+        <p>Find relevant posts/answers. No solution yet to your concern? Come and ask your question</p>
+        <p><a class="" href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=262" target="_blank">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
+
+
+
+
+        <div class="col-md-4 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-life-ring fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Professional support</h4>
+        <p>Obeo, co-leader of Sirius, provides training, expertise, custom development and support plans</p>
+        <p><a class="" href="https://www.obeodesigner.com/en/services" target="_blank">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
+
+
+
+    </div>
+    </div>
+</section>
+
+<footer>
+  <div class="container">
+      <div class="row">    
+        
+<div class="col-md-3">
+    <p><a href="http://www.eclipse.org/"  target="_blank"><img src="/sirius/common_assets/images/logos/logo-eclipse-foundation.png" alt="Eclipse Foundation logo"></a></p>
+    <p id="copyright">Copyright © 2021 Eclipse Foundation, Inc.<br>All Rights Reserved.</p>
+</div>
+
+<div class="col-md-3">
+    <h6>Eclipse Foundation</h6>
+    <ul>
+        <li><a href="http://www.eclipse.org/legal/privacy.php" target="_blank">Privacy Policy</a></li>
+        <li><a href="http://eclipse.org/" target="_blank">Eclipse</a></li>
+        <li><a href="http://www.eclipse.org/legal/termsofuse.php" target="_blank">Terms of Use</a></li>
+        <li><a href="http://www.eclipse.org/legal/copyright.php" target="_blank">Copyright Agent</a></li>
+        <li><a href="http://www.eclipse.org/legal/" target="_blank">Legal</a></li>
+        <li><a href="http://www.eclipse.org/org/foundation/contact.php" target="_blank"> Contact Us</a></li>
+    </ul>
+</div>
+
+        
+<div class="col-md-3">
+    <h6>Project Links</h6>
+    <ul>
+        <li><a href="https://projects.eclipse.org/projects/modeling.sirius" target="_blank">About this project</a></li>
+        <li><a href="https://wiki.eclipse.org/Sirius" target="_blank">Wiki</a></li>
+        <li><a href="https://www.eclipse.org/forums/index.php?t=thread&frm_id=262" target="_blank">Forum</a></li>
+        <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius" target="_blank">Bugs</a></li>
+        <li><a href="https://git.eclipse.org/c/sirius/org.eclipse.sirius.git" target="_blank">Source Code</a></li>
+    </ul>
+</div>
+    </div>
+  </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" defer></script>
+
+<script src="/sirius//common_assets/js/wow.min.js" defer></script>
+<script src="/sirius//common_assets/js/main.js" defer></script>
+<script src="/sirius//common_assets/js/magnific-popup.min.js" defer></script>
+<script src="/sirius//common_assets/js/magnific-popup.video.js" defer></script>
+<!-- Call wow function -->
+<script>
+        jQuery(document).ready(function(){
+            "use strict";
+            new WOW().init();
+            jQuery('.smooth-scroll').scrollingTo();
+
+            var url = window.location;
+            // Will only work if string in href matches with location
+            jQuery('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+            // Will also work for relative and absolute hrefs
+            jQuery('ul.nav a').filter(function() {
+                return this.href == url;
+            }).parent().addClass('active');
+
+            jQuery(".nav a").on("click", function(){
+                jQuery(".nav").find(".active").removeClass("active");
+                jQuery(this).parent().addClass("active");
+            });
+        });
+</script>
+  
+  </body>
 </html>

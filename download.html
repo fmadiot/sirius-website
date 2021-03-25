@@ -1,149 +1,379 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="Content-language" content="en">
-	<meta name="description" content="Graphical Editors for your DSL">
 
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="angular/sirius.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <title>Sirius | Download</title>
+  
+    <meta name="description" content="The Eclipse Foundation - home to a global community, the Eclipse IDE, Jakarta EE and over 350 open source projects, including runtimes, tools and frameworks">
+    <link rel="shortcut icon" type="image/png" href="/sirius/images/favicon_sirius.ico"/>
+  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-	<link rel="icon" type="image/png" href="favicon.ico" />
-	<title>Sirius - Download</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://use.fontawesome.com/ef6567f233.css">
-	<script src="https://kit.fontawesome.com/16edf37727.js" crossorigin="anonymous"></script>
-	<!-- Eclipse Foundation Google Tag Manager -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="/sirius/common_assets/css/styles.css">
+    <link rel="stylesheet" href="/sirius/common_assets/css/animate.css">
+    <link rel="stylesheet" href="/sirius/common_assets/css/media.css"/>
+    <link rel="stylesheet" href="/sirius/assets/css/main.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/sirius/common_assets/js/magnific-popup.video.js"></script>
+    <script src="/sirius/common_assets/js/magnific-popup.min.js"></script>
+
+    <!-- Eclipse Foundation Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
-	<!-- End Google Tag Manager -->
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+        <!-- End Google Tag Manager -->  
+        
+        <!-- Eclipse Foundation cookie consent: -->
+        <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+        <script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>  
+        
+        <script src= "/sirius/assets/js/ga.js"></script>
 
-	<!-- Eclipse Foundation cookie consent: -->
-	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
-	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
-	<script type="text/javascript" src="js/ga.js"></script>
+    <!-- Old version of font awesome for some icons -->
+    <script src="https://use.fontawesome.com/b51f77a16a.js"></script>    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <script>
+        jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+    </script>
+    <!-- Triggers tooltips -->
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('.hasTooltip').tooltip();
+        });
+    </script>
 </head>
+  
+  <body>
 
-<body ng-app="sirius" ng-controller="main" class="cloak">
-<ng-include src="'angular/blocks/header.html'"></ng-include>
+    <!-- Navigation -->
+<header id="top-bar" class="navbar navbar-expand-xl fixed-top">
+    <div class="container">
+        <div id="super-menu" class="d-flex">
+            <nav class="main-menu ml-auto">
+                <ul class="nav navbar-nav">
+                    <li class="current"><a href=".">Sirius Desktop</a></li>
+                    <li><a class="txt_purple" href="sirius-web">Sirius Web</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex" id="main-menu-items">
+            <a class="navbar-brand" href="/sirius">
+                <img src="/sirius/common_assets/images/logos/logo_sirius.png" alt="Logo Sirius">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> 
+            <nav class="navbar-collapse collapse" id="navbarResponsive">
+                <div class="main-menu ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="overview">Overview</a>
+                        </li>
+                        <li>
+                            <a href="gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="getstarted">Get Started</a>
+                        </li>
+                        <li>
+                            <a href="features">Features</a>
+                        </li>
+                        <li>
+                            <a href="resource-center">Resources</a>
+                        </li>
+                        <li>
+                            <a href="support">Support</a>
+                        </li>
+                        <li id="dwnld">
+                            <a href="download">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="sirius-web-bar" class="bg_purple">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-xs-12 my-auto">
+                <p class="cloud txt_white text-center"><i class="fas fa-cloud" aria-hidden="true"></i></p>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <h5 class="txt_white">Web version is now available!</h5>
+                <p class="descr txt_white">What you like in Sirius Desktop, in a modern cloud-based stack.</p>
+            </div>                                
+            <div class="col-md-3 col-xs-12 my-auto">
+                <p><a class="text-uppercase txt_yellow" href="sirius-web" target="">Discover Sirius Web <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section>
+    <div class="container">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+            <a class="nav-link active" href="#ready_use_package" data-toggle="pill" aria-controls="pills-profile" aria-selected="true">Ready-to-Use Package</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#drag_to_install" data-toggle="pill" aria-controls="pills-profile" aria-selected="false">Drag to Install</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#marketplace" data-toggle="pill" aria-controls="pills-profile" aria-selected="false">Marketplace</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#update_site" data-toggle="pill" aria-controls="pills-profile" aria-selected="false">Update Site</a>
+            </li>
+        </ul>
 
-<div id="body_wrapper">
-	<h1 class="page_title">Download Sirius Desktop</h1>
+        <div class="tab-content text-center" id="pills-tabContent">  
+            <div class="tab-pane fade show active" id="ready_use_package">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-download fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Download a Ready-to-Use Package</h4>
+        <p>This free package has been created by Sirius commiters to facilitate your first steps with Sirius. It contains Sirius, neatly integrated with other Open Source technologies (EMF Compare, eGit and SWTBot).</p>
+        <p><a class="btn btn-default" href="http://www.obeodesigner.com/download" target="">Download Obeo Designer Community <i class="" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
 
-	<div id="tabs_content_container">
 
-		<div id="tab_eclipse" class="tab_content" style="display: block">
-			<div class="dwnld_wrapper">
 
-				<ul class="installnav" ng-init="tab = 1">
-					<li id="eclipse_package" ng-class="{'active': tab === 1}">
-						<a ng-click="tab = 1">
-							<span>
-								<img src="images/download/icon_packages.png" alt="Eclipse ready-to-Use package" />
-								<p>Ready-to-Use Package</p>
-							</span>
-						</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-users fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Need collaborative features?</h4>
+        <p>Obeo Designer Team edition facilitates the collaboration with your other team members. Models and representations (diagrams, tables, trees) created with Sirius are stored in a shared repository.</p>
+        <p><a class="" href="https://www.obeodesigner.com/en/collaborative-features" target="">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
 
-						<div id="eclipse_package_content" ng-show="tab === 1">
-							<h2>Download a Ready-to-Use Package</h2>
 
-							<p>This free package has been created by Sirius commiters to facilitate your first steps with Sirius. It contains Sirius, neatly integrated with other Open Source technologies (EMF Compare, eGit and SWTBot).</p>
-							<p><a class="btn btn_large" href="http://www.obeodesigner.com/download" target="_blank">Download Obeo Designer Community</a></p>
-							<br />
 
-							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
-							<ng-include src="'angular/blocks/collab_web_block.html'"></ng-include>
+                    <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fab fa-html5 fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Need to run in a Web Browser?</h4>
+        <p>Discover Sirius Web, the open-source sub-project to easily create and deploy studios to the web. All the principles you like in Sirius Desktop, available on a modern cloud-based stack.</p>
+        <p><a class="" href="https://www.eclipse.org/sirius/sirius-web.html" target="">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
 
-						</div>
-					</li>
 
-					<li id="eclipse_drag2install" ng-class="{'active': tab === 2}">
-						<a ng-click="tab = 2">
-							<span>
-								<img src="images/download/icon_drag2install.png" alt="Drag to Install Icon" />
-								<p>Drag to Install</p>
-							</span>
-						</a>
-						<div id="content_drag2install_1" class="ng-hide" ng-show="tab === 2">
-							<h2>Install Sirius with the Drag'n Drop Install</h2>
-							<p><a id="install_1" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" ng-mouseenter="popupTooltip = true" ng-mouseleave="popupTooltip = false">
-								<img src="images/download/drag2install_button.png" id="drag2install_img" /></a>
-							</p>
-							<div class="drag2install_tooltip" ng-show="popupTooltip === true">
-								<p>Drag to your running Eclipse workspace!</p>
-							</div>
-							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
-							<br />
 
-							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
-							<ng-include src="'angular/blocks/collab_web_block.html'"></ng-include>
+                </div>
+            </div>
 
-						</div>
-					</li>
+            <div class="tab-pane fade" id="drag_to_install">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-mouse-pointer fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Install Sirius with the Drag'n Drop Install</h4>
+        <p><b>Requirement:</b> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected.</p>
+        <p><a class="btn btn-default" href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" target="">Drag to Install <i class="" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
 
-					<li id="eclipse_install_emc" ng-class="{'active': tab === 3}">
-						<a ng-click="tab = 3">
-							<span>
-								<img src="images/download/icon_emc.png" alt="Marketplace Icon">
-								<p>Marketplace</p>
-							</span>
-						</a>
-						<div id="content_emc_1" class="ng-hide" ng-show="tab === 3">
-							<h2>Install Sirius with Eclipse Marketplace</h2>
 
-							<p>Browse the Marketplace, choose Sirius and just click on the install button.</p>
-							<p><img src="images/download/install_marketplace_module.png" alt="Obeo Marketplace"></p>
 
-							<p><strong>Requirement:</strong> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected. For more details, please refer to <a href="http://marketplace.eclipse.org/marketplace-client-intro" target="_blank">Introducing the Eclipse Marketplace Client</a> installation guide.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-users fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Need collaborative features?</h4>
+        <p>Obeo Designer Team edition facilitates the collaboration with your other team members. Models and representations (diagrams, tables, trees) created with Sirius are stored in a shared repository.</p>
+        <p><a class="" href="https://www.obeodesigner.com/en/collaborative-features" target="">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
 
-							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
 
-						</div>
-					</li>
 
-					<li id="eclipse_updatesite" ng-class="{'active': tab === 4}">
-						<a ng-click="tab = 4">
-							<span>
-								<img src="images/download/icon_updatesite.png" alt="Drag to Install Icon" />
-								<p>Update Site</p>
-							</span>
-						</a>
+                    <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fab fa-html5 fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Need to run in a Web Browser?</h4>
+        <p>Discover Sirius Web, the open-source sub-project to easily create and deploy studios to the web. All the principles you like in Sirius Desktop, available on a modern cloud-based stack.</p>
+        <p><a class="" href="https://www.eclipse.org/sirius/sirius-web.html" target="">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
 
-						<div id="content_updatesite_1" class="ng-hide" ng-show="tab === 4">
-							<h2>Install Sirius from Update Site</h2>
 
-							<h3>Latest Release</h3>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="marketplace">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-xs-12 wow fadeInLeft animated">
+                        <div>
+                            <i class="fas fa-store fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+                        </div>                                
+                        <div>
+                            <h4>Install Sirius with Eclipse Marketplace</h4>
+                            <p>Browse the Marketplace, choose Sirius and just click on the install button.</p>
+                            <p><img src="images/download/install_marketplace_module.png" alt="Obeo Marketplace"></p>
+                            <p><b>Requirement:</b> Please make sure that Marketplace is already installed in your Eclipse, otherwise these installation instructions won't work as expected. For more details, please refer to <a href="http://marketplace.eclipse.org/marketplace-client-intro" target="_blank">Introducing the Eclipse Marketplace Client</a> installation guide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="update_site">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div>
+                            <p><i class="fas fa-redo fa-3x pa2  txt_indigo" aria-hidden="true"></i></p>
+                        </div>                                
+                        <div>
+                            <h4>Install Sirius from Update Site</h4>
+                            <br>
+                            <h5>Latest Release</h5>
 							<p>Add this URL to your Eclipse Installation to reach Sirius Update Site.</p>
-							<input type="text" value="http://download.eclipse.org/sirius/updates/releases/6.4.2/2020-06" />
-							<p>You can also download the corresponding <a href="http://download.eclipse.org/sirius/updates/releases/6.4.2/org.eclipse.sirius-6.4.2-2020-06.zip">zipped archive</a> for offline installation.</p>
-							<br />
-
-							<h3>Latest Nightly</h3>
+							<p><input type="text" value="http://download.eclipse.org/sirius/updates/releases/6.3.4/2020-06"></p>
+							<p>You can also download the corresponding <a href="http://download.eclipse.org/sirius/updates/releases/6.3.4/org.eclipse.sirius-6.3.4-2020-06.zip">zipped archive</a> for offline installation.</p>
+							<br>
+							<h5>Latest Nightly</h5>
 							<p>Add this URL to your Eclipse Installation to reach Sirius Update Site.</p>
-							<input type="text" value="http://download.eclipse.org/sirius/updates/nightly/latest/2020-06" />
-							<br />
-							<br />
+                            <p><input type="text" value="http://download.eclipse.org/sirius/updates/nightly/latest/2020-06"></p>
+							<br>
+							<br>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+          
+        </div>
+        </div>
+    </div>
+</section>
 
-							<ng-include src="'angular/blocks/help_block.html'"></ng-include>
+<section class="bg_lightest_grey text-center">
+    <h2 class="title wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".2s">Need help to deploy Sirius?</h2> 
+<h3 class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s"></h3>
+<p class="wow fadeInDown" data-wow-duration="500ms" data-w ow-delay=".4s"></p>
 
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
 
-		</div>
 
-</div> <!-- Fin body_wrapper -->
 
-<div class="clear"></div>
-<ng-include src="'angular/blocks/footer.html'"></ng-include>
-<ng-include src="'angular/blocks/call2action.html'"></ng-include>
-</body>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xs-12 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+    <div>
+        <i class="fas fa-life-ring fa-3x pa2 txt_indigo" aria-hidden="true"></i>
+    </div>                                
+    <div>
+        <h4>Training / Custom Development / Support</h4>
+        <p>Obeo, co-leader of Sirius, provides professional services from the set-up to the deployment of your industrial-strength modeling workbenches created with Sirius.</p>
+        <p><a class="" href="https://www.obeodesigner.com/en/services" target="">Learn more <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
+        </a></p>                                
+    </div>
+</div>
+
+
+
+    </div>
+</section>
+
+<footer>
+  <div class="container">
+      <div class="row">    
+        
+<div class="col-md-3">
+    <p><a href="http://www.eclipse.org/"  target="_blank"><img src="/sirius/common_assets/images/logos/logo-eclipse-foundation.png" alt="Eclipse Foundation logo"></a></p>
+    <p id="copyright">Copyright © 2021 Eclipse Foundation, Inc.<br>All Rights Reserved.</p>
+</div>
+
+<div class="col-md-3">
+    <h6>Eclipse Foundation</h6>
+    <ul>
+        <li><a href="http://www.eclipse.org/legal/privacy.php" target="_blank">Privacy Policy</a></li>
+        <li><a href="http://eclipse.org/" target="_blank">Eclipse</a></li>
+        <li><a href="http://www.eclipse.org/legal/termsofuse.php" target="_blank">Terms of Use</a></li>
+        <li><a href="http://www.eclipse.org/legal/copyright.php" target="_blank">Copyright Agent</a></li>
+        <li><a href="http://www.eclipse.org/legal/" target="_blank">Legal</a></li>
+        <li><a href="http://www.eclipse.org/org/foundation/contact.php" target="_blank"> Contact Us</a></li>
+    </ul>
+</div>
+
+        
+<div class="col-md-3">
+    <h6>Project Links</h6>
+    <ul>
+        <li><a href="https://projects.eclipse.org/projects/modeling.sirius" target="_blank">About this project</a></li>
+        <li><a href="https://wiki.eclipse.org/Sirius" target="_blank">Wiki</a></li>
+        <li><a href="https://www.eclipse.org/forums/index.php?t=thread&frm_id=262" target="_blank">Forum</a></li>
+        <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=6776579&classification=Modeling&query_format=advanced&product=Sirius" target="_blank">Bugs</a></li>
+        <li><a href="https://git.eclipse.org/c/sirius/org.eclipse.sirius.git" target="_blank">Source Code</a></li>
+    </ul>
+</div>
+    </div>
+  </div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" defer></script>
+
+<script src="/sirius//common_assets/js/wow.min.js" defer></script>
+<script src="/sirius//common_assets/js/main.js" defer></script>
+<script src="/sirius//common_assets/js/magnific-popup.min.js" defer></script>
+<script src="/sirius//common_assets/js/magnific-popup.video.js" defer></script>
+<!-- Call wow function -->
+<script>
+        jQuery(document).ready(function(){
+            "use strict";
+            new WOW().init();
+            jQuery('.smooth-scroll').scrollingTo();
+
+            var url = window.location;
+            // Will only work if string in href matches with location
+            jQuery('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+            // Will also work for relative and absolute hrefs
+            jQuery('ul.nav a').filter(function() {
+                return this.href == url;
+            }).parent().addClass('active');
+
+            jQuery(".nav a").on("click", function(){
+                jQuery(".nav").find(".active").removeClass("active");
+                jQuery(this).parent().addClass("active");
+            });
+        });
+</script>
+  
+  </body>
 </html>
