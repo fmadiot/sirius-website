@@ -57,7 +57,7 @@
                     "url": "https://wiki.eclipse.org/Sirius/Tutorials/Mindstorms"
                 },
                 {
-                    "nom": "Github",
+                    "nom": "GitHub",
                     "url": "https://github.com/mbats/mindstorms"
                 }
             ]
@@ -235,8 +235,111 @@
             ]
         }
     },
-
-
+    {
+        "medias": {
+            "mainSrc": "images/gallery/bpmn-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "BPMN Designer",
+            "author": "Obeo",
+            "description": "<p>BPMN Designer is based on the BPMN Domain Model of Eclipse Modeling MDT project.</p><p>It supports Flow Objects (Events, Activities, Gateways), Connecting Objects (Sequence Flow, Message Flow, Association), Swim lanes (Pool, Lane) and Artifacts (Data Object, Group, Annotation)</p>",
+            "tags": [
+                {
+                    "nom": "Business Process",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/BPMN-Designer"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/database-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Database Designer",
+            "author": "Obeo",
+            "description": "<p>Database Designer is a graphical designer to define or edit relational tables and relations.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/InformationSystem"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/cinematic-1.jpg",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+                {"src": "images/gallery/FlowDiagram_01.png"}
+            ]
+        },
+        "infos": {
+            "title": "Cinematic Designer",
+            "author": "Obeo",
+            "description": "Cinematic Designer allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/ObeoNetwork/InformationSystem"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/eip-1.png",
+            "imgAlt": "Put image name here",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "EIP Designer",
+            "author": "Laurent Broudoux",
+            "description": "<p>A Sirius designer for Enterprise Integration Patterns.</p><p>It allows you to design integration routes using the common patterns and vocabulary used within Enterprise Application Integration or Enterprise Services Bus solutions.</p>",
+            "tags": [
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/lbroudoux/eip-designer"
+                },
+                {
+                    "nom": "InfoQ",
+                    "url": "http://www.infoq.com/articles/eip-designer"
+                }
+            ]
+        }
+    },
     {
         "medias": {
             "mainSrc": "images/gallery/smartmdsd-1.jpg",
@@ -371,7 +474,6 @@
             ]
         }
     },
-
     {
         "medias": {
             "mainSrc": "images/gallery/trades-1.png",
@@ -395,13 +497,144 @@
             ],
             "lnks": [
                 {
-                    "nom": "Github project",
+                    "nom": "GitHub project",
                     "url": "https://github.com/iai-cyber/TRADES"
                 }
             ]
         }
     },
-    
+    {
+        "medias": {
+            "mainSrc": "images/gallery/ontocase4g-1.png",
+            "imgAlt": "OntoCASE4G-OWL",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "OntoCASE4G-OWL",
+            "author": "Cotechnoe",
+            "description": "<p>OntoCASE4G-OWL is a tool supporting the Graphical Ontology Web Language (G-OWL), a visual syntax for the graphical modeling and visualization of OWL 2 or RDFS ontologies.</p>",
+            "tags": [
+                {
+                    "nom": "Ontology",
+                    "url": "#"
+                },
+                {
+                    "nom": "Semantic Web",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/Cotechnoe/OntoCASE4G-OWL"
+                },
+                {
+                    "nom": "A Complete Visual Syntax for OWL 2 Ontology Modeling and Communication",
+                    "url": "http://www.semantic-web-journal.net/system/files/swj2550.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/aws-workbench-1.jpg",
+            "imgAlt": "AWS Workbench",
+            "thumbs": [
+                {"src": "images/gallery/aws-workbench-1.jpg"},
+                {"src": "images/gallery/aws-workbench-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "AWS Workbench",
+            "author": "RKVS Raman",
+            "description": "<p>AWS Workbench is an ArchOps environment for designing and deploying AWS Infrastructure. It provides a \"What You See Is What Is Deployed\" (WYSIWID) view of infrastructure that improves cloud architecture design and deployment process.</p>",
+            "tags": [
+                {
+                    "nom": "Cloud Computing",
+                    "url": "#"
+                },
+                {
+                    "nom": "Software Development",
+                    "url": "#"
+                },
+                {
+                    "nom": "DevOps",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://aws-workbench.github.io/"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/sodalite-1.png",
+            "imgAlt": "Sodalite IDE",
+            "thumbs": [
+                {"src": "images/gallery/sodalite-1.png"},
+                {"src": "images/gallery/sodalite-2.png"}
+            ]
+        },
+        "infos": {
+            "title": "Sodalite IDE",
+            "author": "ATOS Spain",
+            "description": "<p>Sodalite IDE is a tool suite that assists the users in the authoring of application deployment topology and infrastructure models for Infrastrcuture as Code (IaC). With focus on quality and performance, the IDE enables the faster and simpler development of IaC by offering features such as in-sync multiple model viewpoints , smart context-aware content assistance and semantic validation, powered by a Knowledge Base.</p>",
+            "tags": [
+                {
+                    "nom": "Infrastructure as Code",
+                    "url": "#"
+                },
+                {
+                    "nom": "Cloud Computing",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "GitHub",
+                    "url": "https://github.com/SODALITE-EU/ide"
+                },
+                {
+                    "nom": "A Smart Development Environment for Infrastructure as Code",
+                    "url": "https://www.swforum.eu/sites/default/files/1stSwForumWs_paper_5.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "medias": {
+            "mainSrc": "images/gallery/hsasd-1.png",
+            "imgAlt": "Hospital Situational Awareness System Design",
+            "thumbs": [
+            ]
+        },
+        "infos": {
+            "title": "Hospital Situational Awareness System Design",
+            "author": "ELTA Systems",
+            "description": "<p>This tool is a functional, working prototype of a new system designed for helping hospitals to support their effective operation, management and decision making.</p>",
+            "tags": [
+                {
+                    "nom": "Rapid Prototyping",
+                    "url": "#"
+                },
+                {
+                    "nom": "Healthcare",
+                    "url": "#"
+                }
+            ],
+            "lnks": [
+                {
+                    "nom": "Modeling for Rapid Systems Prototyping: Hospital Situational Awareness System Design†",
+                    "url": "https://www.mdpi.com/2079-8954/9/1/12"
+                }
+            ]
+        }
+    },
     {
         "medias": {
             "mainSrc": "images/gallery/iris-1.png",
@@ -551,7 +784,7 @@
         "infos": {
             "title": "ASCET-CONGRA",
             "author": "ETAS GmbH",
-            "description": "<p>ETAS ASCET-CONGRA (CONstraint GRAph) allows function developers to depict mathematically describable relationships using interactive graphs. These describe the overall system based on equations, differential equations, maps, and curves. The tool checks all input for computability, automatically carries out the mathematical work in the background, and offers various analyses and functions that serve to implement, correctly and efficiently, the system to be developed. It includes interaction with an XText based model and cooperation with a textual representation.</p>",
+            "description": "<p>ETAS SCODE-CONGRA (CONstraint GRAph) allows function developers to depict mathematically describable relationships using interactive graphs. These describe the overall system based on equations, differential equations, maps, and curves. The tool checks all input for computability, automatically carries out the mathematical work in the background, and offers various analyses and functions that serve to implement, correctly and efficiently, the system to be developed. It includes interaction with an XText based model and cooperation with a textual representation.</p>",
             "tags": [
                 {
                     "nom": "Systems Engineering",
@@ -573,7 +806,7 @@
             "lnks": [
                 {
                     "nom": "Project Page",
-                    "url": "https://www.etas.com/fr/products/ascet_congra.php"
+                    "url": "https://www.etas.com/fr/produits/scode-congra.php"
                 }
             ]
         }
@@ -1099,35 +1332,6 @@
     },
     {
         "medias": {
-            "mainSrc": "images/gallery/eip-1.png",
-            "imgAlt": "Put image name here",
-            "thumbs": [
-            ]
-        },
-        "infos": {
-            "title": "EIP Designer",
-            "author": "Laurent Broudoux",
-            "description": "<p>A Sirius designer for Enterprise Integration Patterns.</p><p>It allows you to design integration routes using the common patterns and vocabulary used within Enterprise Application Integration or Enterprise Services Bus solutions.</p>",
-            "tags": [
-                {
-                    "nom": "Software Development",
-                    "url": "#"
-                }
-            ],
-            "lnks": [
-                {
-                    "nom": "GitHub",
-                    "url": "https://github.com/lbroudoux/eip-designer"
-                },
-                {
-                    "nom": "InfoQ",
-                    "url": "http://www.infoq.com/articles/eip-designer"
-                }
-            ]
-        }
-    },
-    {
-        "medias": {
             "mainSrc": "images/gallery/POOSL-1.png",
             "imgAlt": "Put image name here",
             "thumbs": [
@@ -1244,31 +1448,6 @@
     },
     {
         "medias": {
-            "mainSrc": "images/gallery/bpmn-1.png",
-            "imgAlt": "Put image name here",
-            "thumbs": [
-            ]
-        },
-        "infos": {
-            "title": "BPMN Designer",
-            "author": "Obeo",
-            "description": "<p>BPMN Designer is based on the BPMN Domain Model of Eclipse Modeling MDT project.</p><p>It supports Flow Objects (Events, Activities, Gateways), Connecting Objects (Sequence Flow, Message Flow, Association), Swim lanes (Pool, Lane) and Artifacts (Data Object, Group, Annotation)</p>",
-            "tags": [
-                {
-                    "nom": "Business Process",
-                    "url": "#"
-                }
-            ],
-            "lnks": [
-                {
-                    "nom": "GitHub",
-                    "url": "https://github.com/ObeoNetwork/BPMN-Designer"
-                }
-            ]
-        }
-    },
-    {
-        "medias": {
             "mainSrc": "images/gallery/intelhome-1.png",
             "imgAlt": "Put image name here",
             "thumbs": [
@@ -1341,56 +1520,6 @@
                 {
                     "nom": "Slides by O. Beaudoux and M. Clavreul",
                     "url": "http://api.ning.com/files/S7hsBCvqKXFwZfsIm-52lXSg7wS3rubAfJxbJXGt9pJJuv7*9bhF6zx-vZJQlFKO6hhrMQrh7hHloLguVawWWsPlYR6hcdhI/LoaDesigner.pdf"
-                }
-            ]
-        }
-    },
-    {
-        "medias": {
-            "mainSrc": "images/gallery/cinematic-1.jpg",
-            "imgAlt": "Put image name here",
-            "thumbs": [
-            ]
-        },
-        "infos": {
-            "title": "Cinematic Designer",
-            "author": "Obeo",
-            "description": "Cinematic Designer allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.",
-            "tags": [
-                {
-                    "nom": "Software Development",
-                    "url": "#"
-                }
-            ],
-            "lnks": [
-                {
-                    "nom": "GitHub",
-                    "url": "https://github.com/ObeoNetwork/InformationSystem"
-                }
-            ]
-        }
-    },
-    {
-        "medias": {
-            "mainSrc": "images/gallery/database-1.png",
-            "imgAlt": "Put image name here",
-            "thumbs": [
-            ]
-        },
-        "infos": {
-            "title": "Database Designer",
-            "author": "Obeo",
-            "description": "<p>Database Designer is a graphical designer to define or edit relational tables and relations.</p>",
-            "tags": [
-                {
-                    "nom": "Software Development",
-                    "url": "#"
-                }
-            ],
-            "lnks": [
-                {
-                    "nom": "GitHub",
-                    "url": "https://github.com/ObeoNetwork/InformationSystem"
                 }
             ]
         }
