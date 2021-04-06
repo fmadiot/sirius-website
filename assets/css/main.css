@@ -17,7 +17,7 @@ body {padding-top: 105px;}
 #top-bar #super-menu {
     margin-bottom: 10px;
 }
-a, .popup-gallery a:hover, .linked_title a:hover, .bg_indigo a:focus, #top-bar .main-menu li a:hover, #top-bar .main-menu li#dwnld > a {
+a, .txt_fushia, .popup-gallery a:hover, .linked_title a:hover, .bg_indigo a:focus, #top-bar .main-menu li a:hover, #top-bar .main-menu li#dwnld > a {
 	color: #be1a78;
 }
 #top-bar .main-menu li a {
@@ -32,11 +32,12 @@ padding-bottom: 4px;
     background-color: #be1a78;
     color: #fff;
 }
-section#sirius-web-bar {padding: 10px !important;}
-#sirius-web-bar .container .row {padding: 5px 0;}
+section#sirius-web-bar, section.c2a-bar {padding: 10px !important;}
+#sirius-web-bar .container .row, section.c2a-bar .container .row {padding: 5px 0;}
 #sirius-web-bar p.cloud {font-size: 40px;}
 #sirius-web-bar p, #sirius-web-bar h5 {margin-bottom: 0;}
 #sirius-web-bar p.descr {font-size: 12px;}
+section.c2a-bar .btn {margin-top: 0;}
 
 .bg_indigo a {color:#FBB800;}
 .btn-default {
