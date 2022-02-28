@@ -1336,12 +1336,10 @@
             "imgAlt": "Put image name here",
             "thumbs": [
                 {"src": "images/gallery/POOSL-2.png"},
-                {"src": "images/gallery/POOSL-3.png"},
-                {"src": "images/gallery/POOSL-4.png"}
-            ]
+                {"src": "images/gallery/POOSL-3.png"}            ]
         },
         "infos": {
-            "title": "POOSL IDE",
+            "title": "POOSL",
             "author": "TNO-ESI",
             "description": "<p>POOSL (Parallel Object-Oriented Specification Language) is an expressive industry-proven modelling language with a formal semantics to describe both structure and concurrent, real-time and stochastic behavior. It exploits a combination of Xtext with Sirius to realize synchronized textual and graphical editing of POOSL models.</p>",
             "tags": [
@@ -1356,8 +1354,8 @@
             ],
             "lnks": [
                 {
-                    "nom": "POOSL IDE",
-                    "url": "http://poosl.esi.nl"
+                    "nom": "POOSL",
+                    "url": "https://www.poosl.org/"
                 }
             ]
         }
