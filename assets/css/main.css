@@ -77,6 +77,16 @@ section.c2a-bar .btn {margin-top: 0;}
 #bottom-bar .btn{
     padding: 7px 20px;
 }
+
+#siriuscon {
+    margin: 0;
+    background:url('../../images/banners/intro_banner_live.jpg') no-repeat center center;
+    background-size:cover;
+    width:100%;
+    height: 550px;
+    padding-top:2%;
+    padding-bottom:0;
+}
 .cc-color-override-1434350510.cc-revoke {
     color: #fff !important;
     background-color: #be1a78 !important;
