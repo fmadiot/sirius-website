@@ -50,6 +50,15 @@
 									<li>
 										<a href="#node_zorder">Change z-order of nodes</a>
 									</li>
+									<li>
+										<a href="#align">Align elements</a>
+									</li>
+									<li>
+										<a href="#distribute">Distribute elements</a>
+									</li>
+									<li>
+										<a href="#reset_origin">Reset Diagram or Container Origin</a>
+									</li>
 								</ol>
 							</li>
 							<li>
@@ -78,22 +87,6 @@
 									</li>
 									<li>
 										<a href="#edge_label_attachment">Display attachment link between edge and its labels</a>
-									</li>
-								</ol>
-							</li>
-							<li>
-								<a href="#distribute">Distribute elements</a>
-								<ol style="list-style: disc;">
-									<li>
-										<a href="#Firstandlastshapes">First and last shapes</a>
-									</li>
-								</ol>
-							</li>
-							<li>
-								<a href="#reset_origin">Reset Diagram or Container Origin</a>
-								<ol style="list-style: disc;">
-									<li>
-										<a href="#Specificcases">Specific cases</a>
 									</li>
 								</ol>
 							</li>
@@ -138,7 +131,7 @@
 								<a href="#copy_paste_format">Copy/paste of format</a>
 								<ol style="list-style: disc;">
 									<li>
-										<a href="#PasteLayout">Paste Layout</a>
+										<a href="#paste_layout">Paste Layout</a>
 									</li>
 									<li>
 										<a href="#PasteStyle">Paste Style</a>
@@ -449,6 +442,109 @@
 		<p>	
 			<img border="0" src="images/nodesZOrderContextualMenu.png"/>
 		</p>
+		<h4 id="align">Align elements</h4>
+		<p>Six actions allow to distribute shapes OR label of edges: </p>
+		<p>
+			<img border="0" src="images/alignTabbarMenus.png"/>
+		</p>
+		<ul>
+			<li>Align Left: Aligns all the left side of the selected elements to the left side of the last selected element, ie the primary selection.</li>
+			<li>Align Center: Aligns all the center of the selected elements to the center of the last selected element, ie the primary selection.</li>
+			<li>Align Right: Aligns all the right side of the selected elements to the right side of the last selected element, ie the primary selection.</li>
+			<li>Align Top: Aligns all the top side of the selected elements to the top side of the last selected element, ie the primary selection.</li>
+			<li>Align Middle: Aligns all the middle of the selected elements to the middle of the last selected element, ie the primary selection.</li>
+			<li>Align Bottom: Aligns all the bottom side of the selected elements to the bottom side of the last selected element, ie the primary selection.</li>
+		</ul>
+		<p>These actions are also available in contextual menu 
+			<em>Format/Align</em> or in menu bar _ Diagram/Align_.
+		</p>
+		<p>The selection must not contain a mix of shapes and label of edges. In this case, the actions will be disabled.</p>
+		<p>Only the top level shapes of the selection are retained for these actions: if inner shapes, border labels or edges are selected, they are ignored.
+			<br/>At least 2 shapes, or 2 labels of edges, should be selected to enable align actions.
+			<br/>These actions are enabled only if the selected shapes have the same direct parent. There is no real constraint, on this topic, concerning labels of edges, because they are all &#8220;contained&#8221; in the diagram.
+			<br/>These actions are not enabled for border nodes.
+		</p>
+		<p>In sequence diagram, the align actions are only available on labels of edge. Indeed, in sequence diagram, the order, and therefore the alignment, is constrained by the sequence of the elements.</p>
+		<h4 id="distribute">Distribute elements</h4>
+		<p>Four actions allow to distribute shapes OR label of edges: </p>
+		<p>
+			<img border="0" src="images/distribute_initialState.png"/>
+		</p>
+		<ul>
+			<li>Distribute centers horizontally: Distributes the selected elements so that the gap between horizontal centers of each selected elements will be the same.</li>
+		</ul>
+		<p>
+			<img border="0" src="images/distribute_Centers.png"/>
+		</p>
+		<ul>
+			<li>Distribute gaps horizontally: Distributes the selected elements so that the gap between the left side and the right side of each consecutive elements will be the same.</li>
+		</ul>
+		<p>
+			<img border="0" src="images/distribute_WithUniformGap.png"/>
+		</p>
+		<ul>
+			<li>Distribute centers vertically: Distributes the selected elements so that the gap between vertical centers of each selected elements will be the same.</li>
+		</ul>
+		<ul>
+			<li>Distribute gaps vertically: the gap between the bottom side and the top side of each consecutive elements will be the same.</li>
+		</ul>
+		<p>These actions are also available in contextual menu 
+			<em>Format/Distribute</em> or in menu bar _ Diagram/Distribute_.
+		</p>
+		<p>The selection must not contain a mix of shapes and label of edges. In this case, the actions will be disabled.</p>
+		<p>Only the top level shapes of the selection are retained for these actions: if inner shapes, border labels or edges are selected, they are ignored.
+			<br/>At least 3 shapes, or 3 labels of edges, should be selected to enable distribute actions.
+			<br/>These actions are enabled only if the selected shapes have the same direct parent. There is no real constraint, on this topic, concerning labels of edges, because they are all &#8220;contained&#8221; in the diagram.
+			<br/>For border nodes, they will be enabled only if all selected border nodes have the same parent and are on the same axis (top and bottom sides for horizontal actions, left and right for vertical actions). The overlap is forbidden for border nodes, so in some conditions (location already used), these actions may not have accurate results.
+		</p>
+		<p>In sequence diagram, the distribute actions are not available. Indeed, in sequence diagram, the order, and therefore the distribution, is constrained by the sequence of the elements.</p>
+		<h5 id="Firstandlastelements">First and last elements</h5>
+		<p>For all distribute actions, the first and the last elements do not move. The first and last elements do not depend on the selection order. They depend on the location of each selected elements and the chosen action.</p>
+		<p>For horizontal distribution with uniform gaps:</p>
+		<ul>
+			<li>the first element is the leftmost one (with the minimum x location). If several elements have the same x location, the highest one is the first.</li>
+			<li>the last element is the rightmost one (with the right side with the maximum x coordinate). If several elements are aligned to the right, the lowest one is the last.</li>
+		</ul>
+		<p>For horizontal centered distribution:</p>
+		<ul>
+			<li>the first element is the leftmost one (with its center at the minimum x coordinate). If several elements are aligned on center, the one with the highest center is the first.</li>
+			<li>the last element is the rightmost one (with its center at the maximum x coordinate). If several elements are aligned by center, the one with the lowest center is the last.</li>
+		</ul>
+		<p>For vertical distribution with uniform gaps:</p>
+		<ul>
+			<li>the first element is the highest one (with the minimum y location). If several elements have the same y location, the leftmost one is the first.</li>
+			<li>the last element is the lowest one (with the bottom side with the maximum y coordinate). If several elements are aligned to the bottom, the rightmost one is the last.</li>
+		</ul>
+		<p>For vertical centered distribution:</p>
+		<ul>
+			<li>the first element is the highest one (with its center at the minimum y coordinate). If several elements are aligned on middle, the leftmost one is the first.</li>
+			<li>the last element is the lowest one (with the bottom side with the maximum y coordinate). If several elements are aligned by middle, the rightmost one is the last.</li>
+		</ul>
+		<h4 id="reset_origin">Reset Diagram or Container Origin</h4>
+		<p>This action is available within the diagram or containers contextual menu (&#8220;Reset Origin&#8221;) or via &#8220;M1&#8221; + &#8220;HOME&#8221; shortcut.
+			<br/>The diagram (or container) bounds (the rectangle formed by the highest, the leftmost, the lowest and the rightmost elements) can have a negative origin or can be shifted toward the bottom-right with a blank zone at the top-left.
+			<br/>This action aims to move all diagram (or container) elements so that the diagram (or container) retrieves its origin while keeping the element layout.
+		</p>
+		<p>This action can be launched on several containers at same time.</p>
+		<p>This is an example of a diagram with a blank zone between the origin location and the figures bounds:
+			<br/>
+			<img border="0" src="images/reset_origin_before.png"/>
+		</p>
+		<p>After applying the action, the diagram figures are moved toward the top-left origin location:
+			<br/>
+			<img border="0" src="images/reset_origin_after.png"/>
+		</p>
+		<h5 id="Specificcases">Specific cases</h5>
+		<ul>
+			<li>Elements hidden by the user are not considered to compute the shift size but are shifted as the other shapes. That means if an hidden element is located at the top-left corner, the diagram coordinates will turn negative if the user reveals it after having executed the &#8220;Reset Origin&#8221; action.</li>
+			<li>Edges hidden because of a masked source or target are taken in account to compute the diagram bounds:</li>
+		</ul>
+		<p>
+			<img border="0" src="images/reset_origin_visible_edge.png"/>
+			<br/>After having scrolled the container, one of the edge end is masked so the edge is hidden. This one will be considered to compute the diagram bounds:
+			<br/>
+			<img border="0" src="images/reset_origin_masked_edge.png"/>
+		</p>
 		<h3 id="Manageedges">Manage edges</h3>
 		<h4 id="Properties">Properties</h4>
 		<p>The Properties view of an edge allows to change several aspects of the edge.</p>
@@ -730,83 +826,6 @@
 		<p>	
 			<img border="0" src="images/edgeLabelAttachment_labelSelected.png"/>
 		</p>
-		<h3 id="distribute">Distribute elements</h3>
-		<p>Four new actions allow to distribute shapes: </p>
-		<p>
-			<img border="0" src="images/distribute_initialState.png"/>
-		</p>
-		<ul>
-			<li>Distribute centers horizontally: Distributes the selected shapes so that the gap between horizontal centers of each selected shapes will be the same.</li>
-		</ul>
-		<p>
-			<img border="0" src="images/distribute_Centers.png"/>
-		</p>
-		<ul>
-			<li>Distribute gaps horizontally: Distributes the selected shapes so that the gap between the left side and the right side of each consecutive shapes will be the same.</li>
-		</ul>
-		<p>
-			<img border="0" src="images/distribute_WithUniformGap.png"/>
-		</p>
-		<ul>
-			<li>Distribute centers vertically: Distributes the selected shapes so that the gap between vertical centers of each selected shapes will be the same.</li>
-		</ul>
-		<ul>
-			<li>Distribute gaps vertically: the gap between the bottom side and the top side of each consecutive shapes will be the same.</li>
-		</ul>
-		<p>These new actions are also available in contextual menu 
-			<em>Format/Distribute</em> or in menu bar _ Diagram/Distribute_.
-		</p>
-		<p>Only the top level shapes of the selection are retained for these actions: if inner shapes, border labels or edges are selected, they are ignored. 
-			<br/>These actions are enabled only if the selected shapes have the same direct parent. At least 3 shapes should be selected to enable distribute actions.
-			<br/>For border nodes, they will be enabled only if all selected border nodes have the same parent and are on the same axis (top and bottom sides for horizontal actions, left and right for vertical actions). The overlap is forbidden for border nodes, so in some conditions (location already used), these actions may not have accurate results.
-		</p>
-		<h4 id="Firstandlastshapes">First and last shapes</h4>
-		<p>For all distribute actions, the first and the last shapes do not move. The first and last shapes do not depend on the selection order. They depend on the location of each selected shapes and the chosen action.</p>
-		<p>For horizontal distribution with uniform gaps:</p>
-		<ul>
-			<li>the first shape is the leftmost one (with the minimum x location). If several shapes have the same x location, the highest one is the first.</li>
-			<li>the last shape is the rightmost one (with the right side with the maximum x coordinate). If several shapes are aligned to the right, the lowest one is the last.</li>
-		</ul>
-		<p>For horizontal centered distribution:</p>
-		<ul>
-			<li>the first shape is the leftmost one (with its center at the minimum x coordinate). If several shapes are aligned on center, the one with the highest center is the first.</li>
-			<li>the last shape is the rightmost one (with its center at the maximum x coordinate). If several shapes are aligned by center, the one with the lowest center is the last.</li>
-		</ul>
-		<p>For vertical distribution with uniform gaps:</p>
-		<ul>
-			<li>the first shape is the highest one (with the minimum y location). If several shapes have the same y location, the leftmost one is the first.</li>
-			<li>the last shape is the lowest one (with the bottom side with the maximum y coordinate). If several shapes are aligned to the bottom, the rightmost one is the last.</li>
-		</ul>
-		<p>For vertical centered distribution:</p>
-		<ul>
-			<li>the first shape is the highest one (with its center at the minimum y coordinate). If several shapes are aligned on middle, the leftmost one is the first.</li>
-			<li>the last shape is the lowest one (with the bottom side with the maximum y coordinate). If several shapes are aligned by middle, the rightmost one is the last.</li>
-		</ul>
-		<h3 id="reset_origin">Reset Diagram or Container Origin</h3>
-		<p>This action is available within the diagram or containers contextual menu (&#8220;Reset Origin&#8221;) or via &#8220;M1&#8221; + &#8220;HOME&#8221; shortcut.
-			<br/>The diagram (or container) bounds (the rectangle formed by the highest, the leftmost, the lowest and the rightmost elements) can have a negative origin or can be shifted toward the bottom-right with a blank zone at the top-left.
-			<br/>This action aims to move all diagram (or container) elements so that the diagram (or container) retrieves its origin while keeping the element layout.
-		</p>
-		<p>This action can be launched on several containers at same time.</p>
-		<p>This is an example of a diagram with a blank zone between the origin location and the figures bounds:
-			<br/>
-			<img border="0" src="images/reset_origin_before.png"/>
-		</p>
-		<p>After applying the action, the diagram figures are moved toward the top-left origin location:
-			<br/>
-			<img border="0" src="images/reset_origin_after.png"/>
-		</p>
-		<h4 id="Specificcases">Specific cases</h4>
-		<ul>
-			<li>Elements hidden by the user are not considered to compute the shift size but are shifted as the other shapes. That means if an hidden element is located at the top-left corner, the diagram coordinates will turn negative if the user reveals it after having executed the &#8220;Reset Origin&#8221; action.</li>
-			<li>Edges hidden because of a masked source or target are taken in account to compute the diagram bounds:</li>
-		</ul>
-		<p>
-			<img border="0" src="images/reset_origin_visible_edge.png"/>
-			<br/>After having scrolled the container, one of the edge end is masked so the edge is hidden. This one will be considered to compute the diagram bounds:
-			<br/>
-			<img border="0" src="images/reset_origin_masked_edge.png"/>
-		</p>
 		<h3 id="Hidingelements">Hiding elements</h3>
 		<p>Every graphical element on a diagram except compartments can be hidden explicitly. To do that, simply right click on the graphical element (or elements if you want to hide several elements at once) you want to hide. Then, choose 
 			<i>Show/Hide</i> / 
@@ -1061,7 +1080,8 @@
 		<p>	
 			<img border="0" src="images/diagram_editor_copy_format.png"/>
 		</p>
-		<h4 id="PasteLayout">Paste Layout</h4>
+		<p>When an element format is copied, the format of all its children is also recursively copied (containers, nodes or border nodes). The format of the label and outgoing edges of all these elements, is also copied.</p>
+		<h4 id="paste_layout">Paste Layout</h4>
 		<p>The next picture shows the diagram where the layout will be replicated. The tool to paste layout is called &#8220;Paste Layout&#8221; and can be activated from the tab-bar or from the contextual menu (see 
 			<em>Edit</em> section).
 		</p>
@@ -1074,6 +1094,130 @@
 		</p>
 		<p>
 			<strong>Warning</strong> : This copy/paste operation copies exactly what you see on a diagram. When using low zoom level, some diagram elements can be twisted and the paste operation will duplicate theses twistings on the other diagram. Please, zoom in to reduce twistings.
+		</p>
+		<h5 id="Twomodesforpastelayout">Two modes for paste layout</h5>
+		<p>Since Sirius 7.1.0, there are 2 modes to paste the layout. At each execution of the action &#8220;Paste format&#8221; or &#8220;Paste layout&#8221;, a dialog is displayed to choose the mode.</p>
+		<p>	
+			<img border="0" src="images/pasteMode_dialog.png"/>
+		</p>
+		<p>A description of each mode is available in the following chapters. If you check the &#8220;Remember my decision&#8221; check-box, this dialog is no longer displayed and the last choice is used at each execution.</p>
+		<p>These elements are stored in the Sirius preferences and can be accessed through a preference page 
+			<code>Sirius/Sirius Diagram</code> in the group 
+			<code>Paste layout mode</code>.
+		</p>
+		<p>	
+			<img border="0" src="images/pasteMode_preferencePage.png"/>
+		</p>
+		<ul>
+			<li>The check-box 
+				<code>Prompt to select paste mode</code> allows to display, or not, the dialog at each execution of the Paste action.
+			</li>
+			<li>The radio buttons 
+				<code>Similar locations in absolute coordinates</code> and 
+				<code>Optimized locations by group</code> allow to choose the mode: the default mode if the check-box is not checked or the default selected mode in the dialog if checked.
+			</li>
+		</ul>
+		<h6 id="Similarlocationsinabsolutecoordinates">Similar locations in absolute coordinates</h6>
+		<p>The paste action applies a layout to conserve the absolute coordinates of copied elements (independently of the containment hierarchy in source or target).</p>
+		<p>
+			<b>Sample</b>
+		</p>
+		<p>From a Capella diagram, &#8220;system data flow blank&#8221; diagram, copy the layout containing all the functions hierarchy to a diagram having only &#8220;last children&#8221; functions:</p>
+		<ul>
+			<li>Launch the action &#8220;Copy format&#8221; from the source diagram</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_absoluteMode_sample1-1.png"/>
+		</p>
+		<ul>
+			<li>Select the target diagram</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_absoluteMode_sample1-2.png"/>
+		</p>
+		<ul>
+			<li>Launch the action &#8220;Paste layout&#8221;, expected result: The absolute coordinates of each element are preserved.</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_absoluteMode_sample1-3.png"/>
+		</p>
+		<h6 id="Optimizedlocationsbygroup">Optimized locations by group</h6>
+		<p>The paste action groups elements having the same container in the target diagram. Then it applies the copied layout of these elements relative to each other, while maintaining the same location for the group in the target diagram. </p>
+		<p>
+			<b>Sample 1</b>
+		</p>
+		<p>From a Capella diagram, &#8220;system data flow blank&#8221; diagram, copy the layout containing only &#8220;last children&#8221; functions to a diagram having all the functions hierarchy:</p>
+		<ul>
+			<li>Launch the action &#8220;Copy format&#8221; from the source diagram</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample1-1.png"/>
+		</p>
+		<ul>
+			<li>Select the target diagram</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample1-2.png"/>
+		</p>
+		<ul>
+			<li>Launch the action &#8220;Paste layout&#8221;, expected result: The origin of each group of brothers, in the target diagram,  are preserved (as you can see with guide on the horizontal and vertical rulers). And the layout of brothers, in the target diagram, is applied relative to each other.</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample1-3.png"/>
+		</p>
+		<p>
+			<b>Sample 2</b>
+		</p>
+		<p>In the same Capella diagram, &#8220;system data flow blank&#8221; diagram, copy the layout from a &#8220;REC system function containing children system functions&#8221; to two corresponding &#8220;RPL system function  containing children system functions&#8221;:</p>
+		<ul>
+			<li>Select the children functions SF1, SF2, SF3 and SF4 in the REC system function.</li>
+			<li>Launch the action "Copy format"</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample2-1.png"/>
+		</p>
+		<ul>
+			<li>Select the diagram</li>
+			<li>Launch the action &#8220;Paste layout&#8221;, expected result: The layout of 4 functions are copied into RPL1 and RPL2. The origin of each group of functions is preserved.</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample2-2.png"/>
+		</p>
+		<ul>
+			<li>Another solution is to select the REC system function.</li>
+			<li>Launch the action "Copy format"</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample2-3.png"/>
+		</p>
+		<ul>
+			<li>Launch the action &#8220;Paste layout&#8221; successively with RPL1 and RPL2 selected, expected result: The result is slightly different. The layout of REC is applied to RPL1 (only its size is modified, the location remains the same) and the layout of their children are applied. The layout of REC is applied to RPL2 (only its size is modified, the location remains the same) and the layout of their children are applied.</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample2-4.png"/>
+		</p>
+		<p>
+			<b>Sample 3</b>
+		</p>
+		<p>In the same Capella diagram, &#8220;system data flow blank&#8221; diagram, copy the layout from the &#8220;REC system functions&#8221; to the &#8220;RPL system functions&#8221;:</p>
+		<ul>
+			<li>Select "REC system functions"</li>
+			<li>Launch the action "Copy format"</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample3-1.png"/>
+		</p>
+		<ul>
+			<li>Select "RPL system functions"</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample3-2.png"/>
+		</p>
+		<ul>
+			<li>Launch the action "Paste layout"</li>
+		</ul>
+		<p>	
+			<img border="0" src="images/copyLayout_boundingBoxMode_sample3-3.png"/>
 		</p>
 		<h4 id="PasteStyle">Paste Style</h4>
 		<p>The next picture shows the diagram where the layout will be replicated. The tool to paste style is called &#8220;Paste Style&#8221; and can be activated from the tab-bar or from the contextual menu (see 
