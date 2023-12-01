@@ -57,6 +57,9 @@
 										<a href="#distribute">Distribute elements</a>
 									</li>
 									<li>
+										<a href="#new_elements_arrangement">Newly created elements arrangement.</a>
+									</li>
+									<li>
 										<a href="#reset_origin">Reset Diagram or Container Origin</a>
 									</li>
 								</ol>
@@ -140,6 +143,9 @@
 										<a href="#PasteFormat">Paste Format</a>
 									</li>
 								</ol>
+							</li>
+							<li>
+								<a href="#paste_image">Paste image from clipboard</a>
 							</li>
 							<li>
 								<a href="#diagram_element_pinning">Diagram element pinning</a>
@@ -520,6 +526,29 @@
 			<li>the first element is the highest one (with its center at the minimum y coordinate). If several elements are aligned on middle, the leftmost one is the first.</li>
 			<li>the last element is the lowest one (with the bottom side with the maximum y coordinate). If several elements are aligned by middle, the rightmost one is the last.</li>
 		</ul>
+		<h4 id="new_elements_arrangement">Newly created elements arrangement.</h4>
+		<p>When elements in a diagram are not directly positioned by the user. By default, they are sequentially positioned in the center of the editor, diagonally. They can also be positioned vertically or horizontally by changing the preference in Sirius &gt; Sirius Diagram &gt; Newly created elements layout.
+			<br/>
+			<img border="0" src="images/new_elements_arrangement_preferences.png"/>
+		</p>
+		<ul>
+			<li>Diagonal arrangement:</li>
+		</ul>
+		<p>
+			<img border="0" src="images/new_elements_arrangement_diagonal.png"/>
+		</p>
+		<ul>
+			<li>Vertical arrangement:</li>
+		</ul>
+		<p>
+			<img border="0" src="images/new_elements_arrangement_vertical.png"/>
+		</p>
+		<ul>
+			<li>Horizontal arrangement:</li>
+		</ul>
+		<p>
+			<img border="0" src="images/new_elements_arrangement_horizontal.png"/>
+		</p>
 		<h4 id="reset_origin">Reset Diagram or Container Origin</h4>
 		<p>This action is available within the diagram or containers contextual menu (&#8220;Reset Origin&#8221;) or via &#8220;M1&#8221; + &#8220;HOME&#8221; shortcut.
 			<br/>The diagram (or container) bounds (the rectangle formed by the highest, the leftmost, the lowest and the rightmost elements) can have a negative origin or can be shifted toward the bottom-right with a blank zone at the top-left.
@@ -1244,6 +1273,11 @@
 		</p>
 		<p>	
 			<img border="0" src="images/diagram_editor_paste_format2.png"/>
+		</p>
+		<h3 id="paste_image">Paste image from clipboard</h3>
+		<p>It is also possible to paste an image from the clipboard to a node or container. To do this, copy the image in your clipboard, select a node and click on the button &#8220;Paste image from clipboard&#8221; (see picture below). The image is saved as a PNG file in the workspace, in an &#8220;images&#8221; folder and the selected element has a workspace image style that references this image.</p>
+		<p>	
+			<img border="0" src="images/diagram_editor_paste_image.png"/>
 		</p>
 		<h3 id="diagram_element_pinning">Diagram element pinning</h3>
 		<h4 id="Introduction">Introduction</h4>
